@@ -5,35 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requête AJAX vers une API</title>
     <style>
-        /* Ajout de styles pour l'animation du bouton */
-        #startButton {
+        body {
+            background-color: #f0f0f0; /* Fond gris */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px; /* Ajout de marges autour du contenu */
+        }
+
+        #buttonsContainer {
+            display: flex;
+            align-items: flex-start; /* Alignement en haut */
+            margin-bottom: 20px;
+        }
+
+        button {
             background-color: #4CAF50; /* Vert */
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            margin-right: 10px; /* Ajout de marge entre les boutons */
         }
 
-        #startButton:hover {
+        button:hover {
             background-color: #45a049; /* Vert plus foncé au survol */
+            transform: scale(1.05); /* Effet d'agrandissement au survol */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+        }
+
+        button:active {
+            transform: scale(0.95); /* Effet de réduction lors du clic */
+            box-shadow: none; /* Supprime l'ombre lors du clic */
+        }
+
+        #deleteAllButton {
+            background-color: #f44336; /* Rouge */
+        }
+
+        #deleteAllButton:hover {
+            background-color: #d32f2f; /* Rouge plus foncé au survol */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Ajoutez cette règle pour rendre la colonne "Player Names" illimitée à droite */
+        td:nth-child(4) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /* Optionnel : ajoutez des points de suspension (...) si le texte est trop long */
         }
     </style>
 </head>
 <body>
 
-<!-- Ajout du style pour le placement du bouton -->
-<div style="display: flex; align-items: center;">
-    <label for="walletName" style="margin-right: 10px;">Nom du Wallet:</label>
-    <input type="text" id="walletName" style="margin-right: 10px;">
-    <button id="startButton" onclick="startAjaxRequest()">Start</button>
+<div id="buttonsContainer">
+    <button onclick="startAjaxRequest('tvsba.wam')">TVSBA</button>
+    <button onclick="startAjaxRequest('2mtaq.wam')">2MTAQ</button>
+    <button onclick="startAjaxRequest('svtse.wam')">SVTSE</button>
+    <button onclick="startAjaxRequest('l3nre.wam')">L3NRE</button>
+    <button id="showAllButton" onclick="showAllData()">Show All</button>
+    <button id="deleteAllButton" onclick="deleteAllData()">Delete All</button>
 </div>
 
 <table border="1">
     <thead>
         <tr>
             <th>ID</th>
+            <th>Created At</th> <!-- Nouvelle colonne -->
             <th>Player</th>
             <th>Player Names</th>
             <!-- Ajoutez d'autres colonnes en fonction des données retournées par l'API -->
@@ -45,8 +95,7 @@
 </table>
 
 <script>
-    function startAjaxRequest() {
-        var walletName = document.getElementById('walletName').value;
+    function startAjaxRequest(walletName) {
         makeAjaxRequest(walletName);
     }
 
@@ -74,9 +123,6 @@
     function displayData(data) {
         var tableBody = document.getElementById('tableBody');
 
-        // Efface le contenu existant du tableau
-        tableBody.innerHTML = '';
-
         // Parcours des données imbriquées
         data.forEach(function (draftEntry) {
             var playerNames = [];
@@ -94,12 +140,61 @@
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
 
             // Ajoutez d'autres cellules en fonction des données retournées par l'API
             cell1.textContent = draftEntry.id;
-            cell2.textContent = draftEntry.owner;
-            cell3.textContent = playerNames.join(', ');
+            
+            // Convertir le timestamp en date et heure réelles
+            var createdAt = new Date(draftEntry.created_at * 1000); // Convertir en millisecondes
+            cell2.textContent = createdAt.toLocaleString(); // Afficher la date et l'heure formatées
+          
+            cell3.textContent = draftEntry.owner;
+            cell4.textContent = playerNames.join(', ');
         });
+    }
+
+    function showAllData() {
+        // Utilisez Promise.all pour attendre la fin de toutes les requêtes
+        Promise.all([
+            makeAjaxRequestPromise('tvsba.wam'),
+            makeAjaxRequestPromise('2mtaq.wam'),
+            makeAjaxRequestPromise('svtse.wam'),
+            makeAjaxRequestPromise('l3nre.wam')
+        ]).then(function (responses) {
+            // Les réponses sont disponibles ici
+            responses.forEach(function (data) {
+                displayData(data);
+            });
+        });
+    }
+
+    function makeAjaxRequestPromise(walletName) {
+        return new Promise(function (resolve, reject) {
+            var xhr = new XMLHttpRequest();
+            var apiUrl = 'https://bask-api-main-420f15f4aab2.herokuapp.com/api/v1/drafts/' + walletName;
+            xhr.open('GET', apiUrl, true);
+
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    var responseData = JSON.parse(xhr.responseText);
+                    resolve(responseData);
+                } else {
+                    reject('Erreur lors de la requête. Statut : ' + xhr.status);
+                }
+            };
+
+            xhr.onerror = function () {
+                reject('Erreur réseau lors de la requête.');
+            };
+
+            xhr.send();
+        });
+    }
+
+    function deleteAllData() {
+        var tableBody = document.getElementById('tableBody');
+        tableBody.innerHTML = ''; // Efface tout le contenu du tableau
     }
 </script>
 
