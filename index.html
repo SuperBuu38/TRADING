@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requête AJAX vers une API</title>
+    <style>
+        /* Ajout de styles pour l'animation du bouton */
+        #startButton {
+            background-color: #4CAF50; /* Vert */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #startButton:hover {
+            background-color: #45a049; /* Vert plus foncé au survol */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Ajout du style pour le placement du bouton -->
+<div style="display: flex; align-items: center;">
+    <label for="walletName" style="margin-right: 10px;">Nom du Wallet:</label>
+    <input type="text" id="walletName" style="margin-right: 10px;">
+    <button id="startButton" onclick="startAjaxRequest()">Start</button>
+</div>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Player</th>
+            <th>Player Names</th>
+            <!-- Ajoutez d'autres colonnes en fonction des données retournées par l'API -->
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        <!-- Les données de l'API seront insérées ici -->
+    </tbody>
+</table>
+
+<script>
+    function startAjaxRequest() {
+        var walletName = document.getElementById('walletName').value;
+        makeAjaxRequest(walletName);
+    }
+
+    function makeAjaxRequest(walletName) {
+        var xhr = new XMLHttpRequest();
+        var apiUrl = 'https://bask-api-main-420f15f4aab2.herokuapp.com/api/v1/drafts/' + walletName;
+        xhr.open('GET', apiUrl, true);
+
+        xhr.onload = function () {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                var responseData = JSON.parse(xhr.responseText);
+                displayData(responseData);
+            } else {
+                console.error('Erreur lors de la requête. Statut : ' + xhr.status);
+            }
+        };
+
+        xhr.onerror = function () {
+            console.error('Erreur réseau lors de la requête.');
+        };
+
+        xhr.send();
+    }
+
+    function displayData(data) {
+        var tableBody = document.getElementById('tableBody');
+
+        // Efface le contenu existant du tableau
+        tableBody.innerHTML = '';
+
+        // Parcours des données imbriquées
+        data.forEach(function (draftEntry) {
+            var playerNames = [];
+
+            draftEntry.assets.forEach(function (asset) {
+                // Gestion des noms de joueurs
+                if (asset.data.fantasy && asset.data.fantasy.length > 0 && asset.data.fantasy[0].name) {
+                    playerNames.push(asset.data.fantasy[0].name);
+                } else {
+                    playerNames.push('N/A');
+                }
+            });
+
+            var row = tableBody.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+
+            // Ajoutez d'autres cellules en fonction des données retournées par l'API
+            cell1.textContent = draftEntry.id;
+            cell2.textContent = draftEntry.owner;
+            cell3.textContent = playerNames.join(', ');
+        });
+    }
+</script>
+
+</body>
+</html>
