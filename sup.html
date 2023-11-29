@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requête AJAX vers une API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 5px;
+}
+
+table {
+     width: 100% !important;
+  margin: 0 !important;
+}
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 12px;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        th:hover {
+            background-color: #0056b3;
+        }
+
+        tbody tr:hover {
+            background-color: rgba(0, 123, 255, 0.2);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mt-4 text-center">⛹️ Draft Scores 🏀</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">ID</th>
+                    <th onclick="sortTable(1)">Score</th>
+                    <th>Player</th>
+                    <th>Asset IDs</th>
+                    <th>Signed Was Free</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Les données de l'API seront insérées ici -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function makeAjaxRequest() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://bask-api-main-420f15f4aab2.herokuapp.com/api/v1/scores/drafts', true);
+
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    var responseData = JSON.parse(xhr.responseText);
+                    displayData(responseData);
+                } else {
+                    console.error('Erreur lors de la requête. Statut : ' + xhr.status);
+                }
+            };
+
+            xhr.onerror = function () {
+                console.error('Erreur réseau lors de la requête.');
+            };
+
+            xhr.send();
+        }
+
+        function displayData(data) {
+            var tableBody = document.getElementById('tableBody');
+
+            // Efface le contenu existant du tableau
+            tableBody.innerHTML = '';
+
+            // Parcours des données imbriquées
+            data.forEach(function (draftEntry) {
+                draftEntry.drafts.forEach(function (entry) {
+                    var row = tableBody.insertRow();
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    var cell3 = row.insertCell(2);
+                    var cell4 = row.insertCell(3);
+                    var cell5 = row.insertCell(4);
+
+                    // Ajoutez d'autres cellules en fonction des données retournées par l'API
+                    cell1.textContent = entry.draft_id;
+                    cell2.textContent = entry.total_score;
+                    cell3.textContent = entry.owner;
+
+                    // Gestion des asset_ids
+                    if (entry.draft && entry.draft.asset_ids && entry.draft.asset_ids.length > 0) {
+                        var assetIds = entry.draft.asset_ids.map(function (asset) {
+                            return asset.asset_id;
+                        });
+                        cell4.textContent = assetIds.join(', ');
+                    } else {
+                        cell4.textContent = 'N/A';
+                    }
+
+                    // Ajout de la colonne "Signed Was Free"
+                    cell5.textContent = entry.signed_was_free;
+                });
+            });
+        }
+
+        function sortTable(columnIndex) {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.querySelector('table');
+            switching = true;
+
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+
+                for (i = 1; i < rows.length - 1; i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName('td')[columnIndex];
+                    y = rows[i + 1].getElementsByTagName('td')[columnIndex];
+
+                    if (Number(x.textContent) < Number(y.textContent)) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+
+        makeAjaxRequest();
+    </script>
+
+</body>
+
+</html>
