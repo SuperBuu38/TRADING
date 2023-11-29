@@ -12,11 +12,12 @@
             padding: 20px; /* Ajout de marges autour du contenu */
         }
 
-        #buttonsContainer {
-            display: flex;
-            align-items: flex-start; /* Alignement en haut */
-            margin-bottom: 20px;
-        }
+      #buttonsContainer {
+    display: flex;
+    align-items: center; /* Modifier de flex-start à center */
+    justify-content: center; /* Ajouter cette ligne pour centrer horizontalement */
+    margin-bottom: 20px;
+}
 
         button {
             background-color: #4CAF50; /* Vert */
@@ -52,12 +53,14 @@
             border-collapse: collapse;
             width: 80%;
             max-width: 800px;
+            margin: 0 auto;
+            margin-top 20px;
         }
 
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
 
         /* Ajoutez cette règle pour rendre la colonne "Player Names" illimitée à droite */
