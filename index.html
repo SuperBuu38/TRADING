@@ -6,47 +6,61 @@
     <title>Requête AJAX vers une API</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Fond gris */
+            background-color: #f0f0f0;
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px; /* Ajout de marges autour du contenu */
+            padding: 20px;
         }
 
-      #buttonsContainer {
-    display: flex;
-    align-items: center; /* Modifier de flex-start à center */
-    justify-content: center; /* Ajouter cette ligne pour centrer horizontalement */
-    margin-bottom: 20px;
-}
+        #buttonsContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
 
         button {
-            background-color: #4CAF50; /* Vert */
+            background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            margin-right: 10px; /* Ajout de marge entre les boutons */
+            margin-right: 10px;
         }
 
         button:hover {
-            background-color: #45a049; /* Vert plus foncé au survol */
-            transform: scale(1.05); /* Effet d'agrandissement au survol */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+            background-color: #45a049;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         button:active {
-            transform: scale(0.95); /* Effet de réduction lors du clic */
-            box-shadow: none; /* Supprime l'ombre lors du clic */
+            transform: scale(0.95);
+            box-shadow: none;
         }
 
         #deleteAllButton {
-            background-color: #f44336; /* Rouge */
+            background-color: #f44336;
         }
 
         #deleteAllButton:hover {
-            background-color: #d32f2f; /* Rouge plus foncé au survol */
+            background-color: #d32f2f;
+        }
+
+        #supButton {
+            background-color: #2196F3; /* Bleu */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        #supButton:hover {
+            background-color: #0b7dda; /* Bleu plus foncé au survol */
         }
 
         table {
@@ -63,11 +77,10 @@
             text-align: center;
         }
 
-        /* Ajoutez cette règle pour rendre la colonne "Player Names" illimitée à droite */
         td:nth-child(4) {
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis; /* Optionnel : ajoutez des points de suspension (...) si le texte est trop long */
+            text-overflow: ellipsis;
         }
     </style>
 </head>
@@ -80,20 +93,19 @@
     <button onclick="startAjaxRequest('l3nre.wam')">L3NRE</button>
     <button id="showAllButton" onclick="showAllData()">Show All</button>
     <button id="deleteAllButton" onclick="deleteAllData()">Delete All</button>
+    <button id="supButton" onclick="goToSupPage()">Sup Page</button>
 </div>
 
 <table border="1">
     <thead>
         <tr>
             <th>ID</th>
-            <th>Created At</th> <!-- Nouvelle colonne -->
+            <th>Created At</th>
             <th>Player</th>
             <th>Player Names</th>
-            <!-- Ajoutez d'autres colonnes en fonction des données retournées par l'API -->
         </tr>
     </thead>
     <tbody id="tableBody">
-        <!-- Les données de l'API seront insérées ici -->
     </tbody>
 </table>
 
@@ -126,12 +138,10 @@
     function displayData(data) {
         var tableBody = document.getElementById('tableBody');
 
-        // Parcours des données imbriquées
         data.forEach(function (draftEntry) {
             var playerNames = [];
 
             draftEntry.assets.forEach(function (asset) {
-                // Gestion des noms de joueurs
                 if (asset.data.fantasy && asset.data.fantasy.length > 0 && asset.data.fantasy[0].name) {
                     playerNames.push(asset.data.fantasy[0].name);
                 } else {
@@ -145,27 +155,23 @@
             var cell3 = row.insertCell(2);
             var cell4 = row.insertCell(3);
 
-            // Ajoutez d'autres cellules en fonction des données retournées par l'API
             cell1.textContent = draftEntry.id;
-            
-            // Convertir le timestamp en date et heure réelles
-            var createdAt = new Date(draftEntry.created_at * 1000); // Convertir en millisecondes
-            cell2.textContent = createdAt.toLocaleString(); // Afficher la date et l'heure formatées
-          
+
+            var createdAt = new Date(draftEntry.created_at * 1000);
+            cell2.textContent = createdAt.toLocaleString();
+
             cell3.textContent = draftEntry.owner;
             cell4.textContent = playerNames.join(', ');
         });
     }
 
     function showAllData() {
-        // Utilisez Promise.all pour attendre la fin de toutes les requêtes
         Promise.all([
             makeAjaxRequestPromise('tvsba.wam'),
             makeAjaxRequestPromise('2mtaq.wam'),
             makeAjaxRequestPromise('svtse.wam'),
             makeAjaxRequestPromise('l3nre.wam')
         ]).then(function (responses) {
-            // Les réponses sont disponibles ici
             responses.forEach(function (data) {
                 displayData(data);
             });
@@ -197,7 +203,11 @@
 
     function deleteAllData() {
         var tableBody = document.getElementById('tableBody');
-        tableBody.innerHTML = ''; // Efface tout le contenu du tableau
+        tableBody.innerHTML = '';
+    }
+
+    function goToSupPage() {
+        window.location.href = 'sup.html';
     }
 </script>
 
