@@ -1,215 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Requête AJAX vers une API</title>
+    <title>Crypto Dashboard 3.0</title>
     <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: 'Arial', sans-serif;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        #buttonsContainer {
+        body {
+            margin: 0;
+            min-height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            margin-right: 10px;
-        }
-
-        button:hover {
-            background-color: #45a049;
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        button:active {
-            transform: scale(0.95);
-            box-shadow: none;
-        }
-
-        #deleteAllButton {
-            background-color: #f44336;
-        }
-
-        #deleteAllButton:hover {
-            background-color: #d32f2f;
-        }
-
-        #supButton {
-            background-color: #2196F3; /* Bleu */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-        }
-
-        #supButton:hover {
-            background-color: #0b7dda; /* Bleu plus foncé au survol */
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            margin-top 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-
-        td:nth-child(4) {
-            white-space: nowrap;
+            align-items: center;
+            background: #0f172a;
+            font-family: 'Arial', sans-serif;
             overflow: hidden;
-            text-overflow: ellipsis;
+            position: relative;
+        }
+
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+
+        .container {
+            text-align: center;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            position: relative;
+            z-index: 1;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        h1 {
+            color: #e2e8f0;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            perspective: 1000px;
+        }
+
+        .btn {
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .btn:hover::before { left: 100%; }
+
+        .btn-btc {
+            background: linear-gradient(45deg, #f7931a, #ffa726);
+            color: white;
+            box-shadow: 0 0 15px rgba(247, 147, 26, 0.5);
+        }
+
+        .btn-eth {
+            background: linear-gradient(45deg, #627eea, #3c5cdd);
+            color: white;
+            box-shadow: 0 0 15px rgba(98, 126, 234, 0.5);
+        }
+
+        .btn-sol {
+            background: linear-gradient(45deg, #00ffbd, #00bfa5);
+            color: black;
+            box-shadow: 0 0 15px rgba(0, 255, 189, 0.5);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) rotateX(10deg);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .crypto-info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+            color: white;
+            gap: 1.5rem;
+        }
+
+        .crypto-card {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 1.5rem;
+            border-radius: 15px;
+            min-width: 250px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .crypto-card h3 {
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .current-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            color: #00ff88;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        .price-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .price-info:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .price-label {
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+
+        .price-value {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 1200px) {
+            .crypto-info {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .crypto-card {
+                min-width: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+                margin: 1rem;
+            }
+
+            .crypto-card {
+                width: 100%;
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .price-changed {
+            animation: pulse 0.5s ease;
         }
     </style>
 </head>
 <body>
+    <div class="particles"></div>
+    <div class="container">
+        <div class="crypto-info">
+            <div class="crypto-card" id="btc-info">
+                <h3>Bitcoin (BTC)</h3>
+                <div class="current-price" id="btc-current">Chargement...</div>
+                <div class="price-info">
+                    <span class="price-label">OPEN</span>
+                    <span class="price-value" id="btc-open">Chargement...</span>
+                </div>
+                <div class="price-info">
+                    <span class="price-label">HIGH</span>
+                    <span class="price-value" id="btc-high">Chargement...</span>
+                </div>
+                <div class="price-info">
+                    <span class="price-label">LOW</span>
+                    <span class="price-value" id="btc-low">Chargement...</span>
+                </div>
+            </div>
+            <div class="crypto-card" id="eth-info">
+                <h3>Ethereum (ETH)</h3>
+                <div class="current-price" id="eth-current">Chargement...</div>
+                <div class="price-info">
+                    <span class="price-label">OPEN</span>
+                    <span class="price-value" id="eth-open">Chargement...</span>
+                </div>
+                <div class="price-info">
+                    <span class="price-label">HIGH</span>
+                    <span class="price-value" id="eth-high">Chargement...</span>
+                </div>
+                <div class="price-info">
+                    <span class="price-label">LOW</span>
+                    <span class="price-value" id="eth-low">Chargement...</span>
+                </div>
+            </div>
+            <div class="crypto-card" id="sol-info">
+                <h3>Solana (SOL)</h3>
+                <div class="current-price" id="sol-current">Chargement...</div>
+                <div class="price-info">
+                    <span class="price-label">OPEN</span>
+                    <span class="price-value" id="sol-open">Chargement...</span>
+                </div>
+                <div class="price-info">
+                    <span class="price-label">HIGH</span>
+                    <span class="price-value" id="sol-high">Chargement...</span>
+                </div>
+                <div class="price-info">
+                    <span class="price-label">LOW</span>
+                    <span class="price-value" id="sol-low">Chargement...</span>
+                </div>
+            </div>
+        </div>
+        <h1>Crypto Markets</h1>
+        <div class="buttons">
+            <a href="btcusdt.html" class="btn btn-btc">BTC</a>
+            <a href="ethusdt.html" class="btn btn-eth">ETH</a>
+            <a href="solusdt.html" class="btn btn-sol">SOL</a>
+        </div>
+    </div>
 
-<div id="buttonsContainer">
-    <button onclick="startAjaxRequest('tvsba.wam')">TVSBA</button>
-    <button onclick="startAjaxRequest('2mtaq.wam')">2MTAQ</button>
-    <button onclick="startAjaxRequest('svtse.wam')">SVTSE</button>
-    <button onclick="startAjaxRequest('l3nre.wam')">L3NRE</button>
-    <button id="showAllButton" onclick="showAllData()">Show All</button>
-    <button id="deleteAllButton" onclick="deleteAllData()">Delete All</button>
-    <button id="supButton" onclick="goToSupPage()">Draft Scores 🏀</button>
-</div>
+    <script>
+        // Création des particules
+        const particlesContainer = document.querySelector('.particles');
+        const particleCount = 50;
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Created At</th>
-            <th>Player</th>
-            <th>Player Names</th>
-        </tr>
-    </thead>
-    <tbody id="tableBody">
-    </tbody>
-</table>
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * 20}s`;
+            particlesContainer.appendChild(particle);
+        }
 
-<script>
-    function startAjaxRequest(walletName) {
-        makeAjaxRequest(walletName);
-    }
+        // Fonction pour formater les prix
+        function formatPrice(price, decimals = 2) {
+            return parseFloat(price).toLocaleString('en-US', {
+                minimumFractionDigits: decimals,
+                maximumFractionDigits: decimals
+            });
+        }
 
-    function makeAjaxRequest(walletName) {
-        var xhr = new XMLHttpRequest();
-        var apiUrl = 'https://bask-api-main-420f15f4aab2.herokuapp.com/api/v1/drafts/' + walletName;
-        xhr.open('GET', apiUrl, true);
-
-        xhr.onload = function () {
-            if (xhr.status >= 200 && xhr.status < 300) {
-                var responseData = JSON.parse(xhr.responseText);
-                displayData(responseData);
-            } else {
-                console.error('Erreur lors de la requête. Statut : ' + xhr.status);
+        // Fonction pour mettre à jour un élément avec animation
+        function updateElementWithAnimation(elementId, newValue) {
+            const element = document.getElementById(elementId);
+            const oldValue = element.textContent;
+            element.textContent = newValue;
+            
+            if (oldValue !== newValue) {
+                element.classList.remove('price-changed');
+                void element.offsetWidth; // Force reflow
+                element.classList.add('price-changed');
             }
-        };
+        }
 
-        xhr.onerror = function () {
-            console.error('Erreur réseau lors de la requête.');
-        };
+        // Fonction pour mettre à jour les données
+        async function updatePrices() {
+            try {
+                const symbols = ['BTCUSDT', 'ETHUSDT', 'SOLUSDT'];
+                const currentPrices = await Promise.all(
+                    symbols.map(symbol => 
+                        fetch(`https://api.binance.com/api/v3/ticker/price?symbol=${symbol}`)
+                        .then(res => res.json())
+                    )
+                );
+                
+                const klineData = await Promise.all(
+                    symbols.map(symbol =>
+                        fetch(`https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=1d&limit=1`)
+                        .then(res => res.json())
+                    )
+                );
 
-        xhr.send();
-    }
+                const cryptos = ['btc', 'eth', 'sol'];
+                const decimals = {'btc': 2, 'eth': 2, 'sol': 3};
 
-    function displayData(data) {
-        var tableBody = document.getElementById('tableBody');
+                cryptos.forEach((crypto, index) => {
+                    // Mise à jour du prix actuel
+                    updateElementWithAnimation(
+                        `${crypto}-current`,
+                        `$${formatPrice(currentPrices[index].price, decimals[crypto])}`
+                    );
 
-        data.forEach(function (draftEntry) {
-            var playerNames = [];
+                    // Mise à jour des données OHLC
+                    updateElementWithAnimation(
+                        `${crypto}-open`,
+                        `$${formatPrice(klineData[index][0][1], decimals[crypto])}`
+                    );
+                    updateElementWithAnimation(
+                        `${crypto}-high`,
+                        `$${formatPrice(klineData[index][0][2], decimals[crypto])}`
+                    );
+                    updateElementWithAnimation(
+                        `${crypto}-low`,
+                        `$${formatPrice(klineData[index][0][3], decimals[crypto])}`
+                    );
+                });
 
-            draftEntry.assets.forEach(function (asset) {
-                if (asset.data.fantasy && asset.data.fantasy.length > 0 && asset.data.fantasy[0].name) {
-                    playerNames.push(asset.data.fantasy[0].name);
-                } else {
-                    playerNames.push('N/A');
-                }
-            });
+            } catch (error) {
+                console.error('Erreur lors de la récupération des données:', error);
+            }
+        }
 
-            var row = tableBody.insertRow();
-            var cell1 = row.insertCell(0);
-            var cell2 = row.insertCell(1);
-            var cell3 = row.insertCell(2);
-            var cell4 = row.insertCell(3);
+        // Mise à jour initiale et toutes les 10 secondes
+        updatePrices();
+        setInterval(updatePrices, 10000);
 
-            cell1.textContent = draftEntry.id;
-
-            var createdAt = new Date(draftEntry.created_at * 1000);
-            cell2.textContent = createdAt.toLocaleString();
-
-            cell3.textContent = draftEntry.owner;
-            cell4.textContent = playerNames.join(', ');
+        // Effet de hover 3D sur le container
+        const container = document.querySelector('.container');
+        container.addEventListener('mousemove', (e) => {
+            const rect = container.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateY = ((x - centerX) / centerX) * 5;
+            const rotateX = -((y - centerY) / centerY) * 5;
+            
+            container.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
         });
-    }
 
-    function showAllData() {
-        Promise.all([
-            makeAjaxRequestPromise('tvsba.wam'),
-            makeAjaxRequestPromise('2mtaq.wam'),
-            makeAjaxRequestPromise('svtse.wam'),
-            makeAjaxRequestPromise('l3nre.wam')
-        ]).then(function (responses) {
-            responses.forEach(function (data) {
-                displayData(data);
-            });
+        container.addEventListener('mouseleave', () => {
+            container.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
         });
-    }
-
-    function makeAjaxRequestPromise(walletName) {
-        return new Promise(function (resolve, reject) {
-            var xhr = new XMLHttpRequest();
-            var apiUrl = 'https://bask-api-main-420f15f4aab2.herokuapp.com/api/v1/drafts/' + walletName;
-            xhr.open('GET', apiUrl, true);
-
-            xhr.onload = function () {
-                if (xhr.status >= 200 && xhr.status < 300) {
-                    var responseData = JSON.parse(xhr.responseText);
-                    resolve(responseData);
-                } else {
-                    reject('Erreur lors de la requête. Statut : ' + xhr.status);
-                }
-            };
-
-            xhr.onerror = function () {
-                reject('Erreur réseau lors de la requête.');
-            };
-
-            xhr.send();
-        });
-    }
-
-    function deleteAllData() {
-        var tableBody = document.getElementById('tableBody');
-        tableBody.innerHTML = '';
-    }
-
-    function goToSupPage() {
-        window.location.href = 'sup.html';
-    }
-</script>
-
+    </script>
 </body>
 </html>
