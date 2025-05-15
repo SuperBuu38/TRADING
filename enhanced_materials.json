@@ -1,0 +1,6011 @@
+[
+  {
+    "id": 1,
+    "name": "Volcanic Ashes",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "Those simple ashes, mostly composed of silica, iron, and various minerals, can easily be found in the volcanic region of Aperta. It might contain infinitesimal traces of certain Arcadian resources.",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ],
+    "zones": [
+      "Volcanic area"
+    ],
+    "land_location": "Helios"
+  },
+  {
+    "id": 2,
+    "name": "Small volcanic rock",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This small volcanic rock, not easy to break, can be easily found in any volcanic region.",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ],
+    "zones": [
+      "Volcanic area"
+    ],
+    "land_location": "Helios"
+  },
+  {
+    "id": 3,
+    "name": "Volcanic grass",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This hard-to-find grass only grows in small patches in specific places near volcanic areas. Its composition, rich in cellulose, makes it particularly resistant to heat and dry environments. For some reason, predators in the region like to conceal themselves in those small bushes to ambush their prey.",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ],
+    "zones": [
+      "Volcanic area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 4,
+    "name": "Pure lava",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "This lava can easily be found in any volcanic area. However, it is not easy to collect, and even the smallest samples need to be stored in the proper container. It contains infinitesimal traces of Fusium, Actium, Minium, and perhaps even Constructium.",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ],
+    "zones": [
+      "Volcanic area"
+    ],
+    "land_location": "Helios"
+  },
+  {
+    "id": 5,
+    "name": "Mountain moss",
+    "rarity": "common",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This moss can easily be found at high altitudes on the slopes of mountains that are not too cold. It contains traces of Minium, most likely originating from the melting snow that runs down the mountains. Some believe that it is also beneficial for eyesight.",
+    "locations": [
+      "A16",
+      "A7",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B6",
+      "B7",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D14",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "zones": [
+      "Mountains"
+    ],
+    "land_location": "Old Mountain"
+  },
+  {
+    "id": 6,
+    "name": "Calipseum Violaceum",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "A very rare flower that only grows once the Apertian conditions are perfect. The legend calls it 'the dark queen of the mountain, as only one specimen can grow on each summit and they are exclusively visible during the night.",
+    "locations": [
+      "A7",
+      "B14",
+      "B6",
+      "C12",
+      "C14",
+      "C3",
+      "C7",
+      "D12",
+      "D5",
+      "D7",
+      "D8",
+      "D9",
+      "E1",
+      "E12"
+    ],
+    "zones": [
+      "Spring water area",
+      "Mountains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 7,
+    "name": "Cold mountain water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "Anyone exploring the mountainous region of Aperta should be able to find a source of cold and pure water. It has a high Minium content compared to other Apertian waters.",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A7",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "D1",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "E1",
+      "E10",
+      "E11",
+      "E12",
+      "E2",
+      "E3"
+    ],
+    "zones": [
+      "Spring water area",
+      "Mountains",
+      "Cold summits",
+      "Botttomless pit"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 8,
+    "name": "Pine cone",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "In the Apertian region, pines are trees that mostly grow at the interface between mountains and large plains. They often drop pine cones which are rich in fatty acids and polyphenols. For some reason, they contain traces of Minium, likely accumulated from water coming down from the mountain and hydrating the tree on which they grow.",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ],
+    "zones": [
+      "Satoyama"
+    ],
+    "land_location": "Ancient Valley"
+  },
+  {
+    "id": 9,
+    "name": "Satoyaman grass",
+    "rarity": "common",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This abundant grass can easily be found next to the Apertian mountains, in the Satoyaman region.",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ],
+    "zones": [
+      "Satoyama"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 10,
+    "name": "Dry grass",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "Despite its name, this common grass is well alive and contains a lot of cellulose. It can be found in dry regions of Aperta. Surprisingly, the largest specimens contain traces of Fusium and Actium.",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H12",
+      "H2",
+      "H3",
+      "H4",
+      "H9",
+      "I11",
+      "I12",
+      "I4",
+      "M5",
+      "N4",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14",
+      "on"
+    ],
+    "zones": [
+      "Giant Mushroom forest",
+      "Edge of the world",
+      "Canyon",
+      "Vast plains"
+    ],
+    "land_location": "Deep Canyon"
+  },
+  {
+    "id": 11,
+    "name": "Moss from the plains",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This primitive plant prefers to grow mostly on flat surfaces, but some explorers have mentioned finding large quantities next to gorges and ravines. Some speculate that it prefers to grow in soil where the concentration of Arcadian resources is higher than usual.",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H12",
+      "H14",
+      "H15",
+      "H2",
+      "H3",
+      "H4",
+      "H9",
+      "I11",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "I4",
+      "M5",
+      "N4",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P7",
+      "P8",
+      "P9"
+    ],
+    "zones": [
+      "Canyon",
+      "Rainy lands",
+      "Vast plains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 12,
+    "name": "Honey from the plains",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This sweet substance can only be found where Apertian bees are living. It is very rich in various types of sugars and can never spoil. It also contains various molecules believed to be beneficial for heart problems, vision issues, cramps, and more.",
+    "locations": [
+      "F12",
+      "F6",
+      "F7",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H12",
+      "H2",
+      "I11"
+    ],
+    "zones": [
+      "Vast plains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 13,
+    "name": "Large wasp",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This large and combative insect can be found in many Apertian regions. It contains a powerful venom composed of a very strong cocktail of enzymes capable of digesting human cells in only a few seconds.",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F10",
+      "F12",
+      "F13",
+      "F16",
+      "F6",
+      "F7",
+      "F8",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G16",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "H1",
+      "H12",
+      "H16",
+      "H17",
+      "H18",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H7",
+      "H8",
+      "H9",
+      "I11",
+      "I12",
+      "I17",
+      "I18",
+      "I19",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J11",
+      "J18",
+      "J19",
+      "J20",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M5",
+      "M7",
+      "N4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ],
+    "zones": [
+      "Warm swamps",
+      "Giant Mushroom forest",
+      "Rocky hill",
+      "Geyser area",
+      "Canyon",
+      "Edge of the world",
+      "The edge",
+      "Vast plains"
+    ],
+    "land_location": "Ancient Valley"
+  },
+  {
+    "id": 14,
+    "name": "Glowing tree sap",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This fluorescent sap is surprisingly nutritious. It is abundantly found in the darkest Apertian forest.",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ],
+    "zones": [
+      "Dark forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 15,
+    "name": "Glowing flowers",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "These flowers typically thrive in dark environments, relying on fluorescent signals for communication. Surprisingly, they've adapted to the limited light by abandoning photosynthesis and, instead, turning to insect consumption. Using the light they emit, they attract prey, and when in proximity, they sense insect vibrations and precisely shoot a small filament of sticky sap. This filament can be retracted to drag their captured meal, preparing it for digestion.",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ],
+    "zones": [
+      "Dark forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 16,
+    "name": "Fireflies",
+    "rarity": "common",
+    "type": "essence",
+    "source": "aperta",
+    "description": "These small insects can be easily found in the dark Apertian forest. They are not very fast and are fairly easy to capture.",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ],
+    "zones": [
+      "Dark forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 17,
+    "name": "Piece of dark wood",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "As the Apertian proverb goes: \"If the wood is dark, it must come from a dark place...\"",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ],
+    "zones": [
+      "Dark forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 18,
+    "name": "Small fresh water fish",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This small fish is one of the most common animals in Aperta. It can easily be found in any location containing fresh water. If there is a helmet or a piece of equipment that fell into the river, you will probably find a few specimens hiding in it.",
+    "locations": [
+      "B12",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D9",
+      "E10",
+      "E11",
+      "E12",
+      "F11",
+      "F14",
+      "F15",
+      "G11",
+      "G14",
+      "G15",
+      "H10",
+      "H11",
+      "H13",
+      "H14",
+      "H15",
+      "I10",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "K1",
+      "K10",
+      "K12",
+      "K13",
+      "K14",
+      "K15",
+      "K16",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L13",
+      "L14",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "zones": [
+      "Rapids",
+      "Cascades",
+      "The Wetlands",
+      "Distributary",
+      "Lush banks",
+      "River bifurcation",
+      "Spring water area",
+      "Rainy lands",
+      "Lake area",
+      "Western Stream",
+      "River"
+    ],
+    "land_location": "Amaris Surface"
+  },
+  {
+    "id": 19,
+    "name": "Uncommon river fish",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This fish thrives in well-oxygenated water and it can be found in various locations across Aperta. However, capturing it is not always easy due to its considerable speed.",
+    "locations": [
+      "F11",
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "K10",
+      "K12",
+      "K14",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9"
+    ],
+    "zones": [
+      "Rapids",
+      "Cascades",
+      "Distributary",
+      "River bifurcation",
+      "Western Stream",
+      "River"
+    ],
+    "land_location": "Amaris Surface"
+  },
+  {
+    "id": 20,
+    "name": "Emperor fish",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This elusive fish, challenging to find, is present in many Apertian waters. However, as soon as it senses movement, it can disappear in less than a second. Capturing it proves to be extremely challenging. It acquired its name because, in its natural habitat, many other fish species tend to display dominance when an emperor is present.",
+    "locations": [
+      "F11",
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "K10",
+      "K14",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "zones": [
+      "Rapids",
+      "Cascades",
+      "Distributary",
+      "River bifurcation",
+      "Lake area",
+      "Western Stream",
+      "River"
+    ],
+    "land_location": "Amaris Surface"
+  },
+  {
+    "id": 21,
+    "name": "Freshwater algae",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "This algae thrives in most of the Apertian waters, and even the unluckiest miner should be able to gather large quantities of it. The first Arcadian miners were applying it to their injuries as they quickly identified that it possesses antibacterial properties.",
+    "locations": [
+      "F11",
+      "F14",
+      "F15",
+      "G11",
+      "G14",
+      "G15",
+      "H10",
+      "H11",
+      "H13",
+      "H14",
+      "H15",
+      "I10",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J10",
+      "J11",
+      "J12",
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "J7",
+      "J8",
+      "J9",
+      "K10",
+      "K11",
+      "K12",
+      "K13",
+      "K14",
+      "K15",
+      "K16",
+      "K5",
+      "K6",
+      "K7",
+      "K8",
+      "K9",
+      "L10",
+      "L11",
+      "L12",
+      "L13",
+      "L14",
+      "L5",
+      "L6",
+      "L7",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M6",
+      "M7",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "zones": [
+      "Rapids",
+      "Cascades",
+      "Geyser area",
+      "The Wetlands",
+      "Distributary",
+      "River bifurcation",
+      "Lake area",
+      "Rainy lands",
+      "Western Stream",
+      "River"
+    ],
+    "land_location": "Amaris Surface, Electric Lands"
+  },
+  {
+    "id": 22,
+    "name": "Tornado fish",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This combative fish favors rivers and rapids. When fighting enemies or finding itself in stagnant waters, it can rapidly swirl and create a small whirlpool around it to confuse enemies and oxygenate the water, hence its name.",
+    "locations": [
+      "F11",
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "K10",
+      "K12",
+      "K14",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "zones": [
+      "Rapids",
+      "Cascades",
+      "Distributary",
+      "River bifurcation",
+      "Lake area",
+      "Western Stream",
+      "River"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 23,
+    "name": "Unstable water",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This water bears unique properties that cause it to move and suddenly change direction for a few seconds every day. When applied to the skin, it doesn't feel very comfortable; it almost seems to cause pain.",
+    "locations": [
+      "N14"
+    ],
+    "zones": [
+      "River bifurcation"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 24,
+    "name": "Flying hopper",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This abundant insect prefers to stay on the edges of cliffs, from which it can jump and fly to escape its predators. When flying, it can also dive onto its unsuspecting prey that doesn't see it coming. Capturing it shouldn't be a challenge for those who are fast enough.",
+    "locations": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "P5",
+      "P6",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ],
+    "zones": [
+      "Giant Mushroom forest",
+      "Edge of the world",
+      "The edge"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 25,
+    "name": "Freshwater sponge",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This unique specimen is extremely fragile, and only a few individuals survive every year. The main reason is that it requires slowly flowing freshwater for its oxygenation. If the current is too strong, it won't manage to stay attached to the rocks and will perish. However, scientists discovered that when a specimen is carried by the waters and is on the brink of death, it releases a very powerful chemical curative compound that could potentially aid any surrounding relatives. A true act of self-heroism and sacrifice.",
+    "locations": [
+      "O8"
+    ],
+    "zones": [
+      "Distributary"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 26,
+    "name": "Asymmetric butterfly",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This very strange butterfly generally prefers to live close to flying hoppers or next to ravines where the winds are not too strong. Despite its peculiar appearance, it can move quickly, making its capture quite challenging.",
+    "locations": [
+      "M5",
+      "N4",
+      "N5",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P5",
+      "P6",
+      "P7",
+      "P9",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ],
+    "zones": [
+      "Giant Mushroom forest",
+      "Strange mine",
+      "Canyon",
+      "Edge of the world",
+      "The edge"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 27,
+    "name": "Desert grass",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This very resilient grass thrives in hot and dry environments. It can generally be easily spotted on the tops of sandy dunes.",
+    "locations": [
+      "P3",
+      "P4",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R4",
+      "R5",
+      "R7",
+      "R8",
+      "R9",
+      "S10",
+      "S11",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T4",
+      "T5",
+      "T6",
+      "T7",
+      "T8",
+      "T9"
+    ],
+    "zones": [
+      "Desert and sea",
+      "The passage",
+      "Oasis",
+      "Bottom of the cliff",
+      "Edge of the world",
+      "Vast Desert"
+    ],
+    "land_location": "Endless Desert"
+  },
+  {
+    "id": 28,
+    "name": "Dry lichen",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This organism, the result of a complex partnership between a fungus and an alga, thrives in dry and hot environments.",
+    "locations": [
+      "P3",
+      "P4",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R4",
+      "R5",
+      "R7",
+      "R8",
+      "R9",
+      "S10",
+      "S11",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ],
+    "zones": [
+      "Desert and sea",
+      "The passage",
+      "Bottom of the cliff",
+      "Edge of the world",
+      "Vast Desert"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 29,
+    "name": "Hybrid grass",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This peculiar grass requires meticulous hygrometry to grow; the day must be dry, but the night must be wet. It exclusively grows in one particular place on Aperta, making finding it fairly challenging. Scientists believe that this specimen could, in fact, be two symbiotic species consistently aiding each other in various biological processes, including feeding and healing.",
+    "locations": [
+      "P3",
+      "P4",
+      "Q6",
+      "R10",
+      "R8",
+      "R9",
+      "S11"
+    ],
+    "zones": [
+      "Bottom of the cliff",
+      "Edge of the world"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 30,
+    "name": "Desert lizard",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "Quick aggressive and fast, this colorful lizard loves hot and dry environments. Fitted with extraordinary eyesight and speed, it can swiftly conceal itself in the sand if any threat approaches. Capturing it is an extremely challenging task.",
+    "locations": [
+      "P3",
+      "P4",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R5",
+      "R7",
+      "R8",
+      "R9",
+      "S10",
+      "S11",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T4",
+      "T5",
+      "T7",
+      "T9"
+    ],
+    "zones": [
+      "Desert and sea",
+      "The passage",
+      "Oasis",
+      "Bottom of the cliff",
+      "Edge of the world",
+      "Vast Desert"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 31,
+    "name": "Barrel cactus",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This red cactus can only be found in dry and hot environments. It grows rapidly and can be easily located by those who know where to look for it. Interestingly, scientists have observed that if you cut it in half, it will not die but instead multiply.",
+    "locations": [
+      "Q4",
+      "R4",
+      "R5",
+      "S10",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T13",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ],
+    "zones": [
+      "Bottom of the cliff",
+      "Desert and sea",
+      "Vast Desert"
+    ],
+    "land_location": "Endless Desert"
+  },
+  {
+    "id": 32,
+    "name": "Prickly pear",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "A large and delicious fruit that is extremely hard to find. Its composition, mostly water and sugar, helps protect the seed it contains. The first travelers who got lost in the most arid region of Aperta managed to survive thanks to these.",
+    "locations": [
+      "R5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T4"
+    ],
+    "zones": [
+      "Vast Desert"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 33,
+    "name": "Desert fish",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This small but aggressive animal, mostly fish but also fitted with some amphibian features, only lives in warm and calm freshwater areas. During the day, when the water becomes too hot, it can crawl out and keep cool under the shade of a tall palm.",
+    "locations": [
+      "S5",
+      "T7",
+      "T9"
+    ],
+    "zones": [
+      "Oasis"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 34,
+    "name": "Refreshing water",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This freshwater can easily be found in specific regions of Aperta. Despite being fairly warm, it can be very refreshing since it contains many electrolytes, thanks to the surrounding vegetation accustomed to harsh environments.",
+    "locations": [
+      "S5",
+      "T7",
+      "T9"
+    ],
+    "zones": [
+      "Oasis"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 35,
+    "name": "Exotic leaves",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "aperta",
+    "description": "These leaves can easily be found where tropical plants grow. They contain a lot of cellulose along with a fairly sweet sap. If properly prepared, they can be easily eaten without any risk.",
+    "locations": [
+      "A19",
+      "A20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H20",
+      "I20",
+      "S5",
+      "T7",
+      "T9"
+    ],
+    "zones": [
+      "Oasis",
+      "Forgotten Paradise",
+      "Tropical Jungle"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 36,
+    "name": "Large beetle",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "Despite its color, this large black and yellow beetle is not toxic. It can release a sweet mucus containing unknown enzymes. This specimen thrives in vast and open fields, from which it can easily hide or fly to escape when threatened. Thanks to its keen sense of smell, scientists believe that it can easily find edible materials on Aperta.",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F6",
+      "F7",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "H1",
+      "H12",
+      "H3",
+      "H4",
+      "H5",
+      "H7",
+      "H8",
+      "H9",
+      "I11",
+      "I12",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J5",
+      "J6"
+    ],
+    "zones": [
+      "Rocky hill",
+      "Vast plains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 37,
+    "name": "Red-eye singing frog",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This extremely rare specimen only lives on wet soil, where it can easily dig small tunnels to hide. Its red eyes allow it to see in dark environments and through the rain, under which it loves to sing. While studying it, scientists noticed a peculiar phenomenon: the frequency it uses to sing resonates with all Arcadian resources.",
+    "locations": [
+      "F14",
+      "G14",
+      "H13",
+      "H15",
+      "I13",
+      "I14",
+      "K13",
+      "L13",
+      "M13"
+    ],
+    "zones": [
+      "Rainy lands",
+      "The Wetlands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 38,
+    "name": "Poisonous toad",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This small combative toad, actually closer to a salamander, is extremely poisonous. It thrives in puddles or shallow ponds of stagnant freshwater, in which it can release its toxins to surround itself with a cloud of venomous water. It tends to avoid environments in which water moves too fast since it only dilutes its poison and makes its defensive strategy inefficient.",
+    "locations": [
+      "A18",
+      "C18",
+      "D16",
+      "D18",
+      "F15",
+      "G14",
+      "G15",
+      "G16",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H18",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J17",
+      "J19",
+      "K16",
+      "M13"
+    ],
+    "zones": [
+      "Warm swamps",
+      "Rainy lands",
+      "The Wetlands"
+    ],
+    "land_location": "Electric Lands"
+  },
+  {
+    "id": 39,
+    "name": "Mountain snake",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This dark snake thrives in steep terrains. Its thick skin allows it to venture into the coldest places of Aperta. It can sometimes also descend towards the Apertain plains to hunt small insects. Its bite is very painful and induces excruciating pain.",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A7",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B15",
+      "B16",
+      "B6",
+      "B8",
+      "B9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "E1",
+      "E10",
+      "E11",
+      "E12",
+      "E2",
+      "E3"
+    ],
+    "zones": [
+      "Spring water area",
+      "Mountains",
+      "Cold summits"
+    ],
+    "land_location": "Old Mountain"
+  },
+  {
+    "id": 40,
+    "name": "Satoyaman snake",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This Satoyaman snake likes to hide in tall and green grass. In contrast to most other Apertian snakes, it only feeds on Satoyaman rice during the time when the grains are ripe and rich in amylose. Unlike most other snakes, this species prefers living in groups with its conspecifics.",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E14",
+      "E4",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F4",
+      "F5"
+    ],
+    "zones": [
+      "Satoyama"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 41,
+    "name": "Flying snake",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This extremely hard-to-catch snake mostly feeds on flying hoppers. Its bite releases a very toxic and painful venom, which can paralyze even the largest animals in a few seconds. It exhibits exceptional agility on land, in water, and in the air, and some believe that it might be related to Arcadian resources.",
+    "locations": [
+      "O1",
+      "O2",
+      "S13"
+    ],
+    "zones": [
+      "Edge of the world",
+      "The edge"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 42,
+    "name": "Small spider",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This small spider thrives in many Apertian environments, as long as the place is neither too cold nor too hot.",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F10",
+      "F12",
+      "F13",
+      "F16",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G16",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "H1",
+      "H12",
+      "H16",
+      "H17",
+      "H18",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H7",
+      "H8",
+      "H9",
+      "I11",
+      "I12",
+      "I17",
+      "I18",
+      "I19",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J11",
+      "J18",
+      "J19",
+      "J20",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M5",
+      "M7",
+      "N4",
+      "N5",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P3",
+      "P4",
+      "P7",
+      "P8",
+      "P9",
+      "Q5",
+      "Q6",
+      "R10",
+      "R7",
+      "R8",
+      "R9",
+      "S11"
+    ],
+    "zones": [
+      "Warm swamps",
+      "Strange mine",
+      "Rocky hill",
+      "Geyser area",
+      "Canyon",
+      "Bottom of the cliff",
+      "Edge of the world",
+      "Vast plains"
+    ],
+    "land_location": "Ancient Valley"
+  },
+  {
+    "id": 43,
+    "name": "Large spider",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This large spider is extremely fast. Catching it is very challenging, especially since it likes to live in environments with little light, such as the bottom of a ravine. Surprisingly, initial studies revealed that these specimens like to seasonally quickly cross Aperta to go feed on poisonous toad eggs.",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F16",
+      "G16",
+      "H16",
+      "H17",
+      "H18",
+      "I19",
+      "J18",
+      "J19",
+      "M5",
+      "N4",
+      "N5",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P7",
+      "P8",
+      "P9"
+    ],
+    "zones": [
+      "Warm swamps",
+      "Canyon",
+      "Strange mine"
+    ],
+    "land_location": "Deep Canyon"
+  },
+  {
+    "id": 44,
+    "name": "Black spider",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This fairly common spider only inhabits the darkest forests of Aperta. It loves to feed on fluorescent insects. Carefull: It's bite is very painfull!",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ],
+    "zones": [
+      "Dark forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 45,
+    "name": "Glowing spider",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This beautiful spider is extremely rare, and only the luckiest miners can hope to capture a specimen. The male uses white fluorescent signals to attract females, and only the brightest males have a chance to mate. Some believe that their bright color is related to Constructium in some way.",
+    "locations": [
+      "L19",
+      "L20",
+      "M18"
+    ],
+    "zones": [
+      "Dark forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 46,
+    "name": "Small glowing shroom",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This small mushroom only grows next to other mushrooms. Scientists think that these specimens use light to communicate with other mushrooms and even other animals. But so far, this theory has never been confirmed.",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ],
+    "zones": [
+      "Giant Mushroom forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 47,
+    "name": "Mushroom mix",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "These four species of glowing mushrooms prefer to grow together, often thriving next to larger fluorescent mushrooms under which they can stay protected.",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ],
+    "zones": [
+      "Giant Mushroom forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 48,
+    "name": "Medusashroom",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This elongated mushroom was named after its strange shape and small hat, making it look like a jellyfish. It is fairly hard to find and contains several molecules that have never been identified on Earth.",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ],
+    "zones": [
+      "Giant Mushroom forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 49,
+    "name": "Atlas mushroom",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This mushroom is a very peculiar specimen where the superior fungi, mostly purple, grows on the top of a massive mushroom with three feet supporting the weight of its superior counterpart for its entire life.",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R13",
+      "R14",
+      "S14"
+    ],
+    "zones": [
+      "Giant Mushroom forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 50,
+    "name": "Queen mushroom",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This extremely rare mushroom only appears at a certain time during the night, and harvesting it is near impossible. For a few seconds, it releases a large cloud of golden spores, which fertilize or enhance the growth of all surrounding mushrooms, hence its name.",
+    "locations": [
+      "P14",
+      "Q11"
+    ],
+    "zones": [
+      "Giant Mushroom forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 51,
+    "name": "Toxic salamander",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This strange but aggressive specimen can use its two orange antennas to spray a very toxic poison, either for hunting or defending itself. It only thrives in stagnant and stinky waters, where it can move without any effort. Additionally, when caught by predators, it can release a highly slippery liquid through its skin, facilitating its escape from any situation.",
+    "locations": [
+      "A18",
+      "E16",
+      "G16",
+      "H17",
+      "H18",
+      "J19"
+    ],
+    "zones": [
+      "Warm swamps"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 52,
+    "name": "Stagnant water",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "A water so foul-smelling that only the most daring individuals would consider drinking it... And the worst part is that it really sticks to miners' equipment, making them smell for weeks.",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F16",
+      "G16",
+      "H16",
+      "H17",
+      "H18",
+      "I17",
+      "I18",
+      "I19",
+      "J18",
+      "J19",
+      "J20"
+    ],
+    "zones": [
+      "Warm swamps"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 53,
+    "name": "Rainwater",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "This not-so-clean water can be easily collected in any region where it often rains. Since the region where it can be found is not well-lit, some miners believe that drinking it could enhance one's ability to see better in the dark.",
+    "locations": [
+      "F14",
+      "F15",
+      "G14",
+      "G15",
+      "H13",
+      "H14",
+      "H15",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J15",
+      "J16",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "L13",
+      "M13"
+    ],
+    "zones": [
+      "Rainy lands",
+      "The Wetlands"
+    ],
+    "land_location": "Electric Lands"
+  },
+  {
+    "id": 54,
+    "name": "Small exotic plant",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This common exotic plant only grows in warm, wet environments such as jungles. It is very easy to find and collect.",
+    "locations": [
+      "A19",
+      "A20",
+      "B19",
+      "B20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ],
+    "zones": [
+      "Forgotten Paradise",
+      "Tropical Jungle"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 55,
+    "name": "Tropical Venus",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This exotic specimen produces large green leaves, which capture as much sunlight as possible. Near its base, it produces 2 or 3 colorful pistils meant to attract insects and facilitate its pollination.",
+    "locations": [
+      "A19",
+      "B19",
+      "B20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ],
+    "zones": [
+      "Forgotten Paradise",
+      "Tropical Jungle"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 56,
+    "name": "Large pitcher plant",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This elongated specimen mostly consists of a long tube containing an acidic solution meant to digest small insects that fall into the trap. To lure its prey, the plant releases small quantities of a sweet nectar that small insects cannot resist. The nectar can be easily collected and utilized in meal preparation; just a single spoon of it would suffice to energize an entire army of clones!",
+    "locations": [
+      "A20",
+      "B19",
+      "B20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ],
+    "zones": [
+      "Forgotten Paradise",
+      "Tropical Jungle"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 57,
+    "name": "Tropical water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This warm water can only be found in warm and humid regions of Aperta. Its beautiful color makes it very pleasing to look at. It is full of minerals and bears regenerative properties.",
+    "locations": [
+      "A20",
+      "B19",
+      "B20",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ],
+    "zones": [
+      "Forgotten Paradise",
+      "Tropical Jungle"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 58,
+    "name": "Mantis Religiosa",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This ultra-rare insect, which thrives in warm and humid environments, can only be found in the most remote and wild areas of Aperta. Incredibly fast, a single bite is sufficient to unleash venom containing several toxins capable of incapacitating its adversaries in few seconds. If threatened, it can disappear in a second, thanks to its incredible speed. Similarly to their earthling counterparts, after copulation, the female decapitates the male and drinks its blood as a source of energy to engender its offspring.",
+    "locations": [
+      "F18",
+      "F19",
+      "G17",
+      "H20"
+    ],
+    "zones": [
+      "Forgotten Paradise",
+      "Tropical Jungle"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 59,
+    "name": "Mystic crystal",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This glowing crystal is an ultra-rare artifact that can only be found in one place in Arcadia. Its composition remains unknown, and scientists cannot explain the origin of the mesmerizing blue light that the crystal emits. Some suppose that it is linked to the Mimium it may contain, but nothing has ever been proven.",
+    "locations": [
+      "S20",
+      "S20?"
+    ],
+    "zones": [
+      "Mystic island"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 60,
+    "name": "Mystic water",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "The mystic water is generally a unique liquid that can only be found in very small quantities in a particular location on the southeastern part of Aperta. When the water concentrates enough, it can spontaneously crystallize and form a small mystic crystal.",
+    "locations": [
+      "S20"
+    ],
+    "zones": [
+      "Mystic island"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 61,
+    "name": "Red shelled crab",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This large and flat crab lives in almost every salty water. Its shell made of multiple Apertian materials and minerals is fairly hard, offering it good protection against predators.",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "Q3",
+      "R18",
+      "R3",
+      "S18",
+      "S20",
+      "S3",
+      "T18",
+      "T3"
+    ],
+    "zones": [
+      "Mystic island",
+      "Southern shore",
+      "Northern coast",
+      "Abandonned ruins"
+    ],
+    "land_location": "Abandoned Island"
+  },
+  {
+    "id": 62,
+    "name": "Shrimp fish",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This strange creature, half fish, half shrimp, generally lives in groups containing hundreds of individuals. They typically inhabit shallow waters near the coast where they can avoid large predators. Due to their small size, they are very fast and challenging to catch.",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "R18",
+      "S18",
+      "S20",
+      "T18"
+    ],
+    "zones": [
+      "Mystic island",
+      "Southern shore",
+      "Abandonned ruins"
+    ],
+    "land_location": "Abandoned Island"
+  },
+  {
+    "id": 63,
+    "name": "Bluehead jellyfish",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This small jellyfish, with an intense blue cap, lives in most salty Apertian waters where it drifts along with oceanic currents. It likes to play dead to attract small, hungry fish, which it then suddenly catches using its poisonous tentacles.",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q3",
+      "R18",
+      "R19",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T18",
+      "T19",
+      "T3"
+    ],
+    "zones": [
+      "Southern shore",
+      "Northern coast",
+      "Abandonned ruins",
+      "Southern sea",
+      "Mystic island"
+    ],
+    "land_location": "Abandoned Island"
+  },
+  {
+    "id": 64,
+    "name": "Jellyfish tree",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This strange creature is the result of a growing accumulation of salt in which a few jellyfish eggs got trapped and will remain attached all their life. In case of danger, the jellyfish can hide within the salty rock. It is believed that each individual connects to others to share nutrients and oxygen when needed",
+    "locations": [
+      "P17",
+      "P18",
+      "Q1",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q3",
+      "R18",
+      "R19",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T18",
+      "T19",
+      "T3"
+    ],
+    "zones": [
+      "Southern shore",
+      "Northern coast",
+      "Abandonned ruins",
+      "Southern sea",
+      "Mystic island"
+    ],
+    "land_location": "Abandoned Island + Underwater Ridge"
+  },
+  {
+    "id": 65,
+    "name": "Firework jellyfish",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This strange jellyfish can be found in most of the Apertian salt waters. However, when threatened, it can disassemble itself into smaller individuals. If the main core dies in the process, the protrusions will be able to later reassemble and regenerate the full individual. Therefore, capturing a complete specimen is very challenging.",
+    "locations": [
+      "P19",
+      "Q1",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q3",
+      "R18",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T18",
+      "T19",
+      "T3"
+    ],
+    "zones": [
+      "Southern shore",
+      "Northern coast",
+      "Abandonned ruins",
+      "Southern sea",
+      "Mystic island"
+    ],
+    "land_location": "Underwater Ridge"
+  },
+  {
+    "id": 66,
+    "name": "Salted water",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "This seawater can be easily found on any Apertian coast. Anyone with a container can collect a sample. It conducts electricity very well and it is full of electrolytes.",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q3",
+      "R18",
+      "R19",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T13",
+      "T18",
+      "T19",
+      "T3"
+    ],
+    "zones": [
+      "Southern shore",
+      "Desert and sea",
+      "Northern coast",
+      "Abandonned ruins",
+      "Southern sea",
+      "Mystic island"
+    ],
+    "land_location": "Abandoned Island + Underwater Ridge + Raging Ocean"
+  },
+  {
+    "id": 67,
+    "name": "Apertian blue mouse",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This little mouse thrives in wet environments, especially when it can hide in tall, humid grass. An excellent swimmer, it can also dive and hide in deep puddles, remaining underwater for several minutes. However, some explorers swear that they have seen some specimens running in the desert. Mirage or reality, this theory remains as mysterious as the origin of the color of the mouse itself.",
+    "locations": [
+      "F14",
+      "F15",
+      "G14",
+      "G15",
+      "H13",
+      "H14",
+      "H15",
+      "I13",
+      "J15",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "L13",
+      "M13",
+      "S5",
+      "T7",
+      "T9"
+    ],
+    "zones": [
+      "Oasis",
+      "Rainy lands",
+      "The Wetlands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 68,
+    "name": "Apertian green mouse",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "Not especially fond of rain like its blue counterpart, this little mouse prefers to stay dry and likes to feed on grass and rice when possible. It is believed that females generally go to rocky parts where they can hide and calve in peace. Some specimens also live close to stagnant water where they can easily feed on small insects. Like any mouse, it is incredibly fast!",
+    "locations": [
+      "A17",
+      "B17",
+      "B18",
+      "C15",
+      "C17",
+      "D15",
+      "D16",
+      "D17",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F10",
+      "F13",
+      "F16",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G16",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "H12",
+      "H16",
+      "H17",
+      "H18",
+      "H3",
+      "H5",
+      "H7",
+      "H8",
+      "I11",
+      "I12",
+      "I18",
+      "I5",
+      "I6",
+      "I7",
+      "J19",
+      "J4",
+      "J5",
+      "J6"
+    ],
+    "zones": [
+      "Satoyama",
+      "Warm swamps",
+      "Rocky hill",
+      "Vast plains"
+    ],
+    "land_location": "Ancient Valley"
+  },
+  {
+    "id": 69,
+    "name": "Apertian trout",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "The flesh of this extremely rare fish constitutes one of the finest dishes in the whole Arcadian system. This fish only lives where the cold water from the melting snow has warmed up enough to flow into Apertian rivers. It is incredibly fast! Probably the fastest Apertian creature!",
+    "locations": [
+      "F11"
+    ],
+    "zones": [
+      "Cascades"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 70,
+    "name": "Melted ice",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "This strange material is at the perfect equilibrium between solid and liquid states. Indeed, a small amount of ice constantly melts while the same amount of water constantly freezes. Scientists believe that this strange phenomenon is due to traces of Minium in the water, which alter the thermodynamic properties of this material.",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ],
+    "zones": [
+      "Cold summits"
+    ],
+    "land_location": "Frozen Desert + Pagos"
+  },
+  {
+    "id": 71,
+    "name": "Fresh Snow",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This very common material can be found anywhere on the higher Apertian mountains. It contains traces of Minium, and it is fairly easy to create isotonic solutions with it.",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ],
+    "zones": [
+      "Cold summits"
+    ],
+    "land_location": "Frozen Desert + Pagos"
+  },
+  {
+    "id": 72,
+    "name": "Frozen snake",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This snake thrives in cold environments where it can hunt small animals. If needed, it can bury itself under a thick layer of snow and let 90% of its body freeze to slow down its metabolism and wait for better days.",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ],
+    "zones": [
+      "Cold summits"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 73,
+    "name": "Gelida Herbida",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This strange root only grows under a thick layer of snow where it slowly absorbs microscopic amounts of Minium. Finding one is a feat in itself, as tons and tons of snow must be moved to eventually have the chance to locate one.",
+    "locations": [
+      "A11",
+      "A12",
+      "B10",
+      "B9",
+      "C8"
+    ],
+    "zones": [
+      "Cold summits"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 74,
+    "name": "Spring water",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Probably the purest and freshest water on Aperta. It is so pure that many scientists consider it one of the best solvents to create isotonic solutions. However, getting one's hands on some samples is very hard since the water can easily get contaminated.",
+    "locations": [
+      "B12",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D9",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "zones": [
+      "Spring water area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 75,
+    "name": "Small forest shroom",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This funny-looking mushroom can easily be found in any Arcadian forest, as long as the forest is well-exposed and receives enough light from Astra Nova. It seems to be delicious in an omelette!",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ],
+    "zones": [
+      "Lush banks",
+      "Large forest"
+    ],
+    "land_location": "Selene"
+  },
+  {
+    "id": 76,
+    "name": "Broccolishroom",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "Despite its mushroom-like appearance, this creature is actually closer to an animal than a fungus. When threatened, it can become extremely aggressive and swiftly rotate to expel microscopic spikes covered with a lethal poison.",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ],
+    "zones": [
+      "Lush banks",
+      "Large forest"
+    ],
+    "land_location": "Misty Forest + Selene"
+  },
+  {
+    "id": 77,
+    "name": "Large boletus",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This large mushroom can easily camouflage itself among the fallen leaves of surrounding trees. Like most mushrooms, it requires some sunlight, rich soil, and not too much light to grow. If damaged, it can easily regenerate itself.",
+    "locations": [
+      "I1",
+      "I2",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ],
+    "zones": [
+      "Lush banks",
+      "Large forest"
+    ],
+    "land_location": "Misty Forest, Selene"
+  },
+  {
+    "id": 78,
+    "name": "Strange forest moss",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This unique specimen, whose color panel ranges from red to green, only grows under the shade of the largest Apertian trees. Scientists believe that under extremely rare conditions and with the right amount of sunlight from Astra Nova, traces of Fusium, Actium, Minium, and Constructium could crystallize together, offering a nucleus on which this specimen could grow.",
+    "locations": [
+      "K3",
+      "L1",
+      "M1",
+      "M4",
+      "N2"
+    ],
+    "zones": [
+      "Large forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 79,
+    "name": "Forest soil",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This rich soil can be found in any Arcadian forest, containing several minerals along with traces of Fusium.",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ],
+    "zones": [
+      "Lush banks",
+      "Large forest"
+    ],
+    "land_location": "Misty Forest"
+  },
+  {
+    "id": 80,
+    "name": "River water",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "This very common water can be found in any Apertian river. If properly filtered, it becomes drinkable.",
+    "locations": [
+      "J12",
+      "J13",
+      "J14",
+      "K1",
+      "K12",
+      "K14",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N15",
+      "N16",
+      "N6",
+      "O16",
+      "O17",
+      "O18",
+      "O20"
+    ],
+    "zones": [
+      "Rapids",
+      "Lush banks",
+      "River"
+    ],
+    "land_location": "Amaris Surface"
+  },
+  {
+    "id": 81,
+    "name": "Toxic forest frog",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This highly toxic and combative frog was initially discovered on the northern side of the Apertian forest where it can easily feed on tiny insects. But studies revealed that it constantly needs water nearby to keep its skin wet; otherwise, it could easily dry up. Despite its tiny size, capturing a specimen is extremely challenging as its poison can easily incapacitate much larger animals.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 82,
+    "name": "Rocky beetle",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This large beetle only lives among small hills of rocks where it can easily hide. Large males can build up a red and smelly substance around their shell to attract females. These specimens tend to hide easily as soon as they feel any vibrations around. But if they are cornered, they can employ two foldable limbs to deliver a violent blow to their opponent.",
+    "locations": [
+      "G6",
+      "G7",
+      "G8",
+      "H5",
+      "H7",
+      "H8",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J4",
+      "J6"
+    ],
+    "zones": [
+      "Rocky hill"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 83,
+    "name": "Rocky king",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "Also called the king of the hill, this extremely aggressive specimen is equipped with all the tools to inflict maximum damage: an impossible-to-break shell, poison able to dissolve almost anything, and claws able to cut through metal and more. The Arcadian council declines all responsibility regarding any injury related to attempting to capture these specimens.",
+    "locations": [
+      "G6",
+      "G7",
+      "H5",
+      "H7",
+      "H8",
+      "I6",
+      "I7"
+    ],
+    "zones": [
+      "Rocky hill"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 84,
+    "name": "Invigorating water",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "An old Apertian legend says that when Marama and Tungii align, the warm and invigorating waters of the nicest Apertian sources will start to collect the cosmic energy of the two moons and vibrate for a few seconds. Only then can the invigorating water be collected.",
+    "locations": [
+      "L9",
+      "N9"
+    ],
+    "zones": [
+      "Thermas source"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 85,
+    "name": "Jumper",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "Comfortable in dry or not too cold environments, this specimen is perfectly designed for steep terrains on which it can easily jump from rock to rock. Its strong limbs, combined with its light weight, allow it to perform extremely long jumps and easily escape any predator.",
+    "locations": [
+      "A16",
+      "A7",
+      "B13",
+      "B15",
+      "B16",
+      "B6",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D3",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "E1",
+      "E2",
+      "E3",
+      "M5",
+      "N4",
+      "O5",
+      "O6",
+      "P10",
+      "P3",
+      "P7",
+      "P8",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R5",
+      "R7",
+      "R8",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T12",
+      "T13",
+      "T4"
+    ],
+    "zones": [
+      "Mountains",
+      "Desert and sea",
+      "The passage",
+      "Canyon",
+      "Bottom of the cliff",
+      "Edge of the world",
+      "Vast Desert"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 86,
+    "name": "Apertian mackerel",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta",
+    "description": "Unlike Earthling mackerel, this specimen doesn't school and lives a solitary life. Present in both Apertian seas, finding and capturing a specimen is extremely challenging, but its flesh is supposedly delicious.",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "Q1",
+      "Q17",
+      "Q19",
+      "R18",
+      "R19",
+      "R20",
+      "S18",
+      "S19",
+      "T18",
+      "T19"
+    ],
+    "zones": [
+      "Southern sea",
+      "Southern shore",
+      "Abandonned ruins"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 87,
+    "name": "Humidum Plantum",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "This small plant rich in sugar dislikes rain but requires a lot of water to survive. It can easily be found by those who know where to look.",
+    "locations": [
+      "J15",
+      "J16",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "L13",
+      "M13"
+    ],
+    "zones": [
+      "The Wetlands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 88,
+    "name": "Blue princess",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "The roots of this tall and beautiful flower require a lot of water to grow. When blooming, its leaves must not be wet; otherwise, the flower will quickly die. Apparently, the petals can be rubbed against the skin to alleviate the pain after being bitten by small toxic Apertian insects.",
+    "locations": [
+      "J15",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "M13"
+    ],
+    "zones": [
+      "The Wetlands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 89,
+    "name": "Blue queen",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This ultra-rare flower is truly unique. Initially, the seed must soak in rainwater for several months, gradually absorbing traces of Minium and accumulating the energy required for sprouting and growth. Once the germ receives the appropriate amount of light, it opens up, giving rise to this magnificent flower. However, its petals must not be subjected to excessive water, as doing so could lead to its demise.",
+    "locations": [
+      "J15",
+      "J17"
+    ],
+    "zones": [
+      "The Wetlands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 90,
+    "name": "Astral dust",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "So far, only one sample of this material has been found in an abandoned X.1 Shuttle. On the bottle, a peculiar inscription was written: 'In a hole's embrace, astral dust weaves, a rarity untold, where starlight conceives. In cavity's secret hold, cosmic whispers retrieve'. ",
+    "locations": [
+      "I3",
+      "N3",
+      "Q13",
+      "R6"
+    ],
+    "zones": [
+      "Meteor Crater"
+    ],
+    "land_location": "Atmospheric Moon"
+  },
+  {
+    "id": 91,
+    "name": "Hot water",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Caution: Very hot!",
+    "locations": [
+      "J11",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M7"
+    ],
+    "zones": [
+      "Geyser area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 92,
+    "name": "Alien choke",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This peculiar plant, part cactus, part artichoke, exclusively flourishes in the hottest regions of Aperta. Yet, during the final part of the day, it thrives when placed in the shade, unfurling its leaves to capture small insects.",
+    "locations": [
+      "Q5",
+      "R9"
+    ],
+    "zones": [
+      "Bottom of the cliff"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 93,
+    "name": "Singing king",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "Many miners acknowledge the fortuity of having both a Singing king and a Singing frog coexisting in the same region. Without them, the atmosphere in this part of Aperta would likely be quite gloomy.",
+    "locations": [
+      "F15",
+      "G14",
+      "H13",
+      "H14",
+      "H15",
+      "I14",
+      "I15",
+      "I16"
+    ],
+    "zones": [
+      "Rainy lands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 94,
+    "name": "Relaxing algae",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This unique alea can only be found in a specific Apertian environment. Scientists believe that the growth of microscopic algae, too small to be harvested, is stimulated by the calming and appeasing sound of the waterflow against the rocks. It can take several months for a specimen to reach maturity.",
+    "locations": [
+      "M6"
+    ],
+    "zones": [
+      "Rapids"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 95,
+    "name": "Shadow predator",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This cold-blooded killer, thriving in hot environments, can only be found in a specific plot in Aperta. Despite its fondness for sunbathing, it prefers to hide in the shade, ready to ambush small animals.",
+    "locations": [
+      "T12"
+    ],
+    "zones": [
+      "The passage"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 96,
+    "name": "Salty sand",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This common material appears to be a mixture of sand and salt. Primary analysis revealed that the mixture of silica and sodium chloride led to the formation of strange compounds that could indeed have some interesting properties.",
+    "locations": [
+      "T13"
+    ],
+    "zones": [
+      "Desert and sea"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 97,
+    "name": "Standard sand",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This very common sand can easily be found in many Apertian plots. Similar to its Earthly counterpart, its primary component is silica.",
+    "locations": [
+      "Q4",
+      "R4",
+      "R5",
+      "S10",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ],
+    "zones": [
+      "Bottom of the cliff",
+      "Vast Desert"
+    ],
+    "land_location": "Endless Desert"
+  },
+  {
+    "id": 98,
+    "name": "Salty queen",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This unique grass has managed to adapt and grow in sand, metabolizing sodium chloride as a source of nutrients. However, only the strongest specimens, endowed with incredible regenerative properties, can survive in the harsh environment where they grow. As most of the local wildlife consumes it as soon as it appears, harvest it is nearly impossible.",
+    "locations": [
+      "T13"
+    ],
+    "zones": [
+      "Desert and sea"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 99,
+    "name": "Stream water",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "A high-quality freshwater source that can be easily harvested by anyone with the appropriate container.",
+    "locations": [
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10"
+    ],
+    "zones": [
+      "Western Stream"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 100,
+    "name": "Freshwater oyster",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "A pure Arcadian delicacy, surprisingly, this large oyster prefers moderately warm freshwater and only thrives in shallow waters where large fishes dare not venture. Surprisingly, when miners feel dizzy, they consume these. It is a challenging task, especially when unwell, but this material must contain some powerful molecules.",
+    "locations": [
+      "H10",
+      "H11",
+      "I10"
+    ],
+    "zones": [
+      "Western Stream"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 101,
+    "name": "Freshwater crayfish",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "The Apertian crayfish generally thrives in rivulets, where they can easily swim and sunbathe on rocks when needed. Capturing them in the water is impossible, and miners must patiently wait for them to lay still on a rock to have a chance to grab one. Analysis of their shell revealed that it contains traces of all four Arcadian resources.",
+    "locations": [
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10"
+    ],
+    "zones": [
+      "Western Stream"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 102,
+    "name": "Eel from the lake",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This gluey and sticky fish prefers to inhabit the depths of the Apertian lake, where it tends to stay within specific patches of mud from the lake. Scientists believe that it might be related to the quality of the mud. Its camouflage, speed, along with its ability to avoid traps and baits, makes it challenging to catch.",
+    "locations": [
+      "S16",
+      "T16"
+    ],
+    "zones": [
+      "Lake area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 103,
+    "name": "Carps from the lake",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "These red carps which only live in schools were originally very abundant in the Apertian lake, and like its Earthly counterpart, it was considered a low-quality fish. However, a small group of Polish explorers taught other miners how to cook it, leading to overfishing. The population has since regenerated, but the specimens are now much smarter and harder to catch.",
+    "locations": [
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "zones": [
+      "Lake area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 104,
+    "name": "Condensed mist",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This material can be easily collected during the morning when it forms on the surface of a large freshwater area. As the morning progresses, it generally starts to spread in a direction that led the first explorers to believe that it could be attracted to Apertian materials.",
+    "locations": [
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "zones": [
+      "Lake area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 105,
+    "name": "Mud from the lake",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Primary analysis revealed that unique spots at the bottom of the lake contain mud loaded with Minium and traces of other Arcadian resources. Therefore, getting mud from the Apertian lake is easy, but obtaining good-quality mud is much more challenging.",
+    "locations": [
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T17"
+    ],
+    "zones": [
+      "Lake area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 106,
+    "name": "Bewitching water",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "After being discovered, this mesmerizing water gained a notorious reputation, as people who collected it couldn't stop staring at it. Arcadian scientists attempted to study it, but they could never identify what causes this phenomenon or why the water takes on this unique color. Since then, most miners won't even attempt to collect it, making obtaining a sample extremely difficult.",
+    "locations": [
+      "H6"
+    ],
+    "zones": [
+      "Mysterious Fountain"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 107,
+    "name": "Strange scale",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "aperta",
+    "description": "A strange and mesmerizing scale that could make anyone believe that mermaids exist. It's hard to take your eyes off it.",
+    "locations": [
+      "H6"
+    ],
+    "zones": [
+      "Mysterious Fountain"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 108,
+    "name": "Glowing rocks",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "aperta",
+    "description": "Those glowing rocks will captivate anyone who stares too long at them. Scientific analysis has failed to identify their composition as they are so hard that taking a sample is impossible. Some believe that they might be a new resource similar to Minium.",
+    "locations": [
+      "H6"
+    ],
+    "zones": [
+      "Mysterious Fountain"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 109,
+    "name": "Strange jelly",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This strange jelly almost has the same color as the bewitching water, another material found in the same area. It gives the impression that a mysterious creature could live in this cave. Primary analysis revealed that it is replete with unknown molecules that could have a wide range of therapeutic effects.",
+    "locations": [
+      "H6"
+    ],
+    "zones": [
+      "Mysterious Fountain"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 110,
+    "name": "Flying spider",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta",
+    "description": "Those strange but very aggressive spiders mostly stay on the ground where they hunt small insects. However, if prey becomes scarce, they won't hesitate to jump from the side of the cliff they inhabit, spread their wings, and start hunting flying animals. They demonstrate remarkable swiftness both on land and in the air.",
+    "locations": [
+      "O1",
+      "O2"
+    ],
+    "zones": [
+      "The edge"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 111,
+    "name": "Underwater totem",
+    "rarity": "ultimate",
+    "type": "all",
+    "source": "aperta",
+    "description": "No one knows what this thing is, where it comes from, or what it does. Analysis shows that it could be a liquid, a solid, or even an essence. This can definitively only be found in a place truly unique.",
+    "locations": [
+      "H6",
+      "S16"
+    ],
+    "zones": [
+      "Lake area",
+      "Mysterious Fountain"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 112,
+    "name": "Glowing sea stars",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "These strange stars only grow in peculiar water and love to attach themselves to large rocks floating around. During the early stages of their development, a male and a female have to fuse to be able to reproduce and survive. The success rate of the fusion is very low, but if they succeed, the two specimens will remain attached for the rest of their lives. If the fusion fails, both individuals die, explaining why those specimens are incredibly hard to find.",
+    "locations": [
+      "T1"
+    ],
+    "zones": [
+      "Strange underwater area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 113,
+    "name": "Strange tooth",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "The first Arcadian explorers swore that they had seen some shark-looking fish in the northern part of Aperta. But so far, no one has ever managed to see or catch a full specimen. Regardless of the circumstance, the fact remains that this material is extremely hard and resistant.",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S2",
+      "T1",
+      "T2"
+    ],
+    "zones": [
+      "Northern Ocean",
+      "Strange underwater area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 114,
+    "name": "Hard scale",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "aperta_land",
+    "description": "A very hard scale. Does it belong to a shark or a larger fish? No one really knows. Large waves sometimes bring those to the surface, where miners can easily collect them.",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ],
+    "zones": [
+      "Northern Ocean",
+      "Strange underwater area"
+    ],
+    "land_location": "Raging Ocean"
+  },
+  {
+    "id": 115,
+    "name": "Red claw",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "A very strange claw that must belong to a peculiar-looking animal. It looks too big to belong to a red-shelled crab and it is extremely hard.",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R2",
+      "T1",
+      "T2"
+    ],
+    "zones": [
+      "Northern Ocean",
+      "Strange underwater area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 116,
+    "name": "Underwater beetle",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This tiny beetle can easily be found swimming at the surface of some Apertian oceans. Males and females use strong waves to release and propagate their genetic materials in order to reproduce. With the strong waves, they rapidly evolved to be able to swim quickly through rough currents.",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ],
+    "zones": [
+      "Northern Ocean",
+      "Strange underwater area"
+    ],
+    "land_location": "Raging Ocean"
+  },
+  {
+    "id": 117,
+    "name": "Milky mantis shrimp",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This extremely hostile and hard-to-catch shrimp got its name from the substance it releases when threatened: a cloud of thick and white substance that can poison anything around. Therefore, it needs to live in fairly quiet salty water and must hide when waves or strong currents start to form.",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ],
+    "zones": [
+      "Northern Ocean",
+      "Strange underwater area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 118,
+    "name": "Blue isopod",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This strange fella thrives in calm and salty water. It can use its three antennas to sense any danger or predator coming around. When strong waves form, it can use its tiny tail to swiftly navigate them and hunt creatures disoriented by the strong currents.",
+    "locations": [
+      "P2",
+      "Q2",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ],
+    "zones": [
+      "Northern Ocean",
+      "Strange underwater area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 119,
+    "name": "Forbidden fruit",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "aperta",
+    "description": "The king of all fruits. Very sweet and full of vitamins, only a handful of them are produced by the tropical jungle in a very unique spot.",
+    "locations": [
+      "F19"
+    ],
+    "zones": [
+      "Forgotten Paradise"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 120,
+    "name": "Southern sea shrimp",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta",
+    "description": "The very common shrimp thrives in agitated and tumultuous salt waters where it can easily feed on microorganisms. Agile but easy to catch, it is full of proteins.",
+    "locations": [
+      "T20"
+    ],
+    "zones": [
+      "Forgotten artifact"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 121,
+    "name": "Crystallic water",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This unique water spontaneously forms large crystals, which quickly liquefy after a few minutes. The process repeats endlessly. Scientists cannot explain the thermodynamic laws behind this process, but this element is definitely full of energy and cannot stay put. Collecting this water is near impossible, especially since reaching the location where it can be found requires crossing the storms of the southern sea.",
+    "locations": [
+      "T20"
+    ],
+    "zones": [
+      "Forgotten artifact"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 122,
+    "name": "Red coral",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This coral can easily be found in the deep waters of the southern sea. Its tiny protrusions can easily capture tiny drifting animals, but this process requires extremely calm waters.",
+    "locations": [
+      "T20"
+    ],
+    "zones": [
+      "Forgotten artifact"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 123,
+    "name": "Mushroom reef",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This coral, actually a community of more than 20 different species, grows at the bottom of the southern sea. It can also be sometimes found in calmer water. Each individual secretes a special mucus rich in nutrients that helps maintain the colony healthy and alive.",
+    "locations": [
+      "Q19",
+      "Q20",
+      "R19",
+      "R20",
+      "T19",
+      "T20"
+    ],
+    "zones": [
+      "Southern sea",
+      "Forgotten artifact"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 124,
+    "name": "Deep killer's head",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta",
+    "description": "It looks like it was decapitated. There is always a bigger fish...",
+    "locations": [
+      "Q18",
+      "Q19",
+      "Q20",
+      "R19",
+      "R20",
+      "T19",
+      "T20"
+    ],
+    "zones": [
+      "Southern sea",
+      "Forgotten artifact"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 125,
+    "name": "Flappy ray",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This unique specimen likes to lurk in the calm waters of the Apertian southern sea. Scientists believe that adult males dive deep to collect fragments of Minium on their back, which they use to attract and seduce females. Despite its large size, it is remarkably fast!",
+    "locations": [
+      "T20"
+    ],
+    "zones": [
+      "Forgotten artifact"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 126,
+    "name": "Anemona Tentacula",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This strange creature lives in the Apertian southern sea. However, it needs calm and quiet waters in which it can use its bright color to easily attract and capture small fishes.",
+    "locations": [
+      "T20"
+    ],
+    "zones": [
+      "Forgotten artifact"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 127,
+    "name": "One-eyed squid",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This unique creature can only be found in the strangest parts of Aperta. Living in shallow seawater, it likes to hide among the bricks and various objects that have fallen into the water over time. While swimming, it can achieve incredible speeds, particularly when in pursuit of prey.",
+    "locations": [
+      "Q1"
+    ],
+    "zones": [
+      "Abandonned ruins"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 128,
+    "name": "Forbidden water",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Despite all analyses performed, Arcadian scientists have never managed to explain why this strange water constantly emits a faint yellow light. Some think that it might have something to do with the ruins in which it can be found.",
+    "locations": [
+      "Q1"
+    ],
+    "zones": [
+      "Abandonned ruins"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 129,
+    "name": "Tailless yellow fish",
+    "rarity": "common",
+    "type": "solid",
+    "source": "aperta",
+    "description": "Despite the absence of a caudal fin, this fish that can easily be captured in the northern ocean of Aperta can quickly move to avoid predators or hunt its prey.",
+    "locations": [
+      "Q3",
+      "R3",
+      "S3",
+      "T3"
+    ],
+    "zones": [
+      "Northern coast"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 130,
+    "name": "Antimatter dust",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This thick and purple dust can only form in regions where gravity allows grains of dust to fly and collide. Arcadian scientists still have a hard time explaining the physical laws regulating this material.",
+    "locations": [
+      "N5"
+    ],
+    "zones": [
+      "Strange mine"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 131,
+    "name": "Low gravity water",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This strange water seems to react really weirdly when taken out of its environment, almost as if the gravitational properties of where it can be found could be altered.",
+    "locations": [
+      "N5"
+    ],
+    "zones": [
+      "Strange mine"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 132,
+    "name": "Bottom-top centipede",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This strange specimen likes to disguise itself as a growing blade of grass on which some insect could land. Very swift and agile, it can disappear in a second. It can only be found in a region where the gravity allows it to stand tall to execute its hunting technique. Unexpectedly, its exoskeleton is exceedingly tough.",
+    "locations": [
+      "N5"
+    ],
+    "zones": [
+      "Strange mine"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 133,
+    "name": "Dark water from the pit",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "The legend says that at the bottom of the deepest hole of the Apertian region, there is water that never sees the day. This water, if left sitting long enough in the darkness, could turn black.",
+    "locations": [
+      "C6"
+    ],
+    "zones": [
+      "Botttomless pit"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 134,
+    "name": "Apertian flower bee",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This worker bee can easily be found in regions where flowers grow. Interestingly, scientists have identified that some flower bees can take on the appearance of their master, the Apertian queen. This could serve to lure predators or create a diversion if the hive is attacked.",
+    "locations": [
+      "O15",
+      "P15",
+      "P16"
+    ],
+    "zones": [
+      "Rose garden",
+      "Flower field"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 135,
+    "name": "Apertian queen",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "The Apertian Queen is similar to queen bees identified on Earth: they live and manage their hive of honey bees. However, capturing one is near impossible since they are deeply hidden within their colony, while some common workers can also take on the appearance of a queen to lure potential predators.",
+    "locations": [
+      "O15",
+      "P16"
+    ],
+    "zones": [
+      "Flower field"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 136,
+    "name": "Flowers from the field",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "aperta",
+    "description": "These colorful flowers can easily be found in some particular regions of Aperta where the soil is fertile. They contain many essences and multiple terpenoids that can easily be extracted and could have many applications in multiple scientific fields.",
+    "locations": [
+      "O15",
+      "P16"
+    ],
+    "zones": [
+      "Flower field"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 137,
+    "name": "Premium honey",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This great honey is not as coveted as the royal jelly, but it is still challenging to find. Its creation requires the finest Apertian flowers, and Arcadian merchants will probably pay a good price for it.",
+    "locations": [
+      "O15",
+      "P16"
+    ],
+    "zones": [
+      "Flower field"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 138,
+    "name": "Royal jelly",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This delicious fluid can only be made using the best Apertian flowers. It is extremely hard to find since Apertian bees fiercely hide and protect it. It contains traces of all Arcadian resources.",
+    "locations": [
+      "O15",
+      "P16"
+    ],
+    "zones": [
+      "Flower field"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 139,
+    "name": "Colorful petals",
+    "rarity": "common",
+    "type": "essence",
+    "source": "aperta",
+    "description": "Beautiful petals, full of color and essence. These can easily be found in areas where large quantities of flowers are growing. They contain several unidentified molecules that could help enhance various biological functions.",
+    "locations": [
+      "O15",
+      "P16"
+    ],
+    "zones": [
+      "Flower field"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 140,
+    "name": "Anti-gravity soil",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This strange soil seems to have weird gravitational properties, almost as if the gravity that applies to it is not as strong as it should be. No one can explain this phenomenon.",
+    "locations": [
+      "N5"
+    ],
+    "zones": [
+      "Strange mine"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 141,
+    "name": "Invigorating algae",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This common algae is full of energy, just like the water it is growing in!",
+    "locations": [
+      "L9",
+      "M9",
+      "N10",
+      "N11",
+      "N12",
+      "N9"
+    ],
+    "zones": [
+      "Thermas source"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 142,
+    "name": "Cosmic water",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta_land",
+    "description": "This water, in a liquid state, contains several unidentified elements. From time to time, it starts glowing with a pale blue color that is very calming. Arcadian scientists believe that tiny amounts of this materials were brought to Aperta by cosmic elements a long time ago.",
+    "locations": [
+      "D2",
+      "I3",
+      "N3",
+      "Q13",
+      "R6"
+    ],
+    "zones": [
+      "Meteor Crater"
+    ],
+    "land_location": "Atmospheric Moon + Dusty Moon"
+  },
+  {
+    "id": 143,
+    "name": "Cosmic rock",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This small glowing rock can only be found where space debris hits the Apertian ground. Even though they are challenging to find, the legend says that each rock is extremely similar and glows in a synchronized way. Scientists tried to break it open to analyse what is inside, but the material proved to be extremely hard.",
+    "locations": [
+      "D2",
+      "I3",
+      "N3",
+      "Q13"
+    ],
+    "zones": [
+      "Meteor Crater"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 144,
+    "name": "Warm water fish",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This fish thrives exclusively in warm freshwater rich in minerals. Miners seeking relaxation often share their baths with these elusive creatures. However, capturing one proves an exceptionally challenging feat due to their remarkable speed and intelligence.",
+    "locations": [
+      "L9",
+      "M9",
+      "N10",
+      "N11",
+      "N12",
+      "N9"
+    ],
+    "zones": [
+      "Thermas source"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 145,
+    "name": "Ignis Flamis",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "This very rare plant only grows in extremely hot Apertian areas where temperatures can easily reach 300 degrees. The vast majority of young specimens die during the early stage, calcinated by the insufferable heat. Their remains are consumed by the stronger specimens, which constantly secrete a flammable but protective sap, allowing them to survive in those harsh conditions",
+    "locations": [
+      "A2",
+      "A3",
+      "A6",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1"
+    ],
+    "zones": [
+      "Volcanic area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 146,
+    "name": "Satoyaman rice",
+    "rarity": "common",
+    "type": "essence",
+    "source": "aperta",
+    "description": "A perfect material for creating multiple recipes, Satoyman rice is extremely rich in amylose, the crystallizable form of starch. Each plant produces thousands of grains, providing an abundant source of food for Satoyaman snakes during their feeding period.",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ],
+    "zones": [
+      "Satoyama"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 147,
+    "name": "Levitating flake",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "aperta_land",
+    "description": "This flawless flake can exclusively take shape atop the highest summit in the Apertian region, under specific atmospheric conditions. Harvesting one is a remarkable accomplishment. Its thermodynamic and antigravitational properties, coupled with its exceptional stability, make it one of the best materials in Arcadia.",
+    "locations": [
+      "A12",
+      "A13",
+      "A14",
+      "B11",
+      "B9",
+      "C8"
+    ],
+    "zones": [
+      "Cold summits"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 148,
+    "name": "Strange crystal",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "aperta",
+    "description": "This strange crystal only forms when large quantities of warm freshwater rich in minerals are vigorously vaporized. Droplets propelled onto the site evaporate, and the minerals they contain start to crystallize.",
+    "locations": [
+      "G6",
+      "G7",
+      "I7",
+      "L9",
+      "M9",
+      "N10",
+      "N11",
+      "N12",
+      "N9"
+    ],
+    "zones": [
+      "Thermas source",
+      "Rocky hill"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 149,
+    "name": "Thorns",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "aperta",
+    "description": "Those thorns serve only one function: to protect the roses they support. The first studies on the rose garden reveal that if any part of the garden is cut or damaged too badly, the whole ecosystem could die. Therefore, the Arcadian Council forbids the collection of materials in this Apertian region. Miners can still explore it, and they are allowed to collect what naturally fell on the ground",
+    "locations": [
+      "P15"
+    ],
+    "zones": [
+      "Rose garden"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 150,
+    "name": "Queen Zoë",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "aperta",
+    "description": "The queen of all flowers: a rose of pure red that contains countless unidentified molecules. While these roses are abundant in the Apertian rose garden, it is forbidden to collect them. Early studies of this unique Apertian region revealed that the entire garden is, in fact, one single organism that can die if any part of it is cut. Miners must patiently wait for a rose to naturally fall to be able to collect it.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 201,
+    "name": "Coral from the ridge",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "land",
+    "description": "This beautiful coral can only be found on underwater ridges. Its composition makes it harder and a more valuable material than its Apertian counterpart. It is also rich in interesting molecules.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Underwater Ridge"
+  },
+  {
+    "id": 202,
+    "name": "Amphibian beetle",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "land",
+    "description": "This legendary specimen almost looks like an insect living underwater. On its rear, it is equipped with tiny fins, making it able to swim very fast. If needed, it can jump out of the water and start to fly. Capturing one of these is very challenging.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Underwater Ridge"
+  },
+  {
+    "id": 203,
+    "name": "Black-head octopus",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "A very elusive specimen that rarely leaves the safety of its den located on the sunny side of an underwater hill. Several eye-shaped patterns are present on its cap to make it appear larger and intimidate potential predators. Surprisingly, it loves to hunt and collect pieces of Arcadium that it uses to decorate its den.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Underwaer Ridge"
+  },
+  {
+    "id": 204,
+    "name": "Old rock",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "land",
+    "description": "A strange rock, likely as old as the mountain it comes from. Despite its abundance, this is a very hard and probably useful material.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Old Mountain"
+  },
+  {
+    "id": 205,
+    "name": "Old geode",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "land",
+    "description": "This old geological formation can only be found on the slopes of a very old extinct volcano, which most likely transformed into a mountain. Discovering one requires extensive digging, but its unique composition makes it a highly valuable material in Arcadia, especially since some believe that it could possess magical healing powers.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Old Mountain?"
+  },
+  {
+    "id": 206,
+    "name": "Ancient mushroom",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "land",
+    "description": "This hard-to-find mushroom actually only lives for a few days. It mostly got its name from the place where it can be found. It contains several molecules that still remain to be identified. Scientists also discovered that it likes to grow above Fusium deposits.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Ancient Valley"
+  },
+  {
+    "id": 207,
+    "name": "Stalactites from Pagos",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "land",
+    "description": "The challenge with this material is not really finding it, but rather traveling to its location and surviving long enough to be able to collect some. Strangely, sometimes during the day, those stalactites diffract light in a weird way and begin to cast a purple glow.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Pagos Surface"
+  },
+  {
+    "id": 208,
+    "name": "Pagos' Gellida",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "land",
+    "description": "A beautiful and exceptionally resilient specimen capable of thriving even in the coldest environments with limited sunlight. The harsh conditions on Pago's surface make the harvest of this material very challenging.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Pagos Surface"
+  },
+  {
+    "id": 209,
+    "name": "Two-tails mamba",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "land",
+    "description": "This strange snake thrives in the darkness of large cracks that can be found in large canyons. Despite intense research, no specimens were found living on Aperta. This specimen generally likes to hide in pieces of equipment that miners abandoned at the surface whn done with mining.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Deep Canyon"
+  },
+  {
+    "id": 210,
+    "name": "Trapped lightning",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "A unique material that can only be captured by the luckiest miners. Its capture requires impeccable timing and remains extremely dangerous, as one must stand under a thunderstorm for several hours. But the challenge might be worth it, as this material generally reacts when other Apertian materials are close.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Electric Lands"
+  },
+  {
+    "id": 211,
+    "name": "Selene's leaves",
+    "rarity": "common",
+    "type": "solid",
+    "source": "land",
+    "description": "It is now well acknowledged that Selene's vegetation contains unique molecules with potential therapeutic effects. Any owner of a plot of land on Selene can easily collect leaves from the trees inhabiting this planet.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Selenes Surface"
+  },
+  {
+    "id": 212,
+    "name": "Selene's grass",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "land",
+    "description": "This beautiful grass with multiple colors only grows in particular spots on Selene's surface. The patch of soil must have the perfect pH and hygrometry for this specimen to thrive, and it is believed that it can bring good fortune to those who like to hunt for materials.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Selenes Surface"
+  },
+  {
+    "id": 213,
+    "name": "Quiet seagrass",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "This material was actually named by the first Arcadian explorer, who found it amusing that such a peaceful, steady, and immobile grass could grow in such an agitated environment. Later analysis revealed that this specimen is extremely rigid, making it able to resist the strongest storms, even those that agitate the surface of Aquarius.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Raging Ocean"
+  },
+  {
+    "id": 214,
+    "name": "Endless sand",
+    "rarity": "common",
+    "type": "solid",
+    "source": "land",
+    "description": "This red sand can be easily collected in the endless desert. Unlike its Apertian counterpart, its properties are much more interesting.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Endless Desert"
+  },
+  {
+    "id": 215,
+    "name": "Panicum turgidum",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "land",
+    "description": "This desert grass primarily derives its color from the sand on which it grows. Capable of thriving in the hottest environments, this specimen contains numerous unidentified chemical compounds that could be utilized in various applications, particularly in gear development.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Endless Desert"
+  },
+  {
+    "id": 216,
+    "name": "Atmospheric stardust",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "Almost pure stardust can only be found in the atmosphere of specific moons. Managing to locate a substantial amount and collecting it is nearly impossible. Using it to create an isotonic solution should be interesting!",
+    "locations": [],
+    "zones": [],
+    "land_location": "Atmospheric Moon"
+  },
+  {
+    "id": 217,
+    "name": "Atmospheric dust",
+    "rarity": "common",
+    "type": "solid",
+    "source": "land",
+    "description": "This material can easily be collected when traveling through the thin atmosphere of certain Arcadian moons. Despite its commonality, this material possesses interesting properties.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Atmospheric Moon"
+  },
+  {
+    "id": 218,
+    "name": "Atmospheric rock",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "land",
+    "description": "This small, tiny rock can easily be harvested by those who own a land plot on an atmospheric moon. Its unique properties make it fairly valuable on the Arcadian market.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Atmospheric Moon"
+  },
+  {
+    "id": 219,
+    "name": "Forgotten starfish",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "land",
+    "description": "These specimens are generally found in pairs since the female (blue) cannot live without its male counterpart (orange). They were named after the legend that the first explorer who identified them almost forgot the sample on-site when leaving, but also after the place where they can be found.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Abandoned Island"
+  },
+  {
+    "id": 220,
+    "name": "Helios' crust",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "land",
+    "description": "An Arcadian miner once said, 'The challenge with Helios is not really to find materials, but to survive long enough to be able to collect them!' ",
+    "locations": [],
+    "zones": [],
+    "land_location": "Helios"
+  },
+  {
+    "id": 221,
+    "name": "Helios' wrath",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "This wonderful gem rich in Fusium, a symbol of Helio's power, rises to the surface only on rare occasions. While it is possible to try one's luck in Helios' caves to find some, the harsh conditions on the planet's surface make the collection of this material extremely challenging.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Helios"
+  },
+  {
+    "id": 222,
+    "name": "Misty needles",
+    "rarity": "common",
+    "type": "solid",
+    "source": "land",
+    "description": "These pine needles can easily be found by those owning a Misty forest. Due to the rarity of misty forests, most miners are willing to pay a small fortune to obtain these seemingly common materials.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Misty Forest"
+  },
+  {
+    "id": 223,
+    "name": "Misty feather",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "This beautiful feather must belong to a mystic animal only found in the Misty Forest. One thing is certain: only a handful of these feathers have been found so far, and the legend says that it brings good fortune to those owning one.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Misty Forest"
+  },
+  {
+    "id": 224,
+    "name": "Misty Alovera",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "land",
+    "description": "This refreshing vegetal, full of essence and sap, generally grows at the foot of giant pine trees that can be found in the Misty forest.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Misty Forest"
+  },
+  {
+    "id": 225,
+    "name": "Red misty snails",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "land",
+    "description": "This small snail likes to inhabit the Misty forest, where it has almost no predators. Thanks to its long beak, it can suck on the sap of giant trees or Misty Aloe Vera that it particularly likes. For some reason, it appears to be attracted to metallic objects.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Misty Forest"
+  },
+  {
+    "id": 226,
+    "name": "Amarian eel",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "land",
+    "description": "This large eel is way more valuable than its Apertian counterpart. Its flesh is more tender and refined, and its oil can be used for several purposes. However, it is a remarkably intelligent specimen, and capturing it is not always easy, especially since its skin constantly releases a slippery mucus that makes it impossible to grab.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Amaris Surface"
+  },
+  {
+    "id": 227,
+    "name": "Amarian emperor",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "A very small fish. despite its small size, It won't hesitate to attack larger aquatic creatures to protect its peers. The oldest males demonstrate great leadership when it comes to ensuring the survival of their harem.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Amaris Surface"
+  },
+  {
+    "id": 228,
+    "name": "Supercooling water",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "land",
+    "description": "The unique properties of this water allow it to accumulate energy and remain liquid even below its freezing point. Scientists believe that the unique conditions present on Pagos and Boreas led to the occurrence of this strange phenomenon.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Frozen Desert"
+  },
+  {
+    "id": 229,
+    "name": "Strange ice cube",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "land",
+    "description": "A peculiar ice formation that disrupts the otherwise flat and monotonous landscape of the frozen desert. Its outer shell is solid, but its interior is liquid. At times, it appears as though a subtle violet light emanates from the center of the cube.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Frozen Desert"
+  },
+  {
+    "id": 230,
+    "name": "Sub-zero killer",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "This frozen specimen could serve as evidence that at the beginning of Arcadian formation, the vast plains on Pagos and Boreas might have been considerably warmer, fostering thriving life. Or, some elusive creatures may reside near the core of this planet/moon, where temperatures are warmer, and certain specimens ventured too close to the surface.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Frozen Desert"
+  },
+  {
+    "id": 231,
+    "name": "Frozen queen",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "land",
+    "description": "Its resemblance to the subzero killer is uncanny. This specimen suggests that life could exist below the surface of the frozen desert, closer to the planet's core, where temperatures might be warmer. This specimen contains high traces of Minium.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Frozen Desert"
+  },
+  {
+    "id": 232,
+    "name": "Trapped stardust",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "land",
+    "description": "This pure stardust somehow got trapped within a solid rock. This phenomenon can only occur on the surface of a moon with no atmosphere.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Dusty Moon"
+  },
+  {
+    "id": 233,
+    "name": "Strange fossil",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "land",
+    "description": "No one really knows how creatures could live on the surface of a moon with no atmosphere. This could be a potential proof supporting the panspermia theory.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Dusty Moon"
+  },
+  {
+    "id": 234,
+    "name": "Antigravitational dust",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "land",
+    "description": "This dust can only be collected on the surface of a moon where a lot of dust floats around. Anyone fortunate enough to own a plot of such land can harvest significant amounts of this material.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Dusty Moon"
+  },
+  {
+    "id": 235,
+    "name": "Alien remains",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "land",
+    "description": "The first explorer who discovered this material wrote: 'This has to be a joke left by one of us. How could a species have lived in such a place? Yes, some strange fossils were found. But this makes no sense. And how did they manage to make the eyes glow...",
+    "locations": [],
+    "zones": [],
+    "land_location": "Dusty Moon"
+  },
+  {
+    "id": 257,
+    "name": "Mold blend",
+    "rarity": "common",
+    "type": "solid",
+    "source": "sd",
+    "description": "This small concentrated balls can be obtained by blending 50 green molds together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 258,
+    "name": "Oyster shroom jam",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "sd",
+    "description": "This jam can be obtained by blending 50 Bluehead oyster shroom together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 259,
+    "name": "Red boletus paste",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "sd",
+    "description": "This paste can be obtained by blending 50 Red boletus together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 260,
+    "name": "Fireflies extract",
+    "rarity": "rare",
+    "type": "essence",
+    "source": "sd",
+    "description": "This puree can be obtained by blending 50 Golden fireflies together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 261,
+    "name": "Scolopo-concentra",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "sd",
+    "description": "This concentrate can be obtained by blending 50 Scolopandras together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 262,
+    "name": "Tarantula concentrate",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "sd",
+    "description": "This concentrate can be obtained by blending 50 Underground Tarantulas together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 263,
+    "name": "Dark killer concentra",
+    "rarity": "ultimate",
+    "type": "solid",
+    "source": "sd",
+    "description": "This concentrate can be obtained by blending 50 Dark killers together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 264,
+    "name": "Pure Waspant venom",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "sd",
+    "description": "This pure venom extract can be obtained by blending 50 Waspant venoms together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 265,
+    "name": "Pure Tarantula venom",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "sd",
+    "description": "This pure venom extract can be obtained by blending 50 tarantula venoms together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 266,
+    "name": "Hydra scale concentra",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "sd",
+    "description": "This scale concentra can be obtained by blending 50 Hydra scales together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 267,
+    "name": "Blood concentrate",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "sd",
+    "description": "This blood concentrate can be obtained by blending 50 samples of Leech blood.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 268,
+    "name": "Brain concentrate",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "sd",
+    "description": "This brain concentrate can be obtained by blending 50 Scararat brains together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 269,
+    "name": "Liver extract",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "sd",
+    "description": "This liver blend can be obtained by blending 50 Batwolf livers together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 270,
+    "name": "Pure meat blend",
+    "rarity": "epic",
+    "type": "essence",
+    "source": "sd",
+    "description": "This pure meat blend can be obtained by blending 50 pieces of Berserker meat together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 271,
+    "name": "Mud concentrate",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "sd",
+    "description": "This mud concentrate can be obtained by blending 50 samples of digested mud.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 272,
+    "name": "Pure Arachno-embryo",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "sd",
+    "description": "This pure embryo can be obtained by blending 25 Queen's eggs.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 274,
+    "name": "Spiky Blend",
+    "rarity": "common",
+    "type": "solid",
+    "source": "sd",
+    "description": "This spiky blend can be obtained by blending 50 Spiky thorns together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 275,
+    "name": "Dermis Reptilis blend",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "sd",
+    "description": "This Reptilis blend can be obtained by blending 50 Camelzard's skins together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 276,
+    "name": "Eyeball blend",
+    "rarity": "rare",
+    "type": "solid",
+    "source": "sd",
+    "description": "This Eyeball blend can be obtained by blending 50 Squishy eye-balls together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 277,
+    "name": "Pure Fusium powder",
+    "rarity": "legendary",
+    "type": "solid",
+    "source": "sd",
+    "description": "This pure Fusium powder can be obtained by blending 50 Fusium crystals found in the Shadow Depths caves.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 278,
+    "name": "Stinger blood serum",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "sd",
+    "description": "This Stinger blood concentrate can be obtained by blending 50 samples of Stinger blood.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 279,
+    "name": "Ultra-condensed gas",
+    "rarity": "common",
+    "type": "essence",
+    "source": "sd",
+    "description": "This Ultra-condensed gas can be obtained by blending 50 samples of concentrated gases under high pressure.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 281,
+    "name": "Pure arachno-venom",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "sd",
+    "description": "This pure toxikarachnid venom extract can be obtained by blending 50 samples of Toxikarachnid venom.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 282,
+    "name": "Toxiviper scale extract",
+    "rarity": "legendary",
+    "type": "essence",
+    "source": "sd",
+    "description": "This pure scale concentrate can be obtained by blending 50 Toxiviper scale powder together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 283,
+    "name": "Pure Xeno-Chitin",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "sd",
+    "description": "This pure Xeno-Chitin can be obtained by blending 50 Xenothorax cuticle together.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 284,
+    "name": "Pure molten quartz",
+    "rarity": "epic",
+    "type": "solid",
+    "source": "sd",
+    "description": "The very pure liquid should work wonders if mixed with some electric materials.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 286,
+    "name": "Pure fear essence",
+    "rarity": "ultimate",
+    "type": "essence",
+    "source": "sd",
+    "description": "This pure essence loaded with fear can be obtained by blending 25 drops of fear.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 287,
+    "name": "Dusty rocks",
+    "rarity": "common",
+    "type": "solid",
+    "source": "land",
+    "description": "This rock can easily be collected on the dusty surfaces of moons. It emits a glowing light from time to time.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Dusty Moon"
+  },
+  {
+    "id": 288,
+    "name": "Algea Bubblea",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This peculiar microscopic organism can be found in shallow water, where large populations sometimes merge to create vast, jelly-like structures that rise above the water's surface.",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T2"
+    ],
+    "zones": [
+      "Northern Ocean"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 289,
+    "name": "Cactus Juice",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This slightly bitter nectar can be extracted from large cacti by those unafraid of the occasional sting! It's safe to drink and rich in minerals.",
+    "locations": [
+      "R5",
+      "S10",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ],
+    "zones": [
+      "Bottom of the cliff",
+      "Vast Desert"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 290,
+    "name": "Coconut water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This sweet and refreshing water is exclusive to large jungles. However, beware, as its high potassium content may cause mild laxative effects for some individuals if consumed excessively.",
+    "locations": [
+      "A19",
+      "A20",
+      "B19",
+      "B20",
+      "C20",
+      "D19",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F18",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ],
+    "zones": [
+      "Tropical Jungle"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 291,
+    "name": "Dewdrops ",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This fine water can be harvested in large quantities by those who wake up early. However, as the rays from Astra Nova hit the surface of Aperta, this material quickly disappears.",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H12",
+      "H2",
+      "H3",
+      "H4",
+      "H9",
+      "I11",
+      "I12",
+      "I4"
+    ],
+    "zones": [
+      "Vast plains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 292,
+    "name": "Fermented malt beverage",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This unique liquid can only be found in a particular part of the Apertian region where rotten wheat and other vegetals can fall into small puddles and slowly ferment. When filtered, this liquid is perfectly drinkable, and its taste resembles that of traditional beer brewed with cerevisiae yeast.",
+    "locations": [
+      "F12",
+      "F13",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H3",
+      "H9",
+      "I11",
+      "I4"
+    ],
+    "zones": [
+      "Vast plains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 293,
+    "name": "Fish oil",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Scientists believe that this peculiar oil, closer in nature to mucus, is secreted onto rocks by a peculiar species of fish capable of breathing out of the water. Due to its extremely pungent odor, researchers speculate that its primary purpose is to deter predators.",
+    "locations": [
+      "P17",
+      "P18",
+      "P20",
+      "S18",
+      "T18"
+    ],
+    "zones": [
+      "Southern shore"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 294,
+    "name": "Liquid pearls",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Those strange formations, composed of a very thick membrane enclosing a protein-rich liquid, can be used in many recipes. Scientists believe that these formations might be unfertilized eggs carried by the tide.",
+    "locations": [
+      "Q3",
+      "R3",
+      "S3",
+      "T3"
+    ],
+    "zones": [
+      "Northern coast"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 295,
+    "name": "Midnight oil",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This potent oil can only be collected in specific locations when the darkest night has enveloped the Apertian region.",
+    "locations": [
+      "K17",
+      "K19",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L20",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ],
+    "zones": [
+      "Dark forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 296,
+    "name": "Sweet nectar",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This sweet liquid can only be produced in regions where flowers abundantly grow. It is rich in powerful molecules capable of curing the worst ailments.",
+    "locations": [
+      "O15",
+      "P16"
+    ],
+    "zones": [
+      "Flower field"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 297,
+    "name": "Acidic water",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This water, with a pH below 4, can be expelled by certain geysers connected to a highly acidic source where the water composition includes chloride, sodium, silica, and hydrogen sulfide. It is absolutely not safe to drink, but creative minds would likely find useful use cases for this material.",
+    "locations": [
+      "J11",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M7"
+    ],
+    "zones": [
+      "Geyser area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 298,
+    "name": "Hallucinogenic sap",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "As its name suggests, consuming this material would likely incapacitate anyone for several hours. Surprisingly, it became a common way for some miners to relax after long days of work.",
+    "locations": [
+      "I1",
+      "I2",
+      "J2",
+      "K3",
+      "L1",
+      "M1",
+      "M3",
+      "N1",
+      "N2"
+    ],
+    "zones": [
+      "Large forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 299,
+    "name": "Liquida Spongea",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This peculiar sponge, composed of 98% liquid, is extremely toxic. Additionally, it is highly sticky, so be careful not to step on it.",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ],
+    "zones": [
+      "Large forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 300,
+    "name": "Spermatoa",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This Apertian delicacy is highly prized by miners who enjoy the satisfying 'pop' it makes when the head of the moss explodes under the tooth, releasing a sweet and delicious liquid. Better to wash it first and serve it cold.",
+    "locations": [
+      "I1",
+      "I2",
+      "J3",
+      "K2",
+      "K3",
+      "L1",
+      "M1",
+      "M2",
+      "M4",
+      "N1",
+      "N2"
+    ],
+    "zones": [
+      "Large forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 301,
+    "name": "Perfecta liquida",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This unique liquid only forms in a truly exceptional location. Some believe that this substance may actually be a small amount of bewitching water slowly seeping and trickling through the nearby rocks, absorbing unique minerals along the way, thus giving rise to this perfect liquid.",
+    "locations": [
+      "G7",
+      "H5",
+      "H7",
+      "I6"
+    ],
+    "zones": [
+      "Rocky hill"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 302,
+    "name": "Strange eggs",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Those peculiar, liquid-like embryos are typically discovered in the highest reaches of the Apertian region. Despite thorough study, scientists have yet to coax them into hatching or even ascertain the species responsible for laying them.",
+    "locations": [
+      "A16",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B6",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D14",
+      "D3",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "zones": [
+      "Mountains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 303,
+    "name": "Mountain Dew",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This pure water can only be found in the mountainous parts of Aperta. Its purity, combined with its unique composition, makes it an excellent material for crafting Isotonics.",
+    "locations": [
+      "A16",
+      "A7",
+      "B13",
+      "B14",
+      "B15",
+      "B6",
+      "B7",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D14",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D8",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "zones": [
+      "Mountains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 304,
+    "name": "Frosty water",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This strange and exceptionally white liquid can easily drop below zero without freezing. The reason behind its supercooling properties remains yet to be elucidated. Despite intensive studies, Arcadian scientists have never managed to understand the thermodynamic properties of this fluid. Researchers only know that to remain liquid, the substance must stay beneath Apertian mountain rocks.",
+    "locations": [
+      "A11",
+      "A12",
+      "A8",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ],
+    "zones": [
+      "Cold summits"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 305,
+    "name": "Swamp Glimmer",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This peculiar creature is predominantly liquid. Its solid, sponge-like component rapidly forms a protective bubble of toxic water around its core. As the organism matures, the liquid bubble enlarges, and its membrane strengthens, capturing microorganisms capable of photosynthesis to supply energy to the sponge core.",
+    "locations": [
+      "G16",
+      "H16",
+      "H17",
+      "I19",
+      "J19"
+    ],
+    "zones": [
+      "Warm swamps"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 306,
+    "name": "Bloody root",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This remarkable creature, consisting of 98.5% liquid, camouflages itself as a decaying root. When smaller creatures approach, it swiftly releases a thick red jelly to ensnare them and gradually digest them.",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "F16",
+      "G16",
+      "H16",
+      "H17",
+      "H18",
+      "I18",
+      "I19",
+      "J18",
+      "J19",
+      "J20"
+    ],
+    "zones": [
+      "Warm swamps"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 307,
+    "name": "Liquidoshroom",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This distinctive mushroom primarily feeds on the Bloody root jelly, obtaining the nutrients necessary for its growth. Largely liquid, a mere touch can cause it to rupture. However, its interior is packed with spores, facilitating the propagation of the species upon the explosion of the main specimen.",
+    "locations": [
+      "B18",
+      "E16",
+      "G16",
+      "H16",
+      "I19",
+      "J18",
+      "J19"
+    ],
+    "zones": [
+      "Warm swamps"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 308,
+    "name": "Water from the ridge",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This warm and paradisiacal watercan only be found in one of the most beautiful Arcadian lands. Despite its ease of collection, miners are willing to pay a premium to obtain this liquid, as it evokes memories of the most stunning place on earth.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Underwater Ridge"
+  },
+  {
+    "id": 309,
+    "name": "Old water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This somewhat greyish water is solely located in an aged Arcadian site. Legend has it that this liquid is as ancient as Arcadia itself, and those who drink it will be bestowed with boundless wisdom and tranquility.",
+    "locations": [],
+    "zones": [],
+    "land_location": null
+  },
+  {
+    "id": 310,
+    "name": "Ancient water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This water, enriched with Fusium, can easily be found in the ancient valley, where it abundantly runs along the rocky parts of the land. This premium material is perfect for creating powerful Isotonics.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Ancient Valley"
+  },
+  {
+    "id": 311,
+    "name": "Canyon Creek Water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This blue and refreshing water is perfectly drinkable when properly boiled. Its strange color, along with its unique properties, makes it a premium material for crafting Isotonics.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Deep Canyon"
+  },
+  {
+    "id": 312,
+    "name": "Electrified water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This peculiar liquid is heavily loaded with electrons, rapidly moving between oxygen molecules. Large quantities can easily paralyze anyone touching it.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Electric Lands"
+  },
+  {
+    "id": 313,
+    "name": "E. Colicorn",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "land",
+    "description": "This unique plant only grows in regions with abundant water. Rumors suggest that this species only sprouts where lightning strikes the ground. The main part of the plant contains a unique liquid that can be used to craft very interesting Isotonics.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Electric Lands"
+  },
+  {
+    "id": 314,
+    "name": "Selene's serum",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "land",
+    "description": "This wonderful liquid can only be found deep in the forests present on Selene's surface. It is rich in unique essences with wonderful therapeutic effects.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Selene"
+  },
+  {
+    "id": 315,
+    "name": "Liquid storm",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "land",
+    "description": "This unique water is only found on the surface of the most tumultuous Arcadian oceans. It contains a great power.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Raging Ocean?"
+  },
+  {
+    "id": 316,
+    "name": "Underground water",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "land",
+    "description": "This strange water can only be found beneath the surface of the endless desert. Those who seek it must dig deep to uncover it.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Endless Desert"
+  },
+  {
+    "id": 317,
+    "name": "Rocky water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This special water has spent so much time in space being irradiated that it acquired unique properties. For instance, when exposed to direct sunlight, it can slowly start forming rock-like structures that can persist for a few minutes before liquefying.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Atmospheric Moon"
+  },
+  {
+    "id": 318,
+    "name": "Abandoned liquid",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "land",
+    "description": "No one really knows what this jar contains... We can only be certain that it holds liquid...",
+    "locations": [],
+    "zones": [],
+    "land_location": "Abandoned Island"
+  },
+  {
+    "id": 319,
+    "name": "Helios' plasma",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "land",
+    "description": "This strange plasma can only be found on the surface of Helios, the hottest planet in Arcadia. Anyone willing to harvest it must equip themselves properly to survive the harsh conditions on Helios.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Helios"
+  },
+  {
+    "id": 320,
+    "name": "Misty water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This yellow water constantly releases a refreshing mist that apparently holds wonderful properties. However, it can only be found in the Misty Forest, one of the rarest lands in Arcadia.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Misty Forest"
+  },
+  {
+    "id": 321,
+    "name": "Amarian deep water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "Anyone willing to acquire this material should be ready to dive deep below the surface of Amaris, the moon of Aquarius, one of the Arcadian planets. This water is loaded with Minium, and it must be properly combined with the right materials to unleash its true potential.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Amaris Surface"
+  },
+  {
+    "id": 322,
+    "name": "Liquid stalagmite",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "This strange structure can only form in particular Arcadian oceans where the warm water, loaded with micro coral particles, slowly decants and enables the formation of this material. After fusion, the particles generate an elongated pocket of liquid rich in Minium.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Underwater Ridge"
+  },
+  {
+    "id": 323,
+    "name": "Entrapped water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "land",
+    "description": "Scientists spend a lot of time analyzing this material. They can only ascertain that this water has been exposed to a lot of cosmic radiation. Advanced analysis revealed that this liquid doesn't contain any form of life, only strange cosmic minerals.",
+    "locations": [],
+    "zones": [],
+    "land_location": "Dusty Moon"
+  },
+  {
+    "id": 324,
+    "name": "Rice water",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This water can easily be found where wild rice grows. When grains of rice fall into the water, they slowly decompose. As their endosperm begins to dissolve, it releases a lot of carbohydrates, giving this water its uncanny white tint.",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ],
+    "zones": [
+      "Satoyama"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 325,
+    "name": "Liquid Cucumis",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This strange plant, almost entirely liquid, vertically grows like a cactus, reducing its surface exposed to the sun and allowing optimal water preservation. Unlike any other species, when it is ready to bloom, it produces a single pink flower at its base. Scientists believe that the process of pollination involves underground species rather than typical insects, hence the strange location of its flower close to the ground.",
+    "locations": [
+      "F12",
+      "F8",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H2",
+      "H3",
+      "I4"
+    ],
+    "zones": [
+      "Vast plains"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 326,
+    "name": "Liquid Jelly",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Contrary to popular belief, this rare material is not found in rainy lands. The first miners who discovered it sold it for a fairly good price and never revealed the location where they found it. Instead, they began spreading false rumors to prevent others from finding it.",
+    "locations": [
+      "H13",
+      "H15",
+      "I13",
+      "I14"
+    ],
+    "zones": [
+      "Rainy lands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 327,
+    "name": "Blooblybob",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Some scientists believe that this material could be proof that pure water could actually be concentrated into a unique state. Despite intensive studies, no one truly knows how this liquid really appears.",
+    "locations": [
+      "F14",
+      "F15",
+      "G14",
+      "G15",
+      "H13",
+      "H14",
+      "H15",
+      "I13",
+      "I14",
+      "I15"
+    ],
+    "zones": [
+      "Rainy lands"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 328,
+    "name": "Liquid Psilocybe",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This liquid plant contains at least a dozen hallucinogenic substances capable of incapacitating anyone for several days. One thing's for sure: the first miners who ingested it must have had a hell of a night.",
+    "locations": [
+      "Q4",
+      "R4",
+      "R5",
+      "S10",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ],
+    "zones": [
+      "Bottom of the cliff",
+      "Vast Desert"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 329,
+    "name": "Mushroom sap",
+    "rarity": "common",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This fairly sweet sap can easily be extracted from large mushrooms. Its sugary taste, along with its attractive color, makes it a liquid highly prized by the Apertian fauna.",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ],
+    "zones": [
+      "Giant Mushroom forest"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 330,
+    "name": "Strange fluffy mucus",
+    "rarity": "rare",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This cotton candy-like plant is actually closer to a liquid than a solid. It contains a slightly toxic substance. As soon as it senses danger, it quickly retracts, concentrating its toxin to its core, thus dissuading potential predators from eating it.",
+    "locations": [
+      "O3",
+      "O4",
+      "P5",
+      "P6",
+      "Q10",
+      "Q7",
+      "Q8",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ],
+    "zones": [
+      "Giant Mushroom forest",
+      "Edge of the world"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 331,
+    "name": "Double water",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This material defies all the laws of physics as we know them. It can only be found in a very unique place subject to strange abnormalities.",
+    "locations": [
+      "T1"
+    ],
+    "zones": [
+      "Strange underwater area"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 332,
+    "name": "Sweet water",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "Yummy! Warm, refreshing, sweet, nice! After drinking this, even the grumpiest complainers would be happy.",
+    "locations": [
+      "F19"
+    ],
+    "zones": [
+      "Forgotten Paradise"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 333,
+    "name": "Sand Lurker",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This strange creature, which only lives on a few beaches, spends most of its time in shallow water under the sand, where it hunts for small prey. Miners lucky enough to catch one can squeeze out some of the strange ink it uses to hide or hunt.",
+    "locations": [
+      "S20"
+    ],
+    "zones": [
+      "Mystic island"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 334,
+    "name": "Hydrostinger",
+    "rarity": "legendary",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This unique creature uses its special tentacles to walk on shallow waters, where it can hunt for small animals, surfacing to breathe or eat. When threatened, it can dive and find refuge among the submerged blocks of stone present in the region. When killed, this animal almost instantaneously liquefies, making it a great liquid to dilute other materials.",
+    "locations": [
+      "Q1"
+    ],
+    "zones": [
+      "Abandonned ruins"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 335,
+    "name": "Amphibiblob",
+    "rarity": "ultimate",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "No one has a single clue what this thing is. Rigorous chemical analysis revealed that it is only water and sugar, which is kind of disturbing considering the material should contain other chemicals from being exposed outside. Despite looking solid, this material is almost entirely liquid.",
+    "locations": [
+      "G6",
+      "H5",
+      "H7",
+      "I6",
+      "I7",
+      "J4"
+    ],
+    "zones": [
+      "Rocky hill"
+    ],
+    "land_location": null
+  },
+  {
+    "id": 336,
+    "name": "Umbreallapod",
+    "rarity": "epic",
+    "type": "liquid",
+    "source": "aperta",
+    "description": "This funny-looking material gets its unique shape from the region where it can be found. As it grows, the cells from its inner layer cannot be exposed to water, as they allow this peculiar mushroom to breathe. When squeezed, this material becomes liquidish and can be used to create powerful Isotonic.",
+    "locations": [
+      "I14?"
+    ],
+    "zones": [],
+    "land_location": null
+  }
+]
