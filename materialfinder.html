@@ -1,193 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Material Finder</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      margin: 40px;
       background-color: #f5f5f5;
-      margin: 0;
-      padding: 20px;
       color: #333;
     }
-
     h1 {
       text-align: center;
-      color: #444;
     }
-
-    .dropdowns {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
+    h2 {
+      margin-top: 40px;
     }
-
-    .dropdown-container {
-      margin: 10px;
-    }
-
-    label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-    }
-
     select {
+      margin-bottom: 20px;
       padding: 8px;
-      width: 220px;
+      width: 300px;
       font-size: 14px;
     }
-
-    .info-box {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 800px;
-      margin: auto;
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
     }
-
-    .info-row {
-      margin-bottom: 15px;
+    th, td {
+      text-align: left;
+      padding: 10px;
+      vertical-align: top;
     }
-
-    .info-label {
+    tr:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+    td.label {
       font-weight: bold;
-      margin-bottom: 5px;
-      display: block;
+      width: 150px;
     }
-
-    .info-value {
-      white-space: pre-line;
+    .container {
+      max-width: 1000px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
-  <h1>🌋 Material Finder</h1>
-  <div class="dropdowns">
-    <div class="dropdown-container">
-      <label for="apertaOnly">Aperta Only</label>
-      <select id="apertaOnly">
-        <option value="">Select material</option>
-      </select>
-    </div>
+  <div class="container">
+    <h1>Material Finder</h1>
 
-    <div class="dropdown-container">
-      <label for="apertaPlusLand">Aperta + Land</label>
-      <select id="apertaPlusLand">
-        <option value="">Select material</option>
-      </select>
-    </div>
+    <h2>Materials available in Aperta only</h2>
+    <select id="apertaSelect">
+      <option value="">-- Select a material --</option>
+    </select>
 
-    <div class="dropdown-container">
-      <label for="sdOnly">SD Only</label>
-      <select id="sdOnly">
-        <option value="">Select material</option>
-      </select>
-    </div>
+    <h2>Materials available in both Aperta + Land</h2>
+    <select id="apertaLandSelect">
+      <option value="">-- Select a material --</option>
+    </select>
+
+    <h2>Materials available in SD only</h2>
+    <select id="sdSelect">
+      <option value="">-- Select a material --</option>
+    </select>
+
+    <div id="materialDetails"></div>
   </div>
 
-  <div id="materialInfo" class="info-box" style="display: none;"></div>
-
   <script>
-    const dropdowns = {
-      apertaOnly: document.getElementById('apertaOnly'),
-      apertaPlusLand: document.getElementById('apertaPlusLand'),
-      sdOnly: document.getElementById('sdOnly'),
-    };
-    const infoBox = document.getElementById('materialInfo');
     let materials = [];
 
-const GITHUB_JSON_URL = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/enhanced_materials.json';
-
-    fetch(GITHUB_JSON_URL)
-      .then(res => res.json())
+    fetch('https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/enhanced_materials.json')
+      .then(response => response.json())
       .then(data => {
         materials = data;
-        populateDropdowns(data);
-      })
-      .catch(err => {
-        alert('Failed to load JSON data.');
-        console.error(err);
+        populateDropdowns();
       });
 
-    function populateDropdowns(data) {
-      const apertaOnly = new Set();
-      const apertaPlusLand = new Set();
-      const sdOnly = new Set();
+    function populateDropdowns() {
+      const aperta = materials.filter(m => m.source === "aperta");
+      const apertaLand = materials.filter(m => m.source === "aperta_land");
+      const sd = materials.filter(m => m.source === "sd");
 
-      data.forEach(item => {
-        if (item.source === 'aperta_land') apertaOnly.add(item.name);
-        if (item.source.includes('aperta') || item.source.includes('land')) apertaPlusLand.add(item.name);
-        if (item.source === 'sd') sdOnly.add(item.name);
-      });
-
-      addOptions(dropdowns.apertaOnly, [...apertaOnly].sort());
-      addOptions(dropdowns.apertaPlusLand, [...apertaPlusLand].sort());
-      addOptions(dropdowns.sdOnly, [...sdOnly].sort());
+      addOptions("apertaSelect", aperta);
+      addOptions("apertaLandSelect", apertaLand);
+      addOptions("sdSelect", sd);
     }
 
-    function addOptions(selectElement, options) {
-      options.forEach(name => {
-        const opt = document.createElement('option');
-        opt.value = name;
-        opt.textContent = name;
-        selectElement.appendChild(opt);
-      });
-
-      selectElement.addEventListener('change', () => {
-        showMaterialDetails(selectElement.value);
-        // Reset others
-        Object.values(dropdowns).forEach(drop => {
-          if (drop !== selectElement) drop.value = "";
+    function addOptions(selectId, materialList) {
+      const select = document.getElementById(selectId);
+      materialList
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .forEach(material => {
+          const option = document.createElement("option");
+          option.value = material.id;
+          option.text = material.name;
+          select.appendChild(option);
         });
+
+      select.addEventListener("change", () => {
+        const selectedId = parseInt(select.value);
+        const material = materials.find(m => m.id === selectedId);
+        showMaterialDetails(material);
       });
     }
 
-    function showMaterialDetails(name) {
-      const item = materials.find(m => m.name === name);
-      if (!item) return infoBox.style.display = 'none';
+    function showMaterialDetails(material) {
+      if (!material) {
+        document.getElementById("materialDetails").innerHTML = "";
+        return;
+      }
 
-      infoBox.innerHTML = '';
-      const formatRow = (label, value) => `
-        <div class="info-row">
-          <div class="info-label">${label}</div>
-          <div class="info-value">${Array.isArray(value) ? value.join(', ') : formatDescription(value)}</div>
-        </div>
+      const rows = [
+        formatRow("ID", material.id),
+        formatRow("Name", material.name),
+        formatRow("Rarity", material.rarity),
+        formatRow("Type", material.type),
+        formatRow("Source", material.source),
+        formatRow("Description", formatDescription(material.description)),
+        formatRow("Locations", material.locations),
+        formatRow("Zones", material.zones),
+        formatRow("Land Location", material.land_location),
+      ];
+
+      document.getElementById("materialDetails").innerHTML = `
+        <table>
+          ${rows.join("")}
+        </table>
       `;
+    }
 
-      infoBox.innerHTML += formatRow('ID', item.id);
-      infoBox.innerHTML += formatRow('Name', item.name);
-      infoBox.innerHTML += formatRow('Rarity', item.rarity);
-      infoBox.innerHTML += formatRow('Type', item.type);
-      infoBox.innerHTML += formatRow('Source', item.source);
-      infoBox.innerHTML += formatRow('Description', item.description);
-      infoBox.innerHTML += formatRow('Locations', item.locations);
-      infoBox.innerHTML += formatRow('Zones', item.zones);
-      infoBox.innerHTML += formatRow('Land Location', item.land_location);
-
-      infoBox.style.display = 'block';
+    function formatRow(label, value) {
+      if (!value || (Array.isArray(value) && value.length === 0)) return '';
+      let formattedValue = Array.isArray(value) ? value.join(', ') : value;
+      if (label === 'Description') {
+        formattedValue = formatDescription(formattedValue);
+      }
+      return `
+        <tr>
+          <td class="label">${label}</td>
+          <td>${formattedValue}</td>
+        </tr>
+      `;
     }
 
     function formatDescription(text) {
-      if (!text) return '';
+      if (typeof text !== 'string') return '';
       const maxLength = 90;
-      const words = text.split(' ');
-      let current = '';
-      let result = '';
-
-      words.forEach(word => {
-        if ((current + word).length > maxLength) {
-          result += current.trim() + '\n';
-          current = '';
-        }
-        current += word + ' ';
-      });
-      result += current.trim();
-      return result;
+      const regex = new RegExp(`(.{1,${maxLength}})(\\s|$)`, 'g');
+      return text.match(regex).map(line => `<div>${line.trim()}</div>`).join('');
     }
   </script>
 </body>
