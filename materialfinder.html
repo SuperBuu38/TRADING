@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alchemist's Grimoire - NFT Gaming Material Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     :root {
@@ -29,6 +33,7 @@
     }
     
     body {
+      font-family: 'Poppins', sans-serif;
       background-color: var(--background);
       color: var(--light);
       min-height: 100vh;
@@ -42,6 +47,7 @@
       max-width: 1100px;
       margin: 0 auto;
       padding: 0 1rem;
+      position: relative;
     }
     
     header {
@@ -96,6 +102,7 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       position: relative;
       overflow: hidden;
+height: 300px;
     }
     
     .section-card::before {
@@ -260,20 +267,13 @@
       justify-content: center;
     }
     
-    .material-image .icon {
+    .material-image img {
       width: 120px;
       height: 120px;
-      background: linear-gradient(135deg, var(--primary-light), var(--secondary));
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-color: hsl(0, 0%, 90%);
+      object-fit: contain;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    
-    .material-image .icon i {
-      font-size: 3rem;
-      color: var(--light);
     }
     
     .material-info h3 {
@@ -445,27 +445,49 @@
       font-size: 0.9rem;
       color: #a0a0a0;
     }
+    
+    /* Signature Style */
+    .signature {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-family: 'Satisfy', cursive;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transform: rotate(-5deg);
+      z-index: 10;
+      background: linear-gradient(to right, var(--primary-light), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    /* Modify dropdown height to show more items */
+    .select-dropdown {
+      max-height: 300px; /* Increased height to show more items */
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="signature">Made by SuperBuu</div>
+    
     <header>
       <h1>Alchemist's Grimoire</h1>
-      <p class="subtitle">Découvrez et étudiez les matériaux légendaires du royaume</p>
+      <p class="subtitle">Discover and study legendary materials of the realm</p>
     </header>
     
     <div class="material-sections">
       <div class="section-card">
-        <h2><i class="fas fa-gem"></i> Matériaux Aperta</h2>
+        <h2><i class="fas fa-gem"></i> Aperta Materials</h2>
         <div class="custom-select" id="apertaSelect">
           <div class="select-btn">
-            <span>Sélectionnez un matériau</span>
+            <span>Select a material</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="select-dropdown">
-            <div class="select-search">
-              <input type="text" placeholder="Rechercher un matériau...">
-            </div>
             <div class="select-options">
               <!-- Options will be populated here -->
             </div>
@@ -474,16 +496,13 @@
       </div>
       
       <div class="section-card">
-        <h2><i class="fas fa-vial"></i> Matériaux Aperta + Land</h2>
+        <h2><i class="fas fa-vial"></i> Aperta + Land Materials</h2>
         <div class="custom-select" id="apertaLandSelect">
           <div class="select-btn">
-            <span>Sélectionnez un matériau</span>
+            <span>Select a material</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="select-dropdown">
-            <div class="select-search">
-              <input type="text" placeholder="Rechercher un matériau...">
-            </div>
             <div class="select-options">
               <!-- Options will be populated here -->
             </div>
@@ -492,16 +511,13 @@
       </div>
       
       <div class="section-card">
-        <h2><i class="fas fa-flask"></i> Matériaux SD</h2>
+        <h2><i class="fas fa-flask"></i> SD Materials</h2>
         <div class="custom-select" id="sdSelect">
           <div class="select-btn">
-            <span>Sélectionnez un matériau</span>
+            <span>Select a material</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="select-dropdown">
-            <div class="select-search">
-              <input type="text" placeholder="Rechercher un matériau...">
-            </div>
             <div class="select-options">
               <!-- Options will be populated here -->
             </div>
@@ -513,55 +529,31 @@
     <div id="materialDetailsContainer">
       <div class="empty-state">
         <i class="fas fa-scroll"></i>
-        <h3>Aucun matériau sélectionné</h3>
-        <p>Choisissez un matériau dans l'une des catégories ci-dessus pour afficher ses détails.</p>
+        <h3>No material selected</h3>
+        <p>Choose a material from one of the categories above to display its details.</p>
       </div>
     </div>
     
     <div class="loader">
       <div class="loader-content">
         <div class="spinner"></div>
-        <p>Chargement du matériau...</p>
+        <p>Loading material...</p>
       </div>
     </div>
   </div>
   
   <footer>
-    &copy; 2025 Alchemist's Grimoire - Le compagnon essentiel des aventuriers
+    &copy; 2025 Alchemist's Grimoire - The essential companion for adventurers
   </footer>
   
   <script>
     // Global variables
     let materials = [];
-    const icons = {
-      'common': 'fas fa-leaf',
-      'uncommon': 'fas fa-feather',
-      'rare': 'fas fa-gem',
-      'epic': 'fas fa-sun',
-      'legendary': 'fas fa-dragon'
-    };
     
     // Function to get rarity class
     function getRarityClass(rarity) {
       const rarityLower = rarity ? rarity.toLowerCase() : 'common';
       return `rarity-${rarityLower}`;
-    }
-    
-    // Function to get icon based on material type or rarity
-    function getMaterialIcon(material) {
-      if (!material) return 'fas fa-question';
-      
-      const type = material.type ? material.type.toLowerCase() : '';
-      const rarity = material.rarity ? material.rarity.toLowerCase() : 'common';
-      
-      if (type.includes('herb') || type.includes('plant')) return 'fas fa-seedling';
-      if (type.includes('mineral') || type.includes('ore')) return 'fas fa-gem';
-      if (type.includes('potion') || type.includes('elixir')) return 'fas fa-flask';
-      if (type.includes('animal') || type.includes('creature')) return 'fas fa-paw';
-      if (type.includes('tool') || type.includes('weapon')) return 'fas fa-hammer';
-      
-      // Default to rarity icon
-      return icons[rarity] || 'fas fa-star';
     }
     
     // Function to handle API fetch errors
@@ -570,9 +562,9 @@
       document.getElementById('materialDetailsContainer').innerHTML = `
         <div class="material-card">
           <div class="material-info">
-            <h3>Erreur de chargement</h3>
+            <h3>Loading Error</h3>
             <div class="description">
-              Impossible de charger les données des matériaux. Veuillez réessayer plus tard.
+              Unable to load material data. Please try again later.
             </div>
           </div>
         </div>
@@ -596,7 +588,6 @@
       
       customSelects.forEach(select => {
         const selectBtn = select.querySelector('.select-btn');
-        const searchInput = select.querySelector('input');
         
         // Toggle dropdown
         selectBtn.addEventListener('click', () => {
@@ -604,9 +595,6 @@
             if (s !== select) s.classList.remove('active');
           });
           select.classList.toggle('active');
-          if (select.classList.contains('active')) {
-            searchInput.focus();
-          }
         });
         
         // Close dropdown when clicking outside
@@ -614,17 +602,6 @@
           if (!select.contains(e.target)) {
             select.classList.remove('active');
           }
-        });
-        
-        // Search functionality
-        searchInput.addEventListener('input', function() {
-          const filter = this.value.toLowerCase();
-          const options = select.querySelectorAll('.select-option');
-          
-          options.forEach(option => {
-            const text = option.textContent.toLowerCase();
-            option.style.display = text.includes(filter) ? 'block' : 'none';
-          });
         });
       });
     }
@@ -654,7 +631,7 @@
       if (materialList.length === 0) {
         const emptyOption = document.createElement('div');
         emptyOption.className = 'select-option';
-        emptyOption.textContent = 'Aucun matériau disponible';
+        emptyOption.textContent = 'No materials available';
         optionsContainer.appendChild(emptyOption);
         return;
       }
@@ -683,14 +660,15 @@
         document.getElementById('materialDetailsContainer').innerHTML = `
           <div class="empty-state">
             <i class="fas fa-scroll"></i>
-            <h3>Aucun matériau sélectionné</h3>
-            <p>Choisissez un matériau dans l'une des catégories ci-dessus pour afficher ses détails.</p>
+            <h3>No material selected</h3>
+            <p>Choose a material from one of the categories above to display its details.</p>
           </div>
         `;
         return;
       }
       
-      const materialIcon = getMaterialIcon(material);
+      // Get material image URL using its ID
+      const materialImageUrl = `https://game.nftbattleminers.com/img/arcadex/2x/${material.id}.png?v=9`;
       const rarityClass = getRarityClass(material.rarity);
       
       // Create locations tags
@@ -712,9 +690,7 @@
       document.getElementById('materialDetailsContainer').innerHTML = `
         <div class="material-card">
           <div class="material-image">
-            <div class="icon">
-              <i class="${materialIcon}"></i>
-            </div>
+            <img src="${materialImageUrl}" alt="${material.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/120/f0f0f0?text=${material.id}';">
           </div>
           <div class="material-info">
             <h3>
@@ -730,7 +706,7 @@
             
             <div class="material-property">
               <div class="property-label">Type</div>
-              <div class="property-value">${material.type || 'Inconnu'}</div>
+              <div class="property-value">${material.type || 'Unknown'}</div>
             </div>
             
             <div class="material-property">
@@ -740,7 +716,7 @@
             
             ${material.locations && material.locations.length > 0 ? `
               <div class="material-property">
-                <div class="property-label">Localisation</div>
+                <div class="property-label">Locations</div>
                 <div class="property-value">
                   <div class="location-tags">
                     ${locationTags}
@@ -762,7 +738,7 @@
             
             ${material.land_location ? `
               <div class="material-property">
-                <div class="property-label">Lieu Land</div>
+                <div class="property-label">Land Location</div>
                 <div class="property-value">${material.land_location}</div>
               </div>
             ` : ''}
@@ -778,7 +754,7 @@
     
     // Function to format source name
     function formatSource(source) {
-      if (!source) return 'Inconnu';
+      if (!source) return 'Unknown';
       
       switch(source) {
         case 'aperta':
