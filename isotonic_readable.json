@@ -26,7 +26,7 @@
     "name": "Hypertonic of Fusium boost",
     "ingredients": [
       "Mud from the lake",
-      null,
+      "Old geode",
       "Ancient mushroom"
     ],
     "description": "Increase the production of all FUSIUM mining operations by 8% for 24 hours.",
@@ -36,7 +36,7 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of Fusium boost",
     "ingredients": [
-      null,
+      "Mystic water",
       "Antimatter dust",
       "Helios' wrath"
     ],
@@ -80,7 +80,7 @@
     "rarity": "epic",
     "name": "Exotonic of Minium boost",
     "ingredients": [
-      null,
+      "Frosty water",
       "Medusashroom",
       "Mushroom reef"
     ],
@@ -135,9 +135,9 @@
     "rarity": "legendary",
     "name": "Hypertonic of Constructium boost",
     "ingredients": [
-      null,
-      null,
-      null
+      "Forbidden water",
+      "Anti-gravity soil",
+      "Trapped stardust"
     ],
     "description": "Increase the production of all CONSTRUCTIUM mining operations by 8% for 24 hours.",
     "target": "user"
@@ -146,8 +146,8 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of Constructium boost",
     "ingredients": [
-      null,
-      null,
+      "Misty water",
+      "Levitating flake",
       "Alien remains"
     ],
     "description": "Increase the production of all CONSTRUCTIUM mining operations by 10% for 36 hours.",
@@ -190,7 +190,7 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of luck",
     "ingredients": [
-      null,
+      "Dark water from the pit",
       "Forgotten starfish",
       "Misty feather"
     ],
@@ -203,7 +203,7 @@
     "ingredients": [
       "Cosmic water",
       "Warm water fish",
-      null
+      "Amphibian beetle"
     ],
     "description": "When used, enables the worker from all mining operations to work an extra 24 hours before rioting. Lasts 6 days",
     "target": "user"
@@ -235,7 +235,7 @@
     "name": "Exotonic of foraging",
     "ingredients": [
       "Spring water",
-      null,
+      "Old rock",
       "Large boletus"
     ],
     "description": "Each unit placed on Aperta has a +0.12% chance of finding a material for 18 hours (doesn't apply to Common units).",
@@ -278,7 +278,7 @@
     "rarity": "legendary",
     "name": "Hypertonic of prospection",
     "ingredients": [
-      null,
+      "Forbidden water",
       "Carps from the lake",
       "Royal jelly"
     ],
@@ -322,9 +322,9 @@
     "rarity": "epic",
     "name": "Exotonic of velocity",
     "ingredients": [
-      null,
+      "Strange ice cube",
       "Uncommon river fish",
-      null
+      "Flappy ray"
     ],
     "description": "Reduce the travel time for mining operations by 50% for 8 days.",
     "target": "user"
@@ -333,9 +333,9 @@
     "rarity": "legendary",
     "name": "Hypertonic of velocity",
     "ingredients": [
-      null,
+      "Low gravity water",
       "Desert lizard",
-      null
+      "Amphibian beetle"
     ],
     "description": "Reduce the travel time for mining operations by 75% for 8 days.",
     "target": "user"
@@ -356,7 +356,7 @@
     "name": "Hypertonic of austerity",
     "ingredients": [
       "Cosmic water",
-      null,
+      "Anti-gravity soil",
       "Pagos' Gellida"
     ],
     "description": "Reduce the maintenance costs of all operations by 20% for 8 days.",
@@ -443,9 +443,9 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of leadership",
     "ingredients": [
-      null,
+      "Relaxing algae",
       "Emperor fish",
-      null
+      "Amarian emperor"
     ],
     "description": "Grants a +600XP bonus to the Corporate Leader for a duration of 7 days. The Corporate Leader must hold a rank of at least 10 to use this Isotonic.",
     "target": "user"
@@ -509,9 +509,9 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of favorability",
     "ingredients": [
-      null,
+      "Dark water from the pit",
       "Forbidden fruit",
-      null
+      "Glowing spider"
     ],
     "description": "Grants a +0.7% bonus to the probability of receiving a random Active Card Pack (subject to roll fail) every hour. Lasts 6 days. The Corporate Leader must hold a rank of at least 10 to use this Isotonic.",
     "target": "user"
@@ -543,7 +543,7 @@
     "name": "Exotonic of endowment",
     "ingredients": [
       "Rainwater",
-      null,
+      "Antigravitational dust",
       "Large boletus"
     ],
     "description": "Grants a +0.10% bonus to the probability of receiving a Construction Pack every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
@@ -575,7 +575,7 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of generosity",
     "ingredients": [
-      null,
+      "Misty water",
       "Strange scale",
       "Calipseum Violaceum"
     ],
@@ -610,7 +610,7 @@
     "ingredients": [
       "Mud from the lake",
       "Red shelled crab",
-      null
+      "Eel from the lake"
     ],
     "description": "When mining on Arcadian lands, reduce the probability of receiving a card piece to 27.5%, but increase the probability of finding a material to 23.4%. This effect lasts for 4 days.",
     "target": "user"
@@ -630,7 +630,7 @@
     "rarity": "legendary",
     "name": "Hypertonic of strength",
     "ingredients": [
-      null,
+      "Sand Lurker",
       "Desert lizard",
       "Flying spider"
     ],
@@ -641,7 +641,7 @@
     "rarity": "common",
     "name": "Nanotonic of defense",
     "ingredients": [
-      null,
+      "Liquid pearls",
       "Small volcanic rock",
       "Hard scale"
     ],
@@ -652,8 +652,8 @@
     "rarity": "legendary",
     "name": "Hypertonic of defense",
     "ingredients": [
-      null,
-      null,
+      "Mud concentrate",
+      "Helios' crust",
       "Atlas mushroom"
     ],
     "description": "Increase the clone's defense by 20% (multiplier x1.2) for 5 hours.",
@@ -663,9 +663,9 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of defense",
     "ingredients": [
-      null,
-      null,
-      null
+      "Rocky water",
+      "Cosmic rock",
+      "Astral dust"
     ],
     "description": "Increase the clone's defense by 25% (multiplier x1.25) for 6 hours.",
     "target": "clone"
@@ -675,7 +675,7 @@
     "name": "Gravitotonic of agility",
     "ingredients": [
       "Invigorating water",
-      null,
+      "Amarian eel",
       "Flying snake"
     ],
     "description": "Increase the clone's evasion by 25% (multiplier x1.25) for 6 hours.",
@@ -740,9 +740,9 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of accuracy",
     "ingredients": [
-      null,
+      "Relaxing algae",
       "Forgotten starfish",
-      null
+      "Shadow predator"
     ],
     "description": "Increase the clone's accuracy by 25% (multiplier x1.25) for 6 hours.",
     "target": "clone"
@@ -773,8 +773,8 @@
     "rarity": "epic",
     "name": "Exotonic of regeneration",
     "ingredients": [
-      null,
-      null,
+      "Selene's serum",
+      "Misty needles",
       "Hybrid grass"
     ],
     "description": "Increase the clone's regeneration by 15% (multiplier x1.15) for 5 hours.",
@@ -785,8 +785,8 @@
     "name": "Gravitotonic of regeneration",
     "ingredients": [
       "Cosmic water",
-      null,
-      null
+      "Old geode",
+      "Misty Alovera"
     ],
     "description": "Increase the clone's regeneration by 25% (multiplier x1.25) for 6 hours.",
     "target": "clone"
@@ -817,7 +817,7 @@
     "rarity": "epic",
     "name": "Exotonic of devastation",
     "ingredients": [
-      null,
+      "Supercooling water",
       "Poisonous toad",
       "Toxic salamander"
     ],
@@ -828,9 +828,9 @@
     "rarity": "legendary",
     "name": "Hypertonic of devastation",
     "ingredients": [
-      null,
+      "Forbidden water",
       "Emperor fish",
-      null
+      "Strange jelly"
     ],
     "description": "Increase the clone's critical damage by 20% (multiplier x1.2) for 5 hours.",
     "target": "clone"
@@ -839,9 +839,9 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of devastation",
     "ingredients": [
-      null,
-      null,
-      null
+      "Unstable water",
+      "Toxic forest frog",
+      "Rocky king"
     ],
     "description": "Increase the clone's critical damage by 25% (multiplier x1.25) for 6 hours.",
     "target": "clone"
@@ -863,7 +863,7 @@
     "ingredients": [
       "Bewitching water",
       "Mountain snake",
-      null
+      "Queen Zoë"
     ],
     "description": "Increase the clone's chance to perform a critical hit by 20% (multiplier x1.2) for 5 hours.",
     "target": "clone"
@@ -872,7 +872,7 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of annihilation",
     "ingredients": [
-      null,
+      "Dark water from the pit",
       "Singing king",
       "Glowing sea stars"
     ],
@@ -927,8 +927,8 @@
     "rarity": "legendary",
     "name": "Hypertonic of vitality",
     "ingredients": [
-      null,
-      null,
+      "Low gravity water",
+      "Freshwater sponge",
       "Mushroom reef"
     ],
     "description": "Increase the clone's maximum health by 20% (multiplier x1.2) for 5 hours.",
@@ -951,7 +951,7 @@
     "ingredients": [
       "Stream water",
       "Small forest shroom",
-      null
+      "Red misty snails"
     ],
     "description": "Increases the clone's probability of finding equipment in caves by 10% (multiplier x1.1) at the expense of finding materials for 5 hours.",
     "target": "clone"
@@ -982,7 +982,7 @@
     "rarity": "epic",
     "name": "Exotonic of scrutiny",
     "ingredients": [
-      null,
+      "Strange ice cube",
       "Strange tooth",
       "One-eyed squid"
     ],
@@ -1017,7 +1017,7 @@
     "ingredients": [
       "Mushroom sap",
       "Fresh Snow",
-      null
+      "Flappy ray"
     ],
     "description": "Increases the clone's probability of finding resources in caves by 10% (multiplier x1.1) at the expense of finding materials for 5 hours.",
     "target": "clone"
@@ -1026,7 +1026,7 @@
     "rarity": "common",
     "name": "Nanotonic of ambush",
     "ingredients": [
-      null,
+      "Electrified water",
       "Flying hopper",
       "Satoyaman rice"
     ],
@@ -1060,8 +1060,8 @@
     "name": "Hypertonic of ambush",
     "ingredients": [
       "Midnight oil",
-      null,
-      null
+      "Amarian eel",
+      "Shadow predator"
     ],
     "description": "Increase the clone's probability of surprising its enemies by +6% for 10 hours.",
     "target": "clone"
@@ -1070,9 +1070,9 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of ambush",
     "ingredients": [
-      null,
+      "Mystic water",
       "Red-eye singing frog",
-      null
+      "Sub-zero killer"
     ],
     "description": "Increase the clone's probability of surprising its enemies by +8% for 12 hours.",
     "target": "clone"
@@ -1149,7 +1149,7 @@
     "ingredients": [
       "Liquida Spongea",
       "Pure molten quartz",
-      null
+      "Trapped lightning"
     ],
     "description": "Clone has additional +15% chance to stun the enemy. Last for 8 hours.",
     "target": "clone"
@@ -1158,9 +1158,9 @@
     "rarity": "legendary",
     "name": "Hypertonic of anger",
     "ingredients": [
-      null,
+      "Mystic water",
       "Dry grass",
-      null
+      "Ignis Flamis"
     ],
     "description": "The clone deals +25% damage to other clones for 12 hours.",
     "target": "clone"
@@ -1169,9 +1169,9 @@
     "rarity": "legendary",
     "name": "Hypertonic of tuning",
     "ingredients": [
-      null,
-      null,
-      null
+      "Fermented malt beverage",
+      "Strange fossil",
+      "Red misty snails"
     ],
     "description": "Use this strange isotonic to please Junker and receive a 25% discount on tokens when using Quantum tuning. Last for 12 hours.",
     "target": "clone"
@@ -1193,7 +1193,7 @@
     "ingredients": [
       "Cactus Juice",
       "Spiky Blend",
-      null
+      "Ignis Flamis"
     ],
     "description": "Reflects 5% of incoming damage back at attackers. Last for 12 hours, doesn't apply to Guardians.",
     "target": "clone"
@@ -1202,7 +1202,7 @@
     "rarity": "legendary",
     "name": "Hypertonic of Miniofusio boost",
     "ingredients": [
-      null,
+      "Crystallic water",
       "Pure Fusium powder",
       "Flying snake"
     ],
@@ -1224,9 +1224,9 @@
     "rarity": "ultimate",
     "name": "Gravitotonic of Minerium",
     "ingredients": [
-      null,
-      null,
-      null
+      "Relaxing algae",
+      "Antigravitational dust",
+      "Apertian trout"
     ],
     "description": "Grants a bonus of +500/hr to the extraction rate of all resources. Lasts for 24 hours.",
     "target": "user"
