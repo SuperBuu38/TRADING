@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "rarity": "common",
     "name": "Nanotonic of Fusium boost",
     "ingredients": [
@@ -11,6 +12,7 @@
     "target": "user"
   },
   {
+    "id": 2,
     "rarity": "rare",
     "name": "Macrotonic of Fusium boost",
     "ingredients": [
@@ -22,6 +24,7 @@
     "target": "user"
   },
   {
+    "id": 4,
     "rarity": "legendary",
     "name": "Hypertonic of Fusium boost",
     "ingredients": [
@@ -33,6 +36,7 @@
     "target": "user"
   },
   {
+    "id": 5,
     "rarity": "ultimate",
     "name": "Gravitotonic of Fusium boost",
     "ingredients": [
@@ -44,6 +48,7 @@
     "target": "user"
   },
   {
+    "id": 6,
     "rarity": "common",
     "name": "Nanotonic of Actium boost",
     "ingredients": [
@@ -55,6 +60,7 @@
     "target": "user"
   },
   {
+    "id": 7,
     "rarity": "rare",
     "name": "Macrotonic of Actium boost",
     "ingredients": [
@@ -66,6 +72,7 @@
     "target": "user"
   },
   {
+    "id": 11,
     "rarity": "common",
     "name": "Nanotonic of Minium boost",
     "ingredients": [
@@ -77,6 +84,7 @@
     "target": "user"
   },
   {
+    "id": 13,
     "rarity": "epic",
     "name": "Exotonic of Minium boost",
     "ingredients": [
@@ -88,6 +96,7 @@
     "target": "user"
   },
   {
+    "id": 14,
     "rarity": "legendary",
     "name": "Hypertonic of Minium boost",
     "ingredients": [
@@ -99,6 +108,7 @@
     "target": "user"
   },
   {
+    "id": 16,
     "rarity": "common",
     "name": "Nanotonic of Constructium boost",
     "ingredients": [
@@ -110,6 +120,7 @@
     "target": "user"
   },
   {
+    "id": 17,
     "rarity": "rare",
     "name": "Macrotonic of Constructium boost",
     "ingredients": [
@@ -121,6 +132,7 @@
     "target": "user"
   },
   {
+    "id": 18,
     "rarity": "epic",
     "name": "Exotonic of Constructium boost",
     "ingredients": [
@@ -132,6 +144,7 @@
     "target": "user"
   },
   {
+    "id": 19,
     "rarity": "legendary",
     "name": "Hypertonic of Constructium boost",
     "ingredients": [
@@ -143,6 +156,7 @@
     "target": "user"
   },
   {
+    "id": 20,
     "rarity": "ultimate",
     "name": "Gravitotonic of Constructium boost",
     "ingredients": [
@@ -154,6 +168,7 @@
     "target": "user"
   },
   {
+    "id": 21,
     "rarity": "common",
     "name": "Nanotonic of luck",
     "ingredients": [
@@ -165,6 +180,7 @@
     "target": "user"
   },
   {
+    "id": 22,
     "rarity": "rare",
     "name": "Macrotonic of luck",
     "ingredients": [
@@ -176,6 +192,7 @@
     "target": "user"
   },
   {
+    "id": 23,
     "rarity": "epic",
     "name": "Exotonic of luck",
     "ingredients": [
@@ -187,6 +204,7 @@
     "target": "user"
   },
   {
+    "id": 25,
     "rarity": "ultimate",
     "name": "Gravitotonic of luck",
     "ingredients": [
@@ -198,6 +216,7 @@
     "target": "user"
   },
   {
+    "id": 29,
     "rarity": "legendary",
     "name": "Hypertonic of endurance",
     "ingredients": [
@@ -209,6 +228,7 @@
     "target": "user"
   },
   {
+    "id": 31,
     "rarity": "common",
     "name": "Nanotonic of foraging",
     "ingredients": [
@@ -220,6 +240,7 @@
     "target": "user"
   },
   {
+    "id": 32,
     "rarity": "rare",
     "name": "Macrotonic of foraging",
     "ingredients": [
@@ -231,6 +252,7 @@
     "target": "user"
   },
   {
+    "id": 33,
     "rarity": "epic",
     "name": "Exotonic of foraging",
     "ingredients": [
@@ -242,6 +264,7 @@
     "target": "user"
   },
   {
+    "id": 34,
     "rarity": "legendary",
     "name": "Hypertonic of foraging",
     "ingredients": [
@@ -253,6 +276,7 @@
     "target": "user"
   },
   {
+    "id": 36,
     "rarity": "common",
     "name": "Nanotonic of prospection",
     "ingredients": [
@@ -264,6 +288,7 @@
     "target": "user"
   },
   {
+    "id": 37,
     "rarity": "rare",
     "name": "Macrotonic of prospection",
     "ingredients": [
@@ -275,6 +300,7 @@
     "target": "user"
   },
   {
+    "id": 39,
     "rarity": "legendary",
     "name": "Hypertonic of prospection",
     "ingredients": [
@@ -286,6 +312,7 @@
     "target": "user"
   },
   {
+    "id": 40,
     "rarity": "ultimate",
     "name": "Gravitotonic of prospection",
     "ingredients": [
@@ -297,6 +324,7 @@
     "target": "user"
   },
   {
+    "id": 41,
     "rarity": "common",
     "name": "Nanotonic of velocity",
     "ingredients": [
@@ -308,6 +336,7 @@
     "target": "user"
   },
   {
+    "id": 42,
     "rarity": "rare",
     "name": "Macrotonic of velocity",
     "ingredients": [
@@ -319,6 +348,7 @@
     "target": "user"
   },
   {
+    "id": 43,
     "rarity": "epic",
     "name": "Exotonic of velocity",
     "ingredients": [
@@ -330,6 +360,7 @@
     "target": "user"
   },
   {
+    "id": 44,
     "rarity": "legendary",
     "name": "Hypertonic of velocity",
     "ingredients": [
@@ -341,6 +372,7 @@
     "target": "user"
   },
   {
+    "id": 46,
     "rarity": "common",
     "name": "Nanotonic of austerity",
     "ingredients": [
@@ -352,6 +384,7 @@
     "target": "user"
   },
   {
+    "id": 49,
     "rarity": "legendary",
     "name": "Hypertonic of austerity",
     "ingredients": [
@@ -363,6 +396,7 @@
     "target": "user"
   },
   {
+    "id": 50,
     "rarity": "ultimate",
     "name": "Gravitotonic of austerity",
     "ingredients": [
@@ -374,6 +408,7 @@
     "target": "user"
   },
   {
+    "id": 51,
     "rarity": "common",
     "name": "Nanotonic of synthesis",
     "ingredients": [
@@ -385,6 +420,7 @@
     "target": "user"
   },
   {
+    "id": 52,
     "rarity": "rare",
     "name": "Macrotonic of synthesis",
     "ingredients": [
@@ -396,6 +432,7 @@
     "target": "user"
   },
   {
+    "id": 56,
     "rarity": "common",
     "name": "Nanotonic of leadership",
     "ingredients": [
@@ -407,6 +444,7 @@
     "target": "user"
   },
   {
+    "id": 57,
     "rarity": "rare",
     "name": "Macrotonic of leadership",
     "ingredients": [
@@ -418,6 +456,7 @@
     "target": "user"
   },
   {
+    "id": 58,
     "rarity": "epic",
     "name": "Exotonic of leadership",
     "ingredients": [
@@ -429,6 +468,7 @@
     "target": "user"
   },
   {
+    "id": 59,
     "rarity": "legendary",
     "name": "Hypertonic of leadership",
     "ingredients": [
@@ -440,6 +480,7 @@
     "target": "user"
   },
   {
+    "id": 60,
     "rarity": "ultimate",
     "name": "Gravitotonic of leadership",
     "ingredients": [
@@ -451,6 +492,7 @@
     "target": "user"
   },
   {
+    "id": 61,
     "rarity": "common",
     "name": "Nanotonic of bargaining",
     "ingredients": [
@@ -462,6 +504,7 @@
     "target": "user"
   },
   {
+    "id": 63,
     "rarity": "epic",
     "name": "Exotonic of bargaining",
     "ingredients": [
@@ -473,6 +516,7 @@
     "target": "user"
   },
   {
+    "id": 64,
     "rarity": "legendary",
     "name": "Hypertonic of bargaining",
     "ingredients": [
@@ -484,6 +528,7 @@
     "target": "user"
   },
   {
+    "id": 66,
     "rarity": "common",
     "name": "Nanotonic of favorability",
     "ingredients": [
@@ -495,6 +540,7 @@
     "target": "user"
   },
   {
+    "id": 67,
     "rarity": "rare",
     "name": "Macrotonic of favorability",
     "ingredients": [
@@ -506,6 +552,7 @@
     "target": "user"
   },
   {
+    "id": 70,
     "rarity": "ultimate",
     "name": "Gravitotonic of favorability",
     "ingredients": [
@@ -517,6 +564,7 @@
     "target": "user"
   },
   {
+    "id": 71,
     "rarity": "common",
     "name": "Nanotonic of endowment",
     "ingredients": [
@@ -528,6 +576,7 @@
     "target": "user"
   },
   {
+    "id": 72,
     "rarity": "rare",
     "name": "Macrotonic of endowment",
     "ingredients": [
@@ -539,6 +588,7 @@
     "target": "user"
   },
   {
+    "id": 73,
     "rarity": "epic",
     "name": "Exotonic of endowment",
     "ingredients": [
@@ -550,6 +600,7 @@
     "target": "user"
   },
   {
+    "id": 76,
     "rarity": "common",
     "name": "Nanotonic of generosity",
     "ingredients": [
@@ -561,6 +612,7 @@
     "target": "user"
   },
   {
+    "id": 77,
     "rarity": "rare",
     "name": "Macrotonic of generosity",
     "ingredients": [
@@ -572,6 +624,7 @@
     "target": "user"
   },
   {
+    "id": 80,
     "rarity": "ultimate",
     "name": "Gravitotonic of generosity",
     "ingredients": [
@@ -583,6 +636,7 @@
     "target": "user"
   },
   {
+    "id": 81,
     "rarity": "common",
     "name": "Nanotonic of inquisition",
     "ingredients": [
@@ -594,6 +648,7 @@
     "target": "user"
   },
   {
+    "id": 82,
     "rarity": "rare",
     "name": "Macrotonic of inquisition",
     "ingredients": [
@@ -605,6 +660,7 @@
     "target": "user"
   },
   {
+    "id": 83,
     "rarity": "epic",
     "name": "Exotonic of inquisition",
     "ingredients": [
@@ -616,6 +672,7 @@
     "target": "user"
   },
   {
+    "id": 87,
     "rarity": "rare",
     "name": "Macrotonic of strength",
     "ingredients": [
@@ -627,6 +684,7 @@
     "target": "clone"
   },
   {
+    "id": 89,
     "rarity": "legendary",
     "name": "Hypertonic of strength",
     "ingredients": [
@@ -638,6 +696,7 @@
     "target": "clone"
   },
   {
+    "id": 91,
     "rarity": "common",
     "name": "Nanotonic of defense",
     "ingredients": [
@@ -649,6 +708,7 @@
     "target": "clone"
   },
   {
+    "id": 94,
     "rarity": "legendary",
     "name": "Hypertonic of defense",
     "ingredients": [
@@ -660,6 +720,7 @@
     "target": "clone"
   },
   {
+    "id": 95,
     "rarity": "ultimate",
     "name": "Gravitotonic of defense",
     "ingredients": [
@@ -671,6 +732,7 @@
     "target": "clone"
   },
   {
+    "id": 100,
     "rarity": "ultimate",
     "name": "Gravitotonic of agility",
     "ingredients": [
@@ -682,6 +744,7 @@
     "target": "clone"
   },
   {
+    "id": 101,
     "rarity": "common",
     "name": "Nanotonic of speed",
     "ingredients": [
@@ -693,6 +756,7 @@
     "target": "clone"
   },
   {
+    "id": 102,
     "rarity": "rare",
     "name": "Macrotonic of speed",
     "ingredients": [
@@ -704,6 +768,7 @@
     "target": "clone"
   },
   {
+    "id": 103,
     "rarity": "epic",
     "name": "Exotonic of speed",
     "ingredients": [
@@ -715,6 +780,7 @@
     "target": "clone"
   },
   {
+    "id": 106,
     "rarity": "common",
     "name": "Nanotonic of accuracy",
     "ingredients": [
@@ -726,6 +792,7 @@
     "target": "clone"
   },
   {
+    "id": 108,
     "rarity": "epic",
     "name": "Exotonic of accuracy",
     "ingredients": [
@@ -737,6 +804,7 @@
     "target": "clone"
   },
   {
+    "id": 110,
     "rarity": "ultimate",
     "name": "Gravitotonic of accuracy",
     "ingredients": [
@@ -748,6 +816,7 @@
     "target": "clone"
   },
   {
+    "id": 111,
     "rarity": "common",
     "name": "Nanotonic of regeneration",
     "ingredients": [
@@ -759,6 +828,7 @@
     "target": "clone"
   },
   {
+    "id": 112,
     "rarity": "rare",
     "name": "Macrotonic of regeneration",
     "ingredients": [
@@ -770,6 +840,7 @@
     "target": "clone"
   },
   {
+    "id": 113,
     "rarity": "epic",
     "name": "Exotonic of regeneration",
     "ingredients": [
@@ -781,6 +852,7 @@
     "target": "clone"
   },
   {
+    "id": 115,
     "rarity": "ultimate",
     "name": "Gravitotonic of regeneration",
     "ingredients": [
@@ -792,6 +864,7 @@
     "target": "clone"
   },
   {
+    "id": 116,
     "rarity": "common",
     "name": "Nanotonic of devastation",
     "ingredients": [
@@ -803,6 +876,7 @@
     "target": "clone"
   },
   {
+    "id": 117,
     "rarity": "rare",
     "name": "Macrotonic of devastation",
     "ingredients": [
@@ -814,6 +888,7 @@
     "target": "clone"
   },
   {
+    "id": 118,
     "rarity": "epic",
     "name": "Exotonic of devastation",
     "ingredients": [
@@ -825,6 +900,7 @@
     "target": "clone"
   },
   {
+    "id": 119,
     "rarity": "legendary",
     "name": "Hypertonic of devastation",
     "ingredients": [
@@ -836,6 +912,7 @@
     "target": "clone"
   },
   {
+    "id": 120,
     "rarity": "ultimate",
     "name": "Gravitotonic of devastation",
     "ingredients": [
@@ -847,6 +924,7 @@
     "target": "clone"
   },
   {
+    "id": 121,
     "rarity": "common",
     "name": "Nanotonic of annihilation",
     "ingredients": [
@@ -858,6 +936,7 @@
     "target": "clone"
   },
   {
+    "id": 124,
     "rarity": "legendary",
     "name": "Hypertonic of annihilation",
     "ingredients": [
@@ -869,6 +948,7 @@
     "target": "clone"
   },
   {
+    "id": 125,
     "rarity": "ultimate",
     "name": "Gravitotonic of annihilation",
     "ingredients": [
@@ -880,6 +960,7 @@
     "target": "clone"
   },
   {
+    "id": 126,
     "rarity": "common",
     "name": "Nanotonic of chemoresistance",
     "ingredients": [
@@ -891,6 +972,7 @@
     "target": "clone"
   },
   {
+    "id": 127,
     "rarity": "rare",
     "name": "Macrotonic of chemoresistance",
     "ingredients": [
@@ -902,6 +984,7 @@
     "target": "clone"
   },
   {
+    "id": 129,
     "rarity": "legendary",
     "name": "Hypertonic of chemoresistance",
     "ingredients": [
@@ -913,6 +996,7 @@
     "target": "clone"
   },
   {
+    "id": 131,
     "rarity": "common",
     "name": "Nanotonic of vitality",
     "ingredients": [
@@ -924,6 +1008,7 @@
     "target": "clone"
   },
   {
+    "id": 134,
     "rarity": "legendary",
     "name": "Hypertonic of vitality",
     "ingredients": [
@@ -935,6 +1020,7 @@
     "target": "clone"
   },
   {
+    "id": 136,
     "rarity": "common",
     "name": "Nanotonic of looting",
     "ingredients": [
@@ -946,6 +1032,7 @@
     "target": "clone"
   },
   {
+    "id": 137,
     "rarity": "rare",
     "name": "Macrotonic of looting",
     "ingredients": [
@@ -957,6 +1044,7 @@
     "target": "clone"
   },
   {
+    "id": 141,
     "rarity": "common",
     "name": "Nanotonic of scrutiny",
     "ingredients": [
@@ -968,6 +1056,7 @@
     "target": "clone"
   },
   {
+    "id": 142,
     "rarity": "rare",
     "name": "Macrotonic of scrutiny",
     "ingredients": [
@@ -979,6 +1068,7 @@
     "target": "clone"
   },
   {
+    "id": 143,
     "rarity": "epic",
     "name": "Exotonic of scrutiny",
     "ingredients": [
@@ -990,6 +1080,7 @@
     "target": "clone"
   },
   {
+    "id": 145,
     "rarity": "ultimate",
     "name": "Gravitotonic of scrutiny",
     "ingredients": [
@@ -1001,6 +1092,7 @@
     "target": "clone"
   },
   {
+    "id": 146,
     "rarity": "common",
     "name": "Nanotonic of excavation",
     "ingredients": [
@@ -1012,6 +1104,7 @@
     "target": "clone"
   },
   {
+    "id": 147,
     "rarity": "rare",
     "name": "Macrotonic of excavation",
     "ingredients": [
@@ -1023,6 +1116,7 @@
     "target": "clone"
   },
   {
+    "id": 151,
     "rarity": "common",
     "name": "Nanotonic of ambush",
     "ingredients": [
@@ -1034,6 +1128,7 @@
     "target": "clone"
   },
   {
+    "id": 152,
     "rarity": "rare",
     "name": "Macrotonic of ambush",
     "ingredients": [
@@ -1045,6 +1140,7 @@
     "target": "clone"
   },
   {
+    "id": 153,
     "rarity": "epic",
     "name": "Exotonic of ambush",
     "ingredients": [
@@ -1056,6 +1152,7 @@
     "target": "clone"
   },
   {
+    "id": 154,
     "rarity": "legendary",
     "name": "Hypertonic of ambush",
     "ingredients": [
@@ -1067,6 +1164,7 @@
     "target": "clone"
   },
   {
+    "id": 155,
     "rarity": "ultimate",
     "name": "Gravitotonic of ambush",
     "ingredients": [
@@ -1078,6 +1176,7 @@
     "target": "clone"
   },
   {
+    "id": 156,
     "rarity": "common",
     "name": "Nanotonic of chance",
     "ingredients": [
@@ -1089,6 +1188,7 @@
     "target": "user"
   },
   {
+    "id": 157,
     "rarity": "rare",
     "name": "Macrotonic of chance",
     "ingredients": [
@@ -1100,6 +1200,7 @@
     "target": "user"
   },
   {
+    "id": 158,
     "rarity": "epic",
     "name": "Exotonic of chance",
     "ingredients": [
@@ -1111,6 +1212,7 @@
     "target": "user"
   },
   {
+    "id": 159,
     "rarity": "legendary",
     "name": "Hypertonic of chance",
     "ingredients": [
@@ -1122,6 +1224,7 @@
     "target": "user"
   },
   {
+    "id": 160,
     "rarity": "ultimate",
     "name": "Gravitotonic of chance",
     "ingredients": [
@@ -1133,6 +1236,7 @@
     "target": "user"
   },
   {
+    "id": 162,
     "rarity": "epic",
     "name": "Exotonic of revival",
     "ingredients": [
@@ -1144,6 +1248,7 @@
     "target": "clone"
   },
   {
+    "id": 165,
     "rarity": "legendary",
     "name": "Hypertonic of paralysis",
     "ingredients": [
@@ -1155,6 +1260,7 @@
     "target": "clone"
   },
   {
+    "id": 169,
     "rarity": "legendary",
     "name": "Hypertonic of anger",
     "ingredients": [
@@ -1166,6 +1272,7 @@
     "target": "clone"
   },
   {
+    "id": 170,
     "rarity": "legendary",
     "name": "Hypertonic of tuning",
     "ingredients": [
@@ -1177,6 +1284,7 @@
     "target": "clone"
   },
   {
+    "id": 171,
     "rarity": "legendary",
     "name": "Hypertonic of bravery",
     "ingredients": [
@@ -1188,6 +1296,7 @@
     "target": "clone"
   },
   {
+    "id": 172,
     "rarity": "epic",
     "name": "Exotonic of flagellation",
     "ingredients": [
@@ -1199,6 +1308,7 @@
     "target": "clone"
   },
   {
+    "id": 173,
     "rarity": "legendary",
     "name": "Hypertonic of Miniofusio boost",
     "ingredients": [
@@ -1210,6 +1320,7 @@
     "target": "user"
   },
   {
+    "id": 179,
     "rarity": "legendary",
     "name": "Hypertonic of gratisgoods",
     "ingredients": [
@@ -1221,6 +1332,7 @@
     "target": "user"
   },
   {
+    "id": 181,
     "rarity": "ultimate",
     "name": "Gravitotonic of Minerium",
     "ingredients": [
