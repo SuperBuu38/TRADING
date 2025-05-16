@@ -1,0 +1,1234 @@
+[
+  {
+    "rarity": "common",
+    "name": "Nanotonic of Fusium boost",
+    "ingredients": [
+      "River water",
+      "Forest soil",
+      "Mountain moss"
+    ],
+    "description": "Increase the production of all FUSIUM mining operations by 2% for 6 hour.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of Fusium boost",
+    "ingredients": [
+      "Ancient water",
+      "Piece of dark wood",
+      "Exotic leaves"
+    ],
+    "description": "Increase the production of all FUSIUM mining operations by 4% for 12 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of Fusium boost",
+    "ingredients": [
+      "Mud from the lake",
+      null,
+      "Ancient mushroom"
+    ],
+    "description": "Increase the production of all FUSIUM mining operations by 8% for 24 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of Fusium boost",
+    "ingredients": [
+      null,
+      "Antimatter dust",
+      "Helios' wrath"
+    ],
+    "description": "Increase the production of all FUSIUM mining operations by 10% for 36 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of Actium boost",
+    "ingredients": [
+      "Hot water",
+      "Small volcanic rock",
+      "Fireflies extract"
+    ],
+    "description": "Increase the production of all ACTIUM mining operations by 2% for 6 hour.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of Actium boost",
+    "ingredients": [
+      "Stream water",
+      "Broccolishroom",
+      "Moss from the plains"
+    ],
+    "description": "Increase the production of all ACTIUM mining operations by 4% for 12 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of Minium boost",
+    "ingredients": [
+      "Rainwater",
+      "Fresh Snow",
+      "Humidum Plantum"
+    ],
+    "description": "Increase the production of all MINIUM mining operations by 2% for 6 hour.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of Minium boost",
+    "ingredients": [
+      null,
+      "Medusashroom",
+      "Mushroom reef"
+    ],
+    "description": "Increase the production of all MINIUM mining operations by 6% for 18 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of Minium boost",
+    "ingredients": [
+      "Bewitching water",
+      "Glowing rocks",
+      "Pagos' Gellida"
+    ],
+    "description": "Increase the production of all MINIUM mining operations by 8% for 24 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of Constructium boost",
+    "ingredients": [
+      "Invigorating algae",
+      "Flying hopper",
+      "Flowers from the field"
+    ],
+    "description": "Increase the production of all CONSTRUCTIUM mining operations by 2% for 6 hour.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of Constructium boost",
+    "ingredients": [
+      "Double water",
+      "Tornado fish",
+      "Asymmetric butterfly"
+    ],
+    "description": "Increase the production of all CONSTRUCTIUM mining operations by 4% for 12 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of Constructium boost",
+    "ingredients": [
+      "Canyon Creek Water",
+      "Jumper",
+      "Flying spider"
+    ],
+    "description": "Increase the production of all CONSTRUCTIUM mining operations by 6% for 18 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of Constructium boost",
+    "ingredients": [
+      null,
+      null,
+      null
+    ],
+    "description": "Increase the production of all CONSTRUCTIUM mining operations by 8% for 24 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of Constructium boost",
+    "ingredients": [
+      null,
+      null,
+      "Alien remains"
+    ],
+    "description": "Increase the production of all CONSTRUCTIUM mining operations by 10% for 36 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of luck",
+    "ingredients": [
+      "Glowing tree sap",
+      "Small glowing shroom",
+      "Colorful petals"
+    ],
+    "description": "Increase the NFTM yield for each mining operation by 5% over a period of 6 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of luck",
+    "ingredients": [
+      "Tropical water",
+      "Apertian flower bee",
+      "Glowing flowers"
+    ],
+    "description": "Increase the NFTM yield for each mining operation by 10% over a period of 12 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of luck",
+    "ingredients": [
+      "Honey from the plains",
+      "Apertian green mouse",
+      "Blue princess"
+    ],
+    "description": "Increase the NFTM yield for each mining operation by 15% over a period of 18 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of luck",
+    "ingredients": [
+      null,
+      "Forgotten starfish",
+      "Misty feather"
+    ],
+    "description": "Increase the NFTM yield for each mining operation by 25% over a period of 36 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of endurance",
+    "ingredients": [
+      "Cosmic water",
+      "Warm water fish",
+      null
+    ],
+    "description": "When used, enables the worker from all mining operations to work an extra 24 hours before rioting. Lasts 6 days",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of foraging",
+    "ingredients": [
+      "Melted ice",
+      "Dry lichen",
+      "Fireflies"
+    ],
+    "description": "Each unit placed on Aperta has a +0.05% chance of finding a material for 6 hours (doesn't apply to Common units).",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of foraging",
+    "ingredients": [
+      "Freshwater algae",
+      "Satoyaman snake",
+      "Barrel cactus"
+    ],
+    "description": "Each unit placed on Aperta has a +0.1% chance of finding a material for 12 hours (doesn't apply to Common units).",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of foraging",
+    "ingredients": [
+      "Spring water",
+      null,
+      "Large boletus"
+    ],
+    "description": "Each unit placed on Aperta has a +0.12% chance of finding a material for 18 hours (doesn't apply to Common units).",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of foraging",
+    "ingredients": [
+      "Condensed mist",
+      "Mountain snake",
+      "Selene's grass"
+    ],
+    "description": "Each unit placed on Aperta has a +0.15% chance of finding a material for 24 hours (doesn't apply to Common units).",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of prospection",
+    "ingredients": [
+      "Stagnant water",
+      "Volcanic Ashes",
+      "Moss from the plains"
+    ],
+    "description": "Grants a bonus of +10% on Apertian resource extraction for 12 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of prospection",
+    "ingredients": [
+      "Pure lava",
+      "Black spider",
+      "Freshwater crayfish"
+    ],
+    "description": "Grants a bonus of +25% on Apertian resource extraction for 24 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of prospection",
+    "ingredients": [
+      null,
+      "Carps from the lake",
+      "Royal jelly"
+    ],
+    "description": "Grants a bonus of +75% on Apertian resource extraction for 72 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of prospection",
+    "ingredients": [
+      "Invigorating water",
+      "Red-eye singing frog",
+      "Strange forest moss"
+    ],
+    "description": "Grants a bonus of +100% on Apertian resource extraction for 96 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of velocity",
+    "ingredients": [
+      "Pure Waspant venom",
+      "Underwater beetle",
+      "Ultra-condensed gas"
+    ],
+    "description": "Reduce the travel time for mining operations by 25% for 4 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of velocity",
+    "ingredients": [
+      "Invigorating algae",
+      "Shrimp fish",
+      "Ultra-condensed gas"
+    ],
+    "description": "Reduce the travel time for mining operations by 50% for 4 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of velocity",
+    "ingredients": [
+      null,
+      "Uncommon river fish",
+      null
+    ],
+    "description": "Reduce the travel time for mining operations by 50% for 8 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of velocity",
+    "ingredients": [
+      null,
+      "Desert lizard",
+      null
+    ],
+    "description": "Reduce the travel time for mining operations by 75% for 8 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of austerity",
+    "ingredients": [
+      "Blood concentrate",
+      "Strange tooth",
+      "Hard scale"
+    ],
+    "description": "Reduce the maintenance costs of all operations by 5% for 2 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of austerity",
+    "ingredients": [
+      "Cosmic water",
+      null,
+      "Pagos' Gellida"
+    ],
+    "description": "Reduce the maintenance costs of all operations by 20% for 8 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of austerity",
+    "ingredients": [
+      "Invigorating water",
+      "Glowing rocks",
+      "Black-head octopus"
+    ],
+    "description": "Reduce the maintenance costs of all operations by 25% for 10 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of synthesis",
+    "ingredients": [
+      "Refreshing water",
+      "Forest soil",
+      "Mountain moss"
+    ],
+    "description": "Grants a one-time bonus of +2% to the probability of receiving an Arcadian land when fusing two standard lands. The bonus is only available for one fusion, either success or failure.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of synthesis",
+    "ingredients": [
+      "Algea Bubblea",
+      "Pine cone",
+      "Humidum Plantum"
+    ],
+    "description": "Grants a one-time bonus of +4% to the probability of receiving an Arcadian land when fusing two standard lands. The bonus is only available for one fusion, either success or failure.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of leadership",
+    "ingredients": [
+      "Stream water",
+      "Mold blend",
+      "Fireflies"
+    ],
+    "description": "Grants a +20XP bonus to the Corporate Leader for a duration of 4 days. The Corporate Leader must hold a rank of at least 3 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of leadership",
+    "ingredients": [
+      "Cold mountain water",
+      "Mushroom mix",
+      "Brain concentrate"
+    ],
+    "description": "Grants a +60XP bonus to the Corporate Leader for a duration of 5 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of leadership",
+    "ingredients": [
+      "Spring water",
+      "Satoyaman snake",
+      "Jellyfish tree"
+    ],
+    "description": "Grants a +150XP bonus to the Corporate Leader for a duration of 6 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of leadership",
+    "ingredients": [
+      "Bewitching water",
+      "Carps from the lake",
+      "Firework jellyfish"
+    ],
+    "description": "Grants a +300XP bonus to the Corporate Leader for a duration of 7 days. The Corporate Leader must hold a rank of at least 8 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of leadership",
+    "ingredients": [
+      null,
+      "Emperor fish",
+      null
+    ],
+    "description": "Grants a +600XP bonus to the Corporate Leader for a duration of 7 days. The Corporate Leader must hold a rank of at least 10 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of bargaining",
+    "ingredients": [
+      "Salted water",
+      "Southern sea shrimp",
+      "Satoyaman grass"
+    ],
+    "description": "Grants a +0.5% bonus to the probability of receiving a Shop ticket every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 3 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of bargaining",
+    "ingredients": [
+      "Liquidoshroom",
+      "Frozen snake",
+      "Freshwater crayfish"
+    ],
+    "description": "Grants a +0.7% bonus to the probability of receiving a Shop ticket every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of bargaining",
+    "ingredients": [
+      "Glowing tree sap",
+      "Large spider",
+      "Apertian mackerel"
+    ],
+    "description": "Grants a +0.8% bonus to the probability of receiving a Shop ticket every hour. Lasts 5 days. The Corporate Leader must hold a rank of at least 8 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of favorability",
+    "ingredients": [
+      "Hot water",
+      "Tailless yellow fish",
+      "Satoyaman rice"
+    ],
+    "description": "Grants a +0.2% bonus to the probability of receiving a random Active Card Pack (subject to roll fail) every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 3 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of favorability",
+    "ingredients": [
+      "Stagnant water",
+      "Anemona Tentacula",
+      "Exotic leaves"
+    ],
+    "description": "Grants a +0.3% bonus to the probability of receiving a random Active Card Pack (subject to roll fail) every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of favorability",
+    "ingredients": [
+      null,
+      "Forbidden fruit",
+      null
+    ],
+    "description": "Grants a +0.7% bonus to the probability of receiving a random Active Card Pack (subject to roll fail) every hour. Lasts 6 days. The Corporate Leader must hold a rank of at least 10 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of endowment",
+    "ingredients": [
+      "Invigorating algae",
+      "Atmospheric dust",
+      "Colorful petals"
+    ],
+    "description": "Grants a +0.05% bonus to the probability of receiving a Construction Pack every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 3 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of endowment",
+    "ingredients": [
+      "Cold mountain water",
+      "Deep killer's head",
+      "Large pitcher plant"
+    ],
+    "description": "Grants a +0.07% bonus to the probability of receiving a Construction Pack every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of endowment",
+    "ingredients": [
+      "Rainwater",
+      null,
+      "Large boletus"
+    ],
+    "description": "Grants a +0.10% bonus to the probability of receiving a Construction Pack every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of generosity",
+    "ingredients": [
+      "Pure lava",
+      "Selene's leaves",
+      "Hard scale"
+    ],
+    "description": "Grants a +0.025% bonus to the probability of receiving an Arcadium Capsule every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 3 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of generosity",
+    "ingredients": [
+      "Cold mountain water",
+      "Atmospheric rock",
+      "Flowers from the field"
+    ],
+    "description": "Grants a +0.05% bonus to the probability of receiving an Arcadium Capsule every hour. Lasts 4 days. The Corporate Leader must hold a rank of at least 5 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of generosity",
+    "ingredients": [
+      null,
+      "Strange scale",
+      "Calipseum Violaceum"
+    ],
+    "description": "Grants a +0.12% bonus to the probability of receiving an Arcadium Capsule every hour. Lasts 6 days. The Corporate Leader must hold a rank of at least 10 to use this Isotonic.",
+    "target": "user"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of inquisition",
+    "ingredients": [
+      "Hot water",
+      "Small exotic plant",
+      "Moss from the plains"
+    ],
+    "description": "When mining on Arcadian lands, reduce the probability of receiving a card piece to 32.5%, but increase the probability of finding a material to 18.4%. This effect lasts for 4 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of inquisition",
+    "ingredients": [
+      "Freshwater algae",
+      "Small glowing shroom",
+      "Red boletus paste"
+    ],
+    "description": "When mining on Arcadian lands, reduce the probability of receiving a card piece to 30%, but increase the probability of finding a material to 20.9%. This effect lasts for 4 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of inquisition",
+    "ingredients": [
+      "Mud from the lake",
+      "Red shelled crab",
+      null
+    ],
+    "description": "When mining on Arcadian lands, reduce the probability of receiving a card piece to 27.5%, but increase the probability of finding a material to 23.4%. This effect lasts for 4 days.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of strength",
+    "ingredients": [
+      "Pure lava",
+      "Tornado fish",
+      "Toxic salamander"
+    ],
+    "description": "Increase the clone's damage by 10% (multiplier x1.1) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of strength",
+    "ingredients": [
+      null,
+      "Desert lizard",
+      "Flying spider"
+    ],
+    "description": "Increase the clone's damage by 20% (multiplier x1.2) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of defense",
+    "ingredients": [
+      null,
+      "Small volcanic rock",
+      "Hard scale"
+    ],
+    "description": "Increase the clone's defense by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of defense",
+    "ingredients": [
+      null,
+      null,
+      "Atlas mushroom"
+    ],
+    "description": "Increase the clone's defense by 20% (multiplier x1.2) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of defense",
+    "ingredients": [
+      null,
+      null,
+      null
+    ],
+    "description": "Increase the clone's defense by 25% (multiplier x1.25) for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of agility",
+    "ingredients": [
+      "Invigorating water",
+      null,
+      "Flying snake"
+    ],
+    "description": "Increase the clone's evasion by 25% (multiplier x1.25) for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of speed",
+    "ingredients": [
+      "Strange fluffy mucus",
+      "Southern sea shrimp",
+      "Humidum Plantum"
+    ],
+    "description": "Increase the clone's speed by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of speed",
+    "ingredients": [
+      "Tropical water",
+      "Shrimp fish",
+      "Large pitcher plant"
+    ],
+    "description": "Increase the clone's speed by 10% (multiplier x1.1) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of speed",
+    "ingredients": [
+      "Spring water",
+      "Apertian green mouse",
+      "One-eyed squid"
+    ],
+    "description": "Increase the clone's speed by 15% (multiplier x1.15) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of accuracy",
+    "ingredients": [
+      "Rainwater",
+      "Small forest shroom",
+      "Mountain moss"
+    ],
+    "description": "Increase the clone's accuracy by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of accuracy",
+    "ingredients": [
+      "Spring water",
+      "Pine cone",
+      "Glowing flowers"
+    ],
+    "description": "Increase the clone's accuracy by 15% (multiplier x1.15) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of accuracy",
+    "ingredients": [
+      null,
+      "Forgotten starfish",
+      null
+    ],
+    "description": "Increase the clone's accuracy by 25% (multiplier x1.25) for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of regeneration",
+    "ingredients": [
+      "Rice water",
+      "Desert grass",
+      "Colorful petals"
+    ],
+    "description": "Increase the clone's regeneration by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of regeneration",
+    "ingredients": [
+      "Sweet nectar",
+      "Small fresh water fish",
+      "Barrel cactus"
+    ],
+    "description": "Increase the clone's regeneration by 10% (multiplier x1.1) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of regeneration",
+    "ingredients": [
+      null,
+      null,
+      "Hybrid grass"
+    ],
+    "description": "Increase the clone's regeneration by 15% (multiplier x1.15) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of regeneration",
+    "ingredients": [
+      "Cosmic water",
+      null,
+      null
+    ],
+    "description": "Increase the clone's regeneration by 25% (multiplier x1.25) for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of devastation",
+    "ingredients": [
+      "Pure Waspant venom",
+      "Standard sand",
+      "Hard scale"
+    ],
+    "description": "Increase the clone's critical damage by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of devastation",
+    "ingredients": [
+      "Pure lava",
+      "Large wasp",
+      "Rocky beetle"
+    ],
+    "description": "Increase the clone's critical damage by 10% (multiplier x1.1) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of devastation",
+    "ingredients": [
+      null,
+      "Poisonous toad",
+      "Toxic salamander"
+    ],
+    "description": "Increase the clone's critical damage by 15% (multiplier x1.15) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of devastation",
+    "ingredients": [
+      null,
+      "Emperor fish",
+      null
+    ],
+    "description": "Increase the clone's critical damage by 20% (multiplier x1.2) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of devastation",
+    "ingredients": [
+      null,
+      null,
+      null
+    ],
+    "description": "Increase the clone's critical damage by 25% (multiplier x1.25) for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of annihilation",
+    "ingredients": [
+      "Pure arachno-venom",
+      "Piece of dark wood",
+      "Colorful petals"
+    ],
+    "description": "Increase the clone's chance to perform a critical hit by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of annihilation",
+    "ingredients": [
+      "Bewitching water",
+      "Mountain snake",
+      null
+    ],
+    "description": "Increase the clone's chance to perform a critical hit by 20% (multiplier x1.2) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of annihilation",
+    "ingredients": [
+      null,
+      "Singing king",
+      "Glowing sea stars"
+    ],
+    "description": "Increase the clone's chance to perform a critical hit by 25% (multiplier x1.25) for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of chemoresistance",
+    "ingredients": [
+      "Freshwater algae",
+      "Dermis Reptilis blend",
+      "Ultra-condensed gas"
+    ],
+    "description": "Increase the clone's chemical resistance by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of chemoresistance",
+    "ingredients": [
+      "Pure arachno-venom",
+      "Pure Xeno-Chitin",
+      "Exotic leaves"
+    ],
+    "description": "Increase the clone's chemical resistance by 10% (multiplier x1.1) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of chemoresistance",
+    "ingredients": [
+      "Mud from the lake",
+      "Mountain snake",
+      "Mushroom reef"
+    ],
+    "description": "Increase the clone's chemical resistance by 20% (multiplier x1.2) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of vitality",
+    "ingredients": [
+      "Refreshing water",
+      "Desert grass",
+      "Satoyaman rice"
+    ],
+    "description": "Increase the clone's maximum health by 5% (multiplier x1.05) for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of vitality",
+    "ingredients": [
+      null,
+      null,
+      "Mushroom reef"
+    ],
+    "description": "Increase the clone's maximum health by 20% (multiplier x1.2) for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of looting",
+    "ingredients": [
+      "Stagnant water",
+      "Small spider",
+      "Satoyaman rice"
+    ],
+    "description": "Increases the clone's probability of finding equipment in caves by 5% (multiplier x1.05) at the expense of finding materials for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of looting",
+    "ingredients": [
+      "Stream water",
+      "Small forest shroom",
+      null
+    ],
+    "description": "Increases the clone's probability of finding equipment in caves by 10% (multiplier x1.1) at the expense of finding materials for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of scrutiny",
+    "ingredients": [
+      "Mushroom sap",
+      "Small fresh water fish",
+      "Satoyaman grass"
+    ],
+    "description": "Increases the clone's probability of finding materials in caves by 5% (multiplier x1.05) at the expense of finding resources for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of scrutiny",
+    "ingredients": [
+      "Blood concentrate",
+      "Tropical Venus",
+      "Flowers from the field"
+    ],
+    "description": "Increases the clone's probability of finding materials in caves by 10% (multiplier x1.1) at the expense of finding resources for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of scrutiny",
+    "ingredients": [
+      null,
+      "Strange tooth",
+      "One-eyed squid"
+    ],
+    "description": "Increases the clone's probability of finding materials in caves by 15% (multiplier x1.15) at the expense of finding resources for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of scrutiny",
+    "ingredients": [
+      "Invigorating water",
+      "Large beetle",
+      "Frozen queen"
+    ],
+    "description": "Increases the clone's probability of finding materials in caves by 30% (multiplier x1.30) at the expense of finding resources for 8 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of excavation",
+    "ingredients": [
+      "Condensed mist",
+      "Volcanic Ashes",
+      "Moss from the plains"
+    ],
+    "description": "Increases the clone's probability of finding resources in caves by 5% (multiplier x1.05) at the expense of finding materials for 4 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of excavation",
+    "ingredients": [
+      "Mushroom sap",
+      "Fresh Snow",
+      null
+    ],
+    "description": "Increases the clone's probability of finding resources in caves by 10% (multiplier x1.1) at the expense of finding materials for 5 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of ambush",
+    "ingredients": [
+      null,
+      "Flying hopper",
+      "Satoyaman rice"
+    ],
+    "description": "Increase the clone's probability of surprising its enemies by +1% for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of ambush",
+    "ingredients": [
+      "Bloody root",
+      "Bluehead jellyfish",
+      "Bottom-top centipede"
+    ],
+    "description": "Increase the clone's probability of surprising its enemies by +2% for 6 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of ambush",
+    "ingredients": [
+      "Stalactites from Pagos",
+      "Scolopo-concentra",
+      "Volcanic grass"
+    ],
+    "description": "Increase the clone's probability of surprising its enemies by +4% for 8 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of ambush",
+    "ingredients": [
+      "Midnight oil",
+      null,
+      null
+    ],
+    "description": "Increase the clone's probability of surprising its enemies by +6% for 10 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of ambush",
+    "ingredients": [
+      null,
+      "Red-eye singing frog",
+      null
+    ],
+    "description": "Increase the clone's probability of surprising its enemies by +8% for 12 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "common",
+    "name": "Nanotonic of chance",
+    "ingredients": [
+      "Liquid Jelly",
+      "Small exotic plant",
+      "Fireflies"
+    ],
+    "description": "Increase the probability of winning at Spin and Win by 5% for a duration of 1 day.",
+    "target": "user"
+  },
+  {
+    "rarity": "rare",
+    "name": "Macrotonic of chance",
+    "ingredients": [
+      "Coconut water",
+      "Salty sand",
+      "Exotic leaves"
+    ],
+    "description": "Increase  the probability of winning at Spin and Win by 8% for a duration of 1 day.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of chance",
+    "ingredients": [
+      "Pure arachno-venom",
+      "Eyeball blend",
+      "Jellyfish tree"
+    ],
+    "description": "Increase  the probability of winning at Spin and Win by 10% for a duration of day.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of chance",
+    "ingredients": [
+      "Helios' plasma",
+      "Singing king",
+      "Mystic crystal"
+    ],
+    "description": "Increase  the probability of winning at Spin and Win by 15% for a duration of 1 day.",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of chance",
+    "ingredients": [
+      "Perfecta liquida",
+      "Glowing rocks",
+      "Calipseum Violaceum"
+    ],
+    "description": "Increase  the probability of winning at Spin and Win by 20% for a duration of day.",
+    "target": "user"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of revival",
+    "ingredients": [
+      "Premium honey",
+      "Tropical Venus",
+      "Large boletus"
+    ],
+    "description": "The clone's recovery speed is increased by +30%, lasting for 12 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of paralysis",
+    "ingredients": [
+      "Liquida Spongea",
+      "Pure molten quartz",
+      null
+    ],
+    "description": "Clone has additional +15% chance to stun the enemy. Last for 8 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of anger",
+    "ingredients": [
+      null,
+      "Dry grass",
+      null
+    ],
+    "description": "The clone deals +25% damage to other clones for 12 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of tuning",
+    "ingredients": [
+      null,
+      null,
+      null
+    ],
+    "description": "Use this strange isotonic to please Junker and receive a 25% discount on tokens when using Quantum tuning. Last for 12 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of bravery",
+    "ingredients": [
+      "Stalactites from Pagos",
+      "Oyster shroom jam",
+      "Pure fear essence"
+    ],
+    "description": "Increase the damage dealt to the Biohazard guardian by 25% (multiplier x1.25) for 12 hours.",
+    "target": "clone"
+  },
+  {
+    "rarity": "epic",
+    "name": "Exotonic of flagellation",
+    "ingredients": [
+      "Cactus Juice",
+      "Spiky Blend",
+      null
+    ],
+    "description": "Reflects 5% of incoming damage back at attackers. Last for 12 hours, doesn't apply to Guardians.",
+    "target": "clone"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of Miniofusio boost",
+    "ingredients": [
+      null,
+      "Pure Fusium powder",
+      "Flying snake"
+    ],
+    "description": "Grants a bonus of +500/hr to the extraction rate of FUSIUM and MINIUM. Lasts for 24 hours.",
+    "target": "user"
+  },
+  {
+    "rarity": "legendary",
+    "name": "Hypertonic of gratisgoods",
+    "ingredients": [
+      "Invigorating algae",
+      "Antimatter dust",
+      "Queen mushroom"
+    ],
+    "description": "Receive 2 units of alchemy material per win on Spin and Win (normally 1). Lasts for 10 days",
+    "target": "user"
+  },
+  {
+    "rarity": "ultimate",
+    "name": "Gravitotonic of Minerium",
+    "ingredients": [
+      null,
+      null,
+      null
+    ],
+    "description": "Grants a bonus of +500/hr to the extraction rate of all resources. Lasts for 24 hours.",
+    "target": "user"
+  }
+]
