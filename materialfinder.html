@@ -426,25 +426,47 @@
       to { opacity: 1; transform: translateY(0); }
     }
     
-    .rarity-common {
-      color: #b0b0b0;
-    }
-    
-    .rarity-uncommon {
-      color: #4CC9F0;
-    }
-    
-    .rarity-rare {
-      color: #4895EF;
-    }
-    
-    .rarity-epic {
-      color: #9D4EDD;
-    }
-    
-    .rarity-legendary {
-      color: #F72585;
-    }
+/* Styles pour les badges de rareté */
+.rarity-common {
+  background-color: #8A8A8A !important;
+  color: white !important;
+}
+
+.rarity-uncommon {
+  background-color: #4CC9F0 !important;
+  color: white !important;
+}
+
+.rarity-rare {
+  background-color: #4361EE !important;
+  color: white !important;
+}
+
+.rarity-epic {
+  background-color: #9D4EDD !important;
+  color: white !important;
+}
+
+.rarity-legendary {
+  background-color: #F72585 !important;
+  color: white !important;
+}
+
+.rarity-ultimate {
+  background: linear-gradient(to right, #FFD700, #FF8C00) !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+/* S'assurer que la classe spécifique remplace la classe générique */
+.badge.rarity-common,
+.badge.rarity-uncommon,
+.badge.rarity-rare,
+.badge.rarity-epic,
+.badge.rarity-legendary,
+.badge.rarity-ultimate {
+  background: inherit;
+}
     
     .dark-theme-toggle {
       position: absolute;
@@ -593,12 +615,18 @@
     // Global variables
     let materials = [];
     
-    // Function to get rarity class
-    function getRarityClass(rarity) {
-      const rarityLower = rarity ? rarity.toLowerCase() : 'common';
-      return `rarity-${rarityLower}`;
-    }
-    
+// Fonction corrigée pour obtenir la classe de rareté
+function getRarityClass(rarity) {
+  if (!rarity) return 'rarity-common';
+  
+  const rarityLower = rarity.toLowerCase().trim();
+  
+  // Liste complète des raretés possibles
+  const validRarities = ['common', 'uncommon', 'rare', 'epic', 'legendary', 'ultimate'];
+  
+  // S'assurer que la rareté existe, sinon retourner common par défaut
+  return validRarities.includes(rarityLower) ? `rarity-${rarityLower}` : 'rarity-common';
+}
     // Function to handle API fetch errors
     function handleFetchError(error) {
       console.error('Error fetching materials:', error);
