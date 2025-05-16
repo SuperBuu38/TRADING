@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> <!-- Modern font for signature -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     :root {
@@ -24,16 +24,15 @@
       --card: #1C1F2E;
       --card-hover: #252A3C;
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    body {
       font-family: 'Poppins', sans-serif;
+    }
+
+    body {
       background-color: var(--background);
       color: var(--light);
       min-height: 100vh;
@@ -42,20 +41,19 @@
         radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.1) 0%, transparent 20%),
         radial-gradient(circle at 90% 80%, rgba(58, 12, 163, 0.1) 0%, transparent 20%);
     }
-    
+
     .container {
-      max-width: 1500px; /* Augmenté de 1300px à 1500px */
+      max-width: 1500px;
       margin: 0 auto;
       padding: 0 1rem;
       position: relative;
     }
-    
+
     header {
       text-align: center;
-      margin-bottom: 3rem;
-      position: relative;
+      margin-bottom: 2rem;
     }
-    
+
     h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
@@ -63,9 +61,8 @@
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      position: relative;
     }
-    
+
     h1::after {
       content: '';
       display: block;
@@ -75,59 +72,94 @@
       margin: 10px auto;
       border-radius: 2px;
     }
-    
+
     .subtitle {
       color: #a0a0a0;
       font-size: 1.1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
-    
+
+    .search-bar {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .search-bar input {
+      width: 50%; /* Reduced width to avoid spanning full container */
+      max-width: 400px; /* Set a max width for larger screens */
+      padding: 12px 16px;
+      background: var(--card-hover);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: var(--light);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s ease;
+      margin: 0 auto; /* Center the input */
+    }
+
+    .search-bar input:focus {
+      border-color: var(--primary);
+    }
+
+    .search-suggestions {
+      position: absolute;
+      top: 100%;
+      left: 25%; /* Align with the centered input */
+      width: 50%; /* Match the input width */
+      max-width: 400px;
+      background: var(--card-hover);
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      max-height: 200px;
+      overflow-y: auto;
+      display: none;
+      z-index: 10;
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary) var(--card);
+    }
+
+    .search-suggestions::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .search-suggestions::-webkit-scrollbar-track {
+      background: var(--card);
+    }
+
+    .search-suggestions::-webkit-scrollbar-thumb {
+      background-color: var(--primary);
+      border-radius: 20px;
+    }
+
+    .search-suggestion {
+      padding: 10px 16px;
+      cursor: pointer;
+      color: var(--light);
+      transition: background 0.2s ease;
+    }
+
+    .search-suggestion:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
     .material-sections {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem; /* Augmenté de 1.5rem */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
     }
-    
-    @media (min-width: 1200px) {
-      .material-sections {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem; /* Augmenté de 1.5rem */
-      }
-    }
-    
-    /* Responsive pour tablettes - 2 colonnes */
-    @media (min-width: 900px) and (max-width: 1199px) {
-      .material-sections {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem; /* Augmenté de 1.5rem */
-      }
-      
-      /* Pour que chaque carte soit plus large sur les écrans moyens */
-      .section-card {
-        width: 100%;
-      }
-    }
-    
-    /* Responsive pour mobiles - 1 colonne */
-    @media (max-width: 767px) {
-      .material-sections {
-        grid-template-columns: 1fr;
-        gap: 2rem; /* Augmenté de 1.5rem */
-      }
-    }
-    
+
     .section-card {
       background: var(--card);
       border-radius: 16px;
-      padding: 1.5rem;
+      padding: 2rem;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       position: relative;
       overflow: hidden;
       height: 300px;
-      width: 100%; /* Assurer que la carte prend toute la largeur disponible */
     }
-    
+
     .section-card::before {
       content: '';
       position: absolute;
@@ -137,32 +169,29 @@
       height: 5px;
       background: linear-gradient(to right, var(--primary), var(--accent));
     }
-    
+
     .section-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
     }
-    
+
     .section-card h2 {
       font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-left: 2rem;
+      margin-bottom: 1rem;
       display: flex;
       align-items: center;
+      gap: 0.5rem;
     }
-    
+
     .section-card h2 i {
-      position: absolute;
-      left: 0;
       color: var(--primary-light);
+      font-size: 1.2rem;
     }
-    
+
     .custom-select {
       position: relative;
-      margin-bottom: 1.5rem;
     }
-    
+
     .select-btn {
       display: flex;
       align-items: center;
@@ -174,24 +203,22 @@
       cursor: pointer;
       color: var(--light);
       font-size: 1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      width: 100%;
+      transition: background 0.3s ease;
     }
-    
+
     .select-btn:hover {
       background: rgba(255, 255, 255, 0.1);
     }
-    
+
     .select-btn i {
       font-size: 1rem;
       transition: transform 0.3s ease;
     }
-    
+
     .custom-select.active .select-btn i {
       transform: rotate(180deg);
     }
-    
+
     .select-dropdown {
       position: absolute;
       top: calc(100% + 10px);
@@ -200,71 +227,47 @@
       background: var(--card-hover);
       border-radius: 8px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-      max-height: 300px; /* Augmenté de 250px à 300px */
+      max-height: 300px;
       overflow-y: auto;
       z-index: 10;
       display: none;
       scrollbar-width: thin;
       scrollbar-color: var(--primary) var(--card);
     }
-    
+
     .select-dropdown::-webkit-scrollbar {
       width: 6px;
     }
-    
+
     .select-dropdown::-webkit-scrollbar-track {
       background: var(--card);
     }
-    
+
     .select-dropdown::-webkit-scrollbar-thumb {
       background-color: var(--primary);
       border-radius: 20px;
     }
-    
+
     .custom-select.active .select-dropdown {
       display: block;
       animation: fadeIn 0.3s ease;
     }
-    
+
     .select-option {
       padding: 12px 20px;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: background 0.2s ease;
     }
-    
+
     .select-option:hover {
       background: rgba(255, 255, 255, 0.1);
     }
-    
-    .select-search {
-      padding: 12px 16px;
-      position: sticky;
-      top: 0;
-      background: var(--card-hover);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      z-index: 1;
-    }
-    
-    .select-search input {
-      width: 100%;
-      padding: 8px 12px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 4px;
-      color: var(--light);
-      outline: none;
-    }
-    
-    .select-search input:focus {
-      border-color: var(--primary);
-    }
-    
+
     #materialDetailsContainer {
       margin-top: 3rem;
-      position: relative;
       min-height: 100px;
     }
-    
+
     .material-card {
       background: var(--card);
       border-radius: 16px;
@@ -273,35 +276,31 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
-      position: relative;
-      overflow: hidden;
       animation: fadeIn 0.5s ease;
-      width: 100%;
-      max-width: 1500px; /* Augmenté */
+      max-width: 1500px;
       margin: 0 auto;
     }
-    
+
     @media (min-width: 768px) {
       .material-card {
         grid-template-columns: 150px 1fr;
       }
     }
-    
+
     .material-image {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    
+
     .material-image img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background-color: hsl(0, 0%, 90%);
       object-fit: contain;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
-    
+
     .material-info h3 {
       font-size: 2rem;
       margin-bottom: 1rem;
@@ -310,7 +309,7 @@
       align-items: center;
       gap: 1rem;
     }
-    
+
     .material-info h3 .badge {
       font-size: 0.9rem;
       padding: 4px 12px;
@@ -319,23 +318,23 @@
       background: var(--primary);
       color: white;
     }
-    
+
     .material-property {
       display: flex;
       margin-bottom: 1.2rem;
     }
-    
+
     .property-label {
       flex: 0 0 120px;
       color: #a0a0a0;
       font-weight: 600;
     }
-    
+
     .property-value {
       flex: 1;
       font-weight: 500;
     }
-    
+
     .description {
       background: rgba(255, 255, 255, 0.05);
       padding: 1rem;
@@ -344,14 +343,14 @@
       margin-bottom: 1.5rem;
       font-style: italic;
     }
-    
+
     .location-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-top: 0.5rem;
     }
-    
+
     .location-tag {
       background: rgba(255, 255, 255, 0.1);
       padding: 4px 10px;
@@ -361,34 +360,34 @@
       align-items: center;
       gap: 5px;
     }
-    
+
     .location-tag i {
       color: var(--accent);
       font-size: 0.8rem;
     }
-    
+
     .empty-state {
       text-align: center;
       padding: 3rem 1rem;
       color: #a0a0a0;
     }
-    
+
     .empty-state i {
       font-size: 3rem;
       margin-bottom: 1rem;
       opacity: 0.5;
     }
-    
+
     .empty-state h3 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
-    
+
     .empty-state p {
       max-width: 500px;
       margin: 0 auto;
     }
-    
+
     .loader {
       display: none;
       justify-content: center;
@@ -402,11 +401,11 @@
       z-index: 100;
       backdrop-filter: blur(5px);
     }
-    
+
     .loader-content {
       text-align: center;
     }
-    
+
     .spinner {
       width: 50px;
       height: 50px;
@@ -416,58 +415,32 @@
       animation: spin 1s ease-in-out infinite;
       margin: 0 auto 1rem auto;
     }
-    
+
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
-    
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    
-/* Styles pour les badges de rareté */
-.rarity-common {
-  background-color: #8A8A8A !important;
-  color: white !important;
-}
 
-.rarity-uncommon {
-  background-color: #4CC9F0 !important;
-  color: white !important;
-}
+    .rarity-common { background-color: #8A8A8A !important; color: white !important; }
+    .rarity-uncommon { background-color: #4CC9F0 !important; color: white !important; }
+    .rarity-rare { background-color: #4361EE !important; color: white !important; }
+    .rarity-epic { background-color: #9D4EDD !important; color: white !important; }
+    .rarity-legendary { background-color: #F72585 !important; color: white !important; }
+    .rarity-ultimate { background: linear-gradient(to right, #FFD700, #FF8C00) !important; color: black !important; font-weight: bold !important; }
 
-.rarity-rare {
-  background-color: #4361EE !important;
-  color: white !important;
-}
+    .badge.rarity-common,
+    .badge.rarity-uncommon,
+    .badge.rarity-rare,
+    .badge.rarity-epic,
+    .badge.rarity-legendary,
+    .badge.rarity-ultimate {
+      background: inherit;
+    }
 
-.rarity-epic {
-  background-color: #9D4EDD !important;
-  color: white !important;
-}
-
-.rarity-legendary {
-  background-color: #F72585 !important;
-  color: white !important;
-}
-
-.rarity-ultimate {
-  background: linear-gradient(to right, #FFD700, #FF8C00) !important;
-  color: black !important;
-  font-weight: bold !important;
-}
-
-/* S'assurer que la classe spécifique remplace la classe générique */
-.badge.rarity-common,
-.badge.rarity-uncommon,
-.badge.rarity-rare,
-.badge.rarity-epic,
-.badge.rarity-legendary,
-.badge.rarity-ultimate {
-  background: inherit;
-}
-    
     .dark-theme-toggle {
       position: absolute;
       top: 0;
@@ -481,11 +454,11 @@
       opacity: 0.7;
       transition: opacity 0.3s ease;
     }
-    
+
     .dark-theme-toggle:hover {
       opacity: 1;
     }
-    
+
     footer {
       text-align: center;
       margin-top: 5rem;
@@ -493,13 +466,12 @@
       font-size: 0.9rem;
       color: #a0a0a0;
     }
-    
-    /* Signature Style */
+
     .signature {
       position: absolute;
       top: 20px;
       right: 20px;
-      font-family: 'Satisfy', cursive;
+      font-family: 'Montserrat', sans-serif; /* Changed to a modern font */
       font-size: 1.5rem;
       font-weight: 700;
       color: var(--accent);
@@ -511,8 +483,7 @@
       background-clip: text;
       color: transparent;
     }
-    
-    /* Ajustement pour très grands écrans */
+
     @media (min-width: 1400px) {
       .container {
         max-width: 1700px;
@@ -528,6 +499,11 @@
       <h1>Alchemist's Grimoire</h1>
       <p class="subtitle">Discover and study legendary materials of the realm</p>
     </header>
+
+    <div class="search-bar">
+      <input type="text" id="globalSearch" placeholder="Search all materials...">
+      <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
     
     <div class="material-sections">
       <div class="section-card">
@@ -538,9 +514,7 @@
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="select-dropdown">
-            <div class="select-options">
-              <!-- Options will be populated here -->
-            </div>
+            <div class="select-options"></div>
           </div>
         </div>
       </div>
@@ -553,9 +527,7 @@
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="select-dropdown">
-            <div class="select-options">
-              <!-- Options will be populated here -->
-            </div>
+            <div class="select-options"></div>
           </div>
         </div>
       </div>
@@ -568,9 +540,7 @@
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="select-dropdown">
-            <div class="select-options">
-              <!-- Options will be populated here -->
-            </div>
+            <div class="select-options"></div>
           </div>
         </div>
       </div>
@@ -583,9 +553,7 @@
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="select-dropdown">
-            <div class="select-options">
-              <!-- Options will be populated here -->
-            </div>
+            <div class="select-options"></div>
           </div>
         </div>
       </div>
@@ -595,7 +563,7 @@
       <div class="empty-state">
         <i class="fas fa-scroll"></i>
         <h3>No material selected</h3>
-        <p>Choose a material from one of the categories above to display its details.</p>
+        <p>Choose a material from one of the categories above or use the search bar to find a specific material.</p>
       </div>
     </div>
     
@@ -608,26 +576,19 @@
   </div>
   
   <footer>
-    &copy; 2025 Alchemist's Grimoire - The essential companion for adventurers
+    © 2025 Alchemist's Grimoire - The essential companion for adventurers
   </footer>
   
   <script>
-    // Global variables
     let materials = [];
-    
-// Fonction corrigée pour obtenir la classe de rareté
-function getRarityClass(rarity) {
-  if (!rarity) return 'rarity-common';
-  
-  const rarityLower = rarity.toLowerCase().trim();
-  
-  // Liste complète des raretés possibles
-  const validRarities = ['common', 'uncommon', 'rare', 'epic', 'legendary', 'ultimate'];
-  
-  // S'assurer que la rareté existe, sinon retourner common par défaut
-  return validRarities.includes(rarityLower) ? `rarity-${rarityLower}` : 'rarity-common';
-}
-    // Function to handle API fetch errors
+
+    function getRarityClass(rarity) {
+      if (!rarity) return 'rarity-common';
+      const rarityLower = rarity.toLowerCase().trim();
+      const validRarities = ['common', 'uncommon', 'rare', 'epic', 'legendary', 'ultimate'];
+      return validRarities.includes(rarityLower) ? `rarity-${rarityLower}` : 'rarity-common';
+    }
+
     function handleFetchError(error) {
       console.error('Error fetching materials:', error);
       document.getElementById('materialDetailsContainer').innerHTML = `
@@ -642,58 +603,113 @@ function getRarityClass(rarity) {
       `;
       hideLoader();
     }
-    
-    // Function to show loader
+
     function showLoader() {
       document.querySelector('.loader').style.display = 'flex';
     }
-    
-    // Function to hide loader
+
     function hideLoader() {
       document.querySelector('.loader').style.display = 'none';
     }
-    
-    // Custom select functionality
+
     function setupCustomSelects() {
       const customSelects = document.querySelectorAll('.custom-select');
-      
       customSelects.forEach(select => {
         const selectBtn = select.querySelector('.select-btn');
-        
-        // Toggle dropdown
         selectBtn.addEventListener('click', () => {
-          customSelects.forEach(s => {
-            if (s !== select) s.classList.remove('active');
-          });
+          customSelects.forEach(s => s !== select && s.classList.remove('active'));
           select.classList.toggle('active');
         });
-        
-        // Close dropdown when clicking outside
         document.addEventListener('click', (e) => {
-          if (!select.contains(e.target)) {
-            select.classList.remove('active');
-          }
+          if (!select.contains(e.target)) select.classList.remove('active');
         });
       });
     }
-    
-    // Function to populate selects with filtered materials
+
+    function setupGlobalSearch() {
+      const searchInput = document.getElementById('globalSearch');
+      const suggestionsDiv = document.getElementById('searchSuggestions');
+      let debounceTimeout;
+
+      searchInput.addEventListener('input', () => {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => {
+          const query = searchInput.value.trim().toLowerCase();
+          if (query.length >= 2) {
+            const filteredMaterials = materials.filter(m => m.name.toLowerCase().includes(query));
+            if (filteredMaterials.length > 0) {
+              suggestionsDiv.innerHTML = filteredMaterials.map(m => `
+                <div class="search-suggestion" data-name="${m.name}">${m.name}</div>
+              `).join('');
+              suggestionsDiv.style.display = 'block';
+            } else {
+              suggestionsDiv.innerHTML = '<div class="search-suggestion">No matches found</div>';
+              suggestionsDiv.style.display = 'block';
+            }
+          } else {
+            suggestionsDiv.style.display = 'none';
+          }
+
+          if (query === '') {
+            document.getElementById('materialDetailsContainer').innerHTML = `
+              <div class="empty-state">
+                <i class="fas fa-scroll"></i>
+                <h3>No material selected</h3>
+                <p>Choose a material from one of the categories above or use the search bar to find a specific material.</p>
+              </div>
+            `;
+            suggestionsDiv.style.display = 'none';
+            return;
+          }
+          const filteredMaterials = materials.filter(m => m.name.toLowerCase().includes(query));
+          if (filteredMaterials.length > 0) {
+            showMaterialDetails(filteredMaterials[0]);
+          } else {
+            document.getElementById('materialDetailsContainer').innerHTML = `
+              <div class="empty-state">
+                <i class="fas fa-search"></i>
+                <h3>No results found</h3>
+                <p>No materials match your search query.</p>
+              </div>
+            `;
+          }
+        }, 300);
+      });
+
+      // Handle suggestion click
+      suggestionsDiv.addEventListener('click', (e) => {
+        if (e.target.classList.contains('search-suggestion')) {
+          const selectedMaterial = materials.find(m => m.name === e.target.getAttribute('data-name'));
+          searchInput.value = selectedMaterial.name;
+          suggestionsDiv.style.display = 'none';
+          showMaterialDetails(selectedMaterial);
+        }
+      });
+
+      // Hide suggestions when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !suggestionsDiv.contains(e.target)) {
+          suggestionsDiv.style.display = 'none';
+        }
+      });
+    }
+
     function populateSelects() {
       const aperta = materials.filter(m => m.source === "aperta");
       const apertaLand = materials.filter(m => m.source === "aperta_land");
       const sd = materials.filter(m => m.source === "sd");
-      const land = materials.filter(m => m.source === "land"); // Ajout du filtre pour les matériaux "land"
+      const land = materials.filter(m => m.source === "land");
       
       addOptions("apertaSelect", aperta);
       addOptions("apertaLandSelect", apertaLand);
       addOptions("sdSelect", sd);
-      addOptions("landSelect", land); // Ajout des options pour le nouveau sélecteur
+      addOptions("landSelect", land);
       
       setupCustomSelects();
+      setupGlobalSearch();
       hideLoader();
     }
-    
-    // Function to add options to selects
+
     function addOptions(selectId, materialList) {
       const select = document.getElementById(selectId);
       const optionsContainer = select.querySelector('.select-options');
@@ -702,10 +718,7 @@ function getRarityClass(rarity) {
       optionsContainer.innerHTML = '';
       
       if (materialList.length === 0) {
-        const emptyOption = document.createElement('div');
-        emptyOption.className = 'select-option';
-        emptyOption.textContent = 'No materials available';
-        optionsContainer.appendChild(emptyOption);
+        optionsContainer.innerHTML = '<div class="select-option">No materials available</div>';
         return;
       }
       
@@ -716,106 +729,73 @@ function getRarityClass(rarity) {
           option.className = 'select-option';
           option.setAttribute('data-id', material.id);
           option.textContent = material.name;
-          
           option.addEventListener('click', () => {
             selectBtn.textContent = material.name;
             select.classList.remove('active');
             showMaterialDetails(material);
           });
-          
           optionsContainer.appendChild(option);
         });
     }
-    
-    // Function to show material details
+
     function showMaterialDetails(material) {
       if (!material) {
         document.getElementById('materialDetailsContainer').innerHTML = `
           <div class="empty-state">
             <i class="fas fa-scroll"></i>
             <h3>No material selected</h3>
-            <p>Choose a material from one of the categories above to display its details.</p>
+            <p>Choose a material from one of the categories above or use the search bar to find a specific material.</p>
           </div>
         `;
         return;
       }
       
-      // Get material image URL using its ID
       const materialImageUrl = `https://game.nftbattleminers.com/img/arcadex/2x/${material.id}.png?v=9`;
       const rarityClass = getRarityClass(material.rarity);
-      
-      // Create locations tags
-      let locationTags = '';
-      if (material.locations && material.locations.length > 0) {
-        material.locations.forEach(location => {
-          locationTags += `<div class="location-tag"><i class="fas fa-map-marker-alt"></i> ${location}</div>`;
-        });
-      }
-      
-      // Create zones tags
-      let zonesTags = '';
-      if (material.zones && material.zones.length > 0) {
-        material.zones.forEach(zone => {
-          zonesTags += `<div class="location-tag"><i class="fas fa-layer-group"></i> ${zone}</div>`;
-        });
-      }
+      let locationTags = material.locations?.map(location => `
+        <div class="location-tag"><i class="fas fa-map-marker-alt"></i> ${location}</div>
+      `).join('') || '';
+      let zonesTags = material.zones?.map(zone => `
+        <div class="location-tag"><i class="fas fa-layer-group"></i> ${zone}</div>
+      `).join('') || '';
       
       document.getElementById('materialDetailsContainer').innerHTML = `
         <div class="material-card">
           <div class="material-image">
-            <img src="${materialImageUrl}" alt="${material.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/120/f0f0f0?text=${material.id}';">
+            <img src="${materialImageUrl}" alt="${material.name}" onerror="this.src='https://via.placeholder.com/120/f0f0f0?text=${material.id}';">
           </div>
           <div class="material-info">
             <h3>
               ${material.name} 
               <span class="badge ${rarityClass}">${material.rarity || 'Common'}</span>
             </h3>
-            
-            ${material.description ? `
-              <div class="description">
-                ${material.description}
-              </div>
-            ` : ''}
-            
+            ${material.description ? `<div class="description">${material.description}</div>` : ''}
             <div class="material-property">
               <div class="property-label">Type</div>
               <div class="property-value">${material.type || 'Unknown'}</div>
             </div>
-            
             <div class="material-property">
               <div class="property-label">Source</div>
               <div class="property-value">${formatSource(material.source)}</div>
             </div>
-            
-            ${material.locations && material.locations.length > 0 ? `
+            ${material.locations?.length ? `
               <div class="material-property">
                 <div class="property-label">Locations</div>
-                <div class="property-value">
-                  <div class="location-tags">
-                    ${locationTags}
-                  </div>
-                </div>
+                <div class="property-value"><div class="location-tags">${locationTags}</div></div>
               </div>
             ` : ''}
-            
-            ${material.zones && material.zones.length > 0 ? `
+            ${material.zones?.length ? `
               <div class="material-property">
                 <div class="property-label">Zones</div>
-                <div class="property-value">
-                  <div class="location-tags">
-                    ${zonesTags}
-                  </div>
-                </div>
+                <div class="property-value"><div class="location-tags">${zonesTags}</div></div>
               </div>
             ` : ''}
-            
             ${material.land_location ? `
               <div class="material-property">
                 <div class="property-label">Land Location</div>
                 <div class="property-value">${material.land_location}</div>
               </div>
             ` : ''}
-            
             <div class="material-property">
               <div class="property-label">ID</div>
               <div class="property-value">${material.id}</div>
@@ -824,35 +804,22 @@ function getRarityClass(rarity) {
         </div>
       `;
     }
-    
-    // Function to format source name
+
     function formatSource(source) {
-      if (!source) return 'Unknown';
-      
-      switch(source) {
-        case 'aperta':
-          return 'Aperta';
-        case 'aperta_land':
-          return 'Aperta + Land';
-        case 'sd':
-          return 'SD';
-        case 'land':
-          return 'Land';
-        default:
-          return source;
-      }
+      const sourceMap = {
+        aperta: 'Aperta',
+        aperta_land: 'Aperta + Land',
+        sd: 'SD',
+        land: 'Land'
+      };
+      return sourceMap[source] || 'Unknown';
     }
-    
-    // Initialize application
+
     document.addEventListener('DOMContentLoaded', () => {
       showLoader();
-      
-      // Replace with your actual API endpoint
       fetch('https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/enhanced_materials.json')
         .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
+          if (!response.ok) throw new Error('Network response was not ok');
           return response.json();
         })
         .then(data => {
