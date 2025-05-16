@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alchemist's Grimoire - NFT Gaming Material Finder</title>
+  <title>Alchemist's Grimoire - Material Finder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> <!-- Modern font for signature -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     :root {
@@ -79,14 +79,31 @@
       margin-bottom: 1.5rem;
     }
 
+    .signature {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transform: rotate(-5deg);
+      z-index: 10;
+      background: linear-gradient(to right, var(--primary-light), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
     .search-bar {
       margin-bottom: 2rem;
       text-align: center;
     }
 
     .search-bar input {
-      width: 50%; /* Reduced width to avoid spanning full container */
-      max-width: 400px; /* Set a max width for larger screens */
+      width: 50%;
+      max-width: 400px;
       padding: 12px 16px;
       background: var(--card-hover);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -95,7 +112,7 @@
       font-size: 1rem;
       outline: none;
       transition: border-color 0.3s ease;
-      margin: 0 auto; /* Center the input */
+      margin: 0 auto;
     }
 
     .search-bar input:focus {
@@ -105,8 +122,8 @@
     .search-suggestions {
       position: absolute;
       top: 100%;
-      left: 25%; /* Align with the centered input */
-      width: 50%; /* Match the input width */
+      left: 25%;
+      width: 50%;
       max-width: 400px;
       background: var(--card-hover);
       border-radius: 8px;
@@ -467,21 +484,47 @@
       color: #a0a0a0;
     }
 
-    .signature {
+    .isotonic-finder-button {
       position: absolute;
       top: 20px;
-      right: 20px;
-      font-family: 'Montserrat', sans-serif; /* Changed to a modern font */
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--accent);
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      transform: rotate(-5deg);
-      z-index: 10;
+      left: 20px;
+      padding: 10px 20px;
       background: linear-gradient(to right, var(--primary-light), var(--accent));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      border: none;
+      border-radius: 8px;
+      color: var(--light);
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 10;
+    }
+
+    .isotonic-finder-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .isotonic-finder-button i {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .isotonic-finder-button {
+        top: 10px;
+        left: 10px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+
+      .signature {
+        top: 10px;
+        right: 10px;
+        font-size: 1.2rem;
+      }
     }
 
     @media (min-width: 1400px) {
@@ -493,6 +536,9 @@
 </head>
 <body>
   <div class="container">
+    <button class="isotonic-finder-button" onclick="window.location.href='https://superbuu38.github.io/superbuu/isotonic.html'">
+      <i class="fas fa-flask"></i> Isotonic Finder
+    </button>
     <div class="signature">Made by SuperBuu</div>
     
     <header>
@@ -676,7 +722,6 @@
         }, 300);
       });
 
-      // Handle suggestion click
       suggestionsDiv.addEventListener('click', (e) => {
         if (e.target.classList.contains('search-suggestion')) {
           const selectedMaterial = materials.find(m => m.name === e.target.getAttribute('data-name'));
@@ -686,7 +731,6 @@
         }
       });
 
-      // Hide suggestions when clicking outside
       document.addEventListener('click', (e) => {
         if (!searchInput.contains(e.target) && !suggestionsDiv.contains(e.target)) {
           suggestionsDiv.style.display = 'none';
