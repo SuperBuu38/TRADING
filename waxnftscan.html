@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>WAX NFT SCAN</title>
+<script src=https://cdn.tailwindcss.com></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700&family=VT323&display=swap" rel=stylesheet>
+<style>body{font-family:'JetBrains Mono',monospace;background-color:#000;color:#fff;line-height:1.2}.container{max-width:800px;margin:0 auto;padding:1rem}.input-field{background-color:#111;border:1px solid #0f0;color:#0f0;padding:.25rem .5rem;font-size:.75rem;width:100%;max-width:200px;box-shadow:0 0 5px rgba(0,255,0,.2)}.input-field:focus{outline:0;box-shadow:0 0 8px rgba(0,255,0,.5)}.btn{background-color:#0f0;color:#000;padding:.25rem .5rem;font-size:.75rem;text-transform:uppercase;border:none;cursor:pointer;box-shadow:0 0 5px rgba(0,255,0,.3)}.btn:hover{background-color:#0c0}.radio-group{display:flex;flex-direction:column;gap:.25rem;font-size:.75rem}.radio-group label{display:flex;align-items:center;gap:.5rem;color:#0f0}.table{width:100%;font-size:.7rem;border-collapse:collapse}.table th{background-color:#111;color:#0f0;text-transform:uppercase;padding:.25rem;text-align:left;cursor:pointer}.table th:hover{background-color:#222}.table td{padding:.25rem;border-bottom:1px solid #222}.schema-header td{background-color:#111;color:#0f0;font-weight:700;padding:.5rem .25rem}.rarity-common{color:#fff}.rarity-rare{color:#0f0}.rarity-epic{color:#a0f}.rarity-legendary{color:#ff0}.rarity-ultimate{color:red}.rarity-unknown{color:#777}.totals{position:fixed;top:.5rem;right:.5rem;background-color:rgba(0,0,0,.8);border:1px solid #0f0;padding:.5rem;max-width:200px;max-height:70vh;overflow-y:auto;font-size:.65rem;box-shadow:0 0 5px rgba(0,255,0,.2)}.totals h3{font-size:.8rem;color:#0f0;margin-bottom:.25rem}.totals p{margin:.25rem 0}.totals .rarity-details{font-size:.6rem;color:#0f0;margin-top:.1rem}.toggle-btn{color:#0f0;cursor:pointer;text-decoration:underline;font-size:.65rem}.spinner{border:2px solid #0f0;border-top:2px solid #000;border-radius:50%;width:16px;height:16px;animation:spin 1s linear infinite;margin:.5rem auto}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.error{color:red;font-size:.7rem;margin-top:.25rem}.signature{text-align:center;font-size:.8rem;color:#0f0;margin-bottom:.5rem;position:relative;overflow:hidden}.signature-text{display:inline-block;white-space:pre}.discord-handle{font-size:.75rem;color:#0f0;display:flex;justify-content:center;align-items:center;gap:.25rem;margin-top:.2rem;text-decoration:none}.discord-handle:hover{text-decoration:underline;color:#0c0}.discord-logo{width:16px;height:16px;filter:brightness(0) invert(1)}.discord-handle:hover .discord-logo{filter:brightness(0) invert(1) hue-rotate(180deg)}.cursor{display:inline-block;width:6px;height:.8rem;background-color:#0f0;animation:blink .7s step-end infinite;vertical-align:middle}@keyframes blink{50%{opacity:0}}.modal{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:1000}.modal-content{background-color:#111;border:1px solid #0f0;padding:1rem;text-align:center;box-shadow:0 0 10px rgba(0,255,0,.3);font-size:.75rem;color:#0f0}.modal-content p{margin-bottom:.5rem}.modal-content .btn{margin:0 .5rem}.guide{font-size:.75rem;color:#0f0;margin-bottom:1rem}.guide ol{list-style:decimal;margin-left:1.5rem}.guide li{margin-bottom:.25rem;text-transform:uppercase}.title{font-family:Orbitron,VT323,'JetBrains Mono',monospace}.hidden{display:none}</style>
+</head>
+<body>
+<div class=signature>
+<span id=signature-text class=signature-text></span>
+<span id=cursor class=cursor></span>
+<a href=https://discord.com/users/superbuu38 target=_blank class=discord-handle>
+<img src=https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg alt=Discord class=discord-logo>
+superbuu38
+</a>
+</div>
+<div class=container>
+<h1 class="text-2xl font-bold text-green-500 mb-2 text-center title">WAX NFT SCAN</h1>
+<div class=guide>
+<ol>
+<li>Enter your WAX wallet address (e.g., abcde.wam)</li>
+<li>Click "NEXT" to proceed</li>
+<li>Select battleminers or "Other" and enter collection (e.g., alien.worlds)</li>
+<li>Click "SCAN NFTS" to view your NFTs</li>
+<li>Sort table by columns; toggle totals with HIDE/SHOW</li>
+</ol>
+</div>
+<div id=step1 class=mb-4>
+<label for=wallet class="block text-xs font-bold text-green-500 mb-1 uppercase">
+Wallet Address
+</label>
+<input id=wallet class=input-field>
+<button onclick=goToStep2() class="btn mtskyblue-2">
+Next
+</button>
+<p id=wallet-error class="error hidden">Enter a valid wallet address.</p>
+</div>
+<div id=step2 class="mb-4 hidden">
+<label class="block text-xs font-bold text-green-500 mb-1 uppercase">
+Collection
+</label>
+<div class=radio-group>
+<label>
+<input type=radio name=collection value=battleminers checked onclick=toggleCollectionInput()>
+battleminers
+</label>
+<label>
+<input type=radio name=collection value=other onclick=toggleCollectionInput()>
+Other
+</label>
+<input id=other-collection placeholder="e.g., alien.worlds" class="input-field hidden">
+</div>
+<button onclick=listNFTs() class="btn mt-2">
+Scan NFTs
+</button>
+<button onclick=goBackToStep1() class="btn mt-2 ml-2">
+Back
+</button>
+<button onclick=resetForm() class="btn mt-2 ml-2">
+Reset
+</button>
+<p id=collection-error class="error hidden">Select or enter a collection.</p>
+</div>
+<div id=loading class=hidden>
+<div class=spinner></div>
+</div>
+<div id=result class=hidden>
+<table class=table>
+<thead>
+<tr>
+<th onclick=sortTable(0)>Schema</th>
+<th onclick=sortTable(1)>NFT Name</th>
+<th onclick=sortTable(2)>Rarity</th>
+<th onclick=sortTable(3)>Copies</th>
+</tr>
+</thead>
+<tbody id=table-body></tbody>
+</table>
+</div>
+</div>
+<div id=totals-container class="totals hidden">
+<h3>TOTALS</h3>
+<span class=toggle-btn onclick=toggleTotals()>Hide</span>
+<div id=totals-content></div>
+</div>
+<div id=donation-modal class="modal hidden">
+<div class=modal-content>
+<p>SUPPORT THE PROJECT?<br>DONATE WAX OR NFTS TO SVTSE.WAM</p>
+<button class=btn onclick=openDonation()>Yes</button>
+<button class=btn onclick=closeDonationModal()>No</button>
+</div>
+</div>
+<div id=thank-you-modal class="modal hidden">
+<div class=modal-content>
+<p>THANK YOU!</p>
+<button class=btn onclick=closeThankYouModal()>Close</button>
+</div>
+</div>
+<div id=next-time-modal class="modal hidden">
+<div class=modal-content>
+<p>OK BRO, NEXT TIME!</p>
+<button class=btn onclick=closeNextTimeModal()>Close</button>
+</div>
+</div>
+<script>
+// Block F12 and developer tools shortcuts
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'F12' || event.keyCode === 123) {
+        event.preventDefault();
+        return false;
+    }
+    // Block other common developer tools shortcuts (e.g., Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C)
+    if (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'J' || event.key === 'C')) {
+        event.preventDefault();
+        return false;
+    }
+});
+
+// Block right-click context menu
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    return false;
+});
+
+let nftData=[],currentSortColumn=-1,sortDirection=1;const rarityOrder=["Common","Rare","Epic","Legendary","Ultimate"],signatureText="MADE BY SUPERBUU";let charIndex=0;function typeSignature(){const e=document.getElementById("signature-text");charIndex<signatureText.length?(e.textContent+=signatureText[charIndex],charIndex++,setTimeout(typeSignature,100)):document.getElementById("cursor").classList.add("hidden")}function goToStep2(){const e=document.getElementById("wallet").value.trim(),t=document.getElementById("wallet-error");!e||e.length<3?t.classList.remove("hidden"):(t.classList.add("hidden"),document.getElementById("step1").classList.add("hidden"),document.getElementById("step2").classList.remove("hidden"))}function goBackToStep1(){document.getElementById("step2").classList.add("hidden"),document.getElementById("step1").classList.remove("hidden"),document.getElementById("wallet").focus()}function resetForm(){document.getElementById("wallet").value="",document.querySelector('input[name="collection"][value="battleminers"]').checked=!0,document.getElementById("other-collection").value="",document.getElementById("other-collection").classList.add("hidden"),document.getElementById("step2").classList.add("hidden"),document.getElementById("step1").classList.remove("hidden"),document.getElementById("result").classList.add("hidden"),document.getElementById("totals-container").classList.add("hidden"),document.getElementById("table-body").innerHTML="",nftData=[],document.getElementById("wallet").focus()}function toggleCollectionInput(){const e=document.getElementById("other-collection"),t=document.querySelector('input[value="other"]');e.classList.toggle("hidden",!t.checked),t.checked&&e.focus()}function showDonationModal(){const e=(new Date).toISOString().split("T")[0];localStorage.getItem("lastDonationPrompt")!==e&&(document.getElementById("donation-modal").classList.remove("hidden"),localStorage.setItem("lastDonationPrompt",e))}function closeDonationModal(){document.getElementById("donation-modal").classList.add("hidden"),document.getElementById("next-time-modal").classList.remove("hidden")}function openDonation(){document.getElementById("donation-modal").classList.add("hidden"),document.getElementById("thank-you-modal").classList.remove("hidden")}function closeThankYouModal(){document.getElementById("thank-you-modal").classList.add("hidden")}function closeNextTimeModal(){document.getElementById("next-time-modal").classList.add("hidden")}async function listNFTs(){const e=document.getElementById("wallet").value.trim(),t=document.querySelector('input[name="collection"]:checked'),n=document.getElementById("other-collection").value.trim(),o=document.getElementById("collection-error");let d=t.value;if("other"===d){if(!n)return void o.classList.remove("hidden");d=n}o.classList.add("hidden"),document.getElementById("loading").classList.remove("hidden"),document.getElementById("table-body").innerHTML="",document.getElementById("totals-content").innerHTML="",document.getElementById("result").classList.remove("hidden"),document.getElementById("totals-container").classList.remove("hidden");try{let t=1;const n=100;let o=!0;const a={},r={};for(;o;){const s=await fetch(`https://wax.api.atomicassets.io/atomicassets/v1/assets?owner=${encodeURIComponent(e)}&collection_name=${encodeURIComponent(d)}&page=${t}&limit=${n}`),c=await s.json();if(!c.success||!c.data)throw new Error("ERROR FETCHING DATA");for(const e of c.data){const t=e.schema.schema_name,n=e.data.name||"NO NAME",o=e.data.rarity||"UNKNOWN",d=`${t}|${n}|${o}`;a[d]=a[d]||{schema:t,name:n,rarity:o,copies:0},a[d].copies++,r[t]=r[t]||{total:0,rarities:{}},r[t].total++,r[t].rarities[o]=(r[t].rarities[o]||0)+1}c.data.length<n?o=!1:t++}nftData=Object.values(a).sort(((e,t)=>{if(e.schema!==t.schema)return e.schema.localeCompare(t.schema);const n=-1===rarityOrder.indexOf(e.rarity)?999:rarityOrder.indexOf(e.rarity),o=-1===rarityOrder.indexOf(t.rarity)?999:rarityOrder.indexOf(t.rarity);return n!==o?n-o:e.name.localeCompare(t.name)})),renderTotals(r),renderTable(),setTimeout(showDonationModal,1e4)}catch(e){document.getElementById("table-body").innerHTML=`\n                    <tr><td colspan="4" class="p-2 text-center text-red-500">\n                        ERROR: ${e.message||"UNABLE TO FETCH DATA"}\n                    </td></tr>`,document.getElementById("totals-content").innerHTML='<p class="text-red-500">ERROR LOADING TOTALS</p>'}finally{document.getElementById("loading").classList.add("hidden")}}function renderTable(){const e=document.getElementById("table-body");e.innerHTML="";let t="";nftData.forEach((n=>{n.schema!==t&&(t=n.schema,e.innerHTML+=`\n                        <tr class="schema-header">\n                            <td colspan="4">${t}</td>\n                        </tr>`);const o="rarity-"+(rarityOrder.includes(n.rarity)?n.rarity.toLowerCase():"unknown");e.innerHTML+=`\n                    <tr>\n                        <td>${n.schema}</td>\n                        <td>${n.name}</td>\n                        <td class="${o}">${n.rarity}</td>\n                        <td>${n.copies}</td>\n                    </tr>`})),0===nftData.length&&(e.innerHTML='\n                    <tr><td colspan="4" class="p-2 text-center">\n                        NO NFTS FOUND\n                    </td></tr>')}function renderTotals(e){const t=document.getElementById("totals-content");let n="";const o=Object.keys(e).sort();0===o.length?n="<p>NO NFTS FOUND</p>":o.forEach((t=>{const o=e[t].rarities,d=Object.keys(o).filter((e=>o[e]>0)).sort(((e,t)=>(-1===rarityOrder.indexOf(e)?999:rarityOrder.indexOf(e))-(-1===rarityOrder.indexOf(t)?999:rarityOrder.indexOf(t)))).map((e=>`${e.charAt(0)}=${o[e]}`)).join(", ");n+=`\n                        <p>TOTAL ${t.toUpperCase()} = ${e[t].total}</p>\n                        <div class="rarity-details">${d}</div>`})),t.innerHTML=n}function toggleTotals(){const e=document.getElementById("totals-content"),t=document.querySelector(".toggle-btn");e.classList.contains("hidden")?(e.classList.remove("hidden"),t.textContent="HIDE"):(e.classList.add("hidden"),t.textContent="SHOW")}function sortTable(e){currentSortColumn===e?sortDirection*=-1:(currentSortColumn=e,sortDirection=1);const t=["schema","name","rarity","copies"];nftData.sort(((n,o)=>{let d=n[t[e]],a=o[t[e]];if(2===e){const e=-1===rarityOrder.indexOf(d)?999:rarityOrder.indexOf(d),t=-1===rarityOrder.indexOf(a)?999:rarityOrder.indexOf(a);return sortDirection*(e-t)}return 3===e?(d=parseInt(d),a=parseInt(a),sortDirection*(d-a)):sortDirection*d.localeCompare(a)})),renderTable()}window.onload=typeSignature
+</script>
+</body>
+</html>
