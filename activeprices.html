@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Price Tracker - JSON</title>
+</head>
+<body>
+    <div id="output" style="white-space: pre; font-family: monospace;"></div>
+
+    <script>
+        const RARITIES = ['Common', 'Rare', 'Epic', 'Legendary', 'Ultimate'];
+        const BASE_URL = 'https://wax.api.atomicassets.io/atomicmarket/v1/sales/templates';
+        
+        async function fetchSingleNFT(rarity, level) {
+            const params = new URLSearchParams({
+                symbol: 'WAX',
+                collection_name: 'battleminers',
+                schema_name: 'active',
+                page: '1',
+                limit: '100',
+                order: 'asc',
+                sort: 'price',
+                'immutable_data:text.rarity': rarity,
+                'immutable_data:text.level': level.toString()
+            });
+
+            try {
+                const response = await fetch(`${BASE_URL}?${params}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                return {
+                    rarity,
+                    level,
+                    success: true,
+                    data: data.data && data.data.length > 0 ? data.data[0] : null
+                };
+            } catch (error) {
+                return {
+                    rarity,
+                    level,
+                    success: false,
+                    error: error.message
+                };
+            }
+        }
+
+        async function fetchNFTPrices() {
+            const output = document.getElementById('output');
+            output.textContent = 'Fetching data...';
+            
+            // Create all promises at once
+            const promises = [];
+            for (const rarity of RARITIES) {
+                for (let level = 1; level <= 5; level++) {
+                    promises.push(fetchSingleNFT(rarity, level));
+                }
+            }
+
+            // Wait for all promises to resolve
+            const results = await Promise.all(promises);
+            
+            // Process results into JSON format
+            const jsonData = [];
+            
+            for (const result of results) {
+                let itemData;
+                
+                if (result.success && result.data) {
+                    const price = (parseFloat(result.data.price.amount) / 100000000).toFixed(4);
+                    const nftName = result.data.assets?.[0]?.data?.name || `${result.rarity} Level ${result.level}`;
+                    
+                    itemData = {
+                        rarity: result.rarity,
+                        level: result.level,
+                        name: nftName,
+                        price: price,
+                        seller: result.data.seller,
+                        sale_id: result.data.sale_id,
+                        timestamp: new Date().toISOString(),
+                        status: "Success",
+                        sale_link: `https://atomichub.io/market/sale/wax-mainnet/${result.data.sale_id}`
+                    };
+                } else if (result.success) {
+                    itemData = {
+                        rarity: result.rarity,
+                        level: result.level,
+                        name: `${result.rarity} Level ${result.level}`,
+                        price: null,
+                        seller: null,
+                        sale_id: null,
+                        timestamp: new Date().toISOString(),
+                        status: "No listings",
+                        sale_link: null
+                    };
+                } else {
+                    itemData = {
+                        rarity: result.rarity,
+                        level: result.level,
+                        error: result.error,
+                        timestamp: new Date().toISOString(),
+                        status: "Error"
+                    };
+                }
+                
+                jsonData.push(itemData);
+            }
+            
+            // Display the JSON data
+            output.textContent = JSON.stringify(jsonData, null, 2);
+            
+            // Optional: if you want to allow the data to be downloaded
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(jsonData));
+            console.log("Data ready. Access the JSON data via the JavaScript console or copy from the page.");
+            console.log("To download, run: const a = document.createElement('a'); a.href = '" + dataStr + "'; a.download = 'ac_price_data.json'; a.click();");
+            
+            return jsonData; // Return the data to make it available in the console
+        }
+
+        // Execute the function when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            window.priceData = fetchNFTPrices();
+        });
+    </script>
+</body>
+</html>
