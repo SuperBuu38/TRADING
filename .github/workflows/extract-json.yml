@@ -1,23 +1,25 @@
 name: Extract JSON from HTML
 on:
-  workflow_dispatch:  # Permet de le lancer manuellement
+  workflow_dispatch:  # Allows manual triggering
 jobs:
   extract:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
-    
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}  # Use GITHUB_TOKEN for authentication
+
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '20'
-    
+
     - name: Install Puppeteer
       run: |
         npm init -y
         npm install puppeteer
-    
+
     - name: Run Puppeteer to extract JSON
       run: |
         cat > extract.js << 'EOL'
@@ -28,35 +30,35 @@ jobs:
         (async () => {
           try {
             const browser = await puppeteer.launch({ 
-              headless: 'new',  // 'new' est recommandé au lieu de true
+              headless: 'new',
               args: ['--no-sandbox', '--disable-setuid-sandbox'] 
             });
             
             const page = await browser.newPage();
             const filePath = path.join(process.cwd(), 'activeprices.html');
             
-            console.log(`Ouverture du fichier: ${filePath}`);
+            console.log(`Opening file: ${filePath}`);
             await page.goto('file://' + filePath, { waitUntil: 'networkidle0' });
             
-            console.log('Attente du sélecteur #output');
+            console.log('Waiting for selector #output');
             await page.waitForSelector('#output', { timeout: 30000 });
             
             const jsonText = await page.$eval('#output', el => el.textContent.trim());
-            console.log('JSON extrait avec succès, écriture dans data.json');
+            console.log('JSON extracted successfully, writing to data.json');
             
             fs.writeFileSync('data.json', jsonText);
-            console.log('Fichier data.json créé avec succès');
+            console.log('File data.json created successfully');
             
             await browser.close();
           } catch (error) {
-            console.error('Erreur lors de l\'extraction:', error);
+            console.error('Error during extraction:', error);
             process.exit(1);
           }
         })();
         EOL
         
         node extract.js
-    
+
     - name: Commit and push data.json
       run: |
         git config --global user.name 'github-actions'
@@ -64,3 +66,5 @@ jobs:
         git add data.json
         git commit -m "Update JSON from HTML execution" || echo "No changes to commit"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass GITHUB_TOKEN to authenticate push
