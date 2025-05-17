@@ -1,0 +1,49 @@
+name: Extract JSON from HTML
+
+on:
+  workflow_dispatch:  # Permet de le lancer manuellement
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install Puppeteer
+      run: |
+        npm init -y
+        npm install puppeteer
+
+    - name: Run Puppeteer to extract JSON
+      run: |
+        echo "
+        const puppeteer = require('puppeteer');
+        const fs = require('fs');
+
+        (async () => {
+          const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+          const page = await browser.newPage();
+          await page.goto('file://' + process.cwd() + '/activeprices.html', { waitUntil: 'networkidle0' });
+          await page.waitForSelector('#output');
+          const jsonText = await page.$eval('#output', el => el.textContent.trim());
+          fs.writeFileSync('data.json', jsonText);
+          await browser.close();
+        })();
+        " > extract.js
+
+        node extract.js
+
+    - name: Commit and push data.json
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'actions@github.com'
+        git add data.json
+        git commit -m "Update JSON from HTML execution" || echo "No changes to commit"
+        git push
