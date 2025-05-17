@@ -1,45 +1,62 @@
 name: Extract JSON from HTML
-
 on:
   workflow_dispatch:  # Permet de le lancer manuellement
-
 jobs:
   extract:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
-
+    
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '20'
-
+    
     - name: Install Puppeteer
       run: |
         npm init -y
         npm install puppeteer
-
+    
     - name: Run Puppeteer to extract JSON
       run: |
-        echo "
+        cat > extract.js << 'EOL'
         const puppeteer = require('puppeteer');
         const fs = require('fs');
+        const path = require('path');
 
         (async () => {
-          const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
-          const page = await browser.newPage();
-          await page.goto('file://' + process.cwd() + '/activeprices.html', { waitUntil: 'networkidle0' });
-          await page.waitForSelector('#output');
-          const jsonText = await page.$eval('#output', el => el.textContent.trim());
-          fs.writeFileSync('data.json', jsonText);
-          await browser.close();
+          try {
+            const browser = await puppeteer.launch({ 
+              headless: 'new',  // 'new' est recommandé au lieu de true
+              args: ['--no-sandbox', '--disable-setuid-sandbox'] 
+            });
+            
+            const page = await browser.newPage();
+            const filePath = path.join(process.cwd(), 'activeprices.html');
+            
+            console.log(`Ouverture du fichier: ${filePath}`);
+            await page.goto('file://' + filePath, { waitUntil: 'networkidle0' });
+            
+            console.log('Attente du sélecteur #output');
+            await page.waitForSelector('#output', { timeout: 30000 });
+            
+            const jsonText = await page.$eval('#output', el => el.textContent.trim());
+            console.log('JSON extrait avec succès, écriture dans data.json');
+            
+            fs.writeFileSync('data.json', jsonText);
+            console.log('Fichier data.json créé avec succès');
+            
+            await browser.close();
+          } catch (error) {
+            console.error('Erreur lors de l\'extraction:', error);
+            process.exit(1);
+          }
         })();
-        " > extract.js
-
+        EOL
+        
         node extract.js
-
+    
     - name: Commit and push data.json
       run: |
         git config --global user.name 'github-actions'
