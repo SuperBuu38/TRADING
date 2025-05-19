@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBM NFTs Price Tracker</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --background-color: #f5f6fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .table-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .global-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .rarity-common { background-color: #f3f3f3; }
+        .rarity-rare { background-color: #e6f3ff; }
+        .rarity-epic { background-color: #f0e6ff; }
+        .rarity-legendary { background-color: #fff2e6; }
+        .rarity-ultimate { background-color: #e6ffe6; }
+
+        .lowest-price {
+            background-color: #ffe6e6;
+            font-weight: bold;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+
+        .error {
+            color: #e74c3c;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="global-header">
+            <h1>NBM NFTs Price Tracker</h1>
+            <div>
+                <button id="refreshButton" onclick="refreshAll()">Refresh All</button>
+                <button id="testSoundButton" onclick="testSound()">Test Sound</button>
+            </div>
+        </div>
+        <div class="table-container">
+            <h2>Active NFTs</h2>
+            <div id="loadingActive" class="loading">Loading data...</div>
+            <table id="priceTableActive">
+                <thead>
+                    <tr>
+                        <th>Rarity</th>
+                        <th>Level</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Seller</th>
+                        <th>Listing Time</th>
+                        <th>Sale Link</th>
+                    </tr>
+                </thead>
+                <tbody id="priceTableBodyActive"></tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h2>Lands NFTs</h2>
+            <div id="loadingLands" class="loading">Loading data...</div>
+            <table id="priceTableLands">
+                <thead>
+                    <tr>
+                        <th>Rarity</th>
+                        <th>Level</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Seller</th>
+                        <th>Listing Time</th>
+                        <th>Sale Link</th>
+                    </tr>
+                </thead>
+                <tbody id="priceTableBodyLands"></tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h2>Construction NFTs</h2>
+            <div id="loadingConstruction" class="loading">Loading data...</div>
+            <table id="priceTableConstruction">
+                <thead>
+                    <tr>
+                        <th>Rarity</th>
+                        <th>Level</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Seller</th>
+                        <th>Listing Time</th>
+                        <th>Sale Link</th>
+                    </tr>
+                </thead>
+                <tbody id="priceTableBodyConstruction"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <audio id="alertSound" src="https://www.soundjay.com/buttons/beep-01a.mp3" preload="auto"></audio>
+
+    <script>
+        const RARITIES = ['Common', 'Rare', 'Epic', 'Legendary', 'Ultimate'];
+        const SCHEMAS = ['active', 'lands', 'construction'];
+        const BASE_URL = 'https://wax.api.atomicassets.io/atomicmarket/v1/sales/templates';
+        let lowestPricesHistory = {
+            active: {},
+            lands: {},
+            construction: {}
+        }; // Store historical lowest prices per rarity and schema
+        let previousData = {
+            active: {},
+            lands: {},
+            construction: {}
+        }; // Store previous table data per schema, rarity, and level
+
+        async function fetchSingleNFT(rarity, level, schemaName) {
+            const params = new URLSearchParams({
+                symbol: 'WAX',
+                collection_name: 'battleminers',
+                schema_name: schemaName,
+                page: '1',
+                limit: '100',
+                order: 'asc',
+                sort: 'price',
+                'immutable_data:text.rarity': rarity,
+                'immutable_data:text.level': level.toString()
+            });
+
+            try {
+                const response = await fetch(`${BASE_URL}?${params}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                return {
+                    rarity,
+                    level,
+                    success: true,
+                    data: data.data && data.data.length > 0 ? data.data[0] : null
+                };
+            } catch (error) {
+                return {
+                    rarity,
+                    level,
+                    success: false,
+                    error: error.message
+                };
+            }
+        }
+
+        function testSound() {
+            const audio = document.getElementById('alertSound');
+            audio.play().catch(error => console.error('Error playing test sound:', error));
+        }
+
+        async function fetchNFTPrices(schemaName) {
+            const button = document.getElementById('refreshButton');
+            const loading = document.getElementById(`loading${schemaName.charAt(0).toUpperCase() + schemaName.slice(1)}`);
+            const tableBody = document.getElementById(`priceTableBody${schemaName.charAt(0).toUpperCase() + schemaName.slice(1)}`);
+            
+            button.disabled = true;
+            loading.style.display = 'block';
+
+            // Create all promises at once
+            const promises = [];
+            for (const rarity of RARITIES) {
+                for (let level = 1; level <= 5; level++) {
+                    promises.push(fetchSingleNFT(rarity, level, schemaName));
+                }
+            }
+
+            // Wait for all promises to resolve
+            const results = await Promise.all(promises);
+
+            // Group results by rarity
+            const resultsByRarity = {};
+            RARITIES.forEach(rarity => {
+                resultsByRarity[rarity] = results.filter(r => r.rarity === rarity && r.success && r.data && r.data.price);
+            });
+
+            // Find lowest price for each rarity and check for alerts
+            const lowestPrices = {};
+            for (const rarity of RARITIES) {
+                const validResults = resultsByRarity[rarity].filter(r => r.data.price.amount);
+                if (validResults.length > 0) {
+                    const minPrice = Math.min(...validResults.map(r => parseFloat(r.data.price.amount)));
+                    lowestPrices[rarity] = minPrice;
+
+                    // Check if new price is lower than historical price
+                    const historicalPrice = lowestPricesHistory[schemaName][rarity];
+                    if (historicalPrice && minPrice < historicalPrice) {
+                        const formattedNewPrice = (minPrice / 100000000).toFixed(4);
+                        const formattedOldPrice = (historicalPrice / 100000000).toFixed(4);
+                        alert(`New lower price for ${rarity} (${schemaName}): ${formattedNewPrice} WAX, previously ${formattedOldPrice} WAX`);
+                        const audio = document.getElementById('alertSound');
+                        audio.play().catch(error => console.error('Error playing alert sound:', error));
+                    }
+                    // Update historical price
+                    lowestPricesHistory[schemaName][rarity] = minPrice;
+                }
+            }
+
+            // Process results, updating only changed rows
+            let currentRarity = '';
+            let rowIndex = 0;
+            for (const result of results) {
+                if (currentRarity !== result.rarity) {
+                    // Add spacer row if needed
+                    if (!tableBody.children[rowIndex] || tableBody.children[rowIndex].innerHTML !== '<td colspan="7"> </td>') {
+                        const spacerRow = document.createElement('tr');
+                        spacerRow.innerHTML = '<td colspan="7"> </td>';
+                        tableBody.appendChild(spacerRow);
+                    }
+                    rowIndex++;
+                    currentRarity = result.rarity;
+                }
+
+                // Prepare new row data
+                let newRowHTML = '';
+                let rowKey = `${result.rarity}-${result.level}`;
+                if (result.success && result.data) {
+                    const price = (parseFloat(result.data.price.amount) / 100000000).toFixed(4);
+                    const nftName = result.data.assets?.[0]?.data?.name || `${result.rarity} Level ${result.level}`;
+                    const isLowestPrice = lowestPrices[result.rarity] && 
+                        parseFloat(result.data.price.amount) === lowestPrices[result.rarity];
+                    const listingTime = result.data.created_at_time ? 
+                        new Date(parseInt(result.data.created_at_time)).toLocaleString() : 'N/A';
+                    
+                    newRowHTML = `
+                        <td>${result.rarity}</td>
+                        <td>${result.level}</td>
+                        <td>${nftName}</td>
+                        <td class="${isLowestPrice ? 'lowest-price' : ''}">${price}</td>
+                        <td>${result.data.seller}</td>
+                        <td>${listingTime}</td>
+                        <td><a href="https://atomichub.io/market/sale/wax-mainnet/${result.data.sale_id}" target="_blank">View</a></td>
+                    `;
+                    // Store new data for comparison
+                    previousData[schemaName][rowKey] = {
+                        rarity: result.rarity,
+                        level: result.level,
+                        name: nftName,
+                        price: price,
+                        seller: result.data.seller,
+                        listingTime: listingTime,
+                        saleId: result.data.sale_id
+                    };
+                } else if (result.success) {
+                    newRowHTML = `
+                        <td>${result.rarity}</td>
+                        <td>${result.level}</td>
+                        <td>${result.rarity} Level ${result.level}</td>
+                        <td>No listings</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    `;
+                    previousData[schemaName][rowKey] = {
+                        rarity: result.rarity,
+                        level: result.level,
+                        name: `${result.rarity} Level ${result.level}`,
+                        price: 'No listings',
+                        seller: 'N/A',
+                        listingTime: 'N/A',
+                        saleId: 'N/A'
+                    };
+                } else {
+                    newRowHTML = `
+                        <td>${result.rarity}</td>
+                        <td>${result.level}</td>
+                        <td colspan="5" class="error">Error: ${result.error}</td>
+                    `;
+                    previousData[schemaName][rowKey] = {
+                        rarity: result.rarity,
+                        level: result.level,
+                        error: result.error
+                    };
+                }
+
+                // Check if row needs updating
+                const existingRow = tableBody.children[rowIndex];
+                if (!existingRow || existingRow.innerHTML !== newRowHTML) {
+                    const row = document.createElement('tr');
+                    row.className = `rarity-${result.rarity.toLowerCase()}`;
+                    row.innerHTML = newRowHTML;
+                    if (existingRow) {
+                        tableBody.replaceChild(row, existingRow);
+                    } else {
+                        tableBody.appendChild(row);
+                    }
+                }
+                rowIndex++;
+            }
+
+            button.disabled = false;
+            loading.style.display = 'none';
+        }
+
+        async function refreshAll() {
+            await Promise.all(SCHEMAS.map(schema => fetchNFTPrices(schema)));
+        }
+
+        // Auto-refresh every 5 minutes (300,000 ms)
+        function startAutoRefresh() {
+            setInterval(refreshAll, 300000);
+        }
+
+        // Load data for all tables on startup and start auto-refresh
+        document.addEventListener('DOMContentLoaded', () => {
+            refreshAll();
+            startAutoRefresh();
+        });
+    </script>
+</body>
+</html>
