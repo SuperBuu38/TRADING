@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBM NFTs Price Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -13,81 +14,136 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             background-color: var(--background-color);
+            font-size: 14px;
         }
 
         .container {
             max-width: 100%;
             margin: 0 auto;
             display: flex;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
+            position: relative;
+            padding-top: 40px;
+        }
+
+        .countdown {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #333;
+            background-color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .made-by {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            color: #e74c3c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: dramaticEntry 0.8s ease-out;
+            z-index: 1000;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .made-by:hover {
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        @keyframes dramaticEntry {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%) scale(0.1) rotate(-45deg);
+            }
+            70% {
+                opacity: 0.7;
+                transform: translateX(-50%) scale(1.2) rotate(10deg);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(-50%) scale(1) rotate(0deg);
+            }
         }
 
         .table-container {
             flex: 1;
-            min-width: 300px;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
+            min-width: 280px;
         }
 
         .global-header {
             width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .sound-controls {
+            margin-top: 10px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .refresh-label {
+            font-size: 13px;
+            color: #555;
         }
 
         h1 {
             color: var(--primary-color);
             margin: 0;
+            font-size: 1.5em;
         }
 
         h2 {
             color: var(--primary-color);
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        select, button {
+            padding: 5px;
+            font-size: 13px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background-color: white;
+            cursor: pointer;
         }
 
         button {
             background-color: #3498db;
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 5px 15px;
             transition: background-color 0.3s;
-            margin-left: 10px;
         }
 
         button:hover {
             background-color: #2980b9;
         }
 
-        button:disabled {
-            background-color: #bdc3c7;
-            cursor: not-allowed;
-        }
-
         table {
             width: 100%;
             border-collapse: collapse;
             background-color: white;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
         }
 
         th, td {
-            padding: 12px;
+            padding: 8px;
             text-align: center;
             border: 1px solid #ddd;
+            font-size: 13px;
         }
 
         th {
@@ -95,11 +151,11 @@
             color: white;
         }
 
-        .rarity-common { background-color: #f3f3f3; }
-        .rarity-rare { background-color: #e6f3ff; }
-        .rarity-epic { background-color: #f0e6ff; }
-        .rarity-legendary { background-color: #fff2e6; }
-        .rarity-ultimate { background-color: #e6ffe6; }
+        .rarity-C { background-color: #f3f3f3; }
+        .rarity-R { background-color: #e6f3ff; }
+        .rarity-E { background-color: #f0e6ff; }
+        .rarity-L { background-color: #fff2e6; }
+        .rarity-U { background-color: #e6ffe6; }
 
         .lowest-price {
             background-color: #ffe6e6;
@@ -108,13 +164,14 @@
 
         .loading {
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             display: none;
+            font-size: 13px;
         }
 
         .error {
             color: #e74c3c;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
 
         a {
@@ -129,12 +186,19 @@
 </head>
 <body>
     <div class="container">
+        <div class="made-by">Made by SuperBuu</div>
         <div class="global-header">
             <h1>NBM NFTs Price Tracker</h1>
-            <div>
-                <button id="refreshButton" onclick="refreshAll()">Refresh All</button>
-                <button id="testSoundButton" onclick="testSound()">Test Sound</button>
+            <div class="sound-controls">
+                <span class="refresh-label">Refresh interval: choose how often prices are updated</span>
+                <select id="refreshIntervalSelect">
+                    <option value="120">2 minutes</option>
+                    <option value="300">5 minutes</option>
+                </select>
+                <button id="soundToggleButton">Sound: On</button>
+                <button id="testSoundButton">Test Sound</button>
             </div>
+            <div id="countdown" class="countdown">Next refresh in 05:00</div>
         </div>
         <div class="table-container">
             <h2>Active NFTs</h2>
@@ -147,7 +211,6 @@
                         <th>Name</th>
                         <th>Price</th>
                         <th>Seller</th>
-                        <th>Listing Time</th>
                         <th>Sale Link</th>
                     </tr>
                 </thead>
@@ -165,7 +228,6 @@
                         <th>Name</th>
                         <th>Price</th>
                         <th>Seller</th>
-                        <th>Listing Time</th>
                         <th>Sale Link</th>
                     </tr>
                 </thead>
@@ -183,7 +245,6 @@
                         <th>Name</th>
                         <th>Price</th>
                         <th>Seller</th>
-                        <th>Listing Time</th>
                         <th>Sale Link</th>
                     </tr>
                 </thead>
@@ -192,22 +253,49 @@
         </div>
     </div>
 
-    <audio id="alertSound" src="https://www.soundjay.com/buttons/beep-01a.mp3" preload="auto"></audio>
+    <audio id="alertSound" preload="auto" src="https://www.myinstants.com/media/sounds/the-purgesiren-extended.mp3"></audio>
 
     <script>
         const RARITIES = ['Common', 'Rare', 'Epic', 'Legendary', 'Ultimate'];
+        const RARITY_SHORT = ['C', 'R', 'E', 'L', 'U'];
         const SCHEMAS = ['active', 'lands', 'construction'];
         const BASE_URL = 'https://wax.api.atomicassets.io/atomicmarket/v1/sales/templates';
         let lowestPricesHistory = {
             active: {},
             lands: {},
             construction: {}
-        }; // Store historical lowest prices per rarity and schema
+        };
         let previousData = {
             active: {},
             lands: {},
             construction: {}
-        }; // Store previous table data per schema, rarity, and level
+        };
+        let soundEnabled = true;
+
+        function formatRarity(rarity) {
+            const index = RARITIES.indexOf(rarity);
+            return index !== -1 ? RARITY_SHORT[index] : rarity;
+        }
+
+        function playSound() {
+            if (!soundEnabled) return;
+            const audio = document.getElementById('alertSound');
+            audio.play().catch(error => console.error('Error playing sound:', error));
+            setTimeout(() => {
+                audio.pause();
+                audio.currentTime = 0;
+            }, 4000); // Stop after 4 seconds
+        }
+
+        function testSound() {
+            playSound();
+        }
+
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            const button = document.getElementById('soundToggleButton');
+            button.textContent = `Sound: ${soundEnabled ? 'On' : 'Off'}`;
+        }
 
         async function fetchSingleNFT(rarity, level, schemaName) {
             const params = new URLSearchParams({
@@ -245,20 +333,12 @@
             }
         }
 
-        function testSound() {
-            const audio = document.getElementById('alertSound');
-            audio.play().catch(error => console.error('Error playing test sound:', error));
-        }
-
         async function fetchNFTPrices(schemaName) {
-            const button = document.getElementById('refreshButton');
             const loading = document.getElementById(`loading${schemaName.charAt(0).toUpperCase() + schemaName.slice(1)}`);
             const tableBody = document.getElementById(`priceTableBody${schemaName.charAt(0).toUpperCase() + schemaName.slice(1)}`);
             
-            button.disabled = true;
             loading.style.display = 'block';
 
-            // Create all promises at once
             const promises = [];
             for (const rarity of RARITIES) {
                 for (let level = 1; level <= 5; level++) {
@@ -266,16 +346,13 @@
                 }
             }
 
-            // Wait for all promises to resolve
             const results = await Promise.all(promises);
 
-            // Group results by rarity
             const resultsByRarity = {};
             RARITIES.forEach(rarity => {
                 resultsByRarity[rarity] = results.filter(r => r.rarity === rarity && r.success && r.data && r.data.price);
             });
 
-            // Find lowest price for each rarity and check for alerts
             const lowestPrices = {};
             for (const rarity of RARITIES) {
                 const validResults = resultsByRarity[rarity].filter(r => r.data.price.amount);
@@ -283,102 +360,88 @@
                     const minPrice = Math.min(...validResults.map(r => parseFloat(r.data.price.amount)));
                     lowestPrices[rarity] = minPrice;
 
-                    // Check if new price is lower than historical price
                     const historicalPrice = lowestPricesHistory[schemaName][rarity];
                     if (historicalPrice && minPrice < historicalPrice) {
                         const formattedNewPrice = (minPrice / 100000000).toFixed(4);
                         const formattedOldPrice = (historicalPrice / 100000000).toFixed(4);
-                        alert(`New lower price for ${rarity} (${schemaName}): ${formattedNewPrice} WAX, previously ${formattedOldPrice} WAX`);
-                        const audio = document.getElementById('alertSound');
-                        audio.play().catch(error => console.error('Error playing alert sound:', error));
+                        alert(`New lower price for ${formatRarity(rarity)} (${schemaName}): ${formattedNewPrice} WAX, previously ${formattedOldPrice} WAX`);
+                        playSound();
                     }
-                    // Update historical price
                     lowestPricesHistory[schemaName][rarity] = minPrice;
                 }
             }
 
-            // Process results, updating only changed rows
             let currentRarity = '';
             let rowIndex = 0;
             for (const result of results) {
                 if (currentRarity !== result.rarity) {
-                    // Add spacer row if needed
-                    if (!tableBody.children[rowIndex] || tableBody.children[rowIndex].innerHTML !== '<td colspan="7"> </td>') {
+                    if (!tableBody.children[rowIndex] || tableBody.children[rowIndex].innerHTML !== '<td colspan="6"> </td>') {
                         const spacerRow = document.createElement('tr');
-                        spacerRow.innerHTML = '<td colspan="7"> </td>';
+                        spacerRow.innerHTML = '<td colspan="6"> </td>';
                         tableBody.appendChild(spacerRow);
                     }
                     rowIndex++;
                     currentRarity = result.rarity;
                 }
 
-                // Prepare new row data
                 let newRowHTML = '';
                 let rowKey = `${result.rarity}-${result.level}`;
                 if (result.success && result.data) {
                     const price = (parseFloat(result.data.price.amount) / 100000000).toFixed(4);
-                    const nftName = result.data.assets?.[0]?.data?.name || `${result.rarity} Level ${result.level}`;
+                    const nftName = result.data.assets?.[0]?.data?.name || `${formatRarity(result.rarity)} Level ${result.level}`;
                     const isLowestPrice = lowestPrices[result.rarity] && 
                         parseFloat(result.data.price.amount) === lowestPrices[result.rarity];
-                    const listingTime = result.data.created_at_time ? 
-                        new Date(parseInt(result.data.created_at_time)).toLocaleString() : 'N/A';
                     
                     newRowHTML = `
-                        <td>${result.rarity}</td>
+                        <td>${formatRarity(result.rarity)}</td>
                         <td>${result.level}</td>
                         <td>${nftName}</td>
                         <td class="${isLowestPrice ? 'lowest-price' : ''}">${price}</td>
                         <td>${result.data.seller}</td>
-                        <td>${listingTime}</td>
                         <td><a href="https://atomichub.io/market/sale/wax-mainnet/${result.data.sale_id}" target="_blank">View</a></td>
                     `;
-                    // Store new data for comparison
                     previousData[schemaName][rowKey] = {
-                        rarity: result.rarity,
+                        rarity: formatRarity(result.rarity),
                         level: result.level,
                         name: nftName,
                         price: price,
                         seller: result.data.seller,
-                        listingTime: listingTime,
                         saleId: result.data.sale_id
                     };
                 } else if (result.success) {
                     newRowHTML = `
-                        <td>${result.rarity}</td>
+                        <td>${formatRarity(result.rarity)}</td>
                         <td>${result.level}</td>
-                        <td>${result.rarity} Level ${result.level}</td>
+                        <td>${formatRarity(result.rarity)} Level ${result.level}</td>
                         <td>No listings</td>
-                        <td>N/A</td>
                         <td>N/A</td>
                         <td>N/A</td>
                     `;
                     previousData[schemaName][rowKey] = {
-                        rarity: result.rarity,
+                        rarity: formatRarity(result.rarity),
                         level: result.level,
-                        name: `${result.rarity} Level ${result.level}`,
+                        name: `${formatRarity(result.rarity)} Level ${result.level}`,
                         price: 'No listings',
                         seller: 'N/A',
-                        listingTime: 'N/A',
                         saleId: 'N/A'
                     };
                 } else {
                     newRowHTML = `
-                        <td>${result.rarity}</td>
+                        <td>${formatRarity(result.rarity)}</td>
                         <td>${result.level}</td>
-                        <td colspan="5" class="error">Error: ${result.error}</td>
+                        <td colspan="4" class="error">Error: ${result.error}</td>
                     `;
                     previousData[schemaName][rowKey] = {
-                        rarity: result.rarity,
+                        rarity: formatRarity(result.rarity),
                         level: result.level,
                         error: result.error
                     };
                 }
 
-                // Check if row needs updating
                 const existingRow = tableBody.children[rowIndex];
                 if (!existingRow || existingRow.innerHTML !== newRowHTML) {
                     const row = document.createElement('tr');
-                    row.className = `rarity-${result.rarity.toLowerCase()}`;
+                    row.className = `rarity-${formatRarity(result.rarity)}`;
                     row.innerHTML = newRowHTML;
                     if (existingRow) {
                         tableBody.replaceChild(row, existingRow);
@@ -389,7 +452,6 @@
                 rowIndex++;
             }
 
-            button.disabled = false;
             loading.style.display = 'none';
         }
 
@@ -397,13 +459,39 @@
             await Promise.all(SCHEMAS.map(schema => fetchNFTPrices(schema)));
         }
 
-        // Auto-refresh every 5 minutes (300,000 ms)
         function startAutoRefresh() {
-            setInterval(refreshAll, 300000);
+            const countdownElement = document.getElementById('countdown');
+            const refreshSelect = document.getElementById('refreshIntervalSelect');
+            let timeLeft = parseInt(refreshSelect.value); // Initial interval in seconds
+
+            function updateCountdown() {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                countdownElement.textContent = `Next refresh in ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    timeLeft = parseInt(refreshSelect.value);
+                    refreshAll();
+                }
+            }
+
+            updateCountdown();
+            let refreshInterval = setInterval(updateCountdown, 1000);
+
+            refreshSelect.addEventListener('change', () => {
+                timeLeft = parseInt(refreshSelect.value);
+                clearInterval(refreshInterval);
+                refreshInterval = setInterval(updateCountdown, 1000);
+                setTimeout(refreshAll, timeLeft * 1000);
+            });
+
+            setTimeout(refreshAll, timeLeft * 1000);
         }
 
-        // Load data for all tables on startup and start auto-refresh
         document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('soundToggleButton').addEventListener('click', toggleSound);
+            document.getElementById('testSoundButton').addEventListener('click', testSound);
             refreshAll();
             startAutoRefresh();
         });
