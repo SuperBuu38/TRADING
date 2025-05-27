@@ -16,7 +16,7 @@
             --theme-text-secondary: #94a3b8; /* Medium Slate Gray */
             --theme-accent-primary: #0ea5e9; /* Sky Blue */
             --theme-accent-secondary: #7dd3fc; /* Lighter Sky Blue */
-            --theme-accent-glow: rgba(14, 165, 233, 0.3);
+            --theme-accent-glow: rgba(14, 165, 233, 0.2); /* Reduced glow opacity */
             --theme-border-primary: #0ea5e9;
             --theme-border-secondary: #334155; /* Darker border for cyber */
             --theme-highlight-glow: #00f0ff; /* Cyan for highlight */
@@ -38,7 +38,7 @@
         h1.main-title {
             font-family: 'Exo 2', sans-serif;
             color: var(--theme-accent-primary);
-            text-shadow: 0 0 5px var(--theme-accent-primary), 0 0 10px var(--theme-accent-primary);
+            text-shadow: 0 0 3px var(--theme-accent-primary); /* Reduced neon effect */
             font-weight: 700;
         }
 
@@ -46,7 +46,7 @@
             background-color: var(--theme-bg-secondary);
             padding: 10px;
             border-radius: 12px;
-            box-shadow: 0 0 20px var(--theme-accent-glow);
+            box-shadow: 0 0 15px var(--theme-accent-glow); /* Slightly reduced glow */
             border: 1px solid var(--theme-border-primary);
         }
 
@@ -139,13 +139,13 @@
             font-size: 15px;
         }
         .tooltip ul { list-style-type: none; padding: 0; margin: 0; }
-        .tooltip li { margin-bottom: 3px; }
+        .tooltip li { margin-bottom: 3px; white-space: pre; /* Allow wrapping for long material names if needed */ }
 
         .info-panel {
             background-color: var(--theme-bg-secondary);
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 0 20px var(--theme-accent-glow);
+            box-shadow: 0 0 15px var(--theme-accent-glow); /* Slightly reduced glow */
             border: 1px solid var(--theme-border-primary);
         }
         .info-panel h3 {
@@ -156,7 +156,7 @@
             color: var(--theme-accent-primary);
             border-bottom: 2px solid var(--theme-border-primary);
             padding-bottom: 8px;
-            text-shadow: 0 0 3px var(--theme-accent-primary);
+            text-shadow: 0 0 2px var(--theme-accent-primary); /* Reduced neon effect */
         }
         .info-panel label {
             font-family: 'Exo 2', sans-serif;
@@ -177,7 +177,7 @@
             background-position: right 0.75rem center;
             background-size: 1.25em;
         }
-        .info-panel select option { /* Style for options if needed, though limited */
+        .info-panel select option {
             background-color: var(--theme-bg-tertiary);
             color: var(--theme-text-primary);
         }
@@ -221,7 +221,7 @@
 
         .header-controls { 
             display: flex;
-            justify-content: center; /* Center title as switcher is removed */
+            justify-content: center; 
             align-items: center;
             margin-bottom: 1.5rem;
         }
@@ -497,14 +497,14 @@
             const searchSelect = document.getElementById('materialSearch');
             searchSelect.innerHTML = '<option value="">Select a material...</option>'; 
             const sortedMaterials = Array.from(allMaterials).sort();
-            sortedMaterials.forEach(materialString => { // materialString is "Material Name, Rarity"
+            sortedMaterials.forEach(materialString => { 
                 const option = document.createElement('option');
                 option.value = materialString;
                 const parts = materialString.split(', ');
                 const materialName = parts[0];
-                const rarity = parts[1] ? parts[1].trim() : "Common"; // Default to Common if rarity somehow missing
+                const rarity = parts[1] ? parts[1].trim() : "Common"; 
                 const emoji = rarityEmojis[rarity] || '❓';
-                option.textContent = `${emoji} ${materialString}`; // Add emoji to the option text
+                option.textContent = `${emoji} ${materialString}`; 
                 searchSelect.appendChild(option);
             });
             searchSelect.disabled = false; 
@@ -528,18 +528,19 @@
                 zonesSpan.textContent = '-';
                 return;
             }
-            // Display the selected material name without the emoji in the results panel
+            
             const parts = selectedMaterial.split(', ');
             const materialNameOnly = parts[0];
             const rarity = parts[1] ? parts[1].trim() : "";
-            nameSpan.innerHTML = `${rarityEmojis[rarity] || ''} ${materialNameOnly}${rarity ? ', ' + rarity : ''}`;
+            const emojiForDisplay = rarityEmojis[rarity] || ''; // Get emoji for display
+            nameSpan.innerHTML = `${emojiForDisplay} ${materialNameOnly}${rarity ? ', ' + rarity : ''}`;
 
 
             const positions = [];
             const zones = new Set();
 
             for (const cellAddress in cellMaterials) {
-                if (cellMaterials[cellAddress].includes(selectedMaterial)) { // Search uses the full string with emoji
+                if (cellMaterials[cellAddress].includes(selectedMaterial)) { 
                     positions.push(cellAddress);
                     const { row, col } = cellToIndices(cellAddress);
                     if (row >= 0 && row < 20 && col >= 0 && col < 20) {
@@ -615,10 +616,16 @@
             if (biomeStatsArray.length === 0) topRichestZonesDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>';
             for (let i = 0; i < Math.min(3, biomeStatsArray.length); i++) {
                 const biome = biomeStatsArray[i];
+                const tooltipDetail = `Zone: ${biome.name}\nTotal Unique Materials: ${biome.materialCount}\n\nMaterials Found:\n` +
+                    biome.materials.map(m => {
+                        const parts = m.split(', ');
+                        const materialName = parts[0];
+                        const r = parts[1] ? parts[1].trim() : "Common";
+                        return `${rarityEmojis[r] || '❓'} ${materialName} (${r})`;
+                    }).join('\n');
                 const itemDiv = createStatItemDiv(
                     `${i + 1}. ${biome.name} (${biome.materialCount} materials)`,
-                    `Zone: ${biome.name}\nTotal Materials: ${biome.materialCount}\n\nMaterials (by rarity):\n` +
-                    biome.materials.map(m => `${rarityEmojis[m.split(", ")[1].trim()] || '❓'} ${m}`).join('\n')
+                    tooltipDetail
                 );
                 topRichestZonesDiv.appendChild(itemDiv);
             }
@@ -640,10 +647,11 @@
                 if (bestZoneForRarity && maxCount > 0) {
                     displayedRarityStat = true;
                     const materialsOfRarity = Array.from(bestZoneForRarity.rarityStats[rarity]).sort();
+                    const tooltipDetail = `Best Zone for ${rarity} Materials:\n${bestZoneForRarity.name}\n\n${rarity} Materials (${materialsOfRarity.length}):\n` +
+                        materialsOfRarity.map(m => `${rarityEmojis[rarity] || '❓'} ${m}`).join('\n'); // Show full material string
                      const itemDiv = createStatItemDiv( 
                         `${rarityEmojis[rarity] || '❓'} ${rarity}: ${bestZoneForRarity.name} (${maxCount} materials)`, 
-                        `Best Zone for ${rarity}:\n${bestZoneForRarity.name}\n\n${rarity} Materials:\n` +
-                        materialsOfRarity.map(m => `${rarityEmojis[rarity] || '❓'} ${m.split(", ")[0]}`).join('\n') 
+                        tooltipDetail
                     );
                     bestZonesByRarityDiv.appendChild(itemDiv);
                 }
@@ -660,14 +668,14 @@
                 const biome = biomeStatsArray[i];
                 if (biome.totalValue > 0) {
                     displayedValueStat = true;
-                    let valueNote = `Zone: ${biome.name}\nTotal Value: ${biome.totalValue} pts\n\nValue Breakdown:\n`;
+                    let valueNote = `Zone: ${biome.name}\nTotal Value: ${biome.totalValue} pts\n\nValue Breakdown by Rarity:\n`;
                     raritiesToDisplay.forEach(r => {
                         const count = biome.rarityStats[r] ? biome.rarityStats[r].size : 0;
                         if (count > 0) {
                             valueNote += `${rarityEmojis[r] || '❓'} ${r}: ${count} materials (${count * (rarityPoints[r]||0)} pts)\n`;
                         }
                     });
-                    valueNote += "\n\nAll Materials (by rarity):\n" + biome.materials.map(m => `${rarityEmojis[m.split(", ")[1].trim()] || '❓'} ${m}`).join('\n');
+                    valueNote += "\n\nAll Materials in this Zone (sorted by rarity):\n" + biome.materials.map(m => `${rarityEmojis[m.split(", ")[1].trim()] || '❓'} ${m}`).join('\n');
                     
                     const itemDiv = createStatItemDiv(
                         `${i + 1}. ${biome.name} (${biome.totalValue} pts)`,
@@ -695,8 +703,39 @@
             tooltipElement.textContent = tooltipText;
             itemDiv.appendChild(tooltipElement);
             
-             itemDiv.addEventListener('mouseenter', () => itemDiv.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--theme-bg-tertiary'));
-            itemDiv.addEventListener('mouseleave', () => itemDiv.style.backgroundColor = 'transparent');
+             itemDiv.addEventListener('mouseenter', (event) => {
+                itemDiv.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--theme-bg-tertiary');
+                const itemRect = event.currentTarget.getBoundingClientRect();
+                tooltipElement.style.visibility = 'hidden'; 
+                tooltipElement.style.opacity = '0';     
+                tooltipElement.style.display = 'block'; 
+                const tooltipHeight = tooltipElement.offsetHeight;
+                tooltipElement.style.display = ''; 
+
+                tooltipElement.style.visibility = 'visible';
+                tooltipElement.style.opacity = '1';
+
+                if (itemRect.top < tooltipHeight + 10 && (itemRect.bottom + tooltipHeight + 10) > window.innerHeight) {
+                    // If it doesn't fit above or below easily, just position above
+                     tooltipElement.style.top = 'auto';
+                    tooltipElement.style.bottom = '105%';
+                    tooltipElement.style.transform = 'translateX(-50%) translateY(-5px)';
+                } else if (itemRect.top < tooltipHeight + 10) { 
+                    tooltipElement.style.bottom = 'auto';
+                    tooltipElement.style.top = '100%';
+                    tooltipElement.style.transform = 'translateX(-50%) translateY(10px)';
+                } else {
+                    tooltipElement.style.top = 'auto';
+                    tooltipElement.style.bottom = '105%'; // Position above by default
+                     tooltipElement.style.transform = 'translateX(-50%) translateY(-5px)';
+                }
+             });
+            itemDiv.addEventListener('mouseleave', () => {
+                itemDiv.style.backgroundColor = 'transparent';
+                tooltipElement.style.visibility = 'hidden';
+                tooltipElement.style.opacity = '0';
+            });
+
 
             return itemDiv;
         }
@@ -714,11 +753,9 @@
             const materialSearchSelect = document.getElementById('materialSearch');
             const logDataUrl = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/logs_parsed.json';
             
-            // Ensure body has the cyber theme by default if not already set
             if (!document.body.classList.contains('theme-cyber')) {
                 document.body.classList.add('theme-cyber');
             }
-
 
             try {
                 const response = await fetch(logDataUrl);
