@@ -1,0 +1,3590 @@
+[
+  {
+    "name": "Acidic water",
+    "rarity": "Common",
+    "locations": [
+      "J11",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M7"
+    ]
+  },
+  {
+    "name": "Algea Bubblea",
+    "rarity": "Rare",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T2"
+    ]
+  },
+  {
+    "name": "Anemona Tentacula",
+    "rarity": "Rare",
+    "locations": [
+      "T20"
+    ]
+  },
+  {
+    "name": "Anti-gravity soil",
+    "rarity": "Legendary",
+    "locations": [
+      "N5"
+    ]
+  },
+  {
+    "name": "Antimatter dust",
+    "rarity": "Legendary",
+    "locations": [
+      "N5"
+    ]
+  },
+  {
+    "name": "Apertian blue mouse",
+    "rarity": "Legendary",
+    "locations": [
+      "F14",
+      "F15",
+      "G14",
+      "G15",
+      "H13",
+      "H14",
+      "H15",
+      "I13",
+      "J15",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "L13",
+      "M13",
+      "S5",
+      "T7",
+      "T9"
+    ]
+  },
+  {
+    "name": "Apertian flower bee",
+    "rarity": "Rare",
+    "locations": [
+      "O15",
+      "P15",
+      "P16"
+    ]
+  },
+  {
+    "name": "Apertian green mouse",
+    "rarity": "Epic",
+    "locations": [
+      "A17",
+      "B17",
+      "B18",
+      "C15",
+      "C17",
+      "D15",
+      "D16",
+      "D17",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F10",
+      "F13",
+      "F16",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G16",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "H12",
+      "H16",
+      "H17",
+      "H18",
+      "H3",
+      "H5",
+      "H7",
+      "H8",
+      "I11",
+      "I12",
+      "I18",
+      "I5",
+      "I6",
+      "I7",
+      "J19",
+      "J4",
+      "J5",
+      "J6"
+    ]
+  },
+  {
+    "name": "Apertian mackerel",
+    "rarity": "Legendary",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "Q1",
+      "Q17",
+      "Q19",
+      "R18",
+      "R19",
+      "R20",
+      "S18",
+      "S19",
+      "T18",
+      "T19"
+    ]
+  },
+  {
+    "name": "Apertian queen",
+    "rarity": "Ultimate",
+    "locations": [
+      "O15",
+      "P16"
+    ]
+  },
+  {
+    "name": "Asymmetric butterfly",
+    "rarity": "Epic",
+    "locations": [
+      "M5",
+      "N4",
+      "N5",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P5",
+      "P6",
+      "P7",
+      "P9",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ]
+  },
+  {
+    "name": "Atlas mushroom",
+    "rarity": "Legendary",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R13",
+      "R14",
+      "S14"
+    ]
+  },
+  {
+    "name": "Barrel cactus",
+    "rarity": "Rare",
+    "locations": [
+      "Q4",
+      "R4",
+      "R5",
+      "S10",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T13",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ]
+  },
+  {
+    "name": "Bewitching water",
+    "rarity": "Legendary",
+    "locations": [
+      "H6"
+    ]
+  },
+  {
+    "name": "Black spider",
+    "rarity": "Rare",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ]
+  },
+  {
+    "name": "Blooblybob",
+    "rarity": "Rare",
+    "locations": [
+      "F14",
+      "F15",
+      "G14",
+      "G15",
+      "H13",
+      "H14",
+      "H15",
+      "I13",
+      "I14",
+      "I15"
+    ]
+  },
+  {
+    "name": "Bloody root",
+    "rarity": "Rare",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "F16",
+      "G16",
+      "H16",
+      "H17",
+      "H18",
+      "I18",
+      "I19",
+      "J18",
+      "J19",
+      "J20"
+    ]
+  },
+  {
+    "name": "Blue princess",
+    "rarity": "Epic",
+    "locations": [
+      "J15",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "M13"
+    ]
+  },
+  {
+    "name": "Bluehead jellyfish",
+    "rarity": "Rare",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q3",
+      "R18",
+      "R19",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T18",
+      "T19",
+      "T3"
+    ]
+  },
+  {
+    "name": "Bottom-top centipede",
+    "rarity": "Rare",
+    "locations": [
+      "N5"
+    ]
+  },
+  {
+    "name": "Broccolishroom",
+    "rarity": "Rare",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ]
+  },
+  {
+    "name": "Carps from the lake",
+    "rarity": "Legendary",
+    "locations": [
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ]
+  },
+  {
+    "name": "Coconut water",
+    "rarity": "Rare",
+    "locations": [
+      "A19",
+      "A20",
+      "B19",
+      "B20",
+      "C20",
+      "D19",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F18",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ]
+  },
+  {
+    "name": "Cold mountain water",
+    "rarity": "Rare",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A7",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "D1",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "E1",
+      "E10",
+      "E11",
+      "E12",
+      "E2",
+      "E3"
+    ]
+  },
+  {
+    "name": "Colorful petals",
+    "rarity": "Common",
+    "locations": [
+      "O15",
+      "P16"
+    ]
+  },
+  {
+    "name": "Condensed mist",
+    "rarity": "Common",
+    "locations": [
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ]
+  },
+  {
+    "name": "Dark water from the pit",
+    "rarity": "Ultimate",
+    "locations": [
+      "C6"
+    ]
+  },
+  {
+    "name": "Desert grass",
+    "rarity": "Common",
+    "locations": [
+      "P3",
+      "P4",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R4",
+      "R5",
+      "R7",
+      "R8",
+      "R9",
+      "S10",
+      "S11",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T4",
+      "T5",
+      "T6",
+      "T7",
+      "T8",
+      "T9"
+    ]
+  },
+  {
+    "name": "Desert lizard",
+    "rarity": "Legendary",
+    "locations": [
+      "P3",
+      "P4",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R5",
+      "R7",
+      "R8",
+      "R9",
+      "S10",
+      "S11",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T4",
+      "T5",
+      "T7",
+      "T9"
+    ]
+  },
+  {
+    "name": "Dewdrops ",
+    "rarity": "Common",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H12",
+      "H2",
+      "H3",
+      "H4",
+      "H9",
+      "I11",
+      "I12",
+      "I4"
+    ]
+  },
+  {
+    "name": "Dry grass",
+    "rarity": "Common",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H12",
+      "H2",
+      "H3",
+      "H4",
+      "H9",
+      "I11",
+      "I12",
+      "I4",
+      "M5",
+      "N4",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14",
+      "on"
+    ]
+  },
+  {
+    "name": "Dry lichen",
+    "rarity": "Common",
+    "locations": [
+      "P3",
+      "P4",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R4",
+      "R5",
+      "R7",
+      "R8",
+      "R9",
+      "S10",
+      "S11",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ]
+  },
+  {
+    "name": "Emperor fish",
+    "rarity": "Legendary",
+    "locations": [
+      "F11",
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "K10",
+      "K14",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ]
+  },
+  {
+    "name": "Exotic leaves",
+    "rarity": "Rare",
+    "locations": [
+      "A19",
+      "A20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H20",
+      "I20",
+      "S5",
+      "T7",
+      "T9"
+    ]
+  },
+  {
+    "name": "Fermented malt beverage",
+    "rarity": "Legendary",
+    "locations": [
+      "F12",
+      "F13",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H3",
+      "H9",
+      "I11",
+      "I4"
+    ]
+  },
+  {
+    "name": "Fireflies",
+    "rarity": "Common",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ]
+  },
+  {
+    "name": "Firework jellyfish",
+    "rarity": "Legendary",
+    "locations": [
+      "P19",
+      "Q1",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q3",
+      "R18",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T18",
+      "T19",
+      "T3"
+    ]
+  },
+  {
+    "name": "Flying hopper",
+    "rarity": "Common",
+    "locations": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "P5",
+      "P6",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ]
+  },
+  {
+    "name": "Forest soil",
+    "rarity": "Common",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ]
+  },
+  {
+    "name": "Fresh Snow",
+    "rarity": "Common",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ]
+  },
+  {
+    "name": "Freshwater algae",
+    "rarity": "Common",
+    "locations": [
+      "F11",
+      "F14",
+      "F15",
+      "G11",
+      "G14",
+      "G15",
+      "H10",
+      "H11",
+      "H13",
+      "H14",
+      "H15",
+      "I10",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J10",
+      "J11",
+      "J12",
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "J7",
+      "J8",
+      "J9",
+      "K10",
+      "K11",
+      "K12",
+      "K13",
+      "K14",
+      "K15",
+      "K16",
+      "K5",
+      "K6",
+      "K7",
+      "K8",
+      "K9",
+      "L10",
+      "L11",
+      "L12",
+      "L13",
+      "L14",
+      "L5",
+      "L6",
+      "L7",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M6",
+      "M7",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ]
+  },
+  {
+    "name": "Freshwater crayfish",
+    "rarity": "Epic",
+    "locations": [
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10"
+    ]
+  },
+  {
+    "name": "Frosty water",
+    "rarity": "Legendary",
+    "locations": [
+      "A11",
+      "A12",
+      "A8",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ]
+  },
+  {
+    "name": "Frozen snake",
+    "rarity": "Epic",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ]
+  },
+  {
+    "name": "Glowing tree sap",
+    "rarity": "Common",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ]
+  },
+  {
+    "name": "Hard scale",
+    "rarity": "Rare",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ]
+  },
+  {
+    "name": "Honey from the plains",
+    "rarity": "Epic",
+    "locations": [
+      "F12",
+      "F6",
+      "F7",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H12",
+      "H2",
+      "I11"
+    ]
+  },
+  {
+    "name": "Hot water",
+    "rarity": "Common",
+    "locations": [
+      "J11",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M7"
+    ]
+  },
+  {
+    "name": "Humidum Plantum",
+    "rarity": "Rare",
+    "locations": [
+      "J15",
+      "J16",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "L13",
+      "M13"
+    ]
+  },
+  {
+    "name": "Invigorating algae",
+    "rarity": "Common",
+    "locations": [
+      "L9",
+      "M9",
+      "N10",
+      "N11",
+      "N12",
+      "N9"
+    ]
+  },
+  {
+    "name": "Invigorating water",
+    "rarity": "Ultimate",
+    "locations": [
+      "L9",
+      "N9"
+    ]
+  },
+  {
+    "name": "Jellyfish tree",
+    "rarity": "Epic",
+    "locations": [
+      "P17",
+      "P18",
+      "Q1",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q3",
+      "R18",
+      "R19",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T18",
+      "T19",
+      "T3"
+    ]
+  },
+  {
+    "name": "Jumper",
+    "rarity": "Legendary",
+    "locations": [
+      "A16",
+      "A7",
+      "B13",
+      "B15",
+      "B16",
+      "B6",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D3",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "E1",
+      "E2",
+      "E3",
+      "M5",
+      "N4",
+      "O5",
+      "O6",
+      "P10",
+      "P3",
+      "P7",
+      "P8",
+      "Q4",
+      "Q5",
+      "Q6",
+      "R10",
+      "R5",
+      "R7",
+      "R8",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T12",
+      "T13",
+      "T4"
+    ]
+  },
+  {
+    "name": "Large beetle",
+    "rarity": "Legendary",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F6",
+      "F7",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "H1",
+      "H12",
+      "H3",
+      "H4",
+      "H5",
+      "H7",
+      "H8",
+      "H9",
+      "I11",
+      "I12",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J5",
+      "J6"
+    ]
+  },
+  {
+    "name": "Large pitcher plant",
+    "rarity": "Epic",
+    "locations": [
+      "A20",
+      "B19",
+      "B20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ]
+  },
+  {
+    "name": "Large spider",
+    "rarity": "Legendary",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F16",
+      "G16",
+      "H16",
+      "H17",
+      "H18",
+      "I19",
+      "J18",
+      "J19",
+      "M5",
+      "N4",
+      "N5",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P7",
+      "P8",
+      "P9"
+    ]
+  },
+  {
+    "name": "Large wasp",
+    "rarity": "Rare",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F10",
+      "F12",
+      "F13",
+      "F16",
+      "F6",
+      "F7",
+      "F8",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G16",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "H1",
+      "H12",
+      "H16",
+      "H17",
+      "H18",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H7",
+      "H8",
+      "H9",
+      "I11",
+      "I12",
+      "I17",
+      "I18",
+      "I19",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J11",
+      "J18",
+      "J19",
+      "J20",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M5",
+      "M7",
+      "N4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "Q10",
+      "Q7",
+      "Q8",
+      "Q9",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ]
+  },
+  {
+    "name": "Levitating flake",
+    "rarity": "Ultimate",
+    "locations": [
+      "A12",
+      "A13",
+      "A14",
+      "B11",
+      "B9",
+      "C8"
+    ]
+  },
+  {
+    "name": "Liquid Cucumis",
+    "rarity": "Epic",
+    "locations": [
+      "F12",
+      "F8",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H2",
+      "H3",
+      "I4"
+    ]
+  },
+  {
+    "name": "Liquid pearls",
+    "rarity": "Rare",
+    "locations": [
+      "Q3",
+      "R3",
+      "S3",
+      "T3"
+    ]
+  },
+  {
+    "name": "Liquid Psilocybe",
+    "rarity": "Rare",
+    "locations": [
+      "Q4",
+      "R4",
+      "R5",
+      "S10",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ]
+  },
+  {
+    "name": "Liquida Spongea",
+    "rarity": "Rare",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ]
+  },
+  {
+    "name": "Low gravity water",
+    "rarity": "Ultimate",
+    "locations": [
+      "N5"
+    ]
+  },
+  {
+    "name": "Mantis Religiosa",
+    "rarity": "Ultimate",
+    "locations": [
+      "F18",
+      "F19",
+      "G17",
+      "H20"
+    ]
+  },
+  {
+    "name": "Melted ice",
+    "rarity": "Rare",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B8",
+      "B9",
+      "C8"
+    ]
+  },
+  {
+    "name": "Midnight oil",
+    "rarity": "Legendary",
+    "locations": [
+      "K17",
+      "K19",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L20",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ]
+  },
+  {
+    "name": "Moss from the plains",
+    "rarity": "Rare",
+    "locations": [
+      "F10",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "H1",
+      "H12",
+      "H14",
+      "H15",
+      "H2",
+      "H3",
+      "H4",
+      "H9",
+      "I11",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "I4",
+      "M5",
+      "N4",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P7",
+      "P8",
+      "P9"
+    ]
+  },
+  {
+    "name": "Mountain Dew",
+    "rarity": "Rare",
+    "locations": [
+      "A16",
+      "A7",
+      "B13",
+      "B14",
+      "B15",
+      "B6",
+      "B7",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D14",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D8",
+      "E1",
+      "E2",
+      "E3"
+    ]
+  },
+  {
+    "name": "Mountain moss",
+    "rarity": "Common",
+    "locations": [
+      "A16",
+      "A7",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B6",
+      "B7",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D14",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "E1",
+      "E2",
+      "E3"
+    ]
+  },
+  {
+    "name": "Mountain snake",
+    "rarity": "Legendary",
+    "locations": [
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A7",
+      "A8",
+      "A9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B15",
+      "B16",
+      "B6",
+      "B8",
+      "B9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "E1",
+      "E10",
+      "E11",
+      "E12",
+      "E2",
+      "E3"
+    ]
+  },
+  {
+    "name": "Mud from the lake",
+    "rarity": "Epic",
+    "locations": [
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T17"
+    ]
+  },
+  {
+    "name": "Mushroom mix",
+    "rarity": "Rare",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ]
+  },
+  {
+    "name": "Mushroom reef",
+    "rarity": "Legendary",
+    "locations": [
+      "Q19",
+      "Q20",
+      "R19",
+      "R20",
+      "T19",
+      "T20"
+    ]
+  },
+  {
+    "name": "Mushroom sap",
+    "rarity": "Common",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ]
+  },
+  {
+    "name": "Mystic crystal",
+    "rarity": "Ultimate",
+    "locations": [
+      "S20",
+      "S20?"
+    ]
+  },
+  {
+    "name": "Piece of dark wood",
+    "rarity": "Rare",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ]
+  },
+  {
+    "name": "Pine cone",
+    "rarity": "Rare",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ]
+  },
+  {
+    "name": "Poisonous toad",
+    "rarity": "Epic",
+    "locations": [
+      "A18",
+      "C18",
+      "D16",
+      "D18",
+      "F15",
+      "G14",
+      "G15",
+      "G16",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H18",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J17",
+      "J19",
+      "K16",
+      "M13"
+    ]
+  },
+  {
+    "name": "Pure lava",
+    "rarity": "Rare",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ]
+  },
+  {
+    "name": "Rainwater",
+    "rarity": "Common",
+    "locations": [
+      "F14",
+      "F15",
+      "G14",
+      "G15",
+      "H13",
+      "H14",
+      "H15",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J15",
+      "J16",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "L13",
+      "M13"
+    ]
+  },
+  {
+    "name": "Red claw",
+    "rarity": "Epic",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R2",
+      "T1",
+      "T2"
+    ]
+  },
+  {
+    "name": "Red shelled crab",
+    "rarity": "Common",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "Q3",
+      "R18",
+      "R3",
+      "S18",
+      "S20",
+      "S3",
+      "T18",
+      "T3"
+    ]
+  },
+  {
+    "name": "Red-eye singing frog",
+    "rarity": "Ultimate",
+    "locations": [
+      "F14",
+      "G14",
+      "H13",
+      "H15",
+      "I13",
+      "I14",
+      "K13",
+      "L13",
+      "M13"
+    ]
+  },
+  {
+    "name": "Refreshing water",
+    "rarity": "Common",
+    "locations": [
+      "S5",
+      "T7",
+      "T9"
+    ]
+  },
+  {
+    "name": "Rice water",
+    "rarity": "Rare",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ]
+  },
+  {
+    "name": "River water",
+    "rarity": "Common",
+    "locations": [
+      "J12",
+      "J13",
+      "J14",
+      "K1",
+      "K12",
+      "K14",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N15",
+      "N16",
+      "N6",
+      "O16",
+      "O17",
+      "O18",
+      "O20"
+    ]
+  },
+  {
+    "name": "Rocky beetle",
+    "rarity": "Epic",
+    "locations": [
+      "G6",
+      "G7",
+      "G8",
+      "H5",
+      "H7",
+      "H8",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J4",
+      "J6"
+    ]
+  },
+  {
+    "name": "Rocky king",
+    "rarity": "Ultimate",
+    "locations": [
+      "G6",
+      "G7",
+      "H5",
+      "H7",
+      "H8",
+      "I6",
+      "I7"
+    ]
+  },
+  {
+    "name": "Salted water",
+    "rarity": "Common",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q3",
+      "R18",
+      "R19",
+      "R20",
+      "R3",
+      "S18",
+      "S19",
+      "S20",
+      "S3",
+      "T13",
+      "T18",
+      "T19",
+      "T3"
+    ]
+  },
+  {
+    "name": "Sand Lurker",
+    "rarity": "Legendary",
+    "locations": [
+      "S20"
+    ]
+  },
+  {
+    "name": "Satoyaman grass",
+    "rarity": "Common",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ]
+  },
+  {
+    "name": "Satoyaman rice",
+    "rarity": "Common",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E13",
+      "E14",
+      "E15",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ]
+  },
+  {
+    "name": "Satoyaman snake",
+    "rarity": "Epic",
+    "locations": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E14",
+      "E4",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "F1",
+      "F2",
+      "F4",
+      "F5"
+    ]
+  },
+  {
+    "name": "Shrimp fish",
+    "rarity": "Rare",
+    "locations": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q1",
+      "Q17",
+      "R18",
+      "S18",
+      "S20",
+      "T18"
+    ]
+  },
+  {
+    "name": "Singing king",
+    "rarity": "Legendary",
+    "locations": [
+      "F15",
+      "G14",
+      "H13",
+      "H14",
+      "H15",
+      "I14",
+      "I15",
+      "I16"
+    ]
+  },
+  {
+    "name": "Small exotic plant",
+    "rarity": "Common",
+    "locations": [
+      "A19",
+      "A20",
+      "B19",
+      "B20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ]
+  },
+  {
+    "name": "Small forest shroom",
+    "rarity": "Common",
+    "locations": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ]
+  },
+  {
+    "name": "Small fresh water fish",
+    "rarity": "Common",
+    "locations": [
+      "B12",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D9",
+      "E10",
+      "E11",
+      "E12",
+      "F11",
+      "F14",
+      "F15",
+      "G11",
+      "G14",
+      "G15",
+      "H10",
+      "H11",
+      "H13",
+      "H14",
+      "H15",
+      "I10",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "K1",
+      "K10",
+      "K12",
+      "K13",
+      "K14",
+      "K15",
+      "K16",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L13",
+      "L14",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ]
+  },
+  {
+    "name": "Small glowing shroom",
+    "rarity": "Common",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ]
+  },
+  {
+    "name": "Small spider",
+    "rarity": "Common",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F10",
+      "F12",
+      "F13",
+      "F16",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "G1",
+      "G10",
+      "G12",
+      "G13",
+      "G16",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "H1",
+      "H12",
+      "H16",
+      "H17",
+      "H18",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H7",
+      "H8",
+      "H9",
+      "I11",
+      "I12",
+      "I17",
+      "I18",
+      "I19",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J11",
+      "J18",
+      "J19",
+      "J20",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J9",
+      "K11",
+      "K5",
+      "K6",
+      "K7",
+      "L11",
+      "L7",
+      "M5",
+      "M7",
+      "N4",
+      "N5",
+      "O5",
+      "O6",
+      "O7",
+      "P10",
+      "P11",
+      "P3",
+      "P4",
+      "P7",
+      "P8",
+      "P9",
+      "Q5",
+      "Q6",
+      "R10",
+      "R7",
+      "R8",
+      "R9",
+      "S11"
+    ]
+  },
+  {
+    "name": "Small volcanic rock",
+    "rarity": "Common",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ]
+  },
+  {
+    "name": "Spermatoa",
+    "rarity": "Epic",
+    "locations": [
+      "I1",
+      "I2",
+      "J3",
+      "K2",
+      "K3",
+      "L1",
+      "M1",
+      "M2",
+      "M4",
+      "N1",
+      "N2"
+    ]
+  },
+  {
+    "name": "Stagnant water",
+    "rarity": "Common",
+    "locations": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F16",
+      "G16",
+      "H16",
+      "H17",
+      "H18",
+      "I17",
+      "I18",
+      "I19",
+      "J18",
+      "J19",
+      "J20"
+    ]
+  },
+  {
+    "name": "Standard sand",
+    "rarity": "Common",
+    "locations": [
+      "Q4",
+      "R4",
+      "R5",
+      "S10",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T11",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ]
+  },
+  {
+    "name": "Strange crystal",
+    "rarity": "Epic",
+    "locations": [
+      "G6",
+      "G7",
+      "I7",
+      "L9",
+      "M9",
+      "N10",
+      "N11",
+      "N12",
+      "N9"
+    ]
+  },
+  {
+    "name": "Strange eggs",
+    "rarity": "Epic",
+    "locations": [
+      "A16",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B6",
+      "C14",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "D1",
+      "D14",
+      "D3",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "E1",
+      "E2",
+      "E3"
+    ]
+  },
+  {
+    "name": "Strange fluffy mucus",
+    "rarity": "Rare",
+    "locations": [
+      "O3",
+      "O4",
+      "P5",
+      "P6",
+      "Q10",
+      "Q7",
+      "Q8",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ]
+  },
+  {
+    "name": "Strange jelly",
+    "rarity": "Legendary",
+    "locations": [
+      "H6"
+    ]
+  },
+  {
+    "name": "Strange scale",
+    "rarity": "Ultimate",
+    "locations": [
+      "H6"
+    ]
+  },
+  {
+    "name": "Strange tooth",
+    "rarity": "Rare",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S2",
+      "T1",
+      "T2"
+    ]
+  },
+  {
+    "name": "Stream water",
+    "rarity": "Common",
+    "locations": [
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10"
+    ]
+  },
+  {
+    "name": "Sweet nectar",
+    "rarity": "Rare",
+    "locations": [
+      "O15",
+      "P16"
+    ]
+  },
+  {
+    "name": "Sweet water",
+    "rarity": "Epic",
+    "locations": [
+      "F19"
+    ]
+  },
+  {
+    "name": "Tailless yellow fish",
+    "rarity": "Common",
+    "locations": [
+      "Q3",
+      "R3",
+      "S3",
+      "T3"
+    ]
+  },
+  {
+    "name": "Tornado fish",
+    "rarity": "Rare",
+    "locations": [
+      "F11",
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "K10",
+      "K12",
+      "K14",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9",
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ]
+  },
+  {
+    "name": "Toxic salamander",
+    "rarity": "Epic",
+    "locations": [
+      "A18",
+      "E16",
+      "G16",
+      "H17",
+      "H18",
+      "J19"
+    ]
+  },
+  {
+    "name": "Tropical Venus",
+    "rarity": "Rare",
+    "locations": [
+      "A19",
+      "B19",
+      "B20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ]
+  },
+  {
+    "name": "Tropical water",
+    "rarity": "Rare",
+    "locations": [
+      "A20",
+      "B19",
+      "B20",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ]
+  },
+  {
+    "name": "Uncommon river fish",
+    "rarity": "Rare",
+    "locations": [
+      "F11",
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10",
+      "J12",
+      "J13",
+      "J14",
+      "K10",
+      "K12",
+      "K14",
+      "K8",
+      "K9",
+      "L10",
+      "L12",
+      "L14",
+      "L5",
+      "L6",
+      "L8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M6",
+      "M8",
+      "N13",
+      "N14",
+      "N15",
+      "N16",
+      "N6",
+      "N7",
+      "N8",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O16",
+      "O17",
+      "O18",
+      "O19",
+      "O20",
+      "O8",
+      "O9"
+    ]
+  },
+  {
+    "name": "Underwater beetle",
+    "rarity": "Common",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ]
+  },
+  {
+    "name": "Volcanic Ashes",
+    "rarity": "Common",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ]
+  },
+  {
+    "name": "Volcanic grass",
+    "rarity": "Epic",
+    "locations": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ]
+  },
+  {
+    "name": "Warm water fish",
+    "rarity": "Legendary",
+    "locations": [
+      "L9",
+      "M9",
+      "N10",
+      "N11",
+      "N12",
+      "N9"
+    ]
+  },
+  {
+    "name": "Premium honey",
+    "rarity": "Epic",
+    "locations": [
+      "O15",
+      "P16"
+    ]
+  },
+  {
+    "name": "Flowers from the field",
+    "rarity": "Rare",
+    "locations": [
+      "O15",
+      "P16"
+    ]
+  },
+  {
+    "name": "Royal jelly",
+    "rarity": "Legendary",
+    "locations": [
+      "O15",
+      "P16"
+    ]
+  },
+  {
+    "name": "Forbidden water",
+    "rarity": "Legendary",
+    "locations": [
+      "Q1"
+    ]
+  },
+  {
+    "name": "Red coral",
+    "rarity": "Rare",
+    "locations": [
+      "T20"
+    ]
+  },
+  {
+    "name": "Hydrostinger",
+    "rarity": "Legendary",
+    "locations": [
+      "Q1"
+    ]
+  },
+  {
+    "name": "Deep killer's head",
+    "rarity": "Epic",
+    "locations": [
+      "Q18",
+      "Q19",
+      "Q20",
+      "R19",
+      "R20",
+      "T19",
+      "T20"
+    ]
+  },
+  {
+    "name": "Large boletus",
+    "rarity": "Epic",
+    "locations": [
+      "I1",
+      "I2",
+      "J2",
+      "J3",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ]
+  },
+  {
+    "name": "Hallucinogenic sap",
+    "rarity": "Epic",
+    "locations": [
+      "I1",
+      "I2",
+      "J2",
+      "K3",
+      "L1",
+      "M1",
+      "M3",
+      "N1",
+      "N2"
+    ]
+  },
+  {
+    "name": "Fish oil",
+    "rarity": "Epic",
+    "locations": [
+      "P17",
+      "P18",
+      "P20",
+      "S18",
+      "T18"
+    ]
+  },
+  {
+    "name": "spring water ",
+    "rarity": "epic",
+    "locations": [
+      "D9"
+    ]
+  },
+  {
+    "name": "hard scale ",
+    "rarity": "Rare",
+    "locations": [
+      "S2"
+    ]
+  },
+  {
+    "name": "Medusashroom",
+    "rarity": "Epic",
+    "locations": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ]
+  },
+  {
+    "name": "Southern sea shrimp",
+    "rarity": "Common",
+    "locations": [
+      "T20"
+    ]
+  },
+  {
+    "name": "Glowing flowers",
+    "rarity": "Epic",
+    "locations": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ]
+  },
+  {
+    "name": "Alien choke",
+    "rarity": "Ultimate",
+    "locations": [
+      "Q5",
+      "R9"
+    ]
+  },
+  {
+    "name": "Amphibiblob",
+    "rarity": "Ultimate",
+    "locations": [
+      "G6",
+      "H5",
+      "H7",
+      "I6",
+      "I7",
+      "J4"
+    ]
+  },
+  {
+    "name": "Apertian trout",
+    "rarity": "Ultimate",
+    "locations": [
+      "F11"
+    ]
+  },
+  {
+    "name": "Blue isopod",
+    "rarity": "Epic",
+    "locations": [
+      "P2",
+      "Q2",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ]
+  },
+  {
+    "name": "Cactus Juice",
+    "rarity": "Epic",
+    "locations": [
+      "R5",
+      "S10",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T10",
+      "T4",
+      "T5",
+      "T6",
+      "T8"
+    ]
+  },
+  {
+    "name": "Calipseum Violaceum",
+    "rarity": "Ultimate",
+    "locations": [
+      "A7",
+      "B14",
+      "B6",
+      "C12",
+      "C14",
+      "C3",
+      "C7",
+      "D12",
+      "D5",
+      "D7",
+      "D8",
+      "D9",
+      "E1",
+      "E12"
+    ]
+  },
+  {
+    "name": "Cosmic rock",
+    "rarity": "Legendary",
+    "locations": [
+      "D2",
+      "I3",
+      "N3",
+      "Q13"
+    ]
+  },
+  {
+    "name": "Cosmic water",
+    "rarity": "Legendary",
+    "locations": [
+      "D2",
+      "I3",
+      "N3",
+      "Q13",
+      "R6"
+    ]
+  },
+  {
+    "name": "Crystallic water",
+    "rarity": "Ultimate",
+    "locations": [
+      "T20"
+    ]
+  },
+  {
+    "name": "Desert fish",
+    "rarity": "Epic",
+    "locations": [
+      "S5",
+      "T7",
+      "T9"
+    ]
+  },
+  {
+    "name": "Double water",
+    "rarity": "Epic",
+    "locations": [
+      "T1"
+    ]
+  },
+  {
+    "name": "Eel from the lake",
+    "rarity": "Ultimate",
+    "locations": [
+      "S16",
+      "T16"
+    ]
+  },
+  {
+    "name": "Flappy ray",
+    "rarity": "Epic",
+    "locations": [
+      "T20"
+    ]
+  },
+  {
+    "name": "Flying snake",
+    "rarity": "Ultimate",
+    "locations": [
+      "O1",
+      "O2",
+      "S13"
+    ]
+  },
+  {
+    "name": "Flying spider",
+    "rarity": "Legendary",
+    "locations": [
+      "O1",
+      "O2"
+    ]
+  },
+  {
+    "name": "Freshwater oyster",
+    "rarity": "Ultimate",
+    "locations": [
+      "H10",
+      "H11",
+      "I10"
+    ]
+  },
+  {
+    "name": "Gelida Herbida",
+    "rarity": "Ultimate",
+    "locations": [
+      "A11",
+      "A12",
+      "B10",
+      "B9",
+      "C8"
+    ]
+  },
+  {
+    "name": "Glowing rocks",
+    "rarity": "Ultimate",
+    "locations": [
+      "H6"
+    ]
+  },
+  {
+    "name": "Glowing sea stars",
+    "rarity": "Ultimate",
+    "locations": [
+      "T1"
+    ]
+  },
+  {
+    "name": "Glowing spider",
+    "rarity": "Ultimate",
+    "locations": [
+      "L19",
+      "L20",
+      "M18"
+    ]
+  },
+  {
+    "name": "Hybrid grass",
+    "rarity": "Epic",
+    "locations": [
+      "P3",
+      "P4",
+      "Q6",
+      "R10",
+      "R8",
+      "R9",
+      "S11"
+    ]
+  },
+  {
+    "name": "Liquid Jelly",
+    "rarity": "Epic",
+    "locations": [
+      "H13",
+      "H15",
+      "I13",
+      "I14"
+    ]
+  },
+  {
+    "name": "Liquidoshroom",
+    "rarity": "Epic",
+    "locations": [
+      "B18",
+      "E16",
+      "G16",
+      "H16",
+      "I19",
+      "J18",
+      "J19"
+    ]
+  },
+  {
+    "name": "Milky mantis shrimp",
+    "rarity": "Legendary",
+    "locations": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "T2"
+    ]
+  },
+  {
+    "name": "Mystic water",
+    "rarity": "Ultimate",
+    "locations": [
+      "S20"
+    ]
+  },
+  {
+    "name": "One-eyed squid",
+    "rarity": "Epic",
+    "locations": [
+      "Q1"
+    ]
+  },
+  {
+    "name": "Perfecta liquida",
+    "rarity": "Ultimate",
+    "locations": [
+      "G7",
+      "H5",
+      "H7",
+      "I6"
+    ]
+  },
+  {
+    "name": "Prickly pear",
+    "rarity": "Ultimate",
+    "locations": [
+      "R5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "T4"
+    ]
+  },
+  {
+    "name": "Relaxing algae",
+    "rarity": "Ultimate",
+    "locations": [
+      "M6"
+    ]
+  },
+  {
+    "name": "Salty queen",
+    "rarity": "Ultimate",
+    "locations": [
+      "T13"
+    ]
+  },
+  {
+    "name": "Salty sand",
+    "rarity": "Common",
+    "locations": [
+      "T13"
+    ]
+  },
+  {
+    "name": "Spring water",
+    "rarity": "Epic",
+    "locations": [
+      "B12",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D9",
+      "E10",
+      "E11",
+      "E12"
+    ]
+  },
+  {
+    "name": "Strange forest moss",
+    "rarity": "Ultimate",
+    "locations": [
+      "K3",
+      "L1",
+      "M1",
+      "M4",
+      "N2"
+    ]
+  },
+  {
+    "name": "Swamp Glimmer",
+    "rarity": "Epic",
+    "locations": [
+      "G16",
+      "H16",
+      "H17",
+      "I19",
+      "J19"
+    ]
+  },
+  {
+    "name": "Thorns",
+    "rarity": "Legendary",
+    "locations": [
+      "P15"
+    ]
+  },
+  {
+    "name": "Umbreallapod",
+    "rarity": "Epic",
+    "locations": [
+      "F15",
+      "G14",
+      "H13",
+      "H14",
+      "I13"
+    ]
+  },
+  {
+    "name": "Underwater totem",
+    "rarity": "Ultimate",
+    "locations": [
+      "H6",
+      "S16"
+    ]
+  },
+  {
+    "name": "Umbreallapod",
+    "rarity": "Common",
+    "locations": [
+      "I14?"
+    ]
+  },
+  {
+    "name": "Forbidden fruit",
+    "rarity": "Ultimate",
+    "locations": [
+      "F19"
+    ]
+  },
+  {
+    "name": "Blue queen",
+    "rarity": "Ultimate",
+    "locations": [
+      "J15",
+      "J17"
+    ]
+  },
+  {
+    "name": "Astral dust",
+    "rarity": "Ultimate",
+    "locations": [
+      "I3",
+      "N3",
+      "Q13",
+      "R6"
+    ]
+  },
+  {
+    "name": "Queen mushroom",
+    "rarity": "Ultimate",
+    "locations": [
+      "P14",
+      "Q11"
+    ]
+  },
+  {
+    "name": "Shadow predator",
+    "rarity": "Ultimate",
+    "locations": [
+      "T12"
+    ]
+  },
+  {
+    "name": "Invigorating algea",
+    "rarity": "Common",
+    "locations": [
+      "L9",
+      "M9",
+      "N10",
+      "N11",
+      "N12",
+      "N9"
+    ]
+  },
+  {
+    "name": "Ignis Flamis",
+    "rarity": "Ultimate",
+    "locations": [
+      "A2",
+      "A3",
+      "A6",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1"
+    ]
+  },
+  {
+    "name": "Mantis religiosa",
+    "rarity": "Ultimate",
+    "locations": [
+      "A20?"
+    ]
+  },
+  {
+    "name": "Queen ZOE",
+    "rarity": "Ultimate",
+    "locations": [
+      "P15"
+    ]
+  },
+  {
+    "name": "Freshwater crayfishes",
+    "rarity": "Epic",
+    "locations": [
+      "G11",
+      "I10",
+      "J10"
+    ]
+  },
+  {
+    "name": "Carp from the lake",
+    "rarity": "Legendary",
+    "locations": [
+      "S15",
+      "S16",
+      "S17",
+      "T16",
+      "T17"
+    ]
+  },
+  {
+    "name": "Unstable water",
+    "rarity": "Ultimate",
+    "locations": [
+      "N14"
+    ]
+  },
+  {
+    "name": "Freshwater sponge",
+    "rarity": "Ultimate",
+    "locations": [
+      "O8"
+    ]
+  }
+]
