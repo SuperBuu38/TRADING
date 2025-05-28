@@ -373,56 +373,18 @@
     </div>
 
     <script>
-        // Biome data
-        const biomeData = {
-            "1": { name: "Volcanic area", lands: 13, color: "#FF4444" }, "2": { name: "Mountains", lands: 24, color: "#808080" },
-            "3": { name: "Satoyama", lands: 20, color: "#90EE90" }, "4": { name: "Vast plains", lands: 25, color: "#32CD32" },
-            "5": { name: "Dark forest", lands: 20, color: "#2D2D2D" }, "6": { name: "River", lands: 25, color: "#4444FF" },
-            "7": { name: "River bifurcation", lands: 3, color: "#6495ED" }, "8": { name: "Distributary", lands: 7, color: "#87CEEB" },
-            "9": { name: "Edge of the world", lands: 12, color: "#D3D3D3" }, "10": { name: "Bottom of the cliff", lands: 9, color: "#FFD700" },
-            "11": { name: "Vast Desert", lands: 15, color: "#F0E68C" }, "12": { name: "Oasis", lands: 3, color: "#228B22" },
-            "13": { name: "Rainy lands", lands: 11, color: "#483D8B" }, "14": { name: "Canyon", lands: 10, color: "#DEB887" },
-            "15": { name: "Giant Mushroom forest", lands: 13, color: "#FF6B6B" }, "16": { name: "Warm swamps", lands: 18, color: "#BDB76B" },
-            "17": { name: "Tropical Jungle", lands: 22, color: "#228B22" }, "18": { name: "Mystic island", lands: 1, color: "#FFA500" },
-            "19": { name: "Cascades", lands: 3, color: "#FF69B4" }, "20": { name: "Cold summits", lands: 13, color: "#FFFFFF" },
-            "21": { name: "Spring water area", lands: 14, color: "#ADD8E6" }, "22": { name: "Large forest", lands: 15, color: "#006400" },
-            "23": { name: "Lush banks", lands: 4, color: "#98FB98" }, "24": { name: "Rocky hill", lands: 14, color: "#A9A9A9" },
-            "25": { name: "Thermas source", lands: 6, color: "#FF69B4" }, "26": { name: "Southern shore", lands: 8, color: "#C0C0C0" },
-            "27": { name: "The Wetlands", lands: 8, color: "#FFD700" }, "28": { name: "Meteor Crater", lands: 5, color: "#800080" },
-            "29": { name: "Geyser area", lands: 11, color: "#FF6B6B" }, "30": { name: "Rapids", lands: 1, color: "#4169E1" },
-            "31": { name: "The passage", lands: 1, color: "#808080" }, "32": { name: "Desert and sea", lands: 1, color: "#C0C0C0" },
-            "33": { name: "Western Stream", lands: 5, color: "#4682B4" }, "34": { name: "Lake area", lands: 9, color: "#4169E1" },
-            "35": { name: "Botttomless pit", lands: 1, color: "#800080" }, "36": { name: "Mysterious Fountain", lands: 1, color: "#4682B4" },
-            "37": { name: "The edge", lands: 2, color: "#2F4F4F" }, "38": { name: "Strange underwater area", lands: 1, color: "#FF4444" },
-            "39": { name: "Forgotten Paradise", lands: 1, color: "#FF69B4" }, "40": { name: "Forgotten artifact", lands: 1, color: "#FF0000" },
-            "41": { name: "Northern Ocean", lands: 8, color: "#000080" }, "42": { name: "Abandonned ruins", lands: 1, color: "#FFA500" },
-            "43": { name: "Northern coast", lands: 4, color: "#FFD700" }, "44": { name: "Strange mine", lands: 1, color: "#FF69B4" },
-            "45": { name: "Southern sea", lands: 7, color: "#4682B4" }, "46": { name: "Flower field", lands: 2, color: "#FF69B4" },
-            "47": { name: "Rose garden", lands: 1, color: "#FF1493" }
-        };
-        // Grid data
-        const gridData = [
-            ["1","1","1","2","2","3","4","4","22","22","23","22","22","22","37","41","42","41","41","38"],
-            ["1","1","1","28","2","3","4","4","22","22","22","23","22","22","37","41","41","41","41","41"],
-            ["1","1","2","2","2","3","4","4","28","22","22","23","22","28","9","10","43","43","43","43"],
-            ["1","1","2","2","3","3","4","4","4","24","22","23","22","14","9","10","11","11","11","11"],
-            ["1","1","2","2","3","3","4","24","24","24","29","6","14","44","14","9","10","11","12","11"],
-            ["1","2","35","2","3","4","24","36","24","24","29","6","30","6","14","9","10","28","11","12"],
-            ["2","2","2","2","3","4","24","24","24","29","29","29","29","6","14","14","9","10","11","12"],
-            ["20","20","20","2","3","4","24","24","24","29","19","6","6","7","8","14","9","10","11","11"],
-            ["20","20","21","21","3","4","4","4","24","29","6","25","25","25","8","14","9","10","11","12"],
-            ["20","20","21","21","21","4","4","33","33","33","7","6","6","25","8","14","9","10","11","11"],
-            ["20","20","21","21","21","19","33","33","4","29","29","29","6","25","8","14","15","9","10","11"],
-            ["20","21","21","21","21","4","4","4","4","6","6","6","6","25","8","15","15","15","9","31"],
-            ["20","2","21","21","3","4","4","13","13","6","27","27","27","8","8","15","28","15","9","32"],
-            ["20","2","2","2","3","13","13","13","13","6","6","6","6","7","15","15","15","15","15","9"],
-            ["20","2","3","3","3","13","13","13","13","27","27","5","5","6","46","47","15","34","34","34"],
-            ["2","2","3","16","16","16","16","16","13","27","27","5","5","6","6","46","15","34","34","34"],
-            ["3","3","3","16","17","17","17","16","16","27","5","5","5","5","6","26","26","34","34","34"],
-            ["16","16","16","16","17","17","17","16","16","16","5","5","5","5","6","26","45","26","26","26"],
-            ["17","17","17","17","17","39","17","17","16","16","5","5","5","5","19","26","45","45","45","45"],
-            ["17","17","17","17","17","17","17","17","17","16","5","5","5","5","6","26","45","45","18","40"]
-        ];
+        // Generate unique colors for biomes - now using predefined colors
+        function generateUniqueColors(count) {
+            // This function is now obsolete since we use predefined colors
+            // but keeping it for backward compatibility
+            return [];
+        }
+
+        // Create biome lookup map - will be populated from fetched data
+        const biomeMap = {};
+        
+        // We'll build this dynamically from biomes_data.json
+        let cellToBiomeMap = {};
 
         let logsData = []; 
         const rarityOrder = { "Common": 1, "Rare": 2, "Epic": 3, "Legendary": 4, "Ultimate": 5 };
@@ -430,7 +392,7 @@
         const rarityPoints = { Common: 1, Rare: 2, Epic: 3, Legendary: 4, Ultimate: 5 };
         let cellMaterials = {}; 
         let allMaterials = new Set(); 
-        let sortedMaterialsCache = []; 
+        let sortedMaterialsCache = [];
 
         function cellToIndices(cellAddress) { const col = cellAddress.charCodeAt(0) - 65; const row = parseInt(cellAddress.substring(1)) - 1; return { row, col }; }
         function indicesToCell(row, col) { return String.fromCharCode(65 + col) + (row + 1); }
@@ -462,10 +424,11 @@
                 for (let col = 0; col < 20; col++) {
                     const cellElement = document.createElement('div'); cellElement.classList.add('map-cell'); cellElement.dataset.row = row; cellElement.dataset.col = col;
                     const cellAddress = indicesToCell(row, col); cellElement.id = `cell-${cellAddress}`;
-                    const biomeId = gridData[row][col]; 
-                    const biome = biomeData[biomeId]; 
+                    
+                    const biomeName = cellToBiomeMap[cellAddress]; 
+                    const biome = biomeMap[biomeName]; 
                     if (!biome) { 
-                        console.error(`Biome undefined for ID: ${biomeId} at ${cellAddress}`);
+                        console.error(`Biome undefined for name: ${biomeName} at ${cellAddress}`);
                         cellElement.style.backgroundColor = 'pink'; 
                         cellElement.textContent = 'ERR';
                         mapGrid.appendChild(cellElement);
@@ -593,9 +556,8 @@
 
             for (let r = 0; r < 20; r++) {
                 for (let c = 0; c < 20; c++) {
-                    const biomeId = gridData[r][c];
-                    const biome = biomeData[biomeId];
-                    if (biome && biome.name === biomeNameToHighlight) {
+                    const biomeName = cellToBiomeMap[indicesToCell(r, c)];
+                    if (biomeName === biomeNameToHighlight) {
                         const cellAddress = indicesToCell(r, c);
                         const cellElement = document.getElementById(`cell-${cellAddress}`);
                         if (cellElement) {
@@ -639,8 +601,8 @@
                     positions.push(cellAddress);
                     const { row, col } = cellToIndices(cellAddress);
                     if (row >= 0 && row < 20 && col >= 0 && col < 20) {
-                        const biomeId = gridData[row][col];
-                        const biome = biomeData[biomeId];
+                        const biomeName = cellToBiomeMap[cellAddress];
+                        const biome = biomeMap[biomeName];
                         if (biome) uniqueZoneNames.add(biome.name);
                         const cellElement = document.getElementById(`cell-${cellAddress}`);
                         if (cellElement) cellElement.classList.add('highlight-search');
@@ -701,7 +663,7 @@
 
         function calculateAndDisplayZoneStats() { 
             const biomeMaterialStats = {}; 
-            for (const cellAddress in cellMaterials) { const materialsInCell = cellMaterials[cellAddress]; const { row, col } = cellToIndices(cellAddress); if (row >= 0 && row < 20 && col >= 0 && col < 20) { const biomeId = gridData[row][col]; const currentBiome = biomeData[biomeId]; if (currentBiome) { if (!biomeMaterialStats[currentBiome.name]) { biomeMaterialStats[currentBiome.name] = { materials: new Set(), rarityStats: { Common: new Set(), Rare: new Set(), Epic: new Set(), Legendary: new Set(), Ultimate: new Set() }, totalValue: 0, countedForValue: new Set() }; } const biomeStat = biomeMaterialStats[currentBiome.name]; materialsInCell.forEach(materialStr => { biomeStat.materials.add(materialStr); const rarity = materialStr.split(", ")[1].trim(); if (biomeStat.rarityStats[rarity]) biomeStat.rarityStats[rarity].add(materialStr); if (!biomeStat.countedForValue.has(materialStr)) { biomeStat.totalValue += rarityPoints[rarity] || 0; biomeStat.countedForValue.add(materialStr); } }); } } }
+            for (const cellAddress in cellMaterials) { const materialsInCell = cellMaterials[cellAddress]; const { row, col } = cellToIndices(cellAddress); if (row >= 0 && row < 20 && col >= 0 && col < 20) { const biomeName = cellToBiomeMap[cellAddress]; const currentBiome = biomeMap[biomeName]; if (currentBiome) { if (!biomeMaterialStats[currentBiome.name]) { biomeMaterialStats[currentBiome.name] = { materials: new Set(), rarityStats: { Common: new Set(), Rare: new Set(), Epic: new Set(), Legendary: new Set(), Ultimate: new Set() }, totalValue: 0, countedForValue: new Set() }; } const biomeStat = biomeMaterialStats[currentBiome.name]; materialsInCell.forEach(materialStr => { biomeStat.materials.add(materialStr); const rarity = materialStr.split(", ")[1].trim(); if (biomeStat.rarityStats[rarity]) biomeStat.rarityStats[rarity].add(materialStr); if (!biomeStat.countedForValue.has(materialStr)) { biomeStat.totalValue += rarityPoints[rarity] || 0; biomeStat.countedForValue.add(materialStr); } }); } } }
             const biomeStatsArray = Object.entries(biomeMaterialStats).map(([name, data]) => ({ name, materialCount: data.materials.size, materials: Array.from(data.materials).sort((a,b) => { const rA = rarityOrder[a.split(", ")[1].trim()]||0; const rB = rarityOrder[b.split(", ")[1].trim()]||0; return rA !== rB ? rA - rB : a.localeCompare(b); }), rarityStats: data.rarityStats, totalValue: data.totalValue }));
             
             const topRichestZonesDiv = document.getElementById('topRichestZones'); topRichestZonesDiv.innerHTML = ''; biomeStatsArray.sort((a, b) => b.materialCount - a.materialCount); if (biomeStatsArray.length === 0) topRichestZonesDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>';
@@ -735,22 +697,25 @@
 
         async function initializeApp() {
             const mapGridElement = document.getElementById('mapGrid'); 
-            const logDataUrl = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/logs_parsed.json';
-            
+
             if (!document.body.classList.contains('theme-cyber')) {
                 document.body.classList.add('theme-cyber');
             }
 
             try {
+                
+                const logDataUrl = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/biomes_data.json';
                 const response = await fetch(logDataUrl);
                 if (!response.ok) throw new Error(`HTTP Error! Status: ${response.status}`);
-                logsData = await response.json();
+                const biomesData = await response.json();
+                
+                // Transform biomes data to the expected format
+                logsData = transformBiomesData(biomesData);
                 
                 processLogData();
                 createBiomeMap(); 
                 setupMaterialSearchInput(); 
                 calculateAndDisplayZoneStats(); 
-                // updateSelectArrow(); // Obsolete
 
             } catch (error) {
                 console.error("Could not load log data:", error);
@@ -761,6 +726,101 @@
                 document.getElementById('bestZonesByRarity').innerHTML = '<p class="error-message">Error loading statistics.</p>';
                 document.getElementById('topZonesByValue').innerHTML = '<p class="error-message">Error loading statistics.</p>';
             }
+        }
+
+        function transformBiomesData(biomesData) {
+            const materialMap = new Map();
+            
+            // Build cell to biome mapping and populate biomeMap
+            cellToBiomeMap = {};
+            
+            // Process each biome
+            biomesData.forEach(biome => {
+                // Populate biomeMap with fetched data
+                biomeMap[biome.name] = {
+                    id: biome.id,
+                    name: biome.name,
+                    size: biome.size,
+                    cells: biome.cells,
+                    mats: biome.mats,
+                    color: biome.color // Use the predefined color from the data
+                };
+                
+                // Map cells to biome names
+                if (biome.cells) {
+                    biome.cells.forEach(cell => {
+                        cellToBiomeMap[cell] = biome.name;
+                    });
+                }
+                
+                // Process materials
+                if (biome.mats && biome.cells) {
+                    biome.mats.forEach(materialName => {
+                        if (!materialMap.has(materialName)) {
+                            materialMap.set(materialName, {
+                                name: materialName,
+                                rarity: "Common", // Will be updated later
+                                locations: []
+                            });
+                        }
+                        
+                        // Add all cells from this biome to the material's locations
+                        const material = materialMap.get(materialName);
+                        biome.cells.forEach(cell => {
+                            if (!material.locations.includes(cell)) {
+                                material.locations.push(cell);
+                            }
+                        });
+                    });
+                }
+            });
+            
+            // Assign rarities based on material distribution and names
+            const materials = Array.from(materialMap.values());
+            materials.forEach(material => {
+                material.rarity = assignRarity(material.name, material.locations.length);
+            });
+            
+            return materials;
+        }
+
+        function assignRarity(materialName, locationCount) {
+            const name = materialName.toLowerCase();
+            
+            // Ultimate rarity keywords
+            if (name.includes('queen') || name.includes('emperor') || name.includes('forbidden') || 
+                name.includes('antimatter') || name.includes('crystallic') || name.includes('ultimate')) {
+                return "Ultimate";
+            }
+            
+            // Legendary rarity keywords
+            if (name.includes('legendary') || name.includes('cosmic') || name.includes('astral') || 
+                name.includes('anti-gravity') || name.includes('deep killer') || name.includes('mackerel') ||
+                name.includes('apertian') && (name.includes('mouse') || name.includes('queen')) ||
+                name.includes('hydrostinger') || name.includes('calipseum') || name.includes('ignis flamis')) {
+                return "Legendary";
+            }
+            
+            // Epic rarity keywords
+            if (name.includes('epic') || name.includes('tornado') || name.includes('singing king') ||
+                name.includes('asymmetric') || name.includes('flying snake') || name.includes('alien') ||
+                name.includes('premium') || name.includes('royal') || name.includes('exotic') ||
+                name.includes('glowing') && (name.includes('spider') || name.includes('stars')) ||
+                name.includes('apertian') && name.includes('green')) {
+                return "Epic";
+            }
+            
+            // Rare rarity keywords
+            if (name.includes('rare') || name.includes('uncommon') || name.includes('strange') ||
+                name.includes('liquid') || name.includes('fermented') || name.includes('poisonous') ||
+                name.includes('firework') || name.includes('mantis') || name.includes('unstable') ||
+                name.includes('algea') || name.includes('anemona') || name.includes('milky') ||
+                name.includes('thorns') || locationCount <= 3) {
+                return "Rare";
+            }
+            
+            // Everything else is Common
+            return "Common";
         }
 
         document.addEventListener('DOMContentLoaded', initializeApp);
