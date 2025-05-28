@@ -8,20 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto:wght@400;700&family=Orbitron:wght@400&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* --- Theme: Cyber Blue (Default) --- */
-            --theme-bg-primary: #0f172a; /* Dark Slate Blue */
-            --theme-bg-secondary: #1e293b; /* Medium Slate Blue */
-            --theme-bg-tertiary: #0b121e;   /* Very Dark Slate Blue */
-            --theme-text-primary: #e2e8f0;  /* Light Slate Gray */
-            --theme-text-secondary: #94a3b8; /* Medium Slate Gray */
-            --theme-accent-primary: #0ea5e9; /* Sky Blue */
-            --theme-accent-secondary: #7dd3fc; /* Lighter Sky Blue */
-            --theme-accent-glow: rgba(14, 165, 233, 0.3);
+            --theme-bg-primary: #0f172a; 
+            --theme-bg-secondary: #1e293b; 
+            --theme-bg-tertiary: #0b121e;   
+            --theme-text-primary: #e2e8f0;  
+            --theme-text-secondary: #94a3b8; 
+            --theme-accent-primary: #0ea5e9; 
+            --theme-accent-secondary: #7dd3fc; 
+            --theme-accent-glow: rgba(14, 165, 233, 0.2); 
             --theme-border-primary: #0ea5e9;
-            --theme-border-secondary: #334155; /* Darker border for cyber */
-            --theme-highlight-glow: #00f0ff; /* Cyan for highlight */
+            --theme-border-secondary: #334155; 
+            --theme-highlight-glow: #00f0ff; 
             --theme-highlight-border: #00f0ff;
-            --theme-select-arrow-fill: '%230ea5e9'; /* URL encoded sky blue */
+            --theme-select-arrow-fill: '%230ea5e9'; 
         }
 
         body {
@@ -36,17 +35,17 @@
             padding: 1rem 2rem 2rem 2rem;
         }
         h1.main-title {
-            font-family: 'Exo 2', sans-serif; /* Changed Font */
+            font-family: 'Exo 2', sans-serif;
             color: var(--theme-accent-primary);
-            text-shadow: 0 0 5px var(--theme-accent-primary), 0 0 10px var(--theme-accent-primary);
-            font-weight: 700; /* Bolder for Exo 2 */
+            text-shadow: 0 0 3px var(--theme-accent-primary);
+            font-weight: 700;
         }
 
         .map-area-wrapper {
             background-color: var(--theme-bg-secondary);
             padding: 10px;
             border-radius: 12px;
-            box-shadow: 0 0 20px var(--theme-accent-glow);
+            box-shadow: 0 0 15px var(--theme-accent-glow);
             border: 1px solid var(--theme-border-primary);
         }
 
@@ -63,9 +62,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Exo 2', sans-serif; /* Changed Font */
+            font-family: 'Exo 2', sans-serif;
             font-weight: 700;
-            font-size: 13px; /* Adjusted for Exo 2 */
+            font-size: 13px;
             background-color: var(--theme-bg-tertiary);
             color: var(--theme-accent-primary);
             border: 1px solid var(--theme-border-secondary);
@@ -97,7 +96,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Orbitron', sans-serif; /* Kept Orbitron for cell numbers for distinct look */
+            font-family: 'Orbitron', sans-serif;
             font-weight: bold;
             font-size: 16px;
             position: relative;
@@ -123,7 +122,6 @@
             left: 50%;
             transform: translateX(-50%);
             min-width: 280px;
-            /* Removed max-height and overflow-y for full display */
             opacity: 0;
             transition: opacity 0.3s, transform 0.3s;
             font-family: 'Roboto', sans-serif;
@@ -133,56 +131,80 @@
         }
         
         .tooltip h4 {
-            font-family: 'Exo 2', sans-serif; /* Changed Font */
+            font-family: 'Exo 2', sans-serif;
             font-weight: 700;
             margin-bottom: 6px;
             color: var(--theme-accent-primary);
-            font-size: 15px; /* Slightly larger for Exo 2 */
+            font-size: 15px;
         }
         .tooltip ul { list-style-type: none; padding: 0; margin: 0; }
-        .tooltip li { margin-bottom: 3px; }
+        .tooltip li { margin-bottom: 3px; white-space: pre; }
 
         .info-panel {
             background-color: var(--theme-bg-secondary);
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 0 20px var(--theme-accent-glow);
+            box-shadow: 0 0 15px var(--theme-accent-glow);
             border: 1px solid var(--theme-border-primary);
         }
         .info-panel h3 {
-            font-family: 'Exo 2', sans-serif; /* Changed Font */
-            font-size: 1.6rem; /* Adjusted for Exo 2 */
+            font-family: 'Exo 2', sans-serif;
+            font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 15px;
             color: var(--theme-accent-primary);
             border-bottom: 2px solid var(--theme-border-primary);
             padding-bottom: 8px;
-            text-shadow: 0 0 3px var(--theme-accent-primary);
+            text-shadow: 0 0 2px var(--theme-accent-primary);
         }
         .info-panel label {
-            font-family: 'Exo 2', sans-serif; /* Changed Font */
+            font-family: 'Exo 2', sans-serif;
             color: var(--theme-accent-primary);
-            font-size: 1rem; /* Adjusted for Exo 2 */
+            font-size: 1rem;
             font-weight: 700;
         }
-        .info-panel select {
+        
+        #materialSearchInput {
             font-family: 'Roboto', sans-serif;
             background-color: var(--theme-bg-tertiary);
             color: var(--theme-text-primary);
             border: 1px solid var(--theme-border-primary);
             border-radius: 6px;
             padding: 10px;
-            appearance: none;
-            background-image: var(--select-arrow-svg);
-            background-repeat: no-repeat;
-            background-position: right 0.75rem center;
-            background-size: 1.25em;
+            width: 100%;
+            box-sizing: border-box;
         }
-        .info-panel select:focus {
+        #materialSearchInput:focus {
             outline: none;
             border-color: var(--theme-accent-secondary);
             box-shadow: 0 0 0 3px var(--theme-accent-glow);
         }
+        .suggestions-container {
+            position: relative;
+        }
+        #materialSuggestions {
+            position: absolute;
+            background-color: var(--theme-bg-tertiary);
+            border: 1px solid var(--theme-border-primary);
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 90; 
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+        #materialSuggestions div {
+            padding: 8px 12px;
+            cursor: pointer;
+            color: var(--theme-text-primary);
+            font-family: 'Roboto', sans-serif;
+        }
+        #materialSuggestions div:hover {
+            background-color: var(--theme-accent-primary);
+            color: var(--theme-bg-primary);
+        }
+
         .info-panel .result-item {
             padding: 10px;
             border-bottom: 1px solid var(--theme-border-secondary);
@@ -199,13 +221,37 @@
             transform: scale(1.0); 
             z-index: 5;
         }
+
+        .flash-once {
+            animation: shortFlash 0.6s 1 ease-out;
+        }
+        @keyframes shortFlash {
+            0%, 100% { 
+                transform: scale(1.0);
+            }
+            50% { 
+                outline: 4px solid yellow !important; 
+                box-shadow: 0 0 15px yellow, 0 0 25px yellow !important;
+                transform: scale(1.1); 
+            }
+        }
+        .clickable-position {
+            padding: 2px 5px;
+            margin: 0 2px;
+            border-radius: 3px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .clickable-position:hover {
+            background-color: var(--theme-accent-primary);
+            color: var(--theme-bg-primary);
+        }
         
         .loading-message, .error-message {
             text-align: center;
             padding: 20px;
             font-size: 1.1rem;
             color: var(--theme-accent-primary);
-            font-family: 'Exo 2', sans-serif; /* Changed Font */
+            font-family: 'Exo 2', sans-serif;
         }
         .error-message { color: #ef4444; }
 
@@ -218,7 +264,7 @@
 
         .header-controls { 
             display: flex;
-            justify-content: space-between; /* Adjusted for when theme switcher is removed */
+            justify-content: center; 
             align-items: center;
             margin-bottom: 1.5rem;
         }
@@ -226,17 +272,18 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 30px;
-            font-family: 'Exo 2', sans-serif; /* Changed Font */
+            font-family: 'Exo 2', sans-serif;
             font-size: 0.9rem;
             color: var(--theme-text-secondary);
             border-top: 1px solid var(--theme-border-secondary);
         }
     </style>
 </head>
-<body class="p-0 theme-cyber"> <div class="container-wrapper">
+<body class="p-0 theme-cyber"> 
+    <div class="container-wrapper">
         <div class="header-controls">
             <h1 class="main-title text-4xl font-bold">Terragrid Material Finder</h1>
-            </div>
+        </div>
 
         <div class="flex flex-col lg:flex-row gap-8">
             <div class="flex-shrink-0 mx-auto lg:mx-0">
@@ -255,16 +302,15 @@
             <div class="flex-grow info-panel">
                 <div>
                     <h3 class="pb-2 mb-4">Material Search</h3>
-                    <div class="mb-6">
-                        <label for="materialSearch" class="block text-sm font-medium mb-2">Select a material:</label>
-                        <select id="materialSearch" class="mt-1 block w-full text-base shadow-sm" disabled>
-                            <option>Loading materials...</option>
-                        </select>
+                    <div class="mb-1"> <label for="materialSearchInput" class="block text-sm font-medium mb-2">Search for a material:</label>
+                        <div class="suggestions-container">
+                            <input type="text" id="materialSearchInput" class="mt-1 block w-full text-base shadow-sm" placeholder="Type to search materials...">
+                            <div id="materialSuggestions"></div>
+                        </div>
                     </div>
-                    <div id="materialSearchResults" class="text-sm space-y-2 bg-opacity-50 bg-black p-4 rounded-md border var(--theme-border-secondary)">
+                    <div id="materialSearchResults" class="text-sm space-y-2 bg-opacity-50 bg-black p-4 rounded-md border var(--theme-border-secondary) mt-4">
                         <p><strong>Material:</strong> <span id="selectedMaterialName" class="font-bold">-</span></p>
-                        <p><strong>Positions:</strong> <span id="selectedMaterialPositions" class="font-bold">-</span></p>
-                        <p><strong>Zones:</strong> <span id="selectedMaterialZones" class="font-bold">-</span></p>
+                        <p><strong>Positions:</strong> <span id="selectedMaterialPositions" class="font-bold leading-relaxed">-</span></p> <p><strong>Zones:</strong> <span id="selectedMaterialZones" class="font-bold">-</span></p>
                     </div>
                 </div>
 
@@ -296,7 +342,7 @@
     </div>
 
     <script>
-        // Biome data
+        // Biome data (Restored to full definition)
         const biomeData = {
             "1": { name: "Volcanic area", lands: 13, color: "#FF4444" }, "2": { name: "Mountains", lands: 24, color: "#808080" },
             "3": { name: "Satoyama", lands: 20, color: "#90EE90" }, "4": { name: "Vast plains", lands: 25, color: "#32CD32" },
@@ -323,8 +369,7 @@
             "45": { name: "Southern sea", lands: 7, color: "#4682B4" }, "46": { name: "Flower field", lands: 2, color: "#FF69B4" },
             "47": { name: "Rose garden", lands: 1, color: "#FF1493" }
         };
-
-        // Grid data
+        // Grid data (Restored to full definition)
         const gridData = [
             ["1","1","1","2","2","3","4","4","22","22","23","22","22","22","37","41","42","41","41","38"],
             ["1","1","1","28","2","3","4","4","22","22","22","23","22","22","37","41","41","41","41","41"],
@@ -349,166 +394,139 @@
         ];
 
         let logsData = []; 
-
         const rarityOrder = { "Common": 1, "Rare": 2, "Epic": 3, "Legendary": 4, "Ultimate": 5 };
         const rarityEmojis = { "Common": "🔵", "Rare": "🟢", "Epic": "🔴", "Legendary": "🟠", "Ultimate": "🟣" };
         const rarityPoints = { Common: 1, Rare: 2, Epic: 3, Legendary: 4, Ultimate: 5 };
-
         let cellMaterials = {}; 
         let allMaterials = new Set(); 
+        let sortedMaterialsCache = []; 
 
-        function cellToIndices(cellAddress) {
-            const col = cellAddress.charCodeAt(0) - 65; 
-            const row = parseInt(cellAddress.substring(1)) - 1; 
-            return { row, col };
-        }
-
-        function indicesToCell(row, col) {
-            return String.fromCharCode(65 + col) + (row + 1);
-        }
+        function cellToIndices(cellAddress) { const col = cellAddress.charCodeAt(0) - 65; const row = parseInt(cellAddress.substring(1)) - 1; return { row, col }; }
+        function indicesToCell(row, col) { return String.fromCharCode(65 + col) + (row + 1); }
         
         function processLogData() {
-            if (!logsData || logsData.length === 0) {
-                console.warn("No log data to process.");
-                return;
-            }
+            if (!logsData || logsData.length === 0) { console.warn("No log data to process."); return; }
             logsData.forEach(materialEntry => {
                 const fullMaterialName = `${materialEntry.name}, ${materialEntry.rarity}`;
                 allMaterials.add(fullMaterialName);
                 if (materialEntry.locations && Array.isArray(materialEntry.locations)) {
                     materialEntry.locations.forEach(location => {
-                        if (!cellMaterials[location]) {
-                            cellMaterials[location] = [];
-                        }
-                        if (!cellMaterials[location].includes(fullMaterialName)) {
-                             cellMaterials[location].push(fullMaterialName);
-                        }
+                        if (!cellMaterials[location]) cellMaterials[location] = [];
+                        if (!cellMaterials[location].includes(fullMaterialName)) cellMaterials[location].push(fullMaterialName);
                     });
                 }
             });
+            sortedMaterialsCache = Array.from(allMaterials).sort(); 
         }
 
-        function createBiomeMap() {
+        function createBiomeMap() { 
             const mapGrid = document.getElementById('mapGrid');
             const columnHeadersDiv = document.getElementById('columnHeaders');
             const rowHeadersDiv = document.getElementById('rowHeaders');
-
-            mapGrid.innerHTML = ''; 
-            columnHeadersDiv.innerHTML = '';
-            rowHeadersDiv.innerHTML = '';
-
-            for (let col = 0; col < 20; col++) {
-                const headerCell = document.createElement('div');
-                headerCell.classList.add('map-header-cell');
-                headerCell.textContent = String.fromCharCode(65 + col);
-                columnHeadersDiv.appendChild(headerCell);
-            }
-
-            for (let row = 0; row < 20; row++) {
-                const headerCell = document.createElement('div');
-                headerCell.classList.add('map-header-cell');
-                headerCell.textContent = row + 1;
-                rowHeadersDiv.appendChild(headerCell);
-            }
+            mapGrid.innerHTML = ''; columnHeadersDiv.innerHTML = ''; rowHeadersDiv.innerHTML = '';
+            for (let col = 0; col < 20; col++) { const headerCell = document.createElement('div'); headerCell.classList.add('map-header-cell'); headerCell.textContent = String.fromCharCode(65 + col); columnHeadersDiv.appendChild(headerCell); }
+            for (let row = 0; row < 20; row++) { const headerCell = document.createElement('div'); headerCell.classList.add('map-header-cell'); headerCell.textContent = row + 1; rowHeadersDiv.appendChild(headerCell); }
 
             for (let row = 0; row < 20; row++) {
                 for (let col = 0; col < 20; col++) {
-                    const cellElement = document.createElement('div');
-                    cellElement.classList.add('map-cell');
-                    cellElement.dataset.row = row;
-                    cellElement.dataset.col = col;
-                    const cellAddress = indicesToCell(row, col);
-                    cellElement.id = `cell-${cellAddress}`;
-
-                    const biomeId = gridData[row][col];
-                    const biome = biomeData[biomeId];
+                    const cellElement = document.createElement('div'); cellElement.classList.add('map-cell'); cellElement.dataset.row = row; cellElement.dataset.col = col;
+                    const cellAddress = indicesToCell(row, col); cellElement.id = `cell-${cellAddress}`;
+                    const biomeId = gridData[row][col]; 
+                    const biome = biomeData[biomeId]; 
+                    if (!biome) { // Defensive check
+                        console.error(`Biome undefined for ID: ${biomeId} at ${cellAddress}`);
+                        cellElement.style.backgroundColor = 'pink'; // Error color
+                        cellElement.textContent = 'ERR';
+                        mapGrid.appendChild(cellElement);
+                        continue; 
+                    }
                     cellElement.style.backgroundColor = biome.color;
-                    
-                    const bgColor = biome.color.startsWith('#') ? biome.color : '#FFFFFF'; 
-                    const r = parseInt(bgColor.slice(1, 3), 16);
-                    const g = parseInt(bgColor.slice(3, 5), 16);
-                    const b = parseInt(bgColor.slice(5, 7), 16);
+                    const bgColor = biome.color.startsWith('#') ? biome.color : '#FFFFFF'; const r = parseInt(bgColor.slice(1, 3), 16); const g = parseInt(bgColor.slice(3, 5), 16); const b = parseInt(bgColor.slice(5, 7), 16);
                     const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
                     const currentThemeBg = getComputedStyle(document.body).getPropertyValue('--theme-bg-primary').trim();
                     cellElement.style.color = luminance > 0.5 ? currentThemeBg : '#FFFFFF';
-
-
-                    const materialsInCell = cellMaterials[cellAddress] || [];
-                    const uniqueMaterialsInCell = [...new Set(materialsInCell)];
+                    const materialsInCell = cellMaterials[cellAddress] || []; const uniqueMaterialsInCell = [...new Set(materialsInCell)];
                     cellElement.textContent = uniqueMaterialsInCell.length > 0 ? uniqueMaterialsInCell.length : '';
-
-                    const tooltipElement = document.createElement('div'); 
-                    tooltipElement.classList.add('tooltip');
+                    const tooltipElement = document.createElement('div'); tooltipElement.classList.add('tooltip');
                     let tooltipContent = `<h4>${biome.name}</h4>`;
                     if (uniqueMaterialsInCell.length > 0) {
                         tooltipContent += '<ul>';
-                        uniqueMaterialsInCell.sort((a, b) => {
-                            const rarityA = a.split(", ")[1].trim();
-                            const rarityB = b.split(", ")[1].trim();
-                            return (rarityOrder[rarityA] || 0) - (rarityOrder[rarityB] || 0);
-                        });
+                        uniqueMaterialsInCell.sort((a, b) => (rarityOrder[a.split(", ")[1].trim()] || 0) - (rarityOrder[b.split(", ")[1].trim()] || 0));
                         uniqueMaterialsInCell.forEach(materialStr => {
-                            const rarity = materialStr.split(", ")[1].trim();
-                            const emoji = rarityEmojis[rarity] || '❓';
+                            const rarity = materialStr.split(", ")[1].trim(); const emoji = rarityEmojis[rarity] || '❓';
                             tooltipContent += `<li>${emoji} ${materialStr}</li>`;
                         });
                         tooltipContent += '</ul>';
-                    } else {
-                        tooltipContent += '<p>No materials found.</p>';
-                    }
-                    tooltipElement.innerHTML = tooltipContent;
-                    cellElement.appendChild(tooltipElement);
-
-                    cellElement.addEventListener('mouseenter', (event) => {
+                    } else { tooltipContent += '<p>No materials found.</p>'; }
+                    tooltipElement.innerHTML = tooltipContent; cellElement.appendChild(tooltipElement);
+                    cellElement.addEventListener('mouseenter', (event) => { 
                         const cellRect = event.currentTarget.getBoundingClientRect();
-                        // Get tooltip height *after* content is set and it's temporarily visible
-                        tooltipElement.style.visibility = 'hidden'; // Keep it hidden for measurement
-                        tooltipElement.style.opacity = '0';     // Keep it transparent for measurement
-                        tooltipElement.style.display = 'block'; // Temporarily block to measure height
-                        const tooltipHeight = tooltipElement.offsetHeight;
-                        tooltipElement.style.display = ''; // Revert display
-
-                        tooltipElement.style.visibility = 'visible';
-                        tooltipElement.style.opacity = '1';
-
-                        if (cellRect.top < tooltipHeight + 10) { 
-                            tooltipElement.style.bottom = 'auto';
-                            tooltipElement.style.top = '100%';
-                            tooltipElement.style.transform = 'translateX(-50%) translateY(10px)';
-                        } else {
-                            tooltipElement.style.top = 'auto';
-                            tooltipElement.style.bottom = '125%';
-                             tooltipElement.style.transform = 'translateX(-50%) translateY(-5px)';
-                        }
+                        tooltipElement.style.visibility = 'hidden'; tooltipElement.style.opacity = '0'; tooltipElement.style.display = 'block'; 
+                        const tooltipHeight = tooltipElement.offsetHeight; tooltipElement.style.display = ''; 
+                        tooltipElement.style.visibility = 'visible'; tooltipElement.style.opacity = '1';
+                        if (cellRect.top < tooltipHeight + 10) { tooltipElement.style.bottom = 'auto'; tooltipElement.style.top = '100%'; tooltipElement.style.transform = 'translateX(-50%) translateY(10px)';
+                        } else { tooltipElement.style.top = 'auto'; tooltipElement.style.bottom = '125%'; tooltipElement.style.transform = 'translateX(-50%) translateY(-5px)'; }
                     });
-                    cellElement.addEventListener('mouseleave', () => {
-                        tooltipElement.style.visibility = 'hidden';
-                        tooltipElement.style.opacity = '0';
-                    });
+                    cellElement.addEventListener('mouseleave', () => { tooltipElement.style.visibility = 'hidden'; tooltipElement.style.opacity = '0'; });
                     mapGrid.appendChild(cellElement);
                 }
             }
         }
         
-        function setupMaterialSearchDropdown() {
-            const searchSelect = document.getElementById('materialSearch');
-            searchSelect.innerHTML = '<option value="">Select a material...</option>'; 
-            const sortedMaterials = Array.from(allMaterials).sort();
-            sortedMaterials.forEach(material => {
-                const option = document.createElement('option');
-                option.value = material;
-                option.textContent = material;
-                searchSelect.appendChild(option);
+        function setupMaterialSearchInput() {
+            const searchInput = document.getElementById('materialSearchInput');
+            const suggestionsDiv = document.getElementById('materialSuggestions');
+            
+            searchInput.addEventListener('input', function() {
+                const query = this.value.toLowerCase();
+                suggestionsDiv.innerHTML = ''; 
+                if (query.length < 1) { 
+                    suggestionsDiv.style.display = 'none';
+                    return;
+                }
+                const filteredMaterials = sortedMaterialsCache.filter(material => 
+                    material.toLowerCase().includes(query)
+                );
+                if (filteredMaterials.length > 0) {
+                    suggestionsDiv.style.display = 'block';
+                    filteredMaterials.slice(0, 10).forEach(materialString => { 
+                        const suggestionItem = document.createElement('div');
+                        const parts = materialString.split(', ');
+                        const rarity = parts[1] ? parts[1].trim() : "Common";
+                        const emoji = rarityEmojis[rarity] || '❓';
+                        suggestionItem.innerHTML = `${emoji} ${materialString}`; 
+                        suggestionItem.addEventListener('click', function() {
+                            searchInput.value = materialString; 
+                            suggestionsDiv.innerHTML = '';
+                            suggestionsDiv.style.display = 'none';
+                            displayMaterialInfo(materialString); 
+                        });
+                        suggestionsDiv.appendChild(suggestionItem);
+                    });
+                } else {
+                    suggestionsDiv.style.display = 'none';
+                }
             });
-            searchSelect.disabled = false; 
-            searchSelect.addEventListener('change', handleMaterialSearch);
-            updateSelectArrow(); 
+            document.addEventListener('click', function(event) {
+                if (!searchInput.contains(event.target) && !suggestionsDiv.contains(event.target)) {
+                    suggestionsDiv.style.display = 'none';
+                }
+            });
         }
 
-        function handleMaterialSearch(event) {
-            const selectedMaterial = event.target.value;
+        function flashCellOnMap(cellAddress) {
+            const cellElement = document.getElementById(`cell-${cellAddress}`);
+            if (cellElement) {
+                cellElement.classList.add('flash-once');
+                setTimeout(() => {
+                    cellElement.classList.remove('flash-once');
+                }, 600); 
+            }
+        }
+
+        function displayMaterialInfo(selectedMaterial) {
             const nameSpan = document.getElementById('selectedMaterialName');
-            const positionsSpan = document.getElementById('selectedMaterialPositions');
+            const positionsContainer = document.getElementById('selectedMaterialPositions'); 
             const zonesSpan = document.getElementById('selectedMaterialZones');
 
             document.querySelectorAll('.map-cell.highlight-search').forEach(cell => {
@@ -517,213 +535,118 @@
 
             if (!selectedMaterial) {
                 nameSpan.textContent = '-';
-                positionsSpan.textContent = '-';
+                positionsContainer.textContent = '-';
                 zonesSpan.textContent = '-';
                 return;
             }
+            
+            const parts = selectedMaterial.split(', ');
+            const materialNameOnly = parts[0];
+            const rarity = parts[1] ? parts[1].trim() : "";
+            const emojiForDisplay = rarityEmojis[rarity] || '';
+            nameSpan.innerHTML = `${emojiForDisplay} ${materialNameOnly}${rarity ? ', ' + rarity : ''}`;
 
-            nameSpan.textContent = selectedMaterial;
             const positions = [];
             const zones = new Set();
 
             for (const cellAddress in cellMaterials) {
-                if (cellMaterials[cellAddress].includes(selectedMaterial)) {
+                if (cellMaterials[cellAddress].includes(selectedMaterial)) { 
                     positions.push(cellAddress);
                     const { row, col } = cellToIndices(cellAddress);
                     if (row >= 0 && row < 20 && col >= 0 && col < 20) {
                         const biomeId = gridData[row][col];
                         const biome = biomeData[biomeId];
-                        if (biome) {
-                            zones.add(biome.name);
-                        }
+                        if (biome) zones.add(biome.name);
                         const cellElement = document.getElementById(`cell-${cellAddress}`);
-                        if (cellElement) {
-                            cellElement.classList.add('highlight-search');
-                        }
+                        if (cellElement) cellElement.classList.add('highlight-search');
                     }
                 }
             }
-            positionsSpan.textContent = positions.length > 0 ? positions.join(', ') : 'None';
+            
+            positionsContainer.innerHTML = ''; 
+            if (positions.length > 0) {
+                positions.forEach((pos, index) => {
+                    const posElement = document.createElement('span');
+                    posElement.textContent = pos;
+                    posElement.classList.add('clickable-position', 'cursor-pointer');
+                    posElement.title = `Click to highlight ${pos} on map`;
+                    posElement.addEventListener('click', () => flashCellOnMap(pos));
+                    positionsContainer.appendChild(posElement);
+                    if (index < positions.length - 1) { 
+                         const separator = document.createTextNode(', ');
+                         positionsContainer.appendChild(separator);
+                    }
+                });
+            } else {
+                positionsContainer.textContent = 'None';
+            }
             zonesSpan.textContent = zones.size > 0 ? Array.from(zones).join(', ') : 'None';
         }
 
-        function calculateAndDisplayZoneStats() {
+        function calculateAndDisplayZoneStats() { 
             const biomeMaterialStats = {}; 
-
-            for (const cellAddress in cellMaterials) {
-                const materialsInCell = cellMaterials[cellAddress];
-                const { row, col } = cellToIndices(cellAddress);
-
-                if (row >= 0 && row < 20 && col >= 0 && col < 20) {
-                    const biomeId = gridData[row][col];
-                    const currentBiome = biomeData[biomeId];
-
-                    if (currentBiome) {
-                        if (!biomeMaterialStats[currentBiome.name]) {
-                            biomeMaterialStats[currentBiome.name] = {
-                                materials: new Set(),
-                                rarityStats: { Common: new Set(), Rare: new Set(), Epic: new Set(), Legendary: new Set(), Ultimate: new Set() },
-                                totalValue: 0,
-                                countedForValue: new Set() 
-                            };
-                        }
-                        
-                        const biomeStat = biomeMaterialStats[currentBiome.name];
-                        materialsInCell.forEach(materialStr => {
-                            biomeStat.materials.add(materialStr);
-                            const rarity = materialStr.split(", ")[1].trim();
-                            if (biomeStat.rarityStats[rarity]) {
-                                biomeStat.rarityStats[rarity].add(materialStr);
-                            }
-                            if (!biomeStat.countedForValue.has(materialStr)) {
-                                biomeStat.totalValue += rarityPoints[rarity] || 0;
-                                biomeStat.countedForValue.add(materialStr);
-                            }
-                        });
-                    }
-                }
-            }
+            for (const cellAddress in cellMaterials) { const materialsInCell = cellMaterials[cellAddress]; const { row, col } = cellToIndices(cellAddress); if (row >= 0 && row < 20 && col >= 0 && col < 20) { const biomeId = gridData[row][col]; const currentBiome = biomeData[biomeId]; if (currentBiome) { if (!biomeMaterialStats[currentBiome.name]) { biomeMaterialStats[currentBiome.name] = { materials: new Set(), rarityStats: { Common: new Set(), Rare: new Set(), Epic: new Set(), Legendary: new Set(), Ultimate: new Set() }, totalValue: 0, countedForValue: new Set() }; } const biomeStat = biomeMaterialStats[currentBiome.name]; materialsInCell.forEach(materialStr => { biomeStat.materials.add(materialStr); const rarity = materialStr.split(", ")[1].trim(); if (biomeStat.rarityStats[rarity]) biomeStat.rarityStats[rarity].add(materialStr); if (!biomeStat.countedForValue.has(materialStr)) { biomeStat.totalValue += rarityPoints[rarity] || 0; biomeStat.countedForValue.add(materialStr); } }); } } }
+            const biomeStatsArray = Object.entries(biomeMaterialStats).map(([name, data]) => ({ name, materialCount: data.materials.size, materials: Array.from(data.materials).sort((a,b) => { const rA = rarityOrder[a.split(", ")[1].trim()]||0; const rB = rarityOrder[b.split(", ")[1].trim()]||0; return rA !== rB ? rA - rB : a.localeCompare(b); }), rarityStats: data.rarityStats, totalValue: data.totalValue }));
             
-            const biomeStatsArray = Object.entries(biomeMaterialStats).map(([name, data]) => ({
-                name,
-                materialCount: data.materials.size,
-                materials: Array.from(data.materials).sort((a,b) => {
-                    const rarityAVal = rarityOrder[a.split(", ")[1].trim()] || 0;
-                    const rarityBVal = rarityOrder[b.split(", ")[1].trim()] || 0;
-                    if(rarityAVal !== rarityBVal) return rarityAVal - rarityBVal;
-                    return a.localeCompare(b);
-                }),
-                rarityStats: data.rarityStats,
-                totalValue: data.totalValue
-            }));
-
-            const topRichestZonesDiv = document.getElementById('topRichestZones');
-            topRichestZonesDiv.innerHTML = ''; 
-            biomeStatsArray.sort((a, b) => b.materialCount - a.materialCount);
-            if (biomeStatsArray.length === 0) topRichestZonesDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>';
-            for (let i = 0; i < Math.min(3, biomeStatsArray.length); i++) {
-                const biome = biomeStatsArray[i];
-                const itemDiv = createStatItemDiv(
-                    `${i + 1}. ${biome.name} (${biome.materialCount} materials)`,
-                    `Zone: ${biome.name}\nTotal Materials: ${biome.materialCount}\n\nMaterials (by rarity):\n` +
-                    biome.materials.map(m => `${rarityEmojis[m.split(", ")[1].trim()] || '❓'} ${m}`).join('\n')
-                );
-                topRichestZonesDiv.appendChild(itemDiv);
-            }
-
-            const bestZonesByRarityDiv = document.getElementById('bestZonesByRarity');
-            bestZonesByRarityDiv.innerHTML = ''; 
-            const raritiesToDisplay = ["Common", "Rare", "Epic", "Legendary", "Ultimate"];
-            let displayedRarityStat = false;
-            raritiesToDisplay.forEach(rarity => {
-                let bestZoneForRarity = null;
-                let maxCount = 0;
-                biomeStatsArray.forEach(biome => {
-                    const count = biome.rarityStats[rarity] ? biome.rarityStats[rarity].size : 0;
-                    if (count > maxCount) {
-                        maxCount = count;
-                        bestZoneForRarity = biome;
-                    }
-                });
-                if (bestZoneForRarity && maxCount > 0) {
-                    displayedRarityStat = true;
-                    const materialsOfRarity = Array.from(bestZoneForRarity.rarityStats[rarity]).sort();
-                     const itemDiv = createStatItemDiv( // Using createStatItemDiv for consistency
-                        `${rarityEmojis[rarity]} ${rarity}: ${bestZoneForRarity.name} (${maxCount} materials)`, // Added emoji here
-                        `Best Zone for ${rarity}:\n${bestZoneForRarity.name}\n\n${rarity} Materials:\n` +
-                        materialsOfRarity.map(m => `${rarityEmojis[rarity]} ${m.split(", ")[0]}`).join('\n') // Display only name in tooltip for this section
-                    );
-                    bestZonesByRarityDiv.appendChild(itemDiv);
-                }
-            });
-            if (!displayedRarityStat && biomeStatsArray.length > 0) bestZonesByRarityDiv.innerHTML = '<p class="text-gray-400">No rarity data to display.</p>';
-            else if (biomeStatsArray.length === 0) bestZonesByRarityDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>';
+            const topRichestZonesDiv = document.getElementById('topRichestZones'); topRichestZonesDiv.innerHTML = ''; biomeStatsArray.sort((a, b) => b.materialCount - a.materialCount); if (biomeStatsArray.length === 0) topRichestZonesDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>';
+            for (let i = 0; i < Math.min(3, biomeStatsArray.length); i++) { const biome = biomeStatsArray[i]; const tooltipDetail = `Zone: ${biome.name}\nTotal Unique Materials: ${biome.materialCount}\n\nMaterials Found:\n` + biome.materials.map(m => `${rarityEmojis[m.split(", ")[1].trim()] || '❓'} ${m}`).join('\n'); const itemDiv = createStatItemDiv(`${i + 1}. ${biome.name} (${biome.materialCount} materials)`, tooltipDetail); topRichestZonesDiv.appendChild(itemDiv); }
             
-            const topZonesByValueDiv = document.getElementById('topZonesByValue');
-            topZonesByValueDiv.innerHTML = ''; 
-            biomeStatsArray.sort((a,b) => b.totalValue - a.totalValue);
-            if (biomeStatsArray.length === 0) topZonesByValueDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>';
-            let displayedValueStat = false;
-             for (let i = 0; i < Math.min(3, biomeStatsArray.length); i++) {
-                const biome = biomeStatsArray[i];
-                if (biome.totalValue > 0) {
-                    displayedValueStat = true;
-                    let valueNote = `Zone: ${biome.name}\nTotal Value: ${biome.totalValue} pts\n\nValue Breakdown:\n`;
-                    raritiesToDisplay.forEach(r => {
-                        const count = biome.rarityStats[r] ? biome.rarityStats[r].size : 0;
-                        if (count > 0) {
-                            valueNote += `${rarityEmojis[r]} ${r}: ${count} materials (${count * (rarityPoints[r]||0)} pts)\n`;
-                        }
-                    });
-                    valueNote += "\n\nAll Materials (by rarity):\n" + biome.materials.map(m => `${rarityEmojis[m.split(", ")[1].trim()] || '❓'} ${m}`).join('\n');
-                    
-                    const itemDiv = createStatItemDiv(
-                        `${i + 1}. ${biome.name} (${biome.totalValue} pts)`,
-                        valueNote
-                    );
-                    topZonesByValueDiv.appendChild(itemDiv);
-                }
-            }
-            if (!displayedValueStat && biomeStatsArray.length > 0 && biomeStatsArray.some(b => b.totalValue > 0)) {
-            } else if (!biomeStatsArray.some(b => b.totalValue > 0) && biomeStatsArray.length > 0) {
-                 topZonesByValueDiv.innerHTML = '<p class="text-gray-400">No zones with significant material value.</p>';
-            }
+            const bestZonesByRarityDiv = document.getElementById('bestZonesByRarity'); bestZonesByRarityDiv.innerHTML = ''; const raritiesToDisplay = ["Common", "Rare", "Epic", "Legendary", "Ultimate"]; let displayedRarityStat = false;
+            raritiesToDisplay.forEach(rarity => { let bestZoneForRarity = null; let maxCount = 0; biomeStatsArray.forEach(biome => { const count = biome.rarityStats[rarity] ? biome.rarityStats[rarity].size : 0; if (count > maxCount) { maxCount = count; bestZoneForRarity = biome; } }); if (bestZoneForRarity && maxCount > 0) { displayedRarityStat = true; const materialsOfRarity = Array.from(bestZoneForRarity.rarityStats[rarity]).sort(); const tooltipDetail = `Best Zone for ${rarity} Materials:\n${bestZoneForRarity.name}\n\n${rarity} Materials (${materialsOfRarity.length}):\n` + materialsOfRarity.map(m => `${rarityEmojis[rarity] || '❓'} ${m}`).join('\n'); const itemDiv = createStatItemDiv(`${rarityEmojis[rarity] || '❓'} ${rarity}: ${bestZoneForRarity.name} (${maxCount} materials)`, tooltipDetail); bestZonesByRarityDiv.appendChild(itemDiv); } });
+            if (!displayedRarityStat && biomeStatsArray.length > 0) bestZonesByRarityDiv.innerHTML = '<p class="text-gray-400">No rarity data to display.</p>'; else if (biomeStatsArray.length === 0) bestZonesByRarityDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>';
+            
+            const topZonesByValueDiv = document.getElementById('topZonesByValue'); topZonesByValueDiv.innerHTML = ''; biomeStatsArray.sort((a,b) => b.totalValue - a.totalValue); if (biomeStatsArray.length === 0) topZonesByValueDiv.innerHTML = '<p class="text-gray-400">No zone data to display.</p>'; let displayedValueStat = false;
+            for (let i = 0; i < Math.min(3, biomeStatsArray.length); i++) { const biome = biomeStatsArray[i]; if (biome.totalValue > 0) { displayedValueStat = true; let valueNote = `Zone: ${biome.name}\nTotal Value: ${biome.totalValue} pts\n\nValue Breakdown by Rarity:\n`; raritiesToDisplay.forEach(r => { const count = biome.rarityStats[r] ? biome.rarityStats[r].size : 0; if (count > 0) valueNote += `${rarityEmojis[r] || '❓'} ${r}: ${count} materials (${count * (rarityPoints[r]||0)} pts)\n`; }); valueNote += "\n\nAll Materials in this Zone (sorted by rarity):\n" + biome.materials.map(m => `${rarityEmojis[m.split(", ")[1].trim()] || '❓'} ${m}`).join('\n'); const itemDiv = createStatItemDiv(`${i + 1}. ${biome.name} (${biome.totalValue} pts)`, valueNote); topZonesByValueDiv.appendChild(itemDiv); } }
+            if (!displayedValueStat && biomeStatsArray.length > 0 && biomeStatsArray.some(b => b.totalValue > 0)) {} else if (!biomeStatsArray.some(b => b.totalValue > 0) && biomeStatsArray.length > 0) topZonesByValueDiv.innerHTML = '<p class="text-gray-400">No zones with significant material value.</p>';
         }
 
-        function createStatItemDiv(displayText, tooltipText) {
-            const itemDiv = document.createElement('div');
-            itemDiv.classList.add('result-item', 'p-3', 'cursor-default', 'rounded-md');
-            itemDiv.style.color = 'var(--theme-text-primary)';
-            itemDiv.innerHTML = displayText; // Use innerHTML to render emojis if passed in displayText
-
-            const tooltipElement = document.createElement('div'); 
-            tooltipElement.classList.add('tooltip'); 
-            tooltipElement.style.whiteSpace = 'pre-wrap'; 
-            tooltipElement.style.fontSize = '12px'; 
-            tooltipElement.textContent = tooltipText;
-            itemDiv.appendChild(tooltipElement);
-            
-             itemDiv.addEventListener('mouseenter', () => itemDiv.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--theme-bg-tertiary'));
-            itemDiv.addEventListener('mouseleave', () => itemDiv.style.backgroundColor = 'transparent');
-
+        function createStatItemDiv(displayText, tooltipText) { 
+            const itemDiv = document.createElement('div'); itemDiv.classList.add('result-item', 'p-3', 'cursor-default', 'rounded-md'); itemDiv.style.color = 'var(--theme-text-primary)'; itemDiv.innerHTML = displayText; 
+            const tooltipElement = document.createElement('div'); tooltipElement.classList.add('tooltip'); tooltipElement.style.whiteSpace = 'pre-wrap'; tooltipElement.style.fontSize = '12px'; tooltipElement.textContent = tooltipText; itemDiv.appendChild(tooltipElement);
+            itemDiv.addEventListener('mouseenter', (event) => { itemDiv.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--theme-bg-tertiary');
+                const itemRect = event.currentTarget.getBoundingClientRect(); tooltipElement.style.visibility = 'hidden'; tooltipElement.style.opacity = '0'; tooltipElement.style.display = 'block'; 
+                const tooltipHeight = tooltipElement.offsetHeight; tooltipElement.style.display = ''; tooltipElement.style.visibility = 'visible'; tooltipElement.style.opacity = '1';
+                if (itemRect.top < tooltipHeight + 10 && (itemRect.bottom + tooltipHeight + 10) > window.innerHeight) { tooltipElement.style.top = 'auto'; tooltipElement.style.bottom = '105%'; tooltipElement.style.transform = 'translateX(-50%) translateY(-5px)';
+                } else if (itemRect.top < tooltipHeight + 10) { tooltipElement.style.bottom = 'auto'; tooltipElement.style.top = '100%'; tooltipElement.style.transform = 'translateX(-50%) translateY(10px)';
+                } else { tooltipElement.style.top = 'auto'; tooltipElement.style.bottom = '105%'; tooltipElement.style.transform = 'translateX(-50%) translateY(-5px)'; }
+            });
+            itemDiv.addEventListener('mouseleave', () => { itemDiv.style.backgroundColor = 'transparent'; tooltipElement.style.visibility = 'hidden'; tooltipElement.style.opacity = '0'; });
             return itemDiv;
         }
         
+        // This function is not strictly needed anymore as the select element was removed.
+        // However, if any other element needs a dynamic SVG arrow based on theme, it could be adapted.
+        // For now, it's effectively unused by the input field.
         function updateSelectArrow() {
-            // Only Cyber Blue theme is used, so directly use its arrow fill
-            const arrowFill = getComputedStyle(document.documentElement).getPropertyValue('--theme-select-arrow-fill').trim();
-            const selectArrowSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='${decodeURIComponent(arrowFill)}' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")`;
-            document.getElementById('materialSearch').style.backgroundImage = selectArrowSVG;
-            document.documentElement.style.setProperty('--select-arrow-svg', selectArrowSVG);
+            // const arrowFill = getComputedStyle(document.documentElement).getPropertyValue('--theme-select-arrow-fill').trim();
+            // const selectArrowSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='${decodeURIComponent(arrowFill)}' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")`;
+            // document.documentElement.style.setProperty('--select-arrow-svg', selectArrowSVG);
         }
-
 
         async function initializeApp() {
             const mapGridElement = document.getElementById('mapGrid'); 
-            const materialSearchSelect = document.getElementById('materialSearch');
             const logDataUrl = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/logs_parsed.json';
-            // Theme switcher button and related logic removed
-
-            // Set default theme to Cyber Blue (already done on body tag)
-            // No need to define --theme-select-arrow-fill-mono as it's removed
+            
+            if (!document.body.classList.contains('theme-cyber')) {
+                document.body.classList.add('theme-cyber');
+            }
 
             try {
                 const response = await fetch(logDataUrl);
-                if (!response.ok) {
-                    throw new Error(`HTTP Error! Status: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`HTTP Error! Status: ${response.status}`);
                 logsData = await response.json();
                 
                 processLogData();
                 createBiomeMap(); 
-                setupMaterialSearchDropdown(); 
+                setupMaterialSearchInput(); 
                 calculateAndDisplayZoneStats(); 
-                updateSelectArrow(); // Initial arrow setup for Cyber Blue
+                updateSelectArrow(); 
 
             } catch (error) {
                 console.error("Could not load log data:", error);
                 mapGridElement.innerHTML = `<div class="error-message col-span-20 row-span-20 flex items-center justify-center">Error loading map data: ${error.message}</div>`;
-                materialSearchSelect.innerHTML = '<option>Error loading</option>';
+                const searchInput = document.getElementById('materialSearchInput');
+                if(searchInput) searchInput.placeholder = "Error loading materials...";
                 document.getElementById('topRichestZones').innerHTML = '<p class="error-message">Error loading statistics.</p>';
                 document.getElementById('bestZonesByRarity').innerHTML = '<p class="error-message">Error loading statistics.</p>';
                 document.getElementById('topZonesByValue').innerHTML = '<p class="error-message">Error loading statistics.</p>';
@@ -733,4 +656,4 @@
         document.addEventListener('DOMContentLoaded', initializeApp);
     </script>
 </body>
-</html
+</html>
