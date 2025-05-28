@@ -1,0 +1,1050 @@
+[
+  {
+    "name": "Volcanic Ashes",
+    "rarity": "common"
+  },
+  {
+    "name": "Small volcanic rock",
+    "rarity": "common"
+  },
+  {
+    "name": "Volcanic grass",
+    "rarity": "epic"
+  },
+  {
+    "name": "Pure lava",
+    "rarity": "rare"
+  },
+  {
+    "name": "Mountain moss",
+    "rarity": "common"
+  },
+  {
+    "name": "Calipseum Violaceum",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Cold mountain water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Pine cone",
+    "rarity": "rare"
+  },
+  {
+    "name": "Satoyaman grass",
+    "rarity": "common"
+  },
+  {
+    "name": "Dry grass",
+    "rarity": "common"
+  },
+  {
+    "name": "Moss from the plains",
+    "rarity": "rare"
+  },
+  {
+    "name": "Honey from the plains",
+    "rarity": "epic"
+  },
+  {
+    "name": "Large wasp",
+    "rarity": "rare"
+  },
+  {
+    "name": "Glowing tree sap",
+    "rarity": "common"
+  },
+  {
+    "name": "Glowing flowers",
+    "rarity": "epic"
+  },
+  {
+    "name": "Fireflies",
+    "rarity": "common"
+  },
+  {
+    "name": "Piece of dark wood",
+    "rarity": "rare"
+  },
+  {
+    "name": "Small fresh water fish",
+    "rarity": "common"
+  },
+  {
+    "name": "Uncommon river fish",
+    "rarity": "rare"
+  },
+  {
+    "name": "Emperor fish",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Freshwater algae",
+    "rarity": "common"
+  },
+  {
+    "name": "Tornado fish",
+    "rarity": "rare"
+  },
+  {
+    "name": "Unstable water",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Flying hopper",
+    "rarity": "common"
+  },
+  {
+    "name": "Freshwater sponge",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Asymmetric butterfly",
+    "rarity": "epic"
+  },
+  {
+    "name": "Desert grass",
+    "rarity": "common"
+  },
+  {
+    "name": "Dry lichen",
+    "rarity": "common"
+  },
+  {
+    "name": "Hybrid grass",
+    "rarity": "epic"
+  },
+  {
+    "name": "Desert lizard",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Barrel cactus",
+    "rarity": "rare"
+  },
+  {
+    "name": "Prickly pear",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Desert fish",
+    "rarity": "epic"
+  },
+  {
+    "name": "Refreshing water",
+    "rarity": "common"
+  },
+  {
+    "name": "Exotic leaves",
+    "rarity": "rare"
+  },
+  {
+    "name": "Large beetle",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Red-eye singing frog",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Poisonous toad",
+    "rarity": "epic"
+  },
+  {
+    "name": "Mountain snake",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Satoyaman snake",
+    "rarity": "epic"
+  },
+  {
+    "name": "Flying snake",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Small spider",
+    "rarity": "common"
+  },
+  {
+    "name": "Large spider",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Black spider",
+    "rarity": "rare"
+  },
+  {
+    "name": "Glowing spider",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Small glowing shroom",
+    "rarity": "common"
+  },
+  {
+    "name": "Mushroom mix",
+    "rarity": "rare"
+  },
+  {
+    "name": "Medusashroom",
+    "rarity": "epic"
+  },
+  {
+    "name": "Atlas mushroom",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Queen mushroom",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Toxic salamander",
+    "rarity": "epic"
+  },
+  {
+    "name": "Stagnant water",
+    "rarity": "common"
+  },
+  {
+    "name": "Rainwater",
+    "rarity": "common"
+  },
+  {
+    "name": "Small exotic plant",
+    "rarity": "common"
+  },
+  {
+    "name": "Tropical Venus",
+    "rarity": "rare"
+  },
+  {
+    "name": "Large pitcher plant",
+    "rarity": "epic"
+  },
+  {
+    "name": "Tropical water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Mantis Religiosa",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Mystic crystal",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Mystic water",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Red shelled crab",
+    "rarity": "common"
+  },
+  {
+    "name": "Shrimp fish",
+    "rarity": "rare"
+  },
+  {
+    "name": "Bluehead jellyfish",
+    "rarity": "rare"
+  },
+  {
+    "name": "Jellyfish tree",
+    "rarity": "epic"
+  },
+  {
+    "name": "Firework jellyfish",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Salted water",
+    "rarity": "common"
+  },
+  {
+    "name": "Apertian blue mouse",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Apertian green mouse",
+    "rarity": "epic"
+  },
+  {
+    "name": "Apertian trout",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Melted ice",
+    "rarity": "rare"
+  },
+  {
+    "name": "Fresh Snow",
+    "rarity": "common"
+  },
+  {
+    "name": "Frozen snake",
+    "rarity": "epic"
+  },
+  {
+    "name": "Gelida Herbida",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Spring water",
+    "rarity": "epic"
+  },
+  {
+    "name": "Small forest shroom",
+    "rarity": "common"
+  },
+  {
+    "name": "Broccolishroom",
+    "rarity": "rare"
+  },
+  {
+    "name": "Large boletus",
+    "rarity": "epic"
+  },
+  {
+    "name": "Strange forest moss",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Forest soil",
+    "rarity": "common"
+  },
+  {
+    "name": "River water",
+    "rarity": "common"
+  },
+  {
+    "name": "Toxic forest frog",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Rocky beetle",
+    "rarity": "epic"
+  },
+  {
+    "name": "Rocky king",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Invigorating water",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Jumper",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Apertian mackerel",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Humidum Plantum",
+    "rarity": "rare"
+  },
+  {
+    "name": "Blue princess",
+    "rarity": "epic"
+  },
+  {
+    "name": "Blue queen",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Astral dust",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Hot water",
+    "rarity": "common"
+  },
+  {
+    "name": "Alien choke",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Singing king",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Relaxing algae",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Shadow predator",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Salty sand",
+    "rarity": "common"
+  },
+  {
+    "name": "Standard sand",
+    "rarity": "common"
+  },
+  {
+    "name": "Salty queen",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Stream water",
+    "rarity": "common"
+  },
+  {
+    "name": "Freshwater oyster",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Freshwater crayfish",
+    "rarity": "epic"
+  },
+  {
+    "name": "Eel from the lake",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Carps from the lake",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Condensed mist",
+    "rarity": "common"
+  },
+  {
+    "name": "Mud from the lake",
+    "rarity": "epic"
+  },
+  {
+    "name": "Bewitching water",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Strange scale",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Glowing rocks",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Strange jelly",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Flying spider",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Underwater totem",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Glowing sea stars",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Strange tooth",
+    "rarity": "rare"
+  },
+  {
+    "name": "Hard scale",
+    "rarity": "rare"
+  },
+  {
+    "name": "Red claw",
+    "rarity": "epic"
+  },
+  {
+    "name": "Underwater beetle",
+    "rarity": "common"
+  },
+  {
+    "name": "Milky mantis shrimp",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Blue isopod",
+    "rarity": "epic"
+  },
+  {
+    "name": "Forbidden fruit",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Southern sea shrimp",
+    "rarity": "common"
+  },
+  {
+    "name": "Crystallic water",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Red coral",
+    "rarity": "rare"
+  },
+  {
+    "name": "Mushroom reef",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Deep killer's head",
+    "rarity": "epic"
+  },
+  {
+    "name": "Flappy ray",
+    "rarity": "epic"
+  },
+  {
+    "name": "Anemona Tentacula",
+    "rarity": "rare"
+  },
+  {
+    "name": "One-eyed squid",
+    "rarity": "epic"
+  },
+  {
+    "name": "Forbidden water",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Tailless yellow fish",
+    "rarity": "common"
+  },
+  {
+    "name": "Antimatter dust",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Low gravity water",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Bottom-top centipede",
+    "rarity": "rare"
+  },
+  {
+    "name": "Dark water from the pit",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Apertian flower bee",
+    "rarity": "rare"
+  },
+  {
+    "name": "Apertian queen",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Flowers from the field",
+    "rarity": "rare"
+  },
+  {
+    "name": "Premium honey",
+    "rarity": "epic"
+  },
+  {
+    "name": "Royal jelly",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Colorful petals",
+    "rarity": "common"
+  },
+  {
+    "name": "Anti-gravity soil",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Invigorating algae",
+    "rarity": "common"
+  },
+  {
+    "name": "Cosmic water",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Cosmic rock",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Warm water fish",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Ignis Flamis",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Satoyaman rice",
+    "rarity": "common"
+  },
+  {
+    "name": "Levitating flake",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Strange crystal",
+    "rarity": "epic"
+  },
+  {
+    "name": "Thorns",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Queen Zoë",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Coral from the ridge",
+    "rarity": "rare"
+  },
+  {
+    "name": "Amphibian beetle",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Black-head octopus",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Old rock",
+    "rarity": "rare"
+  },
+  {
+    "name": "Old geode",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Ancient mushroom",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Stalactites from Pagos",
+    "rarity": "epic"
+  },
+  {
+    "name": "Pagos' Gellida",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Two-tails mamba",
+    "rarity": "epic"
+  },
+  {
+    "name": "Trapped lightning",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Selene's leaves",
+    "rarity": "common"
+  },
+  {
+    "name": "Selene's grass",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Quiet seagrass",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Endless sand",
+    "rarity": "common"
+  },
+  {
+    "name": "Panicum turgidum",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Atmospheric stardust",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Atmospheric dust",
+    "rarity": "common"
+  },
+  {
+    "name": "Atmospheric rock",
+    "rarity": "rare"
+  },
+  {
+    "name": "Forgotten starfish",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Helios' crust",
+    "rarity": "epic"
+  },
+  {
+    "name": "Helios' wrath",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Misty needles",
+    "rarity": "common"
+  },
+  {
+    "name": "Misty feather",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Misty Alovera",
+    "rarity": "epic"
+  },
+  {
+    "name": "Red misty snails",
+    "rarity": "rare"
+  },
+  {
+    "name": "Amarian eel",
+    "rarity": "epic"
+  },
+  {
+    "name": "Amarian emperor",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Supercooling water",
+    "rarity": "epic"
+  },
+  {
+    "name": "Strange ice cube",
+    "rarity": "common"
+  },
+  {
+    "name": "Sub-zero killer",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Frozen queen",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Trapped stardust",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Strange fossil",
+    "rarity": "epic"
+  },
+  {
+    "name": "Antigravitational dust",
+    "rarity": "rare"
+  },
+  {
+    "name": "Alien remains",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Mold blend",
+    "rarity": "common"
+  },
+  {
+    "name": "Oyster shroom jam",
+    "rarity": "rare"
+  },
+  {
+    "name": "Red boletus paste",
+    "rarity": "epic"
+  },
+  {
+    "name": "Fireflies extract",
+    "rarity": "rare"
+  },
+  {
+    "name": "Scolopo-concentra",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Tarantula concentrate",
+    "rarity": "epic"
+  },
+  {
+    "name": "Dark killer concentra",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Pure Waspant venom",
+    "rarity": "common"
+  },
+  {
+    "name": "Pure Tarantula venom",
+    "rarity": "rare"
+  },
+  {
+    "name": "Hydra scale concentra",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Blood concentrate",
+    "rarity": "common"
+  },
+  {
+    "name": "Brain concentrate",
+    "rarity": "epic"
+  },
+  {
+    "name": "Liver extract",
+    "rarity": "rare"
+  },
+  {
+    "name": "Pure meat blend",
+    "rarity": "epic"
+  },
+  {
+    "name": "Mud concentrate",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Pure Arachno-embryo",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Spiky Blend",
+    "rarity": "common"
+  },
+  {
+    "name": "Dermis Reptilis blend",
+    "rarity": "rare"
+  },
+  {
+    "name": "Eyeball blend",
+    "rarity": "rare"
+  },
+  {
+    "name": "Pure Fusium powder",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Stinger blood serum",
+    "rarity": "epic"
+  },
+  {
+    "name": "Ultra-condensed gas",
+    "rarity": "common"
+  },
+  {
+    "name": "Pure arachno-venom",
+    "rarity": "rare"
+  },
+  {
+    "name": "Toxiviper scale extract",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Pure Xeno-Chitin",
+    "rarity": "epic"
+  },
+  {
+    "name": "Pure molten quartz",
+    "rarity": "epic"
+  },
+  {
+    "name": "Pure fear essence",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Dusty rocks",
+    "rarity": "common"
+  },
+  {
+    "name": "Algea Bubblea",
+    "rarity": "rare"
+  },
+  {
+    "name": "Cactus Juice",
+    "rarity": "epic"
+  },
+  {
+    "name": "Coconut water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Dewdrops ",
+    "rarity": "common"
+  },
+  {
+    "name": "Fermented malt beverage",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Fish oil",
+    "rarity": "epic"
+  },
+  {
+    "name": "Liquid pearls",
+    "rarity": "rare"
+  },
+  {
+    "name": "Midnight oil",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Sweet nectar",
+    "rarity": "rare"
+  },
+  {
+    "name": "Acidic water",
+    "rarity": "common"
+  },
+  {
+    "name": "Hallucinogenic sap",
+    "rarity": "epic"
+  },
+  {
+    "name": "Liquida Spongea",
+    "rarity": "rare"
+  },
+  {
+    "name": "Spermatoa",
+    "rarity": "epic"
+  },
+  {
+    "name": "Perfecta liquida",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Strange eggs",
+    "rarity": "epic"
+  },
+  {
+    "name": "Mountain Dew",
+    "rarity": "rare"
+  },
+  {
+    "name": "Frosty water",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Swamp Glimmer",
+    "rarity": "epic"
+  },
+  {
+    "name": "Bloody root",
+    "rarity": "rare"
+  },
+  {
+    "name": "Liquidoshroom",
+    "rarity": "epic"
+  },
+  {
+    "name": "Water from the ridge",
+    "rarity": "rare"
+  },
+  {
+    "name": "Old water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Ancient water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Canyon Creek Water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Electrified water",
+    "rarity": "rare"
+  },
+  {
+    "name": "E. Colicorn",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Selene's serum",
+    "rarity": "epic"
+  },
+  {
+    "name": "Liquid storm",
+    "rarity": "epic"
+  },
+  {
+    "name": "Underground water",
+    "rarity": "epic"
+  },
+  {
+    "name": "Rocky water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Abandoned liquid",
+    "rarity": "epic"
+  },
+  {
+    "name": "Helios' plasma",
+    "rarity": "epic"
+  },
+  {
+    "name": "Misty water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Amarian deep water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Liquid stalagmite",
+    "rarity": "rare"
+  },
+  {
+    "name": "Entrapped water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Rice water",
+    "rarity": "rare"
+  },
+  {
+    "name": "Liquid Cucumis",
+    "rarity": "epic"
+  },
+  {
+    "name": "Liquid Jelly",
+    "rarity": "epic"
+  },
+  {
+    "name": "Blooblybob",
+    "rarity": "rare"
+  },
+  {
+    "name": "Liquid Psilocybe",
+    "rarity": "rare"
+  },
+  {
+    "name": "Mushroom sap",
+    "rarity": "common"
+  },
+  {
+    "name": "Strange fluffy mucus",
+    "rarity": "rare"
+  },
+  {
+    "name": "Double water",
+    "rarity": "epic"
+  },
+  {
+    "name": "Sweet water",
+    "rarity": "epic"
+  },
+  {
+    "name": "Sand Lurker",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Hydrostinger",
+    "rarity": "legendary"
+  },
+  {
+    "name": "Amphibiblob",
+    "rarity": "ultimate"
+  },
+  {
+    "name": "Umbreallapod",
+    "rarity": "epic"
+  }
+]
