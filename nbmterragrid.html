@@ -696,7 +696,7 @@
 
         function createStatItemDiv(displayText, tooltipText) { 
             const itemDiv = document.createElement('div'); itemDiv.classList.add('result-item', 'p-3', 'cursor-default', 'rounded-md'); itemDiv.style.color = 'var(--theme-text-primary)'; itemDiv.innerHTML = displayText; 
-            const tooltipElement = document.createElement('div'); tooltipElement.classList.add('tooltip'); tooltipElement.style.whiteSpace = 'pre-wrap'; tooltipElement.style.fontSize = '12px'; tooltipElement.textContent = tooltipText; itemDiv.appendChild(tooltipElement);
+            const tooltipElement = document.createElement('div'); tooltipElement.classList.add('tooltip'); tooltipElement.style.whiteSpace = 'pre-wrap'; tooltipElement.style.fontSize = '12px'; tooltipElement.innerHTML = tooltipText; itemDiv.appendChild(tooltipElement);
             itemDiv.addEventListener('mouseenter', (event) => { itemDiv.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--theme-bg-tertiary');
                 const itemRect = event.currentTarget.getBoundingClientRect(); tooltipElement.style.visibility = 'hidden'; tooltipElement.style.opacity = '0'; tooltipElement.style.display = 'block'; 
                 const tooltipHeight = tooltipElement.offsetHeight; tooltipElement.style.display = ''; tooltipElement.style.visibility = 'visible'; tooltipElement.style.opacity = '1';
