@@ -373,22 +373,38 @@
     </div>
 
     <script>
-        // Generate unique colors for biomes - now using predefined colors
-        function generateUniqueColors(count) {
-            // This function is now obsolete since we use predefined colors
-            // but keeping it for backward compatibility
-            return [];
+        // Variable to store fetched rarity data
+        let rarityData = null;
+
+        // Helper function to get material rarity from fetched data
+        function getMaterialRarity(materialName) {
+            if (!rarityData || !Array.isArray(rarityData)) {
+                return "Common";
+            }
+            
+            const material = rarityData.find(m => m.name === materialName);
+            if (material) {
+                // Capitalize the rarity to match existing code expectations
+                return material.rarity.charAt(0).toUpperCase() + material.rarity.slice(1).toLowerCase();
+            }
+            return "Common";
         }
 
         // Create biome lookup map - will be populated from fetched data
         const biomeMap = {};
         
-        // We'll build this dynamically from biomes_data.json
+        // We'll build this dynamically from fetched biomes data
         let cellToBiomeMap = {};
 
-        let logsData = []; 
+        let biomesData = [];
         const rarityOrder = { "Common": 1, "Rare": 2, "Epic": 3, "Legendary": 4, "Ultimate": 5 };
-        const rarityEmojis = { "Common": "🔵", "Rare": "🟢", "Epic": "🔴", "Legendary": "🟠", "Ultimate": "🟣" };
+        const rarityEmojis = { 
+            "Common": '<span style="color: #3b82f6;">⬤</span>',    // Blue filled circle
+            "Rare": '<span style="color: #e11d48;">⬤</span>',      // Red filled circle
+            "Epic": '<span style="color: #22c55e;">⬤</span>',      // Green filled circle
+            "Legendary": '<span style="color: #D995C9;">⬤</span>', // Rose filled circle
+            "Ultimate": '<span style="color: #8b5cf6;">⬤</span>'   // Purple filled circle
+        };
         const rarityPoints = { Common: 1, Rare: 2, Epic: 3, Legendary: 4, Ultimate: 5 };
         let cellMaterials = {}; 
         let allMaterials = new Set(); 
@@ -398,8 +414,8 @@
         function indicesToCell(row, col) { return String.fromCharCode(65 + col) + (row + 1); }
         
         function processLogData() {
-            if (!logsData || logsData.length === 0) { console.warn("No log data to process."); return; }
-            logsData.forEach(materialEntry => {
+            if (!biomesData || biomesData.length === 0) { console.warn("No log data to process."); return; }
+            biomesData.forEach(materialEntry => {
                 const fullMaterialName = `${materialEntry.name}, ${materialEntry.rarity}`;
                 allMaterials.add(fullMaterialName);
                 if (materialEntry.locations && Array.isArray(materialEntry.locations)) {
@@ -697,29 +713,37 @@
 
         async function initializeApp() {
             const mapGridElement = document.getElementById('mapGrid'); 
+            const biomesDataUrl = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/biomes_data.json';
+            const rarityDataUrl = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/refs/heads/SuperBuu38-patch-1/materialsrarity.json'
 
             if (!document.body.classList.contains('theme-cyber')) {
                 document.body.classList.add('theme-cyber');
             }
 
             try {
+                // Fetch rarity data first
+                const resp2 = await fetch(rarityDataUrl);
+                if (!resp2.ok) throw new Error(`HTTP Error! Status: ${resp2.status}`);
+                rarityData = await resp2.json();
+
+                // Fetch biomes data
+                const resp1 = await fetch(biomesDataUrl);
+                if (!resp1.ok) throw new Error(`HTTP Error! Status: ${resp1.status}`);
+                let fetchedBiomesData = await resp1.json();
                 
-                const logDataUrl = 'https://raw.githubusercontent.com/SuperBuu38/superbuu/SuperBuu38-patch-1/biomes_data.json';
-                const response = await fetch(logDataUrl);
-                if (!response.ok) throw new Error(`HTTP Error! Status: ${response.status}`);
-                const biomesData = await response.json();
-                
-                // Transform biomes data to the expected format
-                logsData = transformBiomesData(biomesData);
+                // Transform biomes data to create materials data and assign to global variable
+                biomesData = transformBiomesData(fetchedBiomesData);
                 
                 processLogData();
                 createBiomeMap(); 
                 setupMaterialSearchInput(); 
                 calculateAndDisplayZoneStats(); 
+                // updateSelectArrow(); // Obsolete
 
             } catch (error) {
                 console.error("Could not load log data:", error);
-                mapGridElement.innerHTML = `<div class="error-message col-span-20 row-span-20 flex items-center justify-center">Error loading map data: ${error.message}</div>`;
+                
+                mapGridElement.innerHTML = `<div class="error-message col-span-20 row-span-20 flex items-center justify-center" style="white-space: pre-line; text-align: center;">Error loading map data:<br><br>${error.message}</div>`;
                 const searchInput = document.getElementById('materialSearchInput');
                 if(searchInput) searchInput.placeholder = "Error loading materials...";
                 document.getElementById('topRichestZones').innerHTML = '<p class="error-message">Error loading statistics.</p>';
@@ -759,7 +783,7 @@
                         if (!materialMap.has(materialName)) {
                             materialMap.set(materialName, {
                                 name: materialName,
-                                rarity: "Common", // Will be updated later
+                                rarity: getMaterialRarity(materialName), // Use embedded rarity data
                                 locations: []
                             });
                         }
@@ -775,52 +799,7 @@
                 }
             });
             
-            // Assign rarities based on material distribution and names
-            const materials = Array.from(materialMap.values());
-            materials.forEach(material => {
-                material.rarity = assignRarity(material.name, material.locations.length);
-            });
-            
-            return materials;
-        }
-
-        function assignRarity(materialName, locationCount) {
-            const name = materialName.toLowerCase();
-            
-            // Ultimate rarity keywords
-            if (name.includes('queen') || name.includes('emperor') || name.includes('forbidden') || 
-                name.includes('antimatter') || name.includes('crystallic') || name.includes('ultimate')) {
-                return "Ultimate";
-            }
-            
-            // Legendary rarity keywords
-            if (name.includes('legendary') || name.includes('cosmic') || name.includes('astral') || 
-                name.includes('anti-gravity') || name.includes('deep killer') || name.includes('mackerel') ||
-                name.includes('apertian') && (name.includes('mouse') || name.includes('queen')) ||
-                name.includes('hydrostinger') || name.includes('calipseum') || name.includes('ignis flamis')) {
-                return "Legendary";
-            }
-            
-            // Epic rarity keywords
-            if (name.includes('epic') || name.includes('tornado') || name.includes('singing king') ||
-                name.includes('asymmetric') || name.includes('flying snake') || name.includes('alien') ||
-                name.includes('premium') || name.includes('royal') || name.includes('exotic') ||
-                name.includes('glowing') && (name.includes('spider') || name.includes('stars')) ||
-                name.includes('apertian') && name.includes('green')) {
-                return "Epic";
-            }
-            
-            // Rare rarity keywords
-            if (name.includes('rare') || name.includes('uncommon') || name.includes('strange') ||
-                name.includes('liquid') || name.includes('fermented') || name.includes('poisonous') ||
-                name.includes('firework') || name.includes('mantis') || name.includes('unstable') ||
-                name.includes('algea') || name.includes('anemona') || name.includes('milky') ||
-                name.includes('thorns') || locationCount <= 3) {
-                return "Rare";
-            }
-            
-            // Everything else is Common
-            return "Common";
+            return Array.from(materialMap.values());
         }
 
         document.addEventListener('DOMContentLoaded', initializeApp);
