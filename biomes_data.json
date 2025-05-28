@@ -1,0 +1,1199 @@
+[
+  {
+    "id": 1,
+    "name": "Volcanos",
+    "size": 13,
+    "color": "#ED1C24",
+    "cells": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C1",
+      "C2"
+    ],
+    "mats": [
+      "Volcanic Ashes",
+      "Small volcanic rock",
+      "Pure lava",
+      "Volcanic grass",
+      "Ignis Flamis"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mountains",
+    "size": 17,
+    "color": "#58585A",
+    "cells": [
+      "A7",
+      "A16",
+      "B6",
+      "B7",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C14",
+      "D1",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D14",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "mats": [
+      "Mountain moss",
+      "Cold mountain water",
+      "Mountain Dew",
+      "Strange eggs",
+      "Mountain snake",
+      "Jumper",
+      "Calipseum Violaceum"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Satoyamas",
+    "size": 11,
+    "color": "#838D82",
+    "cells": [
+      "A17",
+      "B17",
+      "C15",
+      "C16",
+      "C17",
+      "D15",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "E13",
+      "E14",
+      "E15",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ],
+    "mats": [
+      "Satoyaman grass",
+      "Satoyaman rice",
+      "Pine cone",
+      "Rice water",
+      "Satoyaman snake",
+      "Apertian green mouse"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Vast plains",
+    "size": 25,
+    "color": "#39B54A",
+    "cells": [
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10",
+      "F12",
+      "F13",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G9",
+      "G10",
+      "G12",
+      "G13",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H9",
+      "H12",
+      "I4",
+      "I11",
+      "I12"
+    ],
+    "mats": [
+      "Dry grass",
+      "Dewdrops",
+      "Small spider",
+      "Moss from the plains",
+      "Large wasp",
+      "Honey from the plains",
+      "Apertian green mouse",
+      "Liquid Cucumis",
+      "Large beetle",
+      "Fermented malt beverage"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dark Forest",
+    "size": 20,
+    "color": "#000000",
+    "cells": [
+      "K17",
+      "K18",
+      "K19",
+      "K20",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "N17",
+      "N18",
+      "N19",
+      "N20"
+    ],
+    "mats": [
+      "Glowing tree sap",
+      "Fireflies",
+      "Piece of dark wood",
+      "Black spider",
+      "Glowing flowers",
+      "Midnight oil",
+      "Glowing spider"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "River",
+    "size": 26,
+    "color": "#0F75BC",
+    "cells": [
+      "J12",
+      "J13",
+      "J14",
+      "K9",
+      "K12",
+      "K14",
+      "L5",
+      "L6",
+      "L8",
+      "L10",
+      "L12",
+      "L14",
+      "M8",
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "N6",
+      "N7",
+      "N15",
+      "N16",
+      "O16",
+      "O17",
+      "O18",
+      "O20"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "River water",
+      "Uncommon river fish",
+      "Tornado fish",
+      "Emperor fish"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "River bifurcation",
+    "size": 3,
+    "color": "#25AAE1",
+    "cells": [
+      "K10",
+      "N8",
+      "N14"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "Uncommon river fish",
+      "Tornado fish",
+      "Emperor fish",
+      "Unstable water"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Distributary",
+    "size": 7,
+    "color": "#5BC7D2",
+    "cells": [
+      "N13",
+      "O8",
+      "O9",
+      "O10",
+      "O11",
+      "O12",
+      "O13"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "Uncommon river fish",
+      "Tornado fish",
+      "Emperor fish",
+      "Freshwater sponge"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Edge of the world",
+    "size": 12,
+    "color": "#A7A9AC",
+    "cells": [
+      "O3",
+      "O4",
+      "P5",
+      "P6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "R11",
+      "S12",
+      "S13",
+      "T14"
+    ],
+    "mats": [
+      "Dry grass",
+      "Flying hopper",
+      "Large wasp",
+      "Strange fluffy mucus",
+      "Asymmetric butterfly",
+      "Flying snake"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Bottom of the cliff",
+    "size": 9,
+    "color": "#FBF7A8",
+    "cells": [
+      "P3",
+      "P4",
+      "Q5",
+      "Q6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "S11"
+    ],
+    "mats": [
+      "Desert grass",
+      "Dry lichen",
+      "Small spider",
+      "Hybrid grass",
+      "Desert lizard",
+      "Jumper",
+      "Alien choke"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Vast desert",
+    "size": 15,
+    "color": "#FFF200",
+    "cells": [
+      "Q4",
+      "R4",
+      "R5",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "T4",
+      "T5",
+      "T6",
+      "T8",
+      "T10",
+      "T11"
+    ],
+    "mats": [
+      "Desert grass",
+      "Dry lichen",
+      "Standard sand",
+      "Barrel cactus",
+      "Liquid Psilocybe",
+      "Cactus Juice",
+      "Desert lizard",
+      "Jumper",
+      "Cosmic water",
+      "Prickly pear",
+      "Astral dust"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Oasis",
+    "size": 3,
+    "color": "#0B9444",
+    "cells": [
+      "S5",
+      "T7",
+      "T9"
+    ],
+    "mats": [
+      "Desert grass",
+      "Refreshing water",
+      "Exotic leaves",
+      "Desert fish",
+      "Desert lizard",
+      "Apertian blue mouse"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Rainy lands",
+    "size": 11,
+    "color": "#262262",
+    "cells": [
+      "F14",
+      "F15",
+      "G14",
+      "G15",
+      "H13",
+      "H14",
+      "H15",
+      "I13",
+      "I14",
+      "I15",
+      "I16"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "Rainwater",
+      "Moss from the plains",
+      "Blooblybob",
+      "Poisonous toad",
+      "Liquid Jelly",
+      "Umbreallapod",
+      "Apertian blue mouse",
+      "Singing king",
+      "Red-eye singing frog"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Canyon",
+    "size": 10,
+    "color": "#F3F3F4",
+    "cells": [
+      "M5",
+      "N4",
+      "O5",
+      "O6",
+      "O7",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11"
+    ],
+    "mats": [
+      "Dry grass",
+      "Small spider",
+      "Moss from the plains",
+      "Large wasp",
+      "Asymmetric butterfly",
+      "Large spider",
+      "Jumper"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Giant Mushroom Forest",
+    "size": 13,
+    "color": "#F1592A",
+    "cells": [
+      "O14",
+      "P12",
+      "P13",
+      "P14",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q16",
+      "R12",
+      "R13",
+      "R14",
+      "S14"
+    ],
+    "mats": [
+      "Small glowing shroom",
+      "Mushroom sap",
+      "Mushroom mix",
+      "Medusashroom",
+      "Atlas mushroom",
+      "Queen mushroom"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Warm swamp",
+    "size": 18,
+    "color": "#B9D75C",
+    "cells": [
+      "A18",
+      "B18",
+      "C18",
+      "D16",
+      "D17",
+      "D18",
+      "E16",
+      "F16",
+      "G16",
+      "H16",
+      "H17",
+      "H18",
+      "I17",
+      "I18",
+      "I19",
+      "J18",
+      "J19",
+      "J20"
+    ],
+    "mats": [
+      "Small spider",
+      "Stagnant water",
+      "Large wasp",
+      "Bloody root",
+      "Poisonous toad",
+      "Swamp Glimmer",
+      "Toxic salamander",
+      "Liquidoshroom",
+      "Apertian green mouse",
+      "Large spider"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Tropical jungle",
+    "size": 22,
+    "color": "#056839",
+    "cells": [
+      "A19",
+      "A20",
+      "B19",
+      "B20",
+      "C19",
+      "C20",
+      "D19",
+      "D20",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "F17",
+      "F18",
+      "F20",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "H19",
+      "H20",
+      "I20"
+    ],
+    "mats": [
+      "Small exotic plant",
+      "Coconut water",
+      "Exotic leaves",
+      "Tropical Venus",
+      "Tropical water",
+      "Large pitcher plant",
+      "Mantis Religiosa"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Mystic Island",
+    "size": 1,
+    "color": "#F7941D",
+    "cells": [
+      "S20"
+    ],
+    "mats": [
+      "Red shelled crab",
+      "Salted water",
+      "Shrimp fish",
+      "Bluehead jellyfish",
+      "Jellyfish tree",
+      "Firework jellyfish",
+      "Sand Lurker",
+      "Mystic crystal",
+      "Mystic water"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Cascades",
+    "size": 3,
+    "color": "#9F1F63",
+    "cells": [
+      "F11",
+      "K8",
+      "O19"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "Uncommon river fish",
+      "Tornado fish",
+      "Emperor fish",
+      "Apertian trout"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Cold peaks",
+    "size": 13,
+    "color": "#FFFFFF",
+    "cells": [
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "C8"
+    ],
+    "mats": [
+      "Fresh Snow",
+      "Cold mountain water",
+      "Melted ice",
+      "Frozen snake",
+      "Mountain snake",
+      "Frosty water",
+      "Gelida Herbida",
+      "Levitating flake"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Spring water area",
+    "size": 14,
+    "color": "#0F75BC",
+    "cells": [
+      "B12",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Cold mountain water",
+      "Spring water",
+      "Mountain snake",
+      "Calipseum Violaceum"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Large forest",
+    "size": 15,
+    "color": "#056839",
+    "cells": [
+      "I1",
+      "I2",
+      "J1",
+      "J2",
+      "J3",
+      "K2",
+      "K3",
+      "K4",
+      "L1",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "N1",
+      "N2"
+    ],
+    "mats": [
+      "Small forest shroom",
+      "Forest soil",
+      "Liquida Spongea",
+      "Broccolishroom",
+      "Hallucinogenic sap",
+      "Spermatoa",
+      "Large boletus",
+      "Strange forest moss"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Lush banks",
+    "size": 4,
+    "color": "#23AAE1",
+    "cells": [
+      "K1",
+      "L2",
+      "L3",
+      "L4"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Small forest shroom",
+      "Forest soil",
+      "River water",
+      "Broccolishroom",
+      "Large boletus"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Rocky hill",
+    "size": 14,
+    "color": "#A7A9AC",
+    "cells": [
+      "G6",
+      "G7",
+      "G8",
+      "H5",
+      "H7",
+      "H8",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "J4",
+      "J5",
+      "J6"
+    ],
+    "mats": [
+      "Small spider",
+      "Large wasp",
+      "Apertian green mouse",
+      "Rocky beetle",
+      "Strange crystal",
+      "Large beetle",
+      "Perfecta liquida",
+      "Amphibiblob",
+      "Rocky king"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Thermal source",
+    "size": 6,
+    "color": "#662D91",
+    "cells": [
+      "L9",
+      "M9",
+      "N9",
+      "N10",
+      "N11",
+      "N12"
+    ],
+    "mats": [
+      "Invigorating algae",
+      "Strange crystal",
+      "Warm water fish",
+      "Invigorating water"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Southern shore",
+    "size": 8,
+    "color": "#D1D2D4",
+    "cells": [
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "Q17",
+      "R18",
+      "S18",
+      "T18"
+    ],
+    "mats": [
+      "Red shelled crab",
+      "Salted water",
+      "Shrimp fish",
+      "Bluehead jellyfish",
+      "Fish oil",
+      "Jellyfish tree",
+      "Firework jellyfish",
+      "Apertian mackerel"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Wetlands",
+    "size": 8,
+    "color": "#FFF200",
+    "cells": [
+      "J15",
+      "J16",
+      "J17",
+      "K13",
+      "K15",
+      "K16",
+      "L13",
+      "M13"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "Rainwater",
+      "Humidum Plantum",
+      "Poisonous toad",
+      "Blue princess",
+      "Apertian blue mouse",
+      "Red-eye singing frog",
+      "Blue queen"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Meteor crater",
+    "size": 5,
+    "color": "#92278F",
+    "cells": [
+      "D2",
+      "I3",
+      "Q13",
+      "N3",
+      "R6"
+    ],
+    "mats": [
+      "Small glowing shroom",
+      "Mushroom sap",
+      "Mushroom mix",
+      "Medusashroom",
+      "Atlas mushroom",
+      "Cosmic water",
+      "Cosmic rock",
+      "Astral dust"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Geyser area",
+    "size": 11,
+    "color": "#F48A8B",
+    "cells": [
+      "J7",
+      "J8",
+      "J9",
+      "J11",
+      "K5",
+      "K6",
+      "K7",
+      "K11",
+      "L7",
+      "L11",
+      "M7"
+    ],
+    "mats": [
+      "Freshwater algae",
+      "Acidic water",
+      "Small spider",
+      "Hot water",
+      "Large wasp"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Rapids",
+    "size": 1,
+    "color": "#2E3192",
+    "cells": [
+      "M6"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "River water",
+      "Uncommon river fish",
+      "Tornado fish",
+      "Emperor fish",
+      "Relaxing algae"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "The passage",
+    "size": 1,
+    "color": "#FFFFFF",
+    "cells": [
+      "T12"
+    ],
+    "mats": [
+      "Desert grass",
+      "Dry lichen",
+      "Desert lizard",
+      "Jumper",
+      "Shadow predator"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Desert and sea",
+    "size": 1,
+    "color": "#6b7280",
+    "cells": [
+      "T13"
+    ],
+    "mats": [
+      "Desert grass",
+      "Dry lichen",
+      "Salted water",
+      "Salty sand",
+      "Barrel cactus",
+      "Desert lizard",
+      "Jumper",
+      "Salty queen"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Western stream",
+    "size": 5,
+    "color": "#6DCFF3",
+    "cells": [
+      "G11",
+      "H10",
+      "H11",
+      "I10",
+      "J10"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "Stream water",
+      "Uncommon river fish",
+      "Tornado fish",
+      "Freshwater crayfish",
+      "Emperor fish",
+      "Freshwater oyster"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Lake area",
+    "size": 9,
+    "color": "#262262",
+    "cells": [
+      "R15",
+      "R16",
+      "R17",
+      "S15",
+      "S16",
+      "S17",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "mats": [
+      "Small fresh water fish",
+      "Freshwater algae",
+      "Condensed mist",
+      "Tornado fish",
+      "Mud from the lake",
+      "Emperor fish",
+      "Carps from the lake",
+      "Eel from the lake"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Bottomless pit",
+    "size": 1,
+    "color": "#000000",
+    "cells": [
+      "C6"
+    ],
+    "mats": [
+      "Cold mountain water",
+      "Dark water from the pit"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Mysterious fountain",
+    "size": 1,
+    "color": "#25AAE1",
+    "cells": [
+      "H6"
+    ],
+    "mats": [
+      "Bewitching water",
+      "Strange jelly",
+      "Strange scale",
+      "Glowing rocks",
+      "Underwater totem"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "The edge",
+    "size": 2,
+    "color": "#27A094",
+    "cells": [
+      "O1",
+      "O2"
+    ],
+    "mats": [
+      "Flying hopper",
+      "Large wasp",
+      "Asymmetric butterfly",
+      "Flying spider",
+      "Flying snake"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Strange underwater area",
+    "size": 1,
+    "color": "#EF4036",
+    "cells": [
+      "T1"
+    ],
+    "mats": [
+      "Underwater beetle",
+      "Strange tooth",
+      "Hard scale",
+      "Double water",
+      "Red claw",
+      "Blue isopod",
+      "Milky mantis shrimp",
+      "Glowing sea stars"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Forgotten paradise",
+    "size": 1,
+    "color": "#ED217C",
+    "cells": [
+      "F19"
+    ],
+    "mats": [
+      "Small exotic plant",
+      "Exotic leaves",
+      "Tropical Venus",
+      "Large pitcher plant",
+      "Sweet water",
+      "Mantis Religiosa",
+      "Forbidden fruit"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Forgotten artifact",
+    "size": 1,
+    "color": "#ED1C24",
+    "cells": [
+      "T20"
+    ],
+    "mats": [
+      "Southern sea shrimp",
+      "Red coral",
+      "Anemona Tentacula",
+      "Deep killer's head",
+      "Flappy ray",
+      "Mushroom reef",
+      "Crystallic water"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Northern ocean",
+    "size": 8,
+    "color": "#328FCD",
+    "cells": [
+      "P1",
+      "P2",
+      "Q2",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T2"
+    ],
+    "mats": [
+      "Underwater beetle",
+      "Algea Bubblea",
+      "Strange tooth",
+      "Hard scale",
+      "Red claw",
+      "Blue isopod",
+      "Milky mantis shrimp"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Abandoned ruins",
+    "size": 1,
+    "color": "#FCB040",
+    "cells": [
+      "Q1"
+    ],
+    "mats": [
+      "Red shelled crab",
+      "Salted water",
+      "Shrimp fish",
+      "Bluehead jellyfish",
+      "Jellyfish tree",
+      "One-eyed squid",
+      "Firework jellyfish",
+      "Hydrostinger",
+      "Apertian mackerel",
+      "Forbidden water"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Northern coast",
+    "size": 4,
+    "color": "#61B3CB",
+    "cells": [
+      "Q3",
+      "R3",
+      "S3",
+      "T3"
+    ],
+    "mats": [
+      "Red shelled crab",
+      "Salted water",
+      "Tailless yellow fish",
+      "Liquid pearls",
+      "Bluehead jellyfish",
+      "Jellyfish tree",
+      "Firework jellyfish"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Strange mine",
+    "size": 1,
+    "color": "#ED1C24",
+    "cells": [
+      "N5"
+    ],
+    "mats": [
+      "Small spider",
+      "Bottom-top centipede",
+      "Asymmetric butterfly",
+      "Large spider",
+      "Antimatter dust",
+      "Anti-gravity soil",
+      "Low gravity water"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Southern sea",
+    "size": 7,
+    "color": "#00AEEF",
+    "cells": [
+      "Q18",
+      "Q19",
+      "Q20",
+      "R19",
+      "R20",
+      "S19",
+      "T19"
+    ],
+    "mats": [
+      "Salted water",
+      "Bluehead jellyfish",
+      "Jellyfish tree",
+      "Deep killer's head",
+      "Firework jellyfish",
+      "Apertian mackerel",
+      "Mushroom reef"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Flower field",
+    "size": 2,
+    "color": "#CB84B8",
+    "cells": [
+      "O15",
+      "P16"
+    ],
+    "mats": [
+      "Colorful petals",
+      "Sweet nectar",
+      "Apertian flower bee",
+      "Flowers from the field",
+      "Premium honey",
+      "Royal jelly",
+      "Apertian queen"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Rose garden",
+    "size": 1,
+    "color": "#ED217C",
+    "cells": [
+      "P15"
+    ],
+    "mats": [
+      "Apertian flower bee",
+      "Thorns",
+      "Queen ZOE"
+    ]
+  }
+]
