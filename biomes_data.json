@@ -692,7 +692,8 @@
       "Forest soil",
       "River water",
       "Broccolishroom",
-      "Large boletus"
+      "Large boletus",
+      "Toxic forest frog"
     ]
   },
   {
@@ -1193,7 +1194,7 @@
     "mats": [
       "Apertian flower bee",
       "Thorns",
-      "Queen ZOE"
+      "Queen Zoë"
     ]
   }
 ]
