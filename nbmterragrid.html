@@ -105,8 +105,8 @@
             transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
         }
         .map-cell:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px var(--theme-accent-primary);
+            transform: scale(1.1) translateY(-1px); /* Slight lift on hover */
+            box-shadow: 0 2px 15px var(--theme-accent-primary);
             z-index: 20; 
             border-color: var(--theme-accent-primary);
         }
@@ -164,6 +164,11 @@
             font-weight: 700;
         }
         
+        .search-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
         #materialSearchInput {
             font-family: 'Roboto', sans-serif;
             background-color: var(--theme-bg-tertiary);
@@ -173,14 +178,32 @@
             padding: 10px;
             width: 100%;
             box-sizing: border-box;
+            padding-right: 35px; /* Space for clear button */
         }
+        #clearSearchButton {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--theme-text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0 5px;
+            display: none; /* Hidden by default */
+        }
+        #clearSearchButton:hover {
+            color: var(--theme-accent-primary);
+        }
+
         #materialSearchInput:focus {
             outline: none;
             border-color: var(--theme-accent-secondary);
             box-shadow: 0 0 0 3px var(--theme-accent-glow);
         }
         .suggestions-container {
-            position: relative;
+            position: relative; /* For absolute positioning of suggestions */
         }
         #materialSuggestions {
             position: absolute;
@@ -193,6 +216,7 @@
             overflow-y: auto;
             z-index: 90; 
             box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+            display: none; /* Hidden by default */
         }
         #materialSuggestions div {
             padding: 8px 12px;
@@ -215,33 +239,35 @@
         .info-panel .result-item:hover { background-color: var(--theme-bg-tertiary); }
 
         .highlight-search {
-            outline: 3px solid var(--theme-highlight-border) !important;
-            outline-offset: -3px; 
-            box-shadow: 0 0 10px var(--theme-highlight-glow), 0 0 20px var(--theme-highlight-glow);
-            transform: scale(1.0); 
-            z-index: 5;
+            /* outline: 3px solid var(--theme-highlight-border) !important; */
+            /* outline-offset: -3px;  */
+            border: 2px solid var(--theme-highlight-border) !important;
+            transform: translateY(-2px) scale(1.03); /* Raised effect */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.4), 0 0 8px var(--theme-highlight-glow), 0 0 15px var(--theme-highlight-glow); /* Shadow for raised effect */
+            z-index: 10; /* Ensure highlighted cells are above non-highlighted ones */
         }
 
         .flash-once {
-            animation: shortFlash 0.6s 1 ease-out;
+            animation: shortFlash 0.7s 1 ease-out;
         }
         @keyframes shortFlash {
             0%, 100% { 
-                transform: scale(1.0);
+                /* Keep existing highlight if present */
+                filter: brightness(1);
             }
             50% { 
-                outline: 4px solid yellow !important; 
-                box-shadow: 0 0 15px yellow, 0 0 25px yellow !important;
-                transform: scale(1.1); 
+                filter: brightness(1.8) drop-shadow(0 0 8px yellow);
+                transform: scale(1.1) translateY(-1px); 
             }
         }
-        .clickable-position {
+        .clickable-position, .clickable-zone {
             padding: 2px 5px;
             margin: 0 2px;
             border-radius: 3px;
             transition: background-color 0.2s, color 0.2s;
+            cursor: pointer;
         }
-        .clickable-position:hover {
+        .clickable-position:hover, .clickable-zone:hover {
             background-color: var(--theme-accent-primary);
             color: var(--theme-bg-primary);
         }
@@ -302,15 +328,20 @@
             <div class="flex-grow info-panel">
                 <div>
                     <h3 class="pb-2 mb-4">Material Search</h3>
-                    <div class="mb-1"> <label for="materialSearchInput" class="block text-sm font-medium mb-2">Search for a material:</label>
-                        <div class="suggestions-container">
+                    <div class="mb-1"> 
+                        <label for="materialSearchInput" class="block text-sm font-medium mb-2">Search for a material:</label>
+                        <div class="search-input-container">
                             <input type="text" id="materialSearchInput" class="mt-1 block w-full text-base shadow-sm" placeholder="Type to search materials...">
+                            <button id="clearSearchButton" title="Clear search">&times;</button>
+                        </div>
+                        <div class="suggestions-container">
                             <div id="materialSuggestions"></div>
                         </div>
                     </div>
                     <div id="materialSearchResults" class="text-sm space-y-2 bg-opacity-50 bg-black p-4 rounded-md border var(--theme-border-secondary) mt-4">
                         <p><strong>Material:</strong> <span id="selectedMaterialName" class="font-bold">-</span></p>
-                        <p><strong>Positions:</strong> <span id="selectedMaterialPositions" class="font-bold leading-relaxed">-</span></p> <p><strong>Zones:</strong> <span id="selectedMaterialZones" class="font-bold">-</span></p>
+                        <p><strong>Positions:</strong> <span id="selectedMaterialPositions" class="font-bold leading-relaxed">-</span></p> 
+                        <p><strong>Zones:</strong> <span id="selectedMaterialZones" class="font-bold leading-relaxed">-</span></p>
                     </div>
                 </div>
 
@@ -342,7 +373,7 @@
     </div>
 
     <script>
-        // Biome data (Restored to full definition)
+        // Biome data
         const biomeData = {
             "1": { name: "Volcanic area", lands: 13, color: "#FF4444" }, "2": { name: "Mountains", lands: 24, color: "#808080" },
             "3": { name: "Satoyama", lands: 20, color: "#90EE90" }, "4": { name: "Vast plains", lands: 25, color: "#32CD32" },
@@ -369,7 +400,7 @@
             "45": { name: "Southern sea", lands: 7, color: "#4682B4" }, "46": { name: "Flower field", lands: 2, color: "#FF69B4" },
             "47": { name: "Rose garden", lands: 1, color: "#FF1493" }
         };
-        // Grid data (Restored to full definition)
+        // Grid data
         const gridData = [
             ["1","1","1","2","2","3","4","4","22","22","23","22","22","22","37","41","42","41","41","38"],
             ["1","1","1","28","2","3","4","4","22","22","22","23","22","22","37","41","41","41","41","41"],
@@ -433,9 +464,9 @@
                     const cellAddress = indicesToCell(row, col); cellElement.id = `cell-${cellAddress}`;
                     const biomeId = gridData[row][col]; 
                     const biome = biomeData[biomeId]; 
-                    if (!biome) { // Defensive check
+                    if (!biome) { 
                         console.error(`Biome undefined for ID: ${biomeId} at ${cellAddress}`);
-                        cellElement.style.backgroundColor = 'pink'; // Error color
+                        cellElement.style.backgroundColor = 'pink'; 
                         cellElement.textContent = 'ERR';
                         mapGrid.appendChild(cellElement);
                         continue; 
@@ -476,67 +507,121 @@
         function setupMaterialSearchInput() {
             const searchInput = document.getElementById('materialSearchInput');
             const suggestionsDiv = document.getElementById('materialSuggestions');
+            const clearButton = document.getElementById('clearSearchButton');
             
             searchInput.addEventListener('input', function() {
                 const query = this.value.toLowerCase();
                 suggestionsDiv.innerHTML = ''; 
-                if (query.length < 1) { 
-                    suggestionsDiv.style.display = 'none';
-                    return;
-                }
-                const filteredMaterials = sortedMaterialsCache.filter(material => 
-                    material.toLowerCase().includes(query)
-                );
-                if (filteredMaterials.length > 0) {
-                    suggestionsDiv.style.display = 'block';
-                    filteredMaterials.slice(0, 10).forEach(materialString => { 
-                        const suggestionItem = document.createElement('div');
-                        const parts = materialString.split(', ');
-                        const rarity = parts[1] ? parts[1].trim() : "Common";
-                        const emoji = rarityEmojis[rarity] || '❓';
-                        suggestionItem.innerHTML = `${emoji} ${materialString}`; 
-                        suggestionItem.addEventListener('click', function() {
-                            searchInput.value = materialString; 
-                            suggestionsDiv.innerHTML = '';
-                            suggestionsDiv.style.display = 'none';
-                            displayMaterialInfo(materialString); 
+                if (query.length > 0) {
+                    clearButton.style.display = 'inline'; // Show clear button
+                    const filteredMaterials = sortedMaterialsCache.filter(material => 
+                        material.toLowerCase().includes(query)
+                    );
+                    if (filteredMaterials.length > 0) {
+                        suggestionsDiv.style.display = 'block';
+                        filteredMaterials.slice(0, 10).forEach(materialString => { 
+                            const suggestionItem = document.createElement('div');
+                            const parts = materialString.split(', ');
+                            const rarity = parts[1] ? parts[1].trim() : "Common";
+                            const emoji = rarityEmojis[rarity] || '❓';
+                            suggestionItem.innerHTML = `${emoji} ${materialString}`; 
+                            suggestionItem.addEventListener('click', function() {
+                                searchInput.value = materialString; 
+                                suggestionsDiv.innerHTML = '';
+                                suggestionsDiv.style.display = 'none';
+                                displayMaterialInfo(materialString); 
+                            });
+                            suggestionsDiv.appendChild(suggestionItem);
                         });
-                        suggestionsDiv.appendChild(suggestionItem);
-                    });
+                    } else {
+                        suggestionsDiv.style.display = 'none';
+                    }
                 } else {
                     suggestionsDiv.style.display = 'none';
+                    clearButton.style.display = 'none'; // Hide clear button
+                    resetSearch(); // Clear results if input is empty
                 }
             });
+
+            clearButton.addEventListener('click', function() {
+                searchInput.value = '';
+                suggestionsDiv.innerHTML = '';
+                suggestionsDiv.style.display = 'none';
+                clearButton.style.display = 'none';
+                resetSearch();
+            });
+
             document.addEventListener('click', function(event) {
-                if (!searchInput.contains(event.target) && !suggestionsDiv.contains(event.target)) {
+                if (!searchInput.contains(event.target) && !suggestionsDiv.contains(event.target) && event.target !== clearButton) {
                     suggestionsDiv.style.display = 'none';
                 }
             });
         }
+
+        function resetSearch() {
+            document.getElementById('selectedMaterialName').textContent = '-';
+            document.getElementById('selectedMaterialPositions').textContent = '-';
+            document.getElementById('selectedMaterialZones').textContent = '-';
+            document.querySelectorAll('.map-cell.highlight-search').forEach(cell => {
+                cell.classList.remove('highlight-search');
+            });
+        }
+
 
         function flashCellOnMap(cellAddress) {
             const cellElement = document.getElementById(`cell-${cellAddress}`);
             if (cellElement) {
+                // Temporarily remove highlight-search if present to ensure flash is visible
+                const wasHighlighted = cellElement.classList.contains('highlight-search');
+                if (wasHighlighted) cellElement.classList.remove('highlight-search');
+                
                 cellElement.classList.add('flash-once');
+                
                 setTimeout(() => {
                     cellElement.classList.remove('flash-once');
-                }, 600); 
+                    // Re-apply highlight-search if it was there before flashing
+                    if (wasHighlighted) cellElement.classList.add('highlight-search');
+                }, 700); // Match animation duration + a little buffer
             }
         }
-
-        function displayMaterialInfo(selectedMaterial) {
-            const nameSpan = document.getElementById('selectedMaterialName');
-            const positionsContainer = document.getElementById('selectedMaterialPositions'); 
-            const zonesSpan = document.getElementById('selectedMaterialZones');
-
+        
+        function highlightBiomeCells(biomeNameToHighlight) {
+            // Clear previous highlights (both material and biome-specific)
             document.querySelectorAll('.map-cell.highlight-search').forEach(cell => {
                 cell.classList.remove('highlight-search');
             });
 
+            for (let r = 0; r < 20; r++) {
+                for (let c = 0; c < 20; c++) {
+                    const biomeId = gridData[r][c];
+                    const biome = biomeData[biomeId];
+                    if (biome && biome.name === biomeNameToHighlight) {
+                        const cellAddress = indicesToCell(r, c);
+                        const cellElement = document.getElementById(`cell-${cellAddress}`);
+                        if (cellElement) {
+                            cellElement.classList.add('highlight-search');
+                        }
+                    }
+                }
+            }
+        }
+
+
+        function displayMaterialInfo(selectedMaterial) {
+            const nameSpan = document.getElementById('selectedMaterialName');
+            const positionsContainer = document.getElementById('selectedMaterialPositions'); 
+            const zonesContainer = document.getElementById('selectedMaterialZones'); // Changed to container
+
+            // Clear previous biome highlights before applying new material highlights
+            document.querySelectorAll('.map-cell.highlight-search').forEach(cell => {
+                cell.classList.remove('highlight-search');
+            });
+
+
             if (!selectedMaterial) {
                 nameSpan.textContent = '-';
                 positionsContainer.textContent = '-';
-                zonesSpan.textContent = '-';
+                zonesContainer.textContent = '-';
                 return;
             }
             
@@ -547,7 +632,7 @@
             nameSpan.innerHTML = `${emojiForDisplay} ${materialNameOnly}${rarity ? ', ' + rarity : ''}`;
 
             const positions = [];
-            const zones = new Set();
+            const uniqueZoneNames = new Set(); // Use Set for unique zone names
 
             for (const cellAddress in cellMaterials) {
                 if (cellMaterials[cellAddress].includes(selectedMaterial)) { 
@@ -556,7 +641,7 @@
                     if (row >= 0 && row < 20 && col >= 0 && col < 20) {
                         const biomeId = gridData[row][col];
                         const biome = biomeData[biomeId];
-                        if (biome) zones.add(biome.name);
+                        if (biome) uniqueZoneNames.add(biome.name);
                         const cellElement = document.getElementById(`cell-${cellAddress}`);
                         if (cellElement) cellElement.classList.add('highlight-search');
                     }
@@ -568,7 +653,7 @@
                 positions.forEach((pos, index) => {
                     const posElement = document.createElement('span');
                     posElement.textContent = pos;
-                    posElement.classList.add('clickable-position', 'cursor-pointer');
+                    posElement.classList.add('clickable-position'); // Removed cursor-pointer, handled by hover
                     posElement.title = `Click to highlight ${pos} on map`;
                     posElement.addEventListener('click', () => flashCellOnMap(pos));
                     positionsContainer.appendChild(posElement);
@@ -580,7 +665,38 @@
             } else {
                 positionsContainer.textContent = 'None';
             }
-            zonesSpan.textContent = zones.size > 0 ? Array.from(zones).join(', ') : 'None';
+
+            zonesContainer.innerHTML = ''; // Clear previous zones
+            if (uniqueZoneNames.size > 0) {
+                Array.from(uniqueZoneNames).forEach((zoneName, index, arr) => {
+                    const zoneElement = document.createElement('span');
+                    zoneElement.textContent = zoneName;
+                    zoneElement.classList.add('clickable-zone');
+                    zoneElement.title = `Click to highlight all '${zoneName}' cells`;
+                    zoneElement.addEventListener('click', () => {
+                        // When a zone is clicked, also clear material name and positions from display
+                        // as the focus is now on the whole biome.
+                        document.getElementById('materialSearchInput').value = ''; // Clear search input
+                        document.getElementById('clearSearchButton').style.display = 'none';
+                        document.getElementById('materialSuggestions').style.display = 'none';
+                        nameSpan.textContent = '-'; 
+                        positionsContainer.textContent = '-';
+                        zonesContainer.innerHTML = ''; // Clear current zone list to avoid self-reference issues
+                        const tempZoneSpan = document.createElement('span'); // Re-add the clicked zone name simply
+                        tempZoneSpan.textContent = zoneName;
+                        zonesContainer.appendChild(tempZoneSpan);
+
+                        highlightBiomeCells(zoneName);
+                    });
+                    zonesContainer.appendChild(zoneElement);
+                    if (index < arr.length - 1) {
+                        const separator = document.createTextNode(', ');
+                        zonesContainer.appendChild(separator);
+                    }
+                });
+            } else {
+                zonesContainer.textContent = 'None';
+            }
         }
 
         function calculateAndDisplayZoneStats() { 
@@ -614,14 +730,8 @@
             return itemDiv;
         }
         
-        // This function is not strictly needed anymore as the select element was removed.
-        // However, if any other element needs a dynamic SVG arrow based on theme, it could be adapted.
-        // For now, it's effectively unused by the input field.
-        function updateSelectArrow() {
-            // const arrowFill = getComputedStyle(document.documentElement).getPropertyValue('--theme-select-arrow-fill').trim();
-            // const selectArrowSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='${decodeURIComponent(arrowFill)}' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")`;
-            // document.documentElement.style.setProperty('--select-arrow-svg', selectArrowSVG);
-        }
+        // updateSelectArrow is obsolete
+        // function updateSelectArrow() { }
 
         async function initializeApp() {
             const mapGridElement = document.getElementById('mapGrid'); 
@@ -640,7 +750,7 @@
                 createBiomeMap(); 
                 setupMaterialSearchInput(); 
                 calculateAndDisplayZoneStats(); 
-                updateSelectArrow(); 
+                // updateSelectArrow(); // Obsolete
 
             } catch (error) {
                 console.error("Could not load log data:", error);
